@@ -102,7 +102,7 @@ The project uses Node.js as a development platform, GIT as version control, and 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/colbyle25/website.git
+   git clone https://github.com/oyfaatuva/oyfa-website.git
    ```
 2. Checkout to an existing dev branch
    ```sh
