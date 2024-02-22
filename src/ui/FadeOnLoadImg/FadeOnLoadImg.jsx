@@ -10,8 +10,6 @@ export default function FadeOnLoadImg({ imgPath, alt, className}) {
           setImageLoaded(true);
         };
         image.src = imgPath;
-        console.log({imgPath})
-        console.log(image.src)
     
         return () => {
           image.onload = null;
@@ -21,7 +19,7 @@ export default function FadeOnLoadImg({ imgPath, alt, className}) {
     return (
         <>
         {loaded && (
-            <img src={imgPath} alt={alt} className={styles.fade_in_image + " " + className} />
+            <img src={imgPath} alt={alt} className={styles.fade_in_image + ' ' + (className || '')} />
         )}
         </>  
     );

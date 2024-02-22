@@ -1,15 +1,7 @@
-.vignette {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
-}
-
 /* dimming the carousel images to make the title pop, depending on the pictures you choose you may want to change this*/
 .title_img_container {
-    filter: brightness(80%);
+    background-color: rgb(27, 27, 27);
+    filter: brightness(60%);
     height: 800px;
 }
 
@@ -34,7 +26,7 @@
     font-weight: bold;
     font-size: 5vw;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 /* force position for the caption */
@@ -81,3 +73,20 @@
         font-size: 2vh; 
     }
 }
+
+/* Fix for flickering carousel */                                                      
+.carousel-inner .carousel-item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  .carousel-inner .carousel-item:first-of-type {
+    position: relative;
+  }
+  .carousel-inner .active {
+    opacity: 1;
+  }
+  /* End of fix */

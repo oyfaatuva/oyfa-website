@@ -10,6 +10,8 @@
 import {Component} from 'react'
 import {Carousel} from 'react-bootstrap';
 import '../Stylesheets/homeTitle.css';
+import FadeOnLoadImg from '../../../ui/FadeOnLoadImg/FadeOnLoadImg';
+import Vignette from '../../../ui/Vignette/Vignette';
 
 /* parent TitleScreen class, render a Carousel and Title  */
 export default class TitleScreen extends Component{
@@ -61,10 +63,10 @@ export default class TitleScreen extends Component{
         ) 
 
         return(
-            <div>
+            <>
                 <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content = {content}/>
                 <Title/>
-            </div>
+            </>
         )
     }
 }
@@ -97,6 +99,7 @@ class TitleCarousel extends Component{
                 {content.map((item, index) => (
                     <Carousel.Item interval={timeBeforeSwitch} key={index}>
                         <CarouselContent
+                            index={index}
                             imgSrc={item.imgSrc}
                             captionHeader={item.captionHeader}
                             captionPara={item.captionPara}
@@ -113,20 +116,29 @@ class CarouselContent extends Component{
     constructor(props){
         super(props)
     }
+    
     render(){
         return(
-            <div>
+            <>
                 <div className = 'title_img_container'>
-                    <div className='vignette'/>
-                    <img alt='Image' src={this.props.imgSrc}/>
+                    {this.props.index === 0 ?
+                        <FadeOnLoadImg imgPath={this.props.imgSrc}/>
+                        :
+                        <img src={this.props.imgSrc}/>
+                    }
+                    <Vignette/>
                 </div>
                 <Carousel.Caption className = 'title_caption'>
                 <h3 className = 'title_caption_header'>{this.props.captionHeader}</h3>
-                <a href = {this.props.link} target='_blank' className = 'title_link'>
+                {this.props.link !== '' ?
+                    <a href = {this.props.link} target={this.props.link.charAt(0) === '/' ? '' : '_blank'} className = 'title_link'>
+                        <p className = 'title_caption_paragraph'>{this.props.captionPara}</p>
+                    </a>
+                    :
                     <p className = 'title_caption_paragraph'>{this.props.captionPara}</p>
-                </a>
+                }
                 </Carousel.Caption>
-            </div>
+            </>
         )
     }
 }
