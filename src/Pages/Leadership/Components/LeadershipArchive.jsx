@@ -5,7 +5,7 @@ import styles from '../Stylesheets/LeadershipArchive.module.css'
 import { BNC_ARCHIVE } from '/src/Constants'
 import { toOrdinalNumber } from '../../../util/toOrdinalNumber';
 
-export default function LeadershipArchive() {
+export default function LeadershipArchive({ updateBnC }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const archiveVariants = {
@@ -31,30 +31,30 @@ export default function LeadershipArchive() {
                 animate={ isOpen ? 'expanded' : 'collapsed'}
                 transition={{ ease: "easeInOut", duration: 0.3 }}
             >
-                <ArchiveGrid archive={BNC_ARCHIVE}/>
+                <ArchiveGrid archive={BNC_ARCHIVE} updateBnC={updateBnC}/>
             </motion.div>
 
         </div>
     )   
 }
 
-function ArchiveGrid({ archive }) {
+function ArchiveGrid({ archive, updateBnC }) {
     return (
         <div className={styles.archive_grid}>
             {archive.map((bnc, index) => (
-                <ArchivedBNC key={index} bnc={bnc}/>
+                <ArchivedBNC key={index} bnc={bnc} updateBnC={updateBnC}/>
             ))}
         </div>
     );
 }
 
-function ArchivedBNC({ bnc }) {
+function ArchivedBNC({ bnc, updateBnC }) {
     return (
         <div className={styles.archived_bnc_container}>
             <div className={styles.archived_bnc_img_container}>
-                <img src={bnc.imgPath}/>
+                <img src={bnc.imgPath} onClick={() => updateBnC({ bnc : bnc.bncNum})} style={{ cursor: 'pointer' }} />
             </div>
-            <p className={styles.archived_bnc_title}>{`${toOrdinalNumber(bnc.bncNum)} BOARD AND COUNCIl`}</p>
+            <p className={styles.archived_bnc_title}>{`${toOrdinalNumber(bnc.bncNum)} BOARD AND COUNCIL`}</p>
         </div>
     );
 }

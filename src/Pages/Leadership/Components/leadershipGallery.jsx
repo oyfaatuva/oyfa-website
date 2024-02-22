@@ -2,7 +2,6 @@ import {Component} from 'react'
 import { motion } from "framer-motion"
 
 import '../Stylesheets/LeadershipGallery.css'
-import { BOARD, COUNCIL } from '../../../Constants'
 /* react-router does not natively support scrolling to specific page sections so we use this add-on package */
 import { HashLink } from 'react-router-hash-link'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -26,11 +25,11 @@ export default class LeadershipGallery extends Component{
 
                 <h1 className = 'gallery_heading'>BOARD</h1>
 
-                <CommitteeGrid committeeRows = {BOARD} />
+                <CommitteeGrid committeeRows = {this.props.board} />
 
                 <h1 className = 'gallery_heading'>COUNCIL</h1>
 
-                <CommitteeGrid committeeRows = {COUNCIL} />
+                <CommitteeGrid committeeRows = {this.props.council} />
 
             </div>
         )

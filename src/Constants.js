@@ -593,9 +593,9 @@ export const COUNCIL_35 =
     ]   /*END COUNCIL******************************************************************************************************/
 
 export const BNC_ARCHIVE = [
-   {bncNum: 35, board: BOARD_35, council: COUNCIL_35, imgPath: './Images/Leadership/Leadership_Title_35B&C.jpeg'},
-   {bncNum: 35, BOARD_35, council: COUNCIL_35, imgPath: './Images/Leadership/Leadership_Title_35B&C.jpeg'},
-   {bncNum: 35, BOARD_35, council: COUNCIL_35, imgPath: './Images/Leadership/Leadership_Title_35B&C.jpeg'},
+   {bncNum: 35, board: BOARD_35, council: COUNCIL_35, imgPath: './Images/Leadership/Leadership_Title_35B&C.jpg'},
+//    {bncNum: 34, BOARD_35, council: COUNCIL_35, imgPath: ''},
+//    {bncNum: 33, BOARD_35, council: COUNCIL_35, imgPath: ''},
 ]
 
     
