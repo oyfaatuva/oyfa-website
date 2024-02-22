@@ -1,0 +1,64 @@
+:root {
+    --archive-color: rgb(239, 238, 238);
+    --button-tab-size: 40px;
+}
+
+.archive {
+    width:100%;
+    background-color: var(--archive-color);
+    position: relative;
+}
+
+.archive_accordian {
+    overflow: hidden;
+}
+
+.archive_button_toggle {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: var(--button-tab-size);
+    background-color: var(--archive-color);
+    position: absolute;
+    top: calc(-1 * var(--button-tab-size));
+    right: 10%;
+}
+
+
+.archive_grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.archived_bnc_container {
+    flex-grow: 0;
+    flex-basis: calc(33.33%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.archived_bnc_img_container {
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.archived_bnc_img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.archived_bnc_title {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
