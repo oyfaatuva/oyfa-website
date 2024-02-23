@@ -38,9 +38,9 @@ export const LINKS =
             sectionTitle: 'Announcements',
             links: 
                 [
-                    {header: 'New Member/Little Form', para: 'Stay tuned! Updating soon.', link: 'https://docs.google.com/forms/d/e/1FAIpQLSfFcR1aBjCCLexKWykdAKzVqPkGgN0GuwfTPJm55d8GdGFcCQ/viewform'},
-                    {header: 'Returning Member/Big Form', para: 'Renew your OYFA membership and sign up for littles! Due August 21 at 11:59PM', link: 'https://forms.office.com/r/uUmenq0YaQ'},
-                    {header: 'OYFA Excellence Scholarship', para: 'The 2023 Scholarship is closed but stay tuned for 2024 school year', link: 'https://docs.google.com/forms/d/e/1FAIpQLSfk7EZutPVbnjQcCzlXYK9H2rdDpbjVfWcS6TuAqvZs-b6NFQ/viewform'},
+                    //{header: 'New Member/Little Form', para: 'Stay tuned! Updating soon.', link: 'https://docs.google.com/forms/d/e/1FAIpQLSfFcR1aBjCCLexKWykdAKzVqPkGgN0GuwfTPJm55d8GdGFcCQ/viewform'},
+                    //{header: 'Returning Member/Big Form', para: 'Renew your OYFA membership and sign up for littles! Due August 21 at 11:59PM', link: 'https://forms.office.com/r/uUmenq0YaQ'},
+                    {header: 'OYFA Excellence Scholarship', para: 'Calling all first years: the 2024 Scholarship is now open! Applications close March 15th, 11:59PM', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
                 ]
         },
         
@@ -51,7 +51,7 @@ export const LINKS =
                     {header: 'OYFA Historic Photos', para: 'View our official archive of memories', link: 'https://uvaoyfa.myportfolio.com/'},
                     {header: 'OYFA 2023-2024 Events Google Calendar', para: 'Clear your calendar for our amazing events!', link: 'https://calendar.google.com/calendar/u/0?cid=Y19uMzRsOThkbGE2cW5vYWJkbG9ibmQzYXY3c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
                     {header: 'Week in OYFA (WIO) Sign-Up', para: 'Get our weekly newletter featuring announcements, news, puzzles, and fun tidbits!', link: 'http://eepurl.com/gBOWJv'},
-                    /* This link is currently broken...not sure if an oyfa discord is even still running but look out for a new link! */ //{header: 'OYFA Discord', para: 'Play games with Oyfans', link: 'https://discord.gg/3EZgad'},
+                    {header: 'OYFA Discord', para: 'Play games with Oyfans', link: 'https://discord.gg/TTUZWeuD'},
                 ]
         },
 
@@ -371,7 +371,7 @@ export const ABOUT_PRESENT_TEXT = `OYFA is a multi-generational organization now
 /* File info which will be rendered on the Archives page */
 export const FILES = 
 [
-    {name: 'OYFA Constitution', imgSrc: './Images/Archives/Archives_Preview_Constitution.png', link: 'https://docs.google.com/document/d/1haR6qSnU0WI45C-wj2Ez2XEHqMeekQ3Sk_eB_Vyu74M/edit?usp=sharing'},
+    {name: 'OYFA Constitution', imgSrc: './Images/Archives/Archives_Preview_Constitution.png', link: './Files/OYFAConsitution.pdf'},
     {name: 'B&C Archive', imgSrc: './Images/Archives/Archives_Preview_B&C_Archive.png', link: './Files/Archives_B&C_Archive.pdf'},
     {name: 'Solidarity Statement', imgSrc: './Images/Archives/Archives_Preview_Solidarity_Statement.png', link: './Files/Archives_Solidarity_Statement.pdf'}
 ]

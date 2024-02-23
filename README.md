@@ -6,6 +6,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+<a id="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
@@ -75,6 +76,9 @@
 ### Built With
 
 * [![React][React.js]][React-url]
+* [![Vite][Vite]][Vite-url]
+* [![React Router][React Router]][React Router-url]
+* [![Framer][Framer]][Framer-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,7 +142,6 @@ pass those arrays as props to child Components, which then dynamically map over 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Leadership Archive
 - [ ] State-based maintenance form to replace Constants.js
 - [ ] Implement multiple-paragraph B&C bios, with links to social media/spotifys
 - [ ] Style overhaul
@@ -196,17 +199,23 @@ Project Link: [https://github.com/oyfaatuva/oyfa-website](https://github.com/oyf
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/colbyle25/website.svg?style=for-the-badge
-[contributors-url]: https://github.com/colbyle25/website/graphs/contributors
+[contributors-url]: https://github.com/oyfaatuva/oyfa-website/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/colbyle25/website.svg?style=for-the-badge
-[forks-url]: https://github.com/colbyle25/website/network/members
+[forks-url]: https://github.com/oyfaatuva/oyfa-website/forks
 [stars-shield]: https://img.shields.io/github/stars/colbyle25/website.svg?style=for-the-badge
-[stars-url]: https://github.com/colbyle25/website/stargazers
+[stars-url]: https://github.com/oyfaatuva/oyfa-website/stargazers
 [issues-shield]: https://img.shields.io/github/issues/colbyle25/website.svg?style=for-the-badge
-[issues-url]: https://github.com/colbyle25/website/issues
+[issues-url]: https://github.com/oyfaatuva/oyfa-website/issues
 [license-shield]: https://img.shields.io/github/license/colbyle25/website.svg?style=for-the-badge
-[license-url]: https://github.com/colbyle25/website/blob/master/LICENSE.txt
+[license-url]: https://github.com/oyfaatuva/oyfa-website/blob/master/LICENSE.txt
 [product-screenshot]: public/Images/_Common/README_Product_Screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[Vite-url]: https://vitejs.dev/
+[React Router]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[React Router-url]: https://reactrouter.com/en/main
+[Framer]: https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue
+[Framer-url]: https://www.framer.com/motion/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
