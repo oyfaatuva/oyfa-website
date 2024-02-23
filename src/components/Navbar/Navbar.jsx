@@ -66,9 +66,10 @@ export default function Navbar({ logoImgSrc }) {
     );
 }
 
-function NavBarLinks({ navBarLinksDict, closeMobileMenu }) {
+function NavBarLinks({ navBarLinksDict, isMobile, closeMobileMenu }) {
     return (
         <ul className={classes.nav_list}>
+            {isMobile && <NavBarLink name='HOME' url='/' closeMobileMenu={closeMobileMenu} />}
             {Object.keys(navBarLinksDict).map((componentKey) => (
                 <NavBarLink key={componentKey} {...navBarLinksDict[componentKey]} closeMobileMenu={closeMobileMenu} />
             ))}
