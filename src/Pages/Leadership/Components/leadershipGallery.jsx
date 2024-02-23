@@ -1,8 +1,10 @@
-import React, {Component} from 'react'
-import '../Stylesheets/leadershipGallery.css'
-import { BOARD, COUNCIL } from '../../../Constants'
+import {Component} from 'react'
+import { motion } from "framer-motion"
+
+import '../Stylesheets/LeadershipGallery.css'
 /* react-router does not natively support scrolling to specific page sections so we use this add-on package */
 import { HashLink } from 'react-router-hash-link'
+import { Container, Row, Col } from 'react-bootstrap'
 
 /********************************************************************************************************************
 ** This is a comprehensive file which contains, from the highest level to the lowest level, LeadershipGallery,
@@ -21,13 +23,13 @@ export default class LeadershipGallery extends Component{
         return(
             <div className = 'gallery_background'>
 
-                <h1 className = 'gallery_heading'>Board</h1>
+                <h1 className = 'gallery_heading'>BOARD</h1>
 
-                <CommitteeGrid committeeRows = {BOARD} />
+                <CommitteeGrid committeeRows = {this.props.board} />
 
-                <h1 className = 'gallery_heading'>Council</h1>
+                <h1 className = 'gallery_heading'>COUNCIL</h1>
 
-                <CommitteeGrid committeeRows = {COUNCIL} />
+                <CommitteeGrid committeeRows = {this.props.council} />
 
             </div>
         )
@@ -94,11 +96,11 @@ class CommitteeGrid extends Component{
         const committeeRows = this.props.committeeRows
 
         return(
-            <div className = 'row person_row committee_grid_container'>
+            <Container className = 'committee_grid_container'>
                 {committeeRows.map((row, index) => (
                     <CommitteeRow key = {index} committees={row} />
                 ))}
-            </div>
+            </Container>
         )
     }
 }
@@ -120,11 +122,11 @@ class CommitteeRow extends Component{
         const committees = this.props.committees
 
         return(
-            <div className = 'row person_row committee_row_container'>
+            <Row className='person_row'>
                 {committees.map((committee, index) => (
                     <Person key = {index} imgSrc = {committee.imgSrc} title = {committee.title} info = {committee.info} />
                 ))}
-            </div>
+            </Row>
         )
     }
 }
@@ -157,36 +159,40 @@ class Person extends Component{
         if(title){
             var titleComponent =                 
                 <div className = 'person_text_container'>
-                    <h1 className = 'person_title'>{title}</h1>
+                    <h1 className = 'person_title'>{title.toUpperCase()}</h1>
                 </div>
         }
     
         /* for each person in the info array, map over them and render a PersonInfo component with their information */
         var infoComponent = 
-            <div>
-                {info.map((item, index) => (
+            <>
+                {info.map((item) => (
                     <div className = 'person_info_container'>
                         <PersonInfo name = {item.name} major = {item.major} email = {item.email} />
                     </div>
                 ))}
-            </div>
+            </>
 
         return(
-            <div className = 'col person_container'>
-    
-                <div className = 'person_img_container'>
-                    <HashLink smooth to = {'/Bios#'+info[0].name} > {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
-                    {/* <a href = {'/Bios#'+info[0].name}> */}
-                        <img src={imgSrc} />
-                    {/* </a> */}
-                    </HashLink>
-                </div>
-    
-                {titleComponent}
-    
-                {infoComponent}
-    
-            </div>
+            <Col>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5}}
+                    className = 'person_container'>
+                    <div className = 'person_img_container'>
+                        <HashLink smooth to = {'/Bios#'+info[0].name} > {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
+                        {/* <a href = {'/Bios#'+info[0].name}> */}
+                            <img src={imgSrc} />
+                        {/* </a> */}
+                        </HashLink>
+                    </div>
+
+                    {infoComponent}
+                    {titleComponent}
+        
+                </motion.div>
+            </Col>
         )
     }
 }
@@ -218,8 +224,8 @@ class PersonInfo extends Component{
         return(
             <div className = 'person_text_container'>
                 {nameComponent}
-                {majorComponent}
-                {emailComponent}
+                {/* {majorComponent} */}
+                {/* {emailComponent} */}
             </div>
         )
     }
