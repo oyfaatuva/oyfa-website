@@ -31,6 +31,7 @@ export default function LeadershipArchive({ updateBnC }) {
                 animate={ isOpen ? 'expanded' : 'collapsed'}
                 transition={{ ease: "easeInOut", duration: 0.3 }}
             >
+                <p className={styles.archive_header}>ARCHIVE</p>
                 <ArchiveGrid archive={BNC_ARCHIVE} updateBnC={updateBnC}/>
             </motion.div>
 

@@ -4,6 +4,7 @@ import YoutubeEmbed from '../../../components/YoutubeEmbed/YoutubeEmbed'
 import {EmailSignupWithName} from '../../../components/Emailsignup/Emailsignup'
 import '../Stylesheets/homeGetInvolved.css'
 import * as Constants from '../../../Constants'
+import { useMediaQuery } from 'react-responsive'
 
 /* ATTENTION: If you are performing yearly upkeep, you will want to change the venmo link
 ** in the src/Constants file to the current Treasurer...
@@ -31,14 +32,13 @@ export default class HomeGetInvolved extends Component{
     }
 }
 
-class HomeSocialMedia extends Component{
-
-    render(){
+export function HomeSocialMedia() {
+    const isMobile = useMediaQuery({ maxWidth: '1000px' });
         const numOfSocialMediaColumns = 3
 
         //if mobile then no text, otherwise have text
         var socialMediaHandles = Constants.SOCIAL_MEDIA_HANDLES
-        if(window.screen.width < 1000) socialMediaHandles = Constants.SOCIAL_MEDIA_HANDLES_NO_TEXT
+        if(isMobile) socialMediaHandles = Constants.SOCIAL_MEDIA_HANDLES_NO_TEXT
 
         return(
             <div className = 'get_involved_parent'>
@@ -60,11 +60,9 @@ class HomeSocialMedia extends Component{
                 </div>
             </div>
         )
-    }
 }
 
 class HomeDonate extends Component{
-
     render(){
         var get_involved_parent_class = 'get_involved_parent'
         if(window.screen.width < 1000) get_involved_parent_class = 'get_involved_mobile_reverse'

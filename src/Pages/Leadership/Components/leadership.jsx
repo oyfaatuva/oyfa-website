@@ -18,7 +18,6 @@ export default function Leadership() {
     const board = useRef(BOARD);
     const council = useRef(COUNCIL);
 
-
     useEffect(() => {
         if(searchParams.has('bnc')) {
             let archive = BNC_ARCHIVE.find(obj => obj.bncNum.toString() === searchParams.get('bnc'));
@@ -50,8 +49,7 @@ export default function Leadership() {
             <HalfTitle header = 'Leadership' imgSrc = {'/Images/Leadership/Leadership_Title_' + bncNum.current + 'B&C.jpg'} brightness={75} position={25} caption='Read Bios' captionLink='/Bios'/>
             <LeadershipArchive updateBnC = {updateBnC} /> {/*TODO: MAKE THIS ALSO TAKE PROPS FOR ENTIRE ARCHIVE BC GOOD PROGRAMMING I AM GOOD PROGRAMMER (COMPS SHOULD NOT CALL CONSTANTS) */}
             <LeadershipIntro bncNum = {bncNum.current} />
-            {dataFetched &&
-            <LeadershipGallery board = {board.current} council = {council.current} /> }
+            <LeadershipGallery board = {board.current} council = {council.current} />
         </>
     )
 }

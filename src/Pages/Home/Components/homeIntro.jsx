@@ -15,26 +15,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import HomeGetInvolved from './homeGetInvolved';
 import '../Stylesheets/homeIntro.css'
+import { toOrdinalNumber } from '../../../util/toOrdinalNumber';
+import { OYFA_AGE } from '../../../Constants';
 
 export default class Introduction extends Component{
 
     render(){     
-        //JS Date is calculated by years since 1900... ????
-        //1988 = 88 years after
-        //is it after April? increment the year
-        const date = new Date()
-        const numOfBnCs = date.getYear() + (date.getMonth() > 4) - 88
-        let append = 'th'
-        if(numOfBnCs % 10 == 1) append = 'st' 
-        else if(numOfBnCs % 10 == 2) append = 'nd'
-        else if(numOfBnCs % 10 == 3) append = 'rd'
-
         /* On this panel we have a row that links to internal pages, you can add a new link by editing this
         ** dictionary here. Use a relative link that matches the router definitions in index */
         const links = [
             {text: "Read about OYFA's heritage and mission", link:'/About'},
             {text: 'View the latest events ', link:'/Events'},
-            {text: 'Meet ' + numOfBnCs + append + ' Board and Council', link:'/Leadership'}
+            {text: 'Meet ' + toOrdinalNumber(OYFA_AGE) + ' Board and Council', link:'/Leadership'}
         ]
 
         return(

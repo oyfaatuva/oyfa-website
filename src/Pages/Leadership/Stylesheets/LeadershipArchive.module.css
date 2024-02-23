@@ -1,5 +1,5 @@
 :root {
-    --archive-color: rgb(239, 238, 238);
+    --archive-color: rgb(235, 235, 235);
     --button-tab-size: 40px;
 }
 
@@ -7,6 +7,12 @@
     width:100%;
     background-color: var(--archive-color);
     position: relative;
+}
+
+.archive_header {
+    font-family: 'Poppins';
+    font-size: 3rem;
+    text-align: center;
 }
 
 .archive_accordian {
@@ -40,7 +46,7 @@
 
 .archived_bnc_container {
     flex-grow: 0;
-    flex-basis: calc(33.33%);
+    flex-basis: 33.33%;
 
     display: flex;
     flex-direction: column;
@@ -48,12 +54,11 @@
 }
 
 .archived_bnc_img_container {
-    margin-top: 30px;
     width: 75%;
     height: 150px;
     overflow: hidden;
 
-    filter: drop-shadow(rgba(0, 0, 0, 0.08) 6px 6px 10px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.086) 6px 6px 10px);
     border-radius: 4px;
 }
 
@@ -63,10 +68,31 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.5s;
+}
+
+.archived_bnc_img_container img:hover {
+    transform: scale(1.1);
 }
 
 .archived_bnc_title {
     text-align: center;
     font-family: 'Poppins';
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width : 1000px) /* Phone Rules */
+{
+    .archive_grid {
+        justify-content: center;
+    }
+
+    .archived_bnc_container {
+        flex-basis: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

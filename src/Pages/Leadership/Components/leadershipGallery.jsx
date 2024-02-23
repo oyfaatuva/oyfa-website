@@ -183,7 +183,7 @@ class Person extends Component{
                     <div className = 'person_img_container'>
                         <HashLink smooth to = {'/Bios#'+info[0].name} > {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
                         {/* <a href = {'/Bios#'+info[0].name}> */}
-                            <img src={imgSrc} />
+                            <img src={imgSrc} loading='lazy'/>
                         {/* </a> */}
                         </HashLink>
                     </div>

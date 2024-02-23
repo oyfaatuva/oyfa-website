@@ -4,7 +4,6 @@
 
 .link_section_heading{
     text-decoration: underline;
-    font-family: 'Playfair Display';
     font-weight: bold;
     text-align: center;
     font-size: 10vh;
@@ -13,7 +12,6 @@
 }
 
 .link_heading{
-    font-family: 'Playfair Display';
     font-weight: bold;
     text-align: center;
     font-size: 5vh;
@@ -36,7 +34,6 @@
 
 .link_paragraph{
     color: black;
-    font-family: 'Open Sans';
     font-size: 1.5em;
     text-align: center;
 }
