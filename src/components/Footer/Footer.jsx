@@ -37,7 +37,6 @@ export default class Footer extends Component{
                 {/* Social media and email section */}
                 <section>
                     <div>
-                        <div className="row mt-3">
                             <div className="text-center">
                                 <p className = 'footer_disclaimer'>
                                     Although this organization has members who are University of Virginia students 
@@ -67,7 +66,6 @@ export default class Footer extends Component{
                                     Copyright Organization of Young Filipino Americans ©{copyrightYear}. All Rights Reserved.
                                 </p>
                             </div>
-                        </div>
                     </div>
                 </section>
             </footer>

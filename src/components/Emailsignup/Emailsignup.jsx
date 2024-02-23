@@ -74,7 +74,7 @@ function EmailSignupWithName(){
             <section>
             <form onSubmit={onSubmit} method="post" id="mc-embedded-subscribe-form" 
             name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
-
+            <div className='container'>
                 <div className="row email_center">
 
                     <div className="col-md-10">
@@ -110,7 +110,9 @@ function EmailSignupWithName(){
                             </button>
                     </div>
                 </div>
-                </form>
+                </div>
+            </form>
+                
             </section>
         )
 }
