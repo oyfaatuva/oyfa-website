@@ -1,6 +1,7 @@
-import React, {Component} from 'react'
+import {Component} from 'react'
+import { motion } from "framer-motion"
+
 import '../Stylesheets/LeadershipGallery.css'
-import { BOARD, COUNCIL } from '../../../Constants'
 /* react-router does not natively support scrolling to specific page sections so we use this add-on package */
 import { HashLink } from 'react-router-hash-link'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -24,11 +25,11 @@ export default class LeadershipGallery extends Component{
 
                 <h1 className = 'gallery_heading'>BOARD</h1>
 
-                <CommitteeGrid committeeRows = {BOARD} />
+                <CommitteeGrid committeeRows = {this.props.board} />
 
                 <h1 className = 'gallery_heading'>COUNCIL</h1>
 
-                <CommitteeGrid committeeRows = {COUNCIL} />
+                <CommitteeGrid committeeRows = {this.props.council} />
 
             </div>
         )
@@ -174,7 +175,11 @@ class Person extends Component{
 
         return(
             <Col>
-                <div className = 'person_container'>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5}}
+                    className = 'person_container'>
                     <div className = 'person_img_container'>
                         <HashLink smooth to = {'/Bios#'+info[0].name} > {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
                         {/* <a href = {'/Bios#'+info[0].name}> */}
@@ -186,7 +191,7 @@ class Person extends Component{
                     {infoComponent}
                     {titleComponent}
         
-                </div>
+                </motion.div>
             </Col>
         )
     }
