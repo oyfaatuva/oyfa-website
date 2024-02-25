@@ -45,7 +45,7 @@ export default class Introduction extends Component{
                 </div>
 
                 {/* rendering the links row */}
-                <div class = 'intro_links_container'>
+                <div className = 'intro_links_container'>
                     {links.map((item, index) => (
                         <PageLink text={item.text} link={item.link} key={index}/>
                     ))}
