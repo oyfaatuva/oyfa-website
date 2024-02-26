@@ -6,7 +6,8 @@ import HalfTitle from '../../../components/HalfTitle/HalfTitle';
 import LeadershipGallery from './LeadershipGallery';
 import LeadershipIntro from './LeadershipIntro';
 import LeadershipArchive from './LeadershipArchive';
-import { useLocation, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
+import axios from 'axios';
 
 /* Main export file to index that combines all "leadership" components */
 
@@ -19,7 +20,19 @@ export default function Leadership() {
     const council = useRef(COUNCIL);
 
     useEffect(() => {
+        const fetchData = async () => {
+            try { 
+                var res = await axios.get(import.meta.env.API_URL);
+            }
+            catch(err) {
+                console.log(err);
+            }
+            return res;
+        }
+
         if(searchParams.has('bnc')) {
+            console.log(fetchData());
+
             let archive = BNC_ARCHIVE.find(obj => obj.bncNum.toString() === searchParams.get('bnc'));
             if(archive !== undefined) {
                 bncNum.current = searchParams.get('bnc');
