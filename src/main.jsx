@@ -13,8 +13,6 @@ document.title = "OYFA at UVA"
 /* Tell the React Document Object Model to create a root HTML element for us */
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-/* Our root is now pathed to all of our pages */
-
 root.render(
   <>
       <React.StrictMode>

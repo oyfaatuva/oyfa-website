@@ -22,7 +22,7 @@ export default function Leadership() {
     useEffect(() => {
         const fetchData = async () => {
             try { 
-                var res = await axios.get(import.meta.env.API_URL);
+                var res = await axios.get(import.meta.env.VITE_API_URL);
             }
             catch(err) {
                 console.log(err);
