@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/oyfaatuv/public_html/
+    - export DEPLOYPATH_DATA=/home/oyfaatuv/data_api/
     - /bin/cp -R ./dist/* $DEPLOYPATH
+    - /bin/cp -R ./api/* $DEPLOYPATH_DATA
