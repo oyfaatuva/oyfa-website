@@ -22,7 +22,9 @@ export default function Leadership() {
     useEffect(() => {
         const fetchData = async () => {
             try { 
-                var res = await axios.get(import.meta.env.VITE_API_URL);
+                let apiGET = "/api/bncarchive/35";
+                console.log(import.meta.env.VITE_API_URL2 + apiGET, { params: {key: import.meta.env.VITE_API_KEY}});
+                var res = await axios.get(import.meta.env.VITE_API_URL2 + apiGET, { params: {key: import.meta.env.VITE_API_KEY}});
             }
             catch(err) {
                 console.log(err);
