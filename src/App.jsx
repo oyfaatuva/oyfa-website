@@ -10,6 +10,7 @@ import Leadership from './pages/Leadership/Components/leadership'
 import Archives from './pages/Archives/Components/archives'
 import LeadershipBio from './pages/Leadership/Components/leadershipBio'
 import RootRouteComponent from './root'
+import Merch from './pages/Merch/Components/Merch';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main class of your page 
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <RootRouteComponent />, /**RootRouteComponent is the parent of all the other Routes and will contain all shared Components (ex. 
-        Navbar, ScrollToTop) */
+        Footer, ScrollToTop) */
         children: [
             {
                 index: true,
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path: 'leadership',
                 element: <Leadership />,
+            },
+            {
+                path: 'merch',
+                element: <Merch />,
             },
             {
                 path: 'archives',
