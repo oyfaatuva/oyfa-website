@@ -1,0 +1,63 @@
+.merch_grid_container {
+    display: flex;
+    justify-content: center; 
+}
+
+.merch_grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    overflow: hidden;
+
+    width: clamp(200px, 100%, 1100px);;
+}
+
+.merch_container{
+    background-color: beige;
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch_img_container{
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    filter: drop-shadow(rgba(0, 0, 0, 0.08) 6px 6px 10px);
+    border-radius: 4px;
+}
+
+.merch_img_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.merch_text_container{
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.merch_name{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 5%;
+}
+
+@media screen and (max-width : 800px)
+{
+    .merch_container{
+        flex: 0 0 calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width : 600px)
+{
+    .merch_container{
+        flex: 0 0 calc(50%);
+        margin: 0;
+    }
+}
