@@ -14,18 +14,7 @@ import useScrollPosition from "/src/hooks/useScrollPosition";
 const SCROLL_POSITION_FOR_TRANSITION = 350; //Scroll Position = 0 is the top of the page (is this measured in pixels??) 
 const MAX_WIDTH = "1000px" //Maximum window width to classify screen as "Mobile"
 
-//Current navbar tabs
-//TODO: abstract all these preset values away as props to make navbar more flexible 
-const navbar = {
-    about: { name: "ABOUT", url: "/about"},
-    events: { name: "EVENTS", url: "/events"},
-    links: { name: "LINKS", url: "/links"},
-    leadership: { name: "LEADERSHIP", url: "/leadership"},
-    merch: {name: "MERCH", url: "/merch"},
-    archives: { name: "ARCHIVES", url: "/archives"},
-};
-
-export default function Navbar({ logoImgSrc }) {
+export default function Navbar({ logoImgSrc, navbar }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH });
     const scrollPosition = useScrollPosition()

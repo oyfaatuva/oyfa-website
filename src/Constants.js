@@ -332,7 +332,14 @@ export const CURRENT_BNC = 36;
 
 /* These are the tabs to render on the Navbar, expect to add more if you add more pages (make sure to Route those in
 ** index.js) */
-export const NAVBAR_TABS = ['--logo', 'About', 'Events', 'Links', 'Leadership', 'Archives']
+export const NAVBAR_TABS = {
+    about: { name: "ABOUT", url: "/about"},
+    events: { name: "EVENTS", url: "/events"},
+    links: { name: "LINKS", url: "/links"},
+    leadership: { name: "LEADERSHIP", url: "/leadership"},
+    merch: {name: "MERCH", url: "/merch"},
+    archives: { name: "ARCHIVES", url: "/archives"},
+};
 
 /* Mailchimp WIO Root Form Posting Link, used in EmailSignup */
 export const MAILCHIMP_BASE_URL = 'https://oyfaatuva.us4.list-manage.com/subscribe/post-json?u=06c31be345165e241d2affc73&amp;id=11be915f14&amp;f_id=00ad07e9f0;tag=1785772'
