@@ -18,7 +18,7 @@ function MerchItem({ item }) {
     return (
         <div className={styles.merch_container} style={{ cursor: 'pointer' }}> {/* Remember: This is the button (not the img) */}
             <div className={styles.merch_img_container}>
-                <img src={''} />
+                <img src={'/Images/Leadership/Leadership_Title_35B&C.jpg'} />
             </div>
             <p className={styles.merch_name}>MERCH</p>
         </div>

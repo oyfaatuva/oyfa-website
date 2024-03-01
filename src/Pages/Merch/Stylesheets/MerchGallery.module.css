@@ -23,16 +23,19 @@
 }
 
 .merch_img_container{
-    display: flex;
-    margin: 0 auto;
-    overflow: hidden;
-    filter: drop-shadow(rgba(0, 0, 0, 0.08) 6px 6px 10px);
-    border-radius: 4px;
+    position: relative;
+    background-color: aqua;
+    width: 100%;
+    padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
+                        Position of the img will have to be relative because of it*/
 }
 
 .merch_img_container img{
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .merch_text_container{
