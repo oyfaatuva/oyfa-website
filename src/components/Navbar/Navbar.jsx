@@ -21,6 +21,7 @@ const navbar = {
     events: { name: "EVENTS", url: "/events"},
     links: { name: "LINKS", url: "/links"},
     leadership: { name: "LEADERSHIP", url: "/leadership"},
+    merch: {name: "MERCH", url: "/merch"},
     archives: { name: "ARCHIVES", url: "/archives"},
 };
 
