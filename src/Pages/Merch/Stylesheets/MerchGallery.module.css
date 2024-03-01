@@ -13,7 +13,6 @@
 }
 
 .merch_container{
-    background-color: beige;
     flex: 0 0 calc(25% - 20px);
     margin: 10px;
 
@@ -24,7 +23,6 @@
 
 .merch_img_container{
     position: relative;
-    background-color: aqua;
     width: 100%;
     padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
                         Position of the img will have to be relative because of it*/
@@ -38,16 +36,30 @@
     object-fit: cover;
 }
 
-.merch_text_container{
-    word-wrap: break-word;
-    text-align: center;
+.merch_category{
+    width: 100%;
+
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .merch_name{
+    width: 100%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
     font-family: 'Poppins';
-    font-size: 1.5rem;
-    color: black;
-    margin-top: 5%;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.merch_price{
+    width: 100%;
+
+    font-family: 'Poppins';
+    font-size: 1.35rem;
+    font-weight: 600;
 }
 
 @media screen and (max-width : 800px)

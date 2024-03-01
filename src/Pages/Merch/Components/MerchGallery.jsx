@@ -20,7 +20,9 @@ function MerchItem({ item }) {
             <div className={styles.merch_img_container}>
                 <img src={'/Images/Leadership/Leadership_Title_35B&C.jpg'} />
             </div>
-            <p className={styles.merch_name}>MERCH</p>
+            <p className={styles.merch_category}>UNISEX T-SHIRT</p>
+            <p className={styles.merch_name}>hellllllllllllllllllllllllllllllllllaaaaaaaaaaa     el el el el el el el ellllll el el </p>
+            <p className={styles.merch_price}>$25.00</p>
         </div>
     );
 }
