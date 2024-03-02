@@ -1,6 +1,13 @@
 .merch_grid_container {
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.merch_gallery_title {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 .merch_grid {
@@ -9,12 +16,12 @@
     justify-content: flex-start;
     overflow: hidden;
 
-    width: clamp(200px, 100%, 1100px);;
+    width: clamp(200px, 100%, 1200px);;
 }
 
 .merch_container{
-    flex: 0 0 calc(25% - 20px);
-    margin: 10px;
+    flex: 0 0 calc(25% - 30px);
+    margin: 15px;
 
     display: flex;
     flex-direction: column;
@@ -50,7 +57,7 @@
     hyphens: auto;
 
     font-family: 'Poppins';
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -65,7 +72,7 @@
 @media screen and (max-width : 800px)
 {
     .merch_container{
-        flex: 0 0 calc(33.33% - 20px);
+        flex: 0 0 calc(33.33% - 30px);
     }
 }
 
