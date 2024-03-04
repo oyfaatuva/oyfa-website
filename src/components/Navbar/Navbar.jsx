@@ -10,11 +10,9 @@ import useScrollPosition from "/src/hooks/useScrollPosition";
  * USAGE GUIDE: to be made... I am lazy
  */
 
-//TODO: This should be dependant on window ;-;;;;
-const SCROLL_POSITION_FOR_TRANSITION = 350; //Scroll Position = 0 is the top of the page (is this measured in pixels??) 
-const MAX_WIDTH = "1000px" //Maximum window width to classify screen as "Mobile"
+const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile"
 
-export default function Navbar({ logoImgSrc, navbar }) {
+export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transitionScrollPositions }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH });
     const scrollPosition = useScrollPosition()
@@ -30,8 +28,8 @@ export default function Navbar({ logoImgSrc, navbar }) {
     };
 
     return (
-        <header className={classes.header}>
-            <nav className={classes.nav + ` ${scrollPosition > SCROLL_POSITION_FOR_TRANSITION ? classes.nav_bg_color : ""}`}>
+        <header className={classes.header + ` ${useTransition ? '' : classes.header_relative}`}>
+            <nav className={classes.nav + ` ${!useTransition || transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : ""}`}>
                 <NavLink to="/" className={classes.nav_logo}>
                     <img src={logoImgSrc}/>
                 </NavLink>
@@ -42,14 +40,14 @@ export default function Navbar({ logoImgSrc, navbar }) {
                 )}
                 { isMobile ? (
                     <div className={classes.nav_menu + " " + (isMenuOpen ? classes.show_menu : "")} id="nav-menu">
-                        <NavBarLinks navBarLinksDict={navbar} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
+                        <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
                         <div className={classes.nav_close} id="nav-close" onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faXmark} />
                         </div>
                     </div>
 
                 ) : (
-                    <NavBarLinks navBarLinksDict={navbar} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
+                    <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
                 )}
             </nav>
     </header>

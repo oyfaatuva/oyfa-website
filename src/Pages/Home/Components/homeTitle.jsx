@@ -13,8 +13,7 @@ import '../Stylesheets/homeTitle.css';
 import FadeOnLoadImg from '../../../ui/FadeOnLoadImg/FadeOnLoadImg';
 import Vignette from '../../../ui/Vignette/Vignette';
 
-/* parent TitleScreen class, render a Carousel and Title  */
-export default class TitleScreen extends Component{
+export default class HomeTitle extends Component{
     render(){
 
         /* Carousel Variables */

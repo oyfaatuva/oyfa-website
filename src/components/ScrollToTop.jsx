@@ -5,8 +5,7 @@ export default function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => { 
-        if(pathname !== localStorage.getItem("currentPath")) {
-            localStorage.setItem("currentPath", pathname);
+        if(pathname !== sessionStorage.getItem("currentPath")) {
             window.scrollTo({top:0, left:0, behavior:"instant"});
         }
     }, [pathname]);

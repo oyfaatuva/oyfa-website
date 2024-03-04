@@ -34,6 +34,10 @@
     border-bottom: 1px white solid;
 }
 
+.header_relative {
+    position: sticky;
+}
+
 .nav_bg_color {
     background-color: var(--navbar-color);
     border-bottom: 1px var(--navbar-color) solid;

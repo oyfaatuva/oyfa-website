@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import '../Stylesheets/leadershipBio.css'
 import Footer from '../../../components/Footer/Footer'
 import {BOARD, COUNCIL} from '../../../Constants';
+import { useOutletContext } from 'react-router';
 
 /********************************************************************************************************************
 ** This is a comprehensive file which contains, from the highest level to the lowest level, BioGrid, BioRow, and
@@ -10,27 +11,28 @@ import {BOARD, COUNCIL} from '../../../Constants';
 ** committee info if you wish to rearrange things your own way.
 ********************************************************************************************************************/
 
-export default class LeadershipBio extends Component{
-    render(){        
-        /* BOARD and COUNCIL arrays were originally modeled for just the LeadershipGallery calls. Recall that a 
-        ** CommitteeGrid is 2 dimensional (RowsXColumns, but you could say 3-D because each Committee has an
-        ** array of people/info), but a BioGrid is just 1 dimensional (Rows where each row is one person).
-        ** This means we have to remove an extraneous layer of the array structure (remove a set of brackets)
-        ** with the flat(1) method to be able to use the information in our BioGrid call */
-        return(
-            <div>
-                <div className = 'bio_background'>
-                    <h1 className = 'bio_heading'>BOARD</h1>
-                    <BioGrid bioRows = {BOARD.flat(1)} />
+export default function LeadershipBio() {
+    const { setTransition } = useOutletContext();
+    setTransition(false);
+      
+    /* BOARD and COUNCIL arrays were originally modeled for just the LeadershipGallery calls. Recall that a 
+    ** CommitteeGrid is 2 dimensional (RowsXColumns, but you could say 3-D because each Committee has an
+    ** array of people/info), but a BioGrid is just 1 dimensional (Rows where each row is one person).
+    ** This means we have to remove an extraneous layer of the array structure (remove a set of brackets)
+    ** with the flat(1) method to be able to use the information in our BioGrid call */
+    return(
+        <div>
+            <div className = 'bio_background'>
+                <h1 className = 'bio_heading'>BOARD</h1>
+                <BioGrid bioRows = {BOARD.flat(1)} />
 
-                    <h1 className = 'bio_heading'>COUNCIL</h1>
-                    <BioGrid bioRows = {COUNCIL.flat(1)} />
-                </div>
-
-                <Footer />
+                <h1 className = 'bio_heading'>COUNCIL</h1>
+                <BioGrid bioRows = {COUNCIL.flat(1)} />
             </div>
-        )
-    }
+
+            <Footer />
+        </div>
+    )
 }
 
 /*==USAGE GUIDE===================================================================================================
