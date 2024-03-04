@@ -20,6 +20,7 @@
 .email_no_name_parent{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .email_label_parent{
