@@ -30,8 +30,11 @@
     font-family: var(--text-font);
     backdrop-filter: blur(16px);
 
-    transition: background-color 0.25s linear, border-bottom 0.25s linear;
     border-bottom: 1px white solid;
+}
+
+.nav_transition {
+    transition: background-color 0.25s linear, border-bottom 0.25s linear;
 }
 
 .header_relative {
@@ -52,7 +55,7 @@
 }
 
 .nav_logo {
-    padding-top: 3px; /*TODO: Make Logo a normal square */
+    padding-top: 3px; /*TODO: Make Logo photo a normal square so we dont need this */
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -130,4 +133,3 @@
 .show_menu {
     right: 0;
 }
-  

@@ -29,7 +29,10 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
 
     return (
         <header className={classes.header + ` ${useTransition ? '' : classes.header_relative}`}>
-            <nav className={classes.nav + ` ${!useTransition || transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : ""}`}>
+            <nav className={classes.nav + ` ${useTransition ? 
+                    classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')
+                    : 
+                    classes.nav_bg_color}`}>
                 <NavLink to="/" className={classes.nav_logo}>
                     <img src={logoImgSrc}/>
                 </NavLink>

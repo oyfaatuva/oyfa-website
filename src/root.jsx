@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import { NAVBAR_TABS } from "./Constants";
 import { useEffect, useState } from "react";
 
-const DEFAULT_NAVBAR_TRANSITION_SCROLL = 350;
+const DEFAULT_NAVBAR_TRANSITION_SCROLL = 340;
 const DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE = 250;
 
 export default function RootRouteComponent() {
