@@ -38,8 +38,6 @@ export const LINKS =
             sectionTitle: 'Announcements',
             links: 
                 [
-                    //{header: 'New Member/Little Form', para: 'Stay tuned! Updating soon.', link: 'https://docs.google.com/forms/d/e/1FAIpQLSfFcR1aBjCCLexKWykdAKzVqPkGgN0GuwfTPJm55d8GdGFcCQ/viewform'},
-                    //{header: 'Returning Member/Big Form', para: 'Renew your OYFA membership and sign up for littles! Due August 21 at 11:59PM', link: 'https://forms.office.com/r/uUmenq0YaQ'},
                     {header: 'OYFA Excellence Scholarship', para: 'Calling all first years: the 2024 Scholarship is now open! Applications close March 15th, 11:59PM', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
                 ]
         },
@@ -61,7 +59,6 @@ export const LINKS =
                 [
                     {header: 'Official Facebook Group', para: 'Official channels for news and info. Find our other socials at the bottom of the page!', link: 'https://www.facebook.com/groups/oyfaatuva/'},
                     {header: 'Chilling Out With OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'},
-                    /* You may want this in the future but right now the D7 facebook is just full of advertisements...add it back when they get their act together! */    //{header: 'D7 Facebook Group', link: 'https://www.facebook.com/groups/2204736918'},
                     {header: 'OYFA Kickboxing Messenger Chat', para: 'Learn kickboxing, exercise, and de-stress', link:'https://m.me/j/AbaysYg9tnmQnxTJ/'}
                 ]
         },
@@ -187,7 +184,7 @@ export const COUNCIL =
                         info:   
                             [
                                 {name: 'Alyssa Manalo', bioImgSrc: LEADERSHIP_FOLDER + '/Leadership_Alyssa.jpg', pronouns: 'she/her', year: '3rd year', major: 'Cognitive Science, Studio Art Minor', email: 'ajw3tt@virginia.edu', city: 'Richmond, Virginia', bio:"Hihi I'm Alyssa and I'm a rising third year majoring in Cognitive Science with a minor in Studio Art. In my free time, I like to dance (K-Edge and AKAdeMiX <3), make art, and do tarot readings (~let's bond and let me read your cards~). I am very excited to be historic chair and I'm ready to make history with you all for the next year :DDD"},
-                                {name: 'Dean Paler', bioImgSrc: LEADERSHIP_FOLDER + '/Leadership_Dean.jpg', pronouns: 'he/they', year: '2nd year', major: 'Cognitive Science, Pyschology and Data Science Minors', email: 'hdh4ys@virginia.edu', city: 'Norfolk, VA', bio:"Hello everyone!! My name is Dean, and I am super excited to be 1/2 of your Historic chairs for this year! Some things I enjoy are photography, fashion/thrifting, basketball, cats, and Pokémon :D Ask me to take your pictures please I’m always down. I promise to do you right for sure. I’ll be at almost all OYFA events taking pictures, so don’t be afraid to say hi! Catch me at the Multicultural Student Center… probably wearing jorts. Instagram: @deanpaler"}
+                                {name: 'Dean Paler', bioImgSrc: LEADERSHIP_FOLDER + '/Leadership_Dean.jpg', pronouns: 'he/they', year: '2nd year', major: 'Cognitive Science and Pyschology Double Major, Data Science Minor', email: 'hdh4ys@virginia.edu', city: 'Norfolk, VA', bio:"Hello everyone!! My name is Dean, and I am super excited to be 1/2 of your Historic chairs for this year! Some things I enjoy are photography, fashion/thrifting, basketball, cats, and Pokémon :D Ask me to take your pictures please I’m always down. I promise to do you right for sure. I’ll be at almost all OYFA events taking pictures, so don’t be afraid to say hi! Catch me at the Multicultural Student Center… probably wearing jorts. Instagram: @deanpaler"}
                             ]
                     },
 
@@ -348,7 +345,7 @@ export const MAILCHIMP_BASE_URL = 'https://oyfaatuva.us4.list-manage.com/subscri
 export const GITHUB_LINK = 'https://github.com/oyfaatuva/oyfa-website'
 
 /* Previous website link, used in footer */
-export const PREVIOUS_WEBSITE_LINK = ''
+export const PREVIOUS_WEBSITE_LINK = 'https://oyfaatuva.github.io/old-oyfa-website/'
 
 /* Textless Social Media Handles Array for passing as props to SocialMedia.js routine, used in footer */
 export const SOCIAL_MEDIA_HANDLES_NO_TEXT = [
@@ -380,7 +377,8 @@ export const FILES =
 [
     {name: 'OYFA Constitution', imgSrc: './Images/Archives/Archives_Preview_Constitution.png', link: './Files/OYFAConsitution.pdf'},
     {name: 'B&C Archive', imgSrc: './Images/Archives/Archives_Preview_B&C_Archive.png', link: './Files/Archives_B&C_Archive.pdf'},
-    {name: 'Solidarity Statement', imgSrc: './Images/Archives/Archives_Preview_Solidarity_Statement.png', link: './Files/Archives_Solidarity_Statement.pdf'}
+    {name: 'Solidarity Statement', imgSrc: './Images/Archives/Archives_Preview_Solidarity_Statement.png', link: './Files/Archives_Solidarity_Statement.pdf'},
+    {name: 'Old Website', imgSrc: './Images/Archives/Archives_Preview_Solidarity_Statement.png', link: PREVIOUS_WEBSITE_LINK},
 ]
 
 
