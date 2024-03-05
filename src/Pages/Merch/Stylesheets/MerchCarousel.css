@@ -1,0 +1,40 @@
+.container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-container {
+  max-width: 1200px;
+  width: clamp(200px, 100%, 1200px);;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.slides {
+  position: relative;    
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+}
+
+.slick-prev {
+  left: 5%;
+  z-index: 5;
+}
+
+.slick-next {
+  right: 5%;
+}
+
+.image-slide {
+  height: clamp(200px, 70vw, 400px); 
+}
+
+.image-slide img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
