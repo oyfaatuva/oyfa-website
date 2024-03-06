@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <RootRouteComponent />, /**RootRouteComponent is the parent of all the other Routes and will contain all shared Components (ex. 
-        Footer, ScrollToTop) */
+        Navbar, Footer, ScrollToTop) */
         children: [
             {
                 index: true,
