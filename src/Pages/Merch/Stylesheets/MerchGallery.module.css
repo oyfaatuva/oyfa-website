@@ -8,6 +8,7 @@
     font-family: 'Poppins';
     font-size: 2rem;
     font-weight: 300;
+    padding: 10px;
 }
 
 .merch_grid {
@@ -19,7 +20,7 @@
     width: clamp(200px, 100%, 1200px);;
 }
 
-.merch_container{
+.merch_container {
     flex: 0 0 calc(25% - 30px);
     margin: 15px;
 
@@ -28,14 +29,18 @@
     align-items: center;
 }
 
-.merch_img_container{
+.merch_container p {
+    width: 100%;
+}
+
+.merch_img_container {
     position: relative;
     width: 100%;
     padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
                         Position of the img will have to be relative because of it*/
 }
 
-.merch_img_container img{
+.merch_img_container img {
     position: absolute;
     top: 0;
     width: 100%;
@@ -43,16 +48,13 @@
     object-fit: cover;
 }
 
-.merch_category{
-    width: 100%;
-
+.merch_category {
     font-family: 'Poppins';
     font-size: 1rem;
     font-weight: 300;
 }
 
-.merch_name{
-    width: 100%;
+.merch_name {
     overflow-wrap: break-word;
     hyphens: auto;
 
@@ -61,9 +63,7 @@
     font-weight: 400;
 }
 
-.merch_price{
-    width: 100%;
-
+.merch_price {
     font-family: 'Poppins';
     font-size: 1.35rem;
     font-weight: 500;
@@ -80,6 +80,7 @@
 {
     .merch_container{
         flex: 0 0 calc(50%);
-        margin: 0;
+        margin: 0px;
+        margin-bottom: 20px;
     }
 }

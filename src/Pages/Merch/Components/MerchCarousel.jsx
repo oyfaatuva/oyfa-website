@@ -8,7 +8,7 @@ export default function MerchCarousel() {
     var settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 400,
         slidesToShow: 1,
         slidesToScroll: 1,
       };
@@ -18,6 +18,12 @@ export default function MerchCarousel() {
             <Slider {...settings}>
                 <div className="image-slide">
                     <img src='/Images/Merch/seb1.jpg'/>
+                </div>
+                <div className="image-slide">
+                    <img src='/Images/Leadership/Leadership_Title_36B&C.jpg'/>
+                </div>
+                <div className="image-slide">
+                    <img src='/Images/Leadership/Leadership_Title_36B&C.jpg'/>
                 </div>
                 <div className="image-slide">
                     <img src='/Images/Leadership/Leadership_Title_36B&C.jpg'/>

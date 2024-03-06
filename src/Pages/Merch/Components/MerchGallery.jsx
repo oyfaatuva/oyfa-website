@@ -21,7 +21,8 @@ function MerchItem({ item }) {
             </div>
             <p className={styles.merch_category}>{item.category.toUpperCase()}</p>
             <p className={styles.merch_name}>{item.name}</p>
-            <p className={styles.merch_price}>{item.price}</p>
+            <p className={styles.merch_price}>{`$${item.price.toFixed(2)}`}</p>
+            <p>{item.stock > 0 ? item.stock + ' IN STOCK': 'OUT OF STOCK'}</p>
         </div>
     );
 }
