@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
@@ -13,12 +13,32 @@ import RootRouteComponent from './root'
 import Merch from './pages/Merch/Components/Merch';
 import Admin from './pages/Admin/Components/Admin';
 import AdminLogin from './pages/Admin/Components/AdminLogin';
+import { AuthLayout } from './components/AuthLayout';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main class of your page 
 **
 ** In general, use React <Link> instead of anchor <a href=''> for navigating between pages (for external websites is ok)
 ** <a> triggers a refresh which can possibly reset any data we are potentially passing between pages */
+
+const newRouter = createBrowserRouter(
+    createRoutesFromElements(
+        <Route element={<AuthLayout/>}>
+            <Route path='/' element={<RootRouteComponent />}>
+                <Route index element={<Home/>}/>
+                <Route path='about' element={<About/>}/>
+                <Route path='events' element={<Events/>}/>
+                <Route path='links' element={<Links/>}/>
+                <Route path='leadership' element={<Leadership/>}/>
+                <Route path='merch' element={<Merch/>}/>
+                <Route path='archives' element={<Archives/>}/>
+                <Route path='bios' element={<LeadershipBio/>}/>
+            </Route>
+            <Route path='admin/login' element={<AdminLogin/>}/>
+            <Route path='admin/dashboard'/>    
+        </Route>
+    )
+);
 
 const router = createBrowserRouter([
     {
@@ -58,24 +78,23 @@ const router = createBrowserRouter([
                 path: 'bios',
                 element: <LeadershipBio/>,
             },
+        ]
+    },
+    {
+        path: 'admin',
+        element: <Admin/>,
+        children: [
             {
-                path: 'admin',
-                element: <Admin/>,
-                children: [
-                    {
-                        path: 'login',
-                        element: <AdminLogin/>
-                    },
-                ]
+                path: 'login',
+                element: <AdminLogin/>
             },
         ]
-    }
-    
+    },
 ]);
 
 function App() {
     return (
-        <RouterProvider router={router}/>            
+        <RouterProvider router={newRouter}/>            
     );
 }
   
