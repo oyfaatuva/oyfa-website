@@ -33,6 +33,6 @@ export default function Merch() {
             <MerchCarousel/>
             <MerchGallery merch={items}/>
         </>
-    )
+    );
 }
 

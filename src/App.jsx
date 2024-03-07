@@ -11,9 +11,11 @@ import Archives from './pages/Archives/Components/archives'
 import LeadershipBio from './pages/Leadership/Components/leadershipBio'
 import RootRouteComponent from './root'
 import Merch from './pages/Merch/Components/Merch';
-import Admin from './pages/Admin/Components/Admin';
+import Admin from './pages/Admin/Components/AdminLayout';
 import AdminLogin from './pages/Admin/Components/AdminLogin';
 import { AuthLayout } from './components/AuthLayout';
+import AdminDashboard from './pages/Admin/Components/AdminDashboard';
+import AdminLayout from './pages/Admin/Components/AdminLayout';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main class of your page 
@@ -35,7 +37,9 @@ const newRouter = createBrowserRouter(
                 <Route path='bios' element={<LeadershipBio/>}/>
             </Route>
             <Route path='admin/login' element={<AdminLogin/>}/>
-            <Route path='admin/dashboard'/>    
+            <Route path='admin' element={<AdminLayout/>}>
+                <Route path='dashboard' element={<AdminDashboard/>}/>  
+            </Route>   
         </Route>
     )
 );
