@@ -2,7 +2,7 @@
 ** Here we generate the "root," the HTML element where our React hierarchy will be rendered/mounted from. */
 
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import App from './App'
 
 /* Set the browser tab title, also for SEO (so when Google queries searches for 'OYFA' this is what it finds) */

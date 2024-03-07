@@ -36,8 +36,10 @@ const newRouter = createBrowserRouter(
                 <Route path='archives' element={<Archives/>}/>
                 <Route path='bios' element={<LeadershipBio/>}/>
             </Route>
+            
             <Route path='admin/login' element={<AdminLogin/>}/>
-            <Route path='admin' element={<AdminLayout/>}>
+            <Route path='admin' element={<Admin/>}/>
+            <Route element={<AdminLayout/>}>
                 <Route path='dashboard' element={<AdminDashboard/>}/>  
             </Route>   
         </Route>
