@@ -33,7 +33,7 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
                     classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')
                     : 
                     classes.nav_bg_color}`}>
-                <NavLink to="/" className={classes.nav_logo}>
+                <NavLink to="/" className={classes.nav_logo} onClick={closeMobileMenu}>
                     <img src={logoImgSrc}/>
                 </NavLink>
                 {isMobile && (
@@ -71,7 +71,7 @@ function NavBarLinks({ navBarLinksDict, isMobile, closeMobileMenu }) {
 function NavBarLink( { name, url, closeMobileMenu } ) {
     return (
         <li>
-            <NavLink to={url.toLowerCase()} className={classes.nav_link}  onClick={closeMobileMenu}>
+            <NavLink to={url.toLowerCase()} className={classes.nav_link} onClick={closeMobileMenu}>
                 {name.toUpperCase()}
             </NavLink>
         </li>
