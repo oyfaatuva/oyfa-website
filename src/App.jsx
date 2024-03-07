@@ -11,6 +11,8 @@ import Archives from './pages/Archives/Components/archives'
 import LeadershipBio from './pages/Leadership/Components/leadershipBio'
 import RootRouteComponent from './root'
 import Merch from './pages/Merch/Components/Merch';
+import Admin from './pages/Admin/Components/Admin';
+import AdminLogin from './pages/Admin/Components/AdminLogin';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main class of your page 
@@ -26,35 +28,45 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Home />,
+                element: <Home/>,
             },
             {
                 path: 'about',
-                element: <About />,
+                element: <About/>,
             },
             {
                 path: 'events',
-                element: <Events />,
+                element: <Events/>,
             },
             {
                 path: 'links',
-                element: <Links />,
+                element: <Links/>,
             },
             {
                 path: 'leadership',
-                element: <Leadership />,
+                element: <Leadership/>,
             },
             {
                 path: 'merch',
-                element: <Merch />,
+                element: <Merch/>,
             },
             {
                 path: 'archives',
-                element: <Archives />,
+                element: <Archives/>,
             },
             {
                 path: 'bios',
-                element: <LeadershipBio />,
+                element: <LeadershipBio/>,
+            },
+            {
+                path: 'admin',
+                element: <Admin/>,
+                children: [
+                    {
+                        path: 'login',
+                        element: <AdminLogin/>
+                    },
+                ]
             },
         ]
     }
