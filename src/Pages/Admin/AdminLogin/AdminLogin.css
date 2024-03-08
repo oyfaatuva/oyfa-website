@@ -1,0 +1,47 @@
+.login_container {
+    display: flex;
+}
+
+.login_panel {
+    width: 40vw;
+    height: 100vw;
+    background-color: rgb(59, 77, 128);
+}
+
+.login_title {
+    width: 100%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    text-align: center;
+}
+
+.login_photo {
+    width: 60vw;
+    height: 100%;
+}
+
+.form_input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+} 

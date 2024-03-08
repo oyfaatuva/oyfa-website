@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
-import { useAuth } from "../../../hooks/useAuth";
+import { useAuth } from "../../hooks/useAuth";
 import { Navigate } from "react-router-dom";
 
 export default function AdminLayout() {
     const { user } = useAuth();
 
-    if (user) {
-        return <Navigate to="/admin/dashboard"/>;
+    if (!user) {
+        return <Navigate to="/admin/login"/>;
     }
     
     return(            
-        <Navigate to="/admin/login"/>
+        <Outlet/>
     );
 }
