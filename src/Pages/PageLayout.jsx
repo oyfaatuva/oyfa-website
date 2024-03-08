@@ -16,9 +16,11 @@ export default function PageLayout() {
     return (
         <>
             <ScrollToTop/>
+
             <Navbar logoImgSrc="/Images/_Common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]}/>
             <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition}}/>
             <Footer/>
+            
             <UpdateLocation setNavbarScrollPosition={setNavbarScrollPosition} setNavbarScrollPositionMobile={setNavbarScrollPositionMobile} setTransition={setTransition}/>
         </>
     );

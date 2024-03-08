@@ -9,12 +9,13 @@ import Links from './pages/Links/Components/links'
 import Leadership from './pages/Leadership/Components/leadership'
 import Archives from './pages/Archives/Components/archives'
 import LeadershipBio from './pages/Leadership/Components/leadershipBio'
-import Merch from './pages/Merch/Components/Merch';
+import Merch, { merchLoader } from './pages/Merch/Components/Merch';
 import AdminLogin from './pages/Admin/AdminLogin/AdminLogin';
 import { AuthLayout } from './components/AuthLayout';
 import AdminDashboard from './pages/Admin/AdminDashboard/AdminDashboard';
 import AdminLayout from './pages/Admin/AdminLayout';
 import PageLayout from './pages/PageLayout';
+import NotFound from './pages/NotFound';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main class of your page 
@@ -31,7 +32,8 @@ const newRouter = createBrowserRouter(
                 <Route path='events' element={<Events/>}/>
                 <Route path='links' element={<Links/>}/>
                 <Route path='leadership' element={<Leadership/>}/>
-                <Route path='merch' element={<Merch/>}/>
+                <Route path='merch' element={<Merch/>}
+                    loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
                 <Route path='bios' element={<LeadershipBio/>}/>
             </Route>
@@ -39,8 +41,10 @@ const newRouter = createBrowserRouter(
             <Route path='admin/login' element={<AdminLogin/>}/>
             <Route path='admin' element={<AdminLayout/>}>
                 <Route index element={<AdminDashboard/>}/> 
-                <Route path='dashboard' element={<AdminDashboard/>}/>  
-            </Route>   
+                <Route path='dashboard' element={<AdminDashboard/>}/>
+                <Route path='merch'/> 
+            </Route>
+            <Route path="*" element={<NotFound/>} />
         </Route>
     )
 );
