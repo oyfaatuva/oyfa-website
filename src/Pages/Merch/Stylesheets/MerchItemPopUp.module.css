@@ -1,0 +1,24 @@
+.item_container {
+    display: flex;
+
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 93vh;
+    background-color: antiquewhite;
+}
+
+.image_column {
+    flex: 0 0 45%;
+    height: 100%;
+}
+
+.image_column img{
+    width: 10%;
+    height: 10%;
+}
+
+.info_column {
+    flex: 1;
+    height: 100%;
+}

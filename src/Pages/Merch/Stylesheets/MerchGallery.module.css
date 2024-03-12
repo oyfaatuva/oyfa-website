@@ -36,6 +36,7 @@
 .merch_img_container {
     position: relative;
     width: 100%;
+    margin-bottom: 5px;
     padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
                         Position of the img will have to be relative because of it*/
 }
@@ -69,18 +70,26 @@
     font-weight: 500;
 }
 
-@media screen and (max-width : 800px)
+@media screen and (max-width : 900px)
 {
     .merch_container{
         flex: 0 0 calc(33.33% - 30px);
     }
 }
 
-@media screen and (max-width : 600px)
+@media screen and (max-width : 650px)
 {
+    .merch_container p {
+        padding-left: 10px;
+    }
+
     .merch_container{
         flex: 0 0 calc(50%);
         margin: 0px;
         margin-bottom: 20px;
+    }
+
+    .merch_img_container {
+        margin-bottom: 10px;
     }
 }
