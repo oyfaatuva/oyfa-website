@@ -44,34 +44,33 @@ export default function AdminLogin () {
     return (
         <div className="login_container">
             <div className="login_panel">
-                <h1 className="login_title">ADMIN LOGIN</h1>
+                <img className="logo" src="/Images/_Common/Navbar_OYFA_Logo.png"/>
+                <h1 className="login_title">LOGIN</h1>
                 <form onSubmit={handleLogin}>
-                    <div>
-                        <input
-                            id="username"
-                            type="text"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                            placeholder="Username"
-                            className="form_input"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <input
-                            id="password"
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Password"
-                            className="form_input"
-                            required
-                        />
-                    </div>
-                    <button type="submit" className="button">Login</button>
+                    <input
+                        id="username"
+                        type="text"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        placeholder="Username"
+                        className="form_input"
+                        required
+                    />
+                    <input
+                        id="password"
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Password"
+                        className="form_input"
+                        required
+                    />
+                    <button type="submit" className="button">LOGIN</button>
                 </form>
             </div>
-            <img className='login_photo' src="/Images/Admin/Login_Photo.jpg"/>
+            <div className='login_photo_container'>
+                <img src="/Images/Admin/Login_Photo.jpg"/>
+            </div>
         </div>
     );
 };

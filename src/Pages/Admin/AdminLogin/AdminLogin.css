@@ -1,22 +1,47 @@
 .login_container {
     display: flex;
+    height: 100vh;
 }
 
 .login_panel {
-    width: 40vw;
-    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-bottom: 30vh;
+    min-width: 450px;
+    flex: 0 0 35%;
+
+    background-color: rgb(244, 244, 244);
 }
 
 .login_title {
     width: 100%;
+    padding-bottom: 30px;
+    font-size: 2rem;
     font-family: 'Poppins';
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
 }
 
-.login_photo {
-    width: 60vw;
+.login_photo_container {
+    flex-grow: 1;
+}
+
+.login_photo_container img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+}
+
+.photo_credits {
+    position: fixed;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    bottom: 0;
+    right: 5px;
 }
 
 .form_input {
@@ -28,13 +53,17 @@
     border-radius: 5px;
 }
 
+.logo {
+    width: 80px;
+    padding-bottom: 10px;
+}
+
 .button {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 16px;
+    background-color: #ffd900;
+    font-weight: 500;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -42,5 +71,35 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #e4c200;
 } 
+
+@media screen and (max-width : 800px)
+{
+    .login_container {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login_panel {
+        width: 60vw;
+        min-width: 0px;
+        padding: 50px;
+        border-radius: 15%;
+
+        z-index: 2;
+    }
+
+    .login_photo_container {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .login_photo_container img {
+        filter: blur(2px); 
+    }
+}
