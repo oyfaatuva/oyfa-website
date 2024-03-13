@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAuth } from "../../../hooks/useAuth";
 import "./AdminLogin.css";
 import { Navigate } from "react-router";
+import axios from "axios";
 
 export default function AdminLogin () {
     const [username, setUsername] = useState("");
@@ -10,14 +11,30 @@ export default function AdminLogin () {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        // Here you would usually send a request to your backend to authenticate the user
-        // For the sake of this example, we're using a mock authentication
-        if (username === "user" && password === "password") {
-        // Replace with actual authentication logic
-            await login({ username });
-        } else {
-            alert("Invalid username or password");
+
+        try {
+            const response = await axios.post('https://oyfaatuva.com/api/index.php', {
+                name: "generateToken",
+                param: {
+                username: username,
+                pass: password,
+                }
+            });
+            const data = await response.data;
+        
+            if (data.status === 200) {
+                const token = response.data.token;
+                localStorage.setItem('token', token);
+
+                await login({ username });    
+            }
+            else {
+                alert('Invalid username or password');
+            }        
+        } catch (error) {
+            console.error('An error occurred:', error);
         }
+
     };
 
     if (user) {
@@ -37,6 +54,7 @@ export default function AdminLogin () {
                             onChange={(e) => setUsername(e.target.value)}
                             placeholder="Username"
                             className="form_input"
+                            required
                         />
                     </div>
                     <div>
@@ -47,6 +65,7 @@ export default function AdminLogin () {
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Password"
                             className="form_input"
+                            required
                         />
                     </div>
                     <button type="submit" className="button">Login</button>
