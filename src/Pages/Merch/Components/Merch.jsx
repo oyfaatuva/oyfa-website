@@ -15,7 +15,7 @@ export default function Merch() {
     const {setTransition} = useOutletContext();
     const [currentItem, setCurrentItem] = useState(null);
 
-    const data = useLoaderData();
+    const loaderData = useLoaderData();
 
     const setMerchItem = (item) => {setCurrentItem(item); setTransition(false);}
     const closeItem = () => {setCurrentItem(null); setTransition(true);};
@@ -51,13 +51,13 @@ export default function Merch() {
                 fallback={<p>Loading merchandise...</p>}
             >
                 <Await
-                    resolve={data.merch}
+                    resolve={loaderData.merch}
                     errorElement={
                         <p>Error loading merchanise</p>
                     }
                 >
                     {(merch) => (
-                        <MerchGallery merch={networklessItemList} setCurrentItem={setMerchItem} imageDir={IMAGE_DIR}/>
+                        <MerchGallery merch={merch} setCurrentItem={setMerchItem} imageDir={IMAGE_DIR}/>
                     )}
                 </Await>
             </Suspense>
@@ -74,8 +74,8 @@ export default function Merch() {
 
 export async function merchLoader() {
     try {
-        const merchPromise = axiosClient.get('/merch');
-        return defer({merch: merchPromise.data});
+        const merchPromise = axiosClient.get('/merch').then((response) => response.data);
+        return defer({merch: merchPromise});
     } catch (error) {
         console.error('Error fetching data:', error);
         throw error;
