@@ -4,11 +4,9 @@ import styles from '../Stylesheets/MerchItemPopUp.module.css'
 const dropIn = {
     hidden: {
         y: "100vh",
-        opacity: 0,
     },
     visible: {
         y: "0",
-        opacity: 1,
         transition: {
             duration: 0.1,
             type: "spring",
@@ -18,7 +16,6 @@ const dropIn = {
     },
     exit: {
         y: "100vh",
-        opacity: 0,
         transition: {
             duration: 0.1,
             type: "spring",
@@ -28,7 +25,7 @@ const dropIn = {
     },
 };
 
-export default function MerchItemPopUp({ item, handleClose }) {
+export default function MerchItemPopUp({ item, handleClose, imageDir }) {
     return (
         <motion.div
             className={styles.item_container}
@@ -38,9 +35,11 @@ export default function MerchItemPopUp({ item, handleClose }) {
             exit="exit"
             >
             <div className={styles.image_column}>
+                <div className={styles.image_container}>
                 {item.images.map((image, index) => (
-                    <img key={index} src={image}/>
+                    <img key={index} src={imageDir + image}/>
                 ))}
+                </div> 
             </div>
 
             <div className={styles.info_column}>
