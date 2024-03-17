@@ -1,4 +1,4 @@
-.container2 {
+.center-container {
   display: flex;
   justify-content: center;
 }
@@ -21,7 +21,7 @@
 
 .slick-prev {
   left: 5%;
-  z-index: 5;
+  z-index: 3;
 }
 
 .slick-next {

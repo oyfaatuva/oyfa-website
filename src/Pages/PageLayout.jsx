@@ -1,7 +1,7 @@
-import { Outlet, useLocation, useNavigation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
+import Navbar from "../components/layout/Navbar/Navbar";
+import Footer from "../components/layout/Footer/Footer";
 import { NAVBAR_TABS } from "../Constants";
 import { useEffect, useState } from "react";
 
@@ -13,22 +13,14 @@ export default function PageLayout() {
     const [scrollMobile, setNavbarScrollPositionMobile] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE)
     const [useTransition, setTransition] = useState(true)
 
-    const navigation = useNavigation();
-
     return (
         <>
             <ScrollToTop/>
-
-            <Navbar logoImgSrc="/Images/_Common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]}/>
-            { navigation.state == "loading" ? <p>loading</p> 
-            : 
-            <>
-                <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition}}/> 
-                <Footer/>
-            </>
-            }
-            
             <UpdateLocation setNavbarScrollPosition={setNavbarScrollPosition} setNavbarScrollPositionMobile={setNavbarScrollPositionMobile} setTransition={setTransition}/>
+
+            <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]}/>
+            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition}}/> 
+            <Footer/>
         </>
     );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "oyfa-website",
   "homepage": "http://www.oyfaatuva.com/",
   "version": "0.1.0",
   "private": true,
@@ -23,15 +23,13 @@
     "react-router-dom": "^6.22.0",
     "react-router-hash-link": "^2.4.3",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1",
-    "vite-tsconfig-paths": "^4.3.1",
-    "web-vitals": "^3.5.2"
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
@@ -56,8 +54,8 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.1.2"

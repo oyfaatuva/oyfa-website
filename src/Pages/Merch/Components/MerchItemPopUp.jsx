@@ -28,7 +28,7 @@ const dropIn = {
     },
 };
 
-export default function MerchItemPopUp({ item, open, handleClose }) {
+export default function MerchItemPopUp({ item, handleClose }) {
     return (
         <motion.div
             className={styles.item_container}

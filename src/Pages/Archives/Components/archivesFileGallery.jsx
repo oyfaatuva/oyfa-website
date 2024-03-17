@@ -55,7 +55,6 @@ class File extends Component{
                     </h1>
 
                     </a>
-            
             </div>
         )
     }

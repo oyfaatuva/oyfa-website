@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import '../Stylesheets/leadershipBio.css'
-import Footer from '../../../components/Footer/Footer'
 import {BOARD, COUNCIL} from '../../../Constants';
 import { useOutletContext } from 'react-router';
 
@@ -29,8 +28,6 @@ export default function LeadershipBio() {
                 <h1 className = 'bio_heading'>COUNCIL</h1>
                 <BioGrid bioRows = {COUNCIL.flat(1)} />
             </div>
-
-            <Footer />
         </div>
     )
 }

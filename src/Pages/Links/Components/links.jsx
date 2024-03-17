@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-import HalfTitle from '../../../components/HalfTitle/HalfTitle'
+import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle'
 
 import LinkGallery from './linksLinkGallery';
 
@@ -10,7 +10,7 @@ export default class Links extends Component{
     render(){
         return(
             <div>
-                <HalfTitle header = 'Links' imgSrc = './Images/Links/Links_Title_Culturefest.jpeg'
+                <HalfTitle header = 'Links' imgSrc = './images/links/Links_Title_Culturefest.jpeg'
                 brightness={90} position={25} />
                 <LinkGallery />
             </div>

@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-import HalfTitle from '../../../components/HalfTitle/HalfTitle';
+import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
 
 import FileGallery from './archivesFileGallery';
 
@@ -10,7 +10,7 @@ export default class Archives extends Component{
     render(){
         return(
             <div>
-                <HalfTitle header='Archives' imgSrc='./Images/Archives/Archives_Title_D7_JMU.jpeg' position={15} brightness={70}/>
+                <HalfTitle header='Archives' imgSrc='./images/archives/Archives_Title_D7_JMU.jpeg' position={15} brightness={70}/>
                 <FileGallery />
             </div>
         )

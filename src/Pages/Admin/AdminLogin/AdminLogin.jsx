@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../../../hooks/useAuth";
+import { useAuth } from "../../../components/AuthContext";
 import "./AdminLogin.css";
 import { Navigate } from "react-router";
 import axios from "axios";
@@ -16,11 +16,12 @@ export default function AdminLogin () {
             const response = await axios.post('https://oyfaatuva.com/api/index.php', {
                 name: "generateToken",
                 param: {
-                username: username,
-                pass: password,
+                    username: username,
+                    pass: password,
                 }
             });
             const data = await response.data;
+            console.log(response);
         
             if (data.status === 200) {
                 const token = response.data.token;
@@ -44,7 +45,7 @@ export default function AdminLogin () {
     return (
         <div className="login_container">
             <div className="login_panel">
-                <img className="logo" src="/Images/_Common/Navbar_OYFA_Logo.png"/>
+                <img className="logo" src="/images/_common/Navbar_OYFA_Logo.png"/>
                 <h1 className="login_title">LOGIN</h1>
                 <form onSubmit={handleLogin}>
                     <input
@@ -69,7 +70,7 @@ export default function AdminLogin () {
                 </form>
             </div>
             <div className='login_photo_container'>
-                <img src="/Images/Admin/Login_Photo.jpg"/>
+                <img src="/images/admin/Login_Photo.jpg"/>
             </div>
         </div>
     );

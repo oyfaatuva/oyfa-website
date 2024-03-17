@@ -1,4 +1,4 @@
-import { useAuth } from "../../../hooks/useAuth";
+import { useAuth } from "../../../components/AuthContext";
 import AdminMerch from "../AdminMerch/AdminMerch";
 
 export default function AdminDashboard () {

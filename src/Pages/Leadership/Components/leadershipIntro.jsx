@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import '../Stylesheets/LeadershipIntro.css';
-import { OYFA_AGE, B_C_YOUTUBE_EMBED_ID } from '/src/Constants';
-import YoutubeEmbed from '../../../components/YoutubeEmbed/YoutubeEmbed';
-import { toOrdinalNumber } from '../../../util/toOrdinalNumber';
+import { B_C_YOUTUBE_EMBED_ID } from '/src/Constants';
+import YoutubeEmbed from './../../../components/media/YoutubeEmbed/YoutubeEmbed';
+import { toOrdinalNumber } from './../../../utils/toOrdinalNumber';
 
 export default class LeadershipIntro extends Component{
     render(){

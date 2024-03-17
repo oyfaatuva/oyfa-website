@@ -1,23 +1,24 @@
 import styles from '../Stylesheets/MerchGallery.module.css'
 
-export default function MerchGallery({ merch, openItem, setCurrentItem }) {
+export default function MerchGallery({ merch, setCurrentItem, imageDir }) {
     return (
         <div className={styles.merch_grid_container}>
             <p className={styles.merch_gallery_title}>Collection</p>
             <div className={styles.merch_grid}>
                 {merch.map((merchItem, index) => (
-                    <MerchItem key={index} item={merchItem} setCurrentItem={setCurrentItem}/>
+                    <MerchItem key={index} item={merchItem} setCurrentItem={setCurrentItem} imageDir={imageDir}/>
                 ))}
             </div>
         </div>
     );
 }
 
-function MerchItem({ item, setCurrentItem }) {
+function MerchItem({ item, setCurrentItem, imageDir }) {
     return (
-        <div className={styles.merch_container} style={{ cursor: 'pointer' }} onClick={() => setCurrentItem(item)}> {/* Remember: Whole thing is the button (not the img) */}
+        <div className={styles.merch_container} style={{ cursor: 'pointer' }} onClick={() => setCurrentItem(item)}>
             <div className={styles.merch_img_container}>
-                <img src={item.imgPath}/>
+                {item.images && item.images.length > 0  && 
+                <img src={imageDir + item.images[0]}/>}
             </div>
             <p className={styles.merch_category}>{item.category.toUpperCase()}</p>
             <p className={styles.merch_name}>{item.name}</p>

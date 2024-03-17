@@ -36,23 +36,23 @@ export default class Mission extends Component{
                     orientation = 'text-left'
                     header = 'Identity'
                     bulletpoints = {identityPoints}
-                    imgSrc = './Images/About/About_FFN.jpeg' 
+                    imgSrc = './images/about/About_FFN.jpeg' 
                     imgCaption = 'Homemade plates of barbecue, lumpia, pancit, and desserts are served at Filipino Food Night, a pop-up restaurant experience of Filipino cuisine.' />
                 <MissionRow
                     orientation = 'text-right'
                     header = 'Community'
                     bulletpoints = {communityPoints}
-                    imgSrc = './Images/About/About_Community_Field_Day.jpeg' />
+                    imgSrc = './images/about/About_Community_Field_Day.jpeg' />
                 <MissionRow
                     orientation = 'text-left'
                     header = 'Professional Development'
                     bulletpoints = {professionalPoints}
-                    imgSrc = './Images/About/About_Professional_Ariane.jpeg' />
+                    imgSrc = './images/about/About_Professional_Ariane.jpeg' />
                 <MissionRow
                     orientation = 'text-right'
                     header = 'Dialogue'
                     bulletpoints = {dialoguePoints}
-                    imgSrc = './Images/About/About_Ylona.png'
+                    imgSrc = './images/about/About_Ylona.png'
                     imgCaption = "Spring 2023's symposium welcomed 88Rising's Ylona Garcia for live performances and a communal Kamayan dinner." />
             </div>
         )

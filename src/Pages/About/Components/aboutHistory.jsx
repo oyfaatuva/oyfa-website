@@ -53,9 +53,9 @@ export default class History extends Component{
                     <p className = 'history_quote'>{ABOUT_PRESENT_TEXT}</p>
 
                     <div className = 'history_img_parent'>
-                        <img className = 'history_img' src = './Images/About/About_Successful_People.jpeg'/>
-                        <img className = 'history_img' src = './Images/About/About_CIO_Award.jpg' />
-                        <img className = 'history_img' src = './Images/About/About_Trophy.jpeg' />   
+                        <img className = 'history_img' src = './images/about/About_Successful_People.jpeg'/>
+                        <img className = 'history_img' src = './images/about/About_CIO_Award.jpg' />
+                        <img className = 'history_img' src = './images/about/About_Trophy.jpeg' />   
                     </div>
 
                 </div>

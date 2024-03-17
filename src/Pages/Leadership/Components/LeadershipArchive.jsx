@@ -1,9 +1,10 @@
 import { useState} from 'react'
 import { motion } from "framer-motion"
+import { toOrdinalNumber } from '../../../utils/toOrdinalNumber';
+import { BNC_ARCHIVE } from '../../../constants/bncArchive';
 
 import styles from '../Stylesheets/LeadershipArchive.module.css'
-import { BNC_ARCHIVE } from '/src/Constants'
-import { toOrdinalNumber } from '../../../util/toOrdinalNumber';
+
 
 export default function LeadershipArchive({ updateBnC }) {
     const [isOpen, setIsOpen] = useState(false);

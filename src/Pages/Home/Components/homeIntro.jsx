@@ -15,8 +15,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import HomeGetInvolved from './homeGetInvolved';
 import '../Stylesheets/homeIntro.css'
-import { toOrdinalNumber } from '../../../util/toOrdinalNumber';
 import { OYFA_AGE } from '../../../Constants';
+import { toOrdinalNumber } from './../../../utils/toOrdinalNumber';
 
 export default class Introduction extends Component{
 
@@ -53,7 +53,7 @@ export default class Introduction extends Component{
 
                  {/* rendering the panorama img */}
                 <img 
-                    src='./Images/Home/Intro_Culturefest_Panorama.jpeg'
+                    src='./images/home/Intro_Culturefest_Panorama.jpeg'
                     className='intro_img'/>
 
                 {/* rendering the get involved header */}

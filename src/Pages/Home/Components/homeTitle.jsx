@@ -10,8 +10,8 @@
 import {Component} from 'react'
 import {Carousel} from 'react-bootstrap';
 import '../Stylesheets/homeTitle.css';
-import FadeOnLoadImg from '../../../ui/FadeOnLoadImg/FadeOnLoadImg';
-import Vignette from '../../../ui/Vignette/Vignette';
+import Vignette from '../../../components/ui/Vignette/Vignette';
+import FadeOnLoadImg from '../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
 
 export default class HomeTitle extends Component{
     render(){
@@ -19,7 +19,7 @@ export default class HomeTitle extends Component{
         /* Carousel Variables */
         const timeBeforeSwitch = 5000 //time in milliseconds
         const content = [] //push more content in the following format to automatically add new slides as you see fit
-        const imgDir = './Images/Home/' //images for this file are in public/Images/Home
+        const imgDir = './images/home/' //images for this file are in public/Images/Home
         
         content.push(
             {
