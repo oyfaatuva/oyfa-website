@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
-import { ScrollRestoration } from 'react-router-dom';
+import { defer, Await } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import HalfTitle from './../../../components/layout/HalfTitle/HalfTitle';
 import MerchCarousel from './MerchCarousel';
@@ -15,11 +15,11 @@ export default function Merch() {
     const {setTransition} = useOutletContext();
     const [currentItem, setCurrentItem] = useState(null);
 
+    const data = useLoaderData();
+
     const setMerchItem = (item) => {setCurrentItem(item); setTransition(false);}
     const closeItem = () => {setCurrentItem(null); setTransition(true);};
 
-    const items = useLoaderData();
-    
     var networklessItemList = [
         {category: "Unisex T-Shirt, S-L", name: "2022 Barrio T-Shirt", price: 25.01, stock: 20, images: ['seb2.jpg']},
         {category: 'me', name: 'Basty', price: 2, stock: 1, images: ['realseb.jpg']},
@@ -44,10 +44,23 @@ export default function Merch() {
 
     return(
         <>
-            <ScrollRestoration/> {/* Included here and not anywhere else because for some reason using a loader resets scroll position */}
             <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} brightness={75} position={55} caption='Order Now!'/>
             <MerchCarousel images={GALLERY_IMAGES}/>
-            <MerchGallery merch={networklessItemList} setCurrentItem={setMerchItem} imageDir={IMAGE_DIR}/>
+
+            <Suspense
+                fallback={<p>Loading merchandise...</p>}
+            >
+                <Await
+                    resolve={data.merch}
+                    errorElement={
+                        <p>Error loading merchanise</p>
+                    }
+                >
+                    {(merch) => (
+                        <MerchGallery merch={networklessItemList} setCurrentItem={setMerchItem} imageDir={IMAGE_DIR}/>
+                    )}
+                </Await>
+            </Suspense>
 
             <AnimatePresence
                 initial={false}
@@ -61,9 +74,8 @@ export default function Merch() {
 
 export async function merchLoader() {
     try {
-        // const response = await axiosClient.get('/merch');
-        // return response.data;
-        return null;
+        const merchPromise = axiosClient.get('/merch');
+        return defer({merch: merchPromise.data});
     } catch (error) {
         console.error('Error fetching data:', error);
         throw error;
