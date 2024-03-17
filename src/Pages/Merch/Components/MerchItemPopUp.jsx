@@ -1,8 +1,10 @@
 import { motion } from "framer-motion"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import styles from '../Stylesheets/MerchItemPopUp.module.css'
 
 export default function MerchItemPopUp({ item, handleClose, imageDir }) {
-    const dropIn = {
+    const popUp = {
         hidden: {
             y: "100vh",
         },
@@ -28,8 +30,8 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
 
     return (
         <motion.div
-            className={styles.item_container}
-            variants={dropIn}
+            className={styles.popup_container}
+            variants={popUp}
             initial="hidden"
             animate="visible"
             exit="exit"
@@ -43,8 +45,13 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
             </div>
 
             <div className={styles.info_column}>
-                <button onClick={handleClose}>Close</button>
+                <p className={styles.info_name}>{item.name}</p>
+                <p>{item.category.toUpperCase()}</p>
+                <p className={styles.info_description}>{item.description}</p>
+                <p>{`$${parseFloat(item.price).toFixed(2)}`}</p>
+                <p>{item.stock}</p>
             </div>
+            <div className={styles.close} onClick={handleClose}><FontAwesomeIcon icon={faXmark} /></div>
         </motion.div>
     );
 }
