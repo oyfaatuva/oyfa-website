@@ -16,16 +16,25 @@
 
 .slick-prev, .slick-next {
   position: absolute;
+  width: 70px;
+  height: 100%;
   top: 50%;
+}
+
+.slick-prev::before, .slick-next::before {
+  font-size: 30px;
 }
 
 .slick-prev {
   left: 5%;
-  z-index: 3;
 }
 
 .slick-next {
   right: 5%;
+}
+
+.slick-list {
+  z-index: -1;
 }
 
 .image-slide {
