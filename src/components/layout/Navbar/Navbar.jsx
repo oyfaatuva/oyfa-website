@@ -12,7 +12,7 @@ import useScrollPosition from "/src/hooks/useScrollPosition";
 
 const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile"
 
-export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transitionScrollPositions }) {
+export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transitionScrollPositions, leaveGap = true }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH });
     const scrollPosition = useScrollPosition()
@@ -28,32 +28,35 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
     };
 
     return (
-        <header className={classes.header + ` ${useTransition ? '' : classes.header_relative}`}>
-            <nav className={classes.nav + ` ${useTransition ? 
-                    classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')
-                    : 
-                    classes.nav_bg_color}`}>
-                <NavLink to="/" className={classes.nav_logo} onClick={closeMobileMenu}>
-                    <img src={logoImgSrc}/>
-                </NavLink>
-                {isMobile && (
-                    <div className={classes.nav_toggle} id="nav-toggle" onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={faBars} />
-                    </div>
-                )}
-                { isMobile ? (
-                    <div className={classes.nav_menu + " " + (isMenuOpen ? classes.show_menu : "")} id="nav-menu">
-                        <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
-                        <div className={classes.nav_close} id="nav-close" onClick={toggleMenu}>
-                            <FontAwesomeIcon icon={faXmark} />
+        <>
+            {!useTransition && leaveGap && <div className={classes.header_space}/>}
+            <header className={classes.header}>
+                <nav className={classes.nav + ` ${useTransition ? 
+                        classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')
+                        : 
+                        classes.nav_bg_color}`}>
+                    <NavLink to="/" className={classes.nav_logo} onClick={closeMobileMenu}>
+                        <img src={logoImgSrc}/>
+                    </NavLink>
+                    {isMobile && (
+                        <div className={classes.nav_toggle} id="nav-toggle" onClick={toggleMenu}>
+                            <FontAwesomeIcon icon={faBars} />
                         </div>
-                    </div>
+                    )}
+                    { isMobile ? (
+                        <div className={classes.nav_menu + " " + (isMenuOpen ? classes.show_menu : "")} id="nav-menu">
+                            <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
+                            <div className={classes.nav_close} id="nav-close" onClick={toggleMenu}>
+                                <FontAwesomeIcon icon={faXmark} />
+                            </div>
+                        </div>
 
-                ) : (
-                    <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
-                )}
-            </nav>
-    </header>
+                    ) : (
+                        <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
+                    )}
+                </nav>
+            </header>
+        </>
     );
 }
 

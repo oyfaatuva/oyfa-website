@@ -21,6 +21,10 @@
     z-index: var(--z-fixed);
 }
 
+.header_space {
+    height: var(--navbar-height);
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -35,10 +39,6 @@
 
 .nav_transition {
     transition: background-color 0.25s linear, border-bottom 0.25s linear;
-}
-
-.header_relative {
-    position: sticky;
 }
 
 .nav_bg_color {
@@ -115,6 +115,10 @@
 }
 
 @media screen and (max-width: 1000px) { /*TODO: preprocessor to make this variable */
+    .body {
+        overflow: hidden;
+    }
+
     .nav {
         justify-content: space-between;
     }
