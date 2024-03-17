@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useEffect} from 'react'
 import '../Stylesheets/leadershipBio.css'
 import {BOARD, COUNCIL} from '../../../Constants';
 import { useOutletContext } from 'react-router';
@@ -12,8 +12,11 @@ import { useOutletContext } from 'react-router';
 
 export default function LeadershipBio() {
     const { setTransition } = useOutletContext();
-    setTransition(false);
-      
+
+    useEffect(() => {
+        setTransition(false);
+    })
+    
     /* BOARD and COUNCIL arrays were originally modeled for just the LeadershipGallery calls. Recall that a 
     ** CommitteeGrid is 2 dimensional (RowsXColumns, but you could say 3-D because each Committee has an
     ** array of people/info), but a BioGrid is just 1 dimensional (Rows where each row is one person).
@@ -53,7 +56,7 @@ class BioGrid extends Component{
         return(
             <div className = 'bio_grid_parent'>
                 {bioRows.map((row, index) => (
-                    <div>
+                    <div key={index}>
                         {row.info.map((info, infoIndex) => (
                             //if bioImgSrc specified in info, use it, otherwise default to the generic committee image
                             <BioRow key={infoIndex} imgSrc={info.bioImgSrc ? info.bioImgSrc : row.imgSrc} info={info} />
