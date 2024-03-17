@@ -12,14 +12,15 @@ export default function PageLayout() {
     const [scroll, setNavbarScrollPosition] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL)
     const [scrollMobile, setNavbarScrollPositionMobile] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE)
     const [useTransition, setTransition] = useState(true)
+    const [leaveGap, setLeaveGap] = useState(true)
 
     return (
         <>
             <ScrollToTop/>
             <UpdateLocation setNavbarScrollPosition={setNavbarScrollPosition} setNavbarScrollPositionMobile={setNavbarScrollPositionMobile} setTransition={setTransition}/>
 
-            <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]}/>
-            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition}}/> 
+            <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]} leaveGap={leaveGap}/>
+            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setLeaveGap}}/> 
             <Footer/>
         </>
     );

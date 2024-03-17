@@ -12,12 +12,12 @@ import axiosClient from '../../../utils/axiosClient';
 const IMAGE_DIR = 'images/merch/'
 
 export default function Merch() {
-    const {setTransition} = useOutletContext();
+    const {setTransition, setLeaveGap} = useOutletContext();
     const [currentItem, setCurrentItem] = useState(null);
 
     const loaderData = useLoaderData();
 
-    const setMerchItem = (item) => {setCurrentItem(item); setTransition(false);}
+    const setMerchItem = (item) => {setCurrentItem(item); setTransition(false); setLeaveGap(false)}
     const closeItem = () => {setCurrentItem(null); setTransition(true);};
 
     var networklessItemList = [
@@ -29,18 +29,6 @@ export default function Merch() {
         {category: "Unisex T-Shirt, S-L", name: "2023 Barrio T-Shirt", price: 25.078, stock: 0, images: ["SamExample.JPG", "SamExample.JPG", "SamExample.JPG"]}]
     
     const GALLERY_IMAGES = ['/images/merch/seb1.jpg', '/images/merch/seb1.jpg' , '/images/merch/seb1.jpg'];
-    // const [items, setItems] = useState([]);
-
-    // const fetch = () => {
-    //     let apiGET = "/api/merch";
-    //     axios
-    //         .get(import.meta.env.VITE_API_URL + apiGET, { params: {key: import.meta.env.VITE_API_KEY}})
-    //         .then((response) => setItems(response.data));
-    // };
-
-    // useEffect(() => {
-    //     fetch();
-    // }, []);
 
     return(
         <>
