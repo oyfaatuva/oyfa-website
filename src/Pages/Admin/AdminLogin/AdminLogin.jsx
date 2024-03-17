@@ -3,6 +3,7 @@ import { useAuth } from "../../../components/AuthContext";
 import "./AdminLogin.css";
 import { Navigate } from "react-router";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 export default function AdminLogin () {
     const [username, setUsername] = useState("");
@@ -44,6 +45,7 @@ export default function AdminLogin () {
 
     return (
         <div className="login_container">
+            <Helmet><title>Admin Login</title></Helmet>
             <div className="login_panel">
                 <img className="logo" src="/images/_common/Navbar_OYFA_Logo.png"/>
                 <h1 className="login_title">LOGIN</h1>

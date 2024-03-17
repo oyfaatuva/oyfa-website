@@ -2,6 +2,7 @@ import { Suspense, useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
 import { defer, Await } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import HalfTitle from './../../../components/layout/HalfTitle/HalfTitle';
 import MerchCarousel from './MerchCarousel';
 import MerchGallery from './MerchGallery';
@@ -32,6 +33,7 @@ export default function Merch() {
 
     return(
         <>
+            <Helmet><title>Merch</title></Helmet>
             <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} brightness={75} position={55} caption='Order Now!'/>
             <MerchCarousel images={GALLERY_IMAGES}/>
 

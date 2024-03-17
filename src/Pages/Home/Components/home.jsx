@@ -1,7 +1,8 @@
+import { useOutletContext } from 'react-router';
+import { Helmet } from 'react-helmet';
 import HomeTitle from './homeTitle';
 import Introduction from './homeIntro';
 import Testimonies from './homeTestimonies';
-import { useOutletContext } from 'react-router';
 
 /* Main export file to index that combines all "home" components */
 
@@ -13,7 +14,7 @@ export default function Home () {
 
     return(
         <>
-            <title>Home</title>
+            <Helmet><title>Home</title></Helmet>
             <HomeTitle/>
             <Introduction/>
             <Testimonies/>

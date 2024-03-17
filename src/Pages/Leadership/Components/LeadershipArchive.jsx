@@ -5,7 +5,6 @@ import { BNC_ARCHIVE } from '../../../constants/bncArchive';
 
 import styles from '../Stylesheets/LeadershipArchive.module.css'
 
-
 export default function LeadershipArchive({ updateBnC }) {
     const [isOpen, setIsOpen] = useState(false);
 

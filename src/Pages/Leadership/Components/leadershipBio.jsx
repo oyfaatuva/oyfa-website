@@ -1,7 +1,9 @@
-import React, {Component, useEffect} from 'react'
-import '../Stylesheets/leadershipBio.css'
-import {BOARD, COUNCIL} from '../../../Constants';
+import {Component, useEffect} from 'react'
+import { Helmet } from 'react-helmet';
 import { useOutletContext } from 'react-router';
+import {BOARD, COUNCIL} from '../../../Constants';
+
+import '../Stylesheets/leadershipBio.css'
 
 /********************************************************************************************************************
 ** This is a comprehensive file which contains, from the highest level to the lowest level, BioGrid, BioRow, and
@@ -24,6 +26,7 @@ export default function LeadershipBio() {
     ** with the flat(1) method to be able to use the information in our BioGrid call */
     return(
         <div>
+            <Helmet><title>Bios</title></Helmet>
             <div className = 'bio_background'>
                 <h1 className = 'bio_heading'>BOARD</h1>
                 <BioGrid bioRows = {BOARD.flat(1)} />

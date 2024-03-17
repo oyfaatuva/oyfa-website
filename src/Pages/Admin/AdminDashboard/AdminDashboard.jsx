@@ -10,6 +10,7 @@ export default function AdminDashboard () {
 
     return (
         <>
+            <Helmet><title>Admin Dashboard</title></Helmet>
             <p>This is my dashboard</p>
             <button onClick={handleLogout}>Logout</button>
             <AdminMerch/>
