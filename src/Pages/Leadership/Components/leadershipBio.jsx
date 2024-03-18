@@ -27,13 +27,13 @@ export default function LeadershipBio() {
     return(
         <div>
             <Helmet><title>Bios</title></Helmet>
-            <div className = 'bio_background'>
+            <>
                 <h1 className = 'bio_heading'>BOARD</h1>
                 <BioGrid bioRows = {BOARD.flat(1)} />
 
                 <h1 className = 'bio_heading'>COUNCIL</h1>
                 <BioGrid bioRows = {COUNCIL.flat(1)} />
-            </div>
+            </>
         </div>
     )
 }

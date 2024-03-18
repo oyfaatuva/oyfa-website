@@ -21,7 +21,7 @@ export default class LeadershipGallery extends Component{
     render(){
 
         return(
-            <div className = 'gallery_background'>
+            <>
 
                 <h1 className = 'gallery_heading'>BOARD</h1>
 
@@ -31,7 +31,7 @@ export default class LeadershipGallery extends Component{
 
                 <CommitteeGrid committeeRows = {this.props.council} />
 
-            </div>
+            </>
         )
     }
 }

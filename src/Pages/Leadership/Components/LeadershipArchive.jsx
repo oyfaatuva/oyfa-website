@@ -13,7 +13,7 @@ export default function LeadershipArchive({ updateBnC }) {
             height: 'auto'
         },
         collapsed: {
-            height: '0px',
+            height: '0px'
         }
     }
 
@@ -31,8 +31,10 @@ export default function LeadershipArchive({ updateBnC }) {
                 animate={ isOpen ? 'expanded' : 'collapsed'}
                 transition={{ ease: "easeInOut", duration: 0.3 }}
             >
-                <p className={styles.archive_header}>ARCHIVE</p>
-                <ArchiveGrid archive={BNC_ARCHIVE} updateBnC={updateBnC}/>
+                <div className={styles.archive_container}>
+                    <p className={styles.archive_header}>ARCHIVE</p>
+                    <ArchiveGrid archive={BNC_ARCHIVE} updateBnC={updateBnC}/>
+                </div>
             </motion.div>
 
         </div>

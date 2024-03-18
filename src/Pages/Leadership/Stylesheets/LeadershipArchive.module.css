@@ -10,13 +10,19 @@
 }
 
 .archive_header {
+    padding-bottom: 1rem;
     font-family: 'Poppins';
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 300;
     text-align: center;
 }
 
 .archive_accordian {
     overflow: hidden;
+}
+
+.archive_container {
+    padding: 20px;
 }
 
 .archive_button_toggle {
@@ -54,7 +60,7 @@
 }
 
 .archived_bnc_img_container {
-    width: 75%;
+    width: 85%;
     height: 150px;
     overflow: hidden;
 

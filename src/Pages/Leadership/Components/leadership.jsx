@@ -1,7 +1,6 @@
 import {useEffect, useRef, useState} from 'react'
 import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
-
 import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
 import LeadershipGallery from './LeadershipGallery';
 import LeadershipIntro from './LeadershipIntro';
@@ -49,7 +48,7 @@ export default function Leadership() {
     return(
         <>
             <Helmet><title>Leadership</title></Helmet>
-            <HalfTitle header = 'Leadership' imgSrc = {'/images/leadership/Leadership_Title_' + bncNum.current + 'B&C.jpg'} brightness={75} position={25} caption='Read Bios' captionLink='/Bios'/>
+            <HalfTitle header = 'Leadership' imgSrc = {'/images/leadership/Leadership_Title_' + bncNum.current + 'B&C.jpg'} brightness={75} position={35} caption='Read Bios' captionLink='/Bios'/>
             <LeadershipArchive updateBnC = {updateBnC} /> {/*TODO: MAKE THIS ALSO TAKE PROPS FOR ENTIRE ARCHIVE BC GOOD PROGRAMMING I AM GOOD PROGRAMMER (COMPS SHOULD NOT CALL CONSTANTS) */}
             <LeadershipIntro bncNum = {bncNum.current} />
             <LeadershipGallery board = {board.current} council = {council.current} />
