@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useAuth } from "../../../components/AuthContext";
 import AdminMerch from "../AdminMerch/AdminMerch";
 
