@@ -17,14 +17,10 @@
     font-size: 5vh;
 }
 
-.links_background{
-    background-color: var(--off-white);
-    padding-bottom: 3vh;
-}
-
 .links_container{
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 3vh;
 }
 
 .link_anchor{

@@ -12,13 +12,13 @@ export default class FileGallery extends Component{
     render(){
 
         return(
-            <div className = 'archives_background'>
+            <>
                 <div className = 'archives_container row'>
                     {FILES.map((file, index) => (
                         <File key = {index} name={file.name} imgSrc={file.imgSrc} link={file.link}/>
                     ))}
                 </div>
-            </div>
+            </>
         )
     }
 }

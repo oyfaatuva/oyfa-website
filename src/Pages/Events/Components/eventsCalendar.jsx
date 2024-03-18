@@ -14,14 +14,14 @@ export default class Calendar extends Component{
     render(){
 
         return(
-            <div className = 'events_background'>
+            <>
                 <h1 className = 'events_heading'>{1988 + OYFA_AGE} Events Calendar</h1>
 
                 <div className = 'events_calendar_container'>
                     <iframe src = {EVENTS_CALENDAR_SOURCE}
                     className = 'events_calendar_iframe'></iframe>  
                 </div> 
-            </div>
+            </>
         )
     }
 }

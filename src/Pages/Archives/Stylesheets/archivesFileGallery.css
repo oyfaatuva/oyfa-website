@@ -8,10 +8,6 @@
     text-align: center;
 }
 
-.archives_background{
-    background-color: var(--off-white);
-}
-
 .archives_container{
     width: 90%;
     padding-top: 5%;

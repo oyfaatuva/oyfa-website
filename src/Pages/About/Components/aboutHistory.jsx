@@ -12,7 +12,7 @@ export default class History extends Component{
             /* quote section
             ** will render the quote and some decorative quotation marks on the left and right. There is some trouble in
             ** aesthetically aligning these quotation marks so keep playing with it. */
-            <div className = 'history_background'>
+            <div className = 'history_container'>
                 <h1 className = 'history_heading'>1988</h1>
 
                 <div className = 'history_quote_parent'>

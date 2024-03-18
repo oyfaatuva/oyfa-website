@@ -32,7 +32,9 @@ export default function Footer () {
             {/* Info section */}
             <section>
                 <div className={styles.footer_bottom_text}>
-                    <p className = {styles.footer_disclaimer}>
+                    {/* We've had this disclaimer on the footer of the website for a while but I don't think it's that important 
+                        and imo its ugly lol - Basty*/}
+                    {/* <p className = {styles.footer_disclaimer}>
                         Although this organization has members who are University of Virginia students 
                         and may have University employees associated or engaged in its activities and affairs, 
                         the organization is not a part of or an agency of the University. 
@@ -40,7 +42,7 @@ export default function Footer () {
                         for and manages its own activities and affairs. The University does not direct, 
                         supervise or control the organization and is not responsible for the organization's contracts, 
                         acts or omissions.
-                    </p>
+                    </p> */} 
 
                     <p className = {styles.footer_paragraph}> {/* have to manually add in the white space */}
                         Website created and maintained by OYFA Webmasters.&nbsp;

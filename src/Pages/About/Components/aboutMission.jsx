@@ -31,7 +31,7 @@ export default class Mission extends Component{
         ]
 
         return(
-            <div className = 'mission_background'>
+            <div className = 'mission_container'>
                 <MissionRow
                     orientation = 'text-left'
                     header = 'Identity'
