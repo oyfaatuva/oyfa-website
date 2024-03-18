@@ -1,6 +1,7 @@
 import {Component} from 'react'
-import '../Stylesheets/eventsCalendar.css'
 import { OYFA_AGE, EVENTS_CALENDAR_SOURCE } from '../../../Constants'
+
+import '../Stylesheets/EventsCalendar.css'  
 
 /* This file renders the Events page with the calendar and header. You can also add announcements and other 
 ** components here if you wish, but for now it just has the calendar. The code for that was simply generated

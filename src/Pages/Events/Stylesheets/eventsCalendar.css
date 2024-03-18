@@ -1,7 +1,8 @@
 .events_heading{
     font-family: 'Poppins';
-    padding-top: 3%;
-    font-size: 10vh;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
 }
@@ -11,11 +12,9 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5%;
 }
 
 .events_calendar_iframe{
-    padding-top: 3%;
     width: 80%;
     height: 60vh;
 }
