@@ -26,9 +26,7 @@ import './HalfTitle.css'
 **      component.
 **==============================================================================================================*/
 
-export default function HalfTitle ({header, imgSrc, brightness, position, caption, captionLink, newTab}) {
-    /* default prop values declared at bottom of file */
-
+export default function HalfTitle ({header, imgSrc, brightness = 100, position = 50, caption, captionLink, newTab}) {
     /* Because these CSS styles can change depending on the props, we have to use JS to dynamically set them */
     const imageStyle = { filter: `brightness(${brightness}%)`, objectFit: 'center', objectPosition: `${position}%`}
     
@@ -44,9 +42,4 @@ export default function HalfTitle ({header, imgSrc, brightness, position, captio
             </AppearingDiv>
         </div>
     )
-}
-
-HalfTitle.defaultProps = {
-    brightness: 100,
-    position: 50
 }
