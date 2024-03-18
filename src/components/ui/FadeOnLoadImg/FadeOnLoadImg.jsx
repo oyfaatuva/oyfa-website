@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./FadeOnLoadImg.module.css"
 
-export default function FadeOnLoadImg({ imgPath, alt, className}) {   
+export default function FadeOnLoadImg({ imgPath, alt, className, style }) {   
     const [loaded, setImageLoaded] = useState(false);
 
     useEffect(() => {
@@ -19,7 +19,7 @@ export default function FadeOnLoadImg({ imgPath, alt, className}) {
     return (
         <>
         {loaded && (
-            <img src={imgPath} alt={alt} className={styles.fade_in_image + ' ' + (className || '')} />
+            <img src={imgPath} alt={alt} className={styles.fade_in_image + ' ' + (className || '')} style={style}/>
         )}
         </>  
     );

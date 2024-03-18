@@ -28,7 +28,7 @@ import './HalfTitle.css'
 
 export default function HalfTitle ({header, imgSrc, brightness = 100, position = 50, caption, captionLink, newTab}) {
     /* Because these CSS styles can change depending on the props, we have to use JS to dynamically set them */
-    const imageStyle = { filter: `brightness(${brightness}%)`, objectFit: 'center', objectPosition: `${position}%`}
+    const imageStyle = { filter: `brightness(${brightness}%)`, objectPosition: `center ${position}%`}
     
     return(
         <div className = 'half_title_container'>
@@ -36,10 +36,11 @@ export default function HalfTitle ({header, imgSrc, brightness = 100, position =
             <Vignette/>
             <AppearingDiv>
                 <h1 className ='half_title_heading'>{header}</h1>
-                <Link to={captionLink} target={newTab ? '_blank' : ''}>
-                    <p className='half_title_caption'>{caption}</p>
-                </Link>
             </AppearingDiv>
+            <Link to={captionLink} target={newTab ? '_blank' : ''}>
+                <AppearingDiv><p className='half_title_caption'>{caption}</p></AppearingDiv>
+            </Link>
+            
         </div>
     )
 }
