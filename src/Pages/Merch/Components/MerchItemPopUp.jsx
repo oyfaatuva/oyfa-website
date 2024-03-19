@@ -44,7 +44,7 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
                 <div className={styles.gallery}>
                     <div className={styles.gallery_images_column}>
                         {item.images.map((imageName, index) => (
-                            <div className={styles.gallery_images_container}>
+                            <div className={styles.gallery_images_container} style={{outline: currentPhotoName === imageName ? '2px solid' : 'none' }}>
                                 <img key={index} src={imageDir + imageName} onClick={() => setPhotoName(imageName)}/>
                             </div>
                         ))}
