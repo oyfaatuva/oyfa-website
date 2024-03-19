@@ -99,7 +99,10 @@
 }
 
 .info_price {
-
+    margin-top: 25px;
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .close {

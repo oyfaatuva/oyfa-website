@@ -44,7 +44,7 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
                 <div className={styles.gallery}>
                     <div className={styles.gallery_images_column}>
                         {item.images.map((imageName, index) => (
-                            <div className={styles.gallery_images_container} style={{outline: currentPhotoName === imageName ? '2px solid' : 'none' }}>
+                            <div className={styles.gallery_images_container} style={{outline: currentPhotoName === imageName ? '3px solid' : 'none' }}>
                                 <img key={index} src={imageDir + imageName} onClick={() => setPhotoName(imageName)}/>
                             </div>
                         ))}
@@ -61,8 +61,9 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
                     <p className={styles.info_category}>{item.category.toUpperCase()}</p>
                     <p className={styles.info_description}>{item.description}</p>
                 </div>
-                <p>{`$${parseFloat(item.price).toFixed(2)}`}</p>
-                <p>{item.stock}</p>
+                <p className={styles.info_price}>{`$${parseFloat(item.price).toFixed(2)}`}</p>
+                <p>Remaining Stock: {item.stock}</p>
+                <h3>Buy it now!</h3>
             </div>
         </motion.div>
     );
