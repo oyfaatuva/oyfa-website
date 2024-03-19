@@ -9,7 +9,7 @@ import Links from './pages/links/Components/Links'
 import Leadership from './pages/leadership/Components/Leadership'
 import Archives from './pages/archives/Components/Archives'
 import LeadershipBio from './pages/leadership/Components/LeadershipBio'
-import Merch, { merchLoader } from './pages/merch/Components/Merch';
+import Merch, { merchLoader } from './pages/merch/Merch';
 import AdminLogin from './pages/admin/AdminLogin/AdminLogin';
 import { AuthLayout } from './pages/AuthLayout';
 import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard';

@@ -3,7 +3,6 @@ import styles from '../Stylesheets/MerchGallery.module.css'
 export default function MerchGallery({ merch, setCurrentItem, imageDir }) {
     return (
         <div className={styles.merch_grid_container}>
-            <p className={styles.merch_gallery_title}>Collection</p>
             <div className={styles.merch_grid}>
                 {merch.map((merchItem, index) => (
                     <MerchItem key={index} item={merchItem} setCurrentItem={setCurrentItem} imageDir={imageDir}/>

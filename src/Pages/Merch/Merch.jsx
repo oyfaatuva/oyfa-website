@@ -1,14 +1,15 @@
-import { Suspense, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
 import { defer, Await } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import HalfTitle from './../../../components/layout/HalfTitle/HalfTitle';
-import MerchCarousel from './MerchCarousel';
-import MerchGallery from './MerchGallery';
-import MerchItemPopUp from './MerchItemPopUp';
+import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import MerchCarousel from './Components/MerchCarousel';
+import MerchGallery from './Components/MerchGallery';
+import MerchItemPopUp from './Components/MerchItemPopUp';
+import axiosClient from '../../utils/axiosClient';
 
-import axiosClient from '../../../utils/axiosClient';
+import styles from './Merch.module.css'
 
 const IMAGE_DIR = 'images/merch/'
 
@@ -29,14 +30,25 @@ export default function Merch() {
         {category: "Unisex T-Shirt, S-L", name: "2022 Barrio T-Shirt", price: 25.078, stock: 0, images: ['OYFABuddy.JPG']},
         {category: "Unisex T-Shirt, S-L", name: "2023 Barrio T-Shirt", price: 25.078, stock: 0, images: ["SamExample.JPG", "SamExample.JPG", "SamExample.JPG"]}]
     
-    const GALLERY_IMAGES = ['/images/merch/seb1.jpg', '/images/merch/seb1.jpg' , '/images/merch/seb1.jpg'];
+    const GALLERY_IMAGES = ['/images/merch/Komiks_Banner.jpg','/images/merch/Example Merch Banner.jpg', '/images/merch/seb1.jpg' , '/images/merch/seb1.jpg'];
+
+    useEffect(() => {
+        if(currentItem == null)
+            document.body.style.overflow = 'visible';
+        else
+            document.body.style.overflow = 'hidden';
+     }, [currentItem]);
 
     return(
         <>
             <Helmet><title>Merch</title></Helmet>
             <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} brightness={75} position={55} caption='Order Now!'/>
-            <MerchCarousel images={GALLERY_IMAGES}/>
-
+            
+            <div className='mb-4'>
+                <p className={styles.gallery_title}>Merch Showcase</p>
+                <MerchCarousel images={GALLERY_IMAGES}/>
+            </div>
+            <p className={styles.gallery_title}>Collection</p>
             <Suspense
                 fallback={<p>Loading merchandise...</p>}
             >

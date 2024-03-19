@@ -6,8 +6,6 @@
 .slider-container {
   max-width: 1200px;
   width: clamp(200px, 100%, 1200px);;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .slides {
@@ -38,7 +36,7 @@
 }
 
 .image-slide {
-  height: clamp(200px, 70vw, 400px); 
+  height: clamp(250px, 50vw, 370px); 
 }
 
 .image-slide img {

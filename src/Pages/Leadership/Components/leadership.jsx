@@ -8,7 +8,6 @@ import LeadershipArchive from './LeadershipArchive';
 import { CURRENT_BNC, BOARD, COUNCIL } from '/src/Constants';
 import { BNC_ARCHIVE } from '../../../constants/bncArchive';
 
-
 /* Main export file to index that combines all "leadership" components */
 
 export default function Leadership() {
@@ -48,7 +47,7 @@ export default function Leadership() {
     return(
         <>
             <Helmet><title>Leadership</title></Helmet>
-            <HalfTitle header = 'Leadership' imgSrc = {'/images/leadership/Leadership_Title_' + bncNum.current + 'B&C.jpg'} brightness={75} position={35} caption='Read Bios' captionLink='/Bios'/>
+            <HalfTitle header = 'Leadership' imgSrc = {'/images/leadership/Leadership_Title_' + bncNum.current + 'B&C.jpg'} brightness={65} position={35} caption='Read Bios' captionLink='/Bios'/>
             <LeadershipArchive updateBnC = {updateBnC} /> {/*TODO: MAKE THIS ALSO TAKE PROPS FOR ENTIRE ARCHIVE BC GOOD PROGRAMMING I AM GOOD PROGRAMMER (COMPS SHOULD NOT CALL CONSTANTS) */}
             <LeadershipIntro bncNum = {bncNum.current} />
             <LeadershipGallery board = {board.current} council = {council.current} />
