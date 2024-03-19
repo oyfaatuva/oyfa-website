@@ -4,13 +4,6 @@
     align-items: center; 
 }
 
-.merch_gallery_title {
-    font-family: 'Poppins';
-    font-size: 2rem;
-    font-weight: 300;
-    padding: 10px;
-}
-
 .merch_grid {
     display: flex;
     flex-wrap: wrap; 

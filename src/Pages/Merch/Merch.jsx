@@ -30,7 +30,7 @@ export default function Merch() {
         {category: "Unisex T-Shirt, S-L", name: "2022 Barrio T-Shirt", price: 25.078, stock: 0, images: ['OYFABuddy.JPG']},
         {category: "Unisex T-Shirt, S-L", name: "2023 Barrio T-Shirt", price: 25.078, stock: 0, images: ["SamExample.JPG", "SamExample.JPG", "SamExample.JPG"]}]
     
-    const GALLERY_IMAGES = ['/images/merch/Komiks_Banner.jpg','/images/merch/Example Merch Banner.jpg', '/images/merch/seb1.jpg' , '/images/merch/seb1.jpg'];
+    const GALLERY_IMAGES = ['/images/merch/Komiks_Banner.png', '/images/merch/beAModelIBeg.jpg' , '/images/merch/seb.jpg'];
 
     useEffect(() => {
         if(currentItem == null)
@@ -42,10 +42,10 @@ export default function Merch() {
     return(
         <>
             <Helmet><title>Merch</title></Helmet>
-            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} brightness={75} position={55} caption='Order Now!'/>
+            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!'/>
             
             <div className='mb-4'>
-                <p className={styles.gallery_title}>Merch Showcase</p>
+                <p className={styles.gallery_title}>Showcase</p>
                 <MerchCarousel images={GALLERY_IMAGES}/>
             </div>
             <p className={styles.gallery_title}>Collection</p>
