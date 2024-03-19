@@ -1,20 +1,48 @@
 .popup_container {
     display: flex;
-
     position: fixed;
     bottom: 0;
     width: 100vw;
-    padding: 5%;
-    padding-top: 5rem;
+    padding: 10px;
+    padding-top: 70px;
     height: calc(100% - 50px);
     background-color: rgb(248, 246, 243);
 
     overflow-y: auto;
 }
 
-.image_column {
-    flex: 0 0 55%;
+.gallery_column {
+    flex: 0 0 50%;
+    max-width: 500px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.gallery_images_column {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.gallery_images_container {
+    position: relative;
+    margin: 5px;
+    margin-top: 0;
+    padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
+                        Position of the img will have to be relative because of it*/
+}
+
+.gallery_images_container img {
+    position: absolute;
+    top: 0;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 .image_container {
@@ -37,7 +65,18 @@
 .info_column {
     flex: 1;
     height: auto;
-    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    overflow-x: hidden;
+}
+
+.info_column p {
+    word-break: break-word;
+}
+
+.info_container {
+    height: auto;
     border-bottom: 1px solid gray;
 }
 
@@ -48,12 +87,13 @@
 }
 
 .info_category {
-
+    font-size: 1.4rem;
 }
 
 .info_description {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .info_price {
@@ -62,7 +102,38 @@
 
 .close {
     position: absolute;
-    top: 2rem;
-    right: 3rem;
+    top: 1.5rem;
+    right: 1.5rem;
     font-size: 1.8rem;
+}
+
+@media screen and (max-width : 600px) {
+    .popup_container {
+        padding-top: 45px;
+    }
+
+    .close {
+        top: .8rem;
+        right: .8rem;
+    }
+
+    .gallery_column {
+        max-width: none;
+    }
+
+    .gallery {
+        margin: 2%;
+    }
+
+    .image_container img {
+        border-radius: 5px;
+    }
+
+    .info_column {
+        overflow-x: visible;
+    }
+
+    .popup_container {
+        flex-direction: column;
+    }
 }
