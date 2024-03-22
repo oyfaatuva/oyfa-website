@@ -1,21 +1,25 @@
-import {Component} from 'react'
-
-import TitleScreen from './homeTitle';
+import { useOutletContext } from 'react-router';
+import { Helmet } from 'react-helmet';
+import HomeTitle from './homeTitle';
 import Introduction from './homeIntro';
 import Testimonies from './homeTestimonies';
+import useWindowDimensions from './../../../hooks/useWindowDimensions';
 
 /* Main export file to index that combines all "home" components */
 
-export default class Home extends Component{
-    render(){
-        return(
-            <>
-                <title>Home</title>
-                {/*TODO: Something in Introduction is overflowing and causing a white bar on the right side of mobile screens */}
-                <TitleScreen />
-                <Introduction />
-                <Testimonies />
-            </>
-        )
-    }
+export default function Home () {
+    const {setNavbarScrollPosition, setNavbarScrollPositionMobile} = useOutletContext();
+    const {height} = useWindowDimensions(); 
+    
+    setNavbarScrollPosition(height - 70);
+    setNavbarScrollPositionMobile(430);
+
+    return(
+        <>
+            <Helmet><title>Home</title></Helmet>
+            <HomeTitle/>
+            <Introduction/>
+            <Testimonies/>
+        </>
+    )
 }

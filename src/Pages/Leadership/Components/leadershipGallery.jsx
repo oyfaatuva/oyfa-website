@@ -1,5 +1,5 @@
-import {Component} from 'react'
-import { motion } from "framer-motion"
+import {Component, useRef} from 'react'
+import { motion, useInView } from "framer-motion"
 
 import '../Stylesheets/LeadershipGallery.css'
 /* react-router does not natively support scrolling to specific page sections so we use this add-on package */
@@ -17,23 +17,20 @@ import { Container, Row, Col } from 'react-bootstrap'
 *********************************************************************************************************************
 ** An Example class is also included in case you need to see how the calls are made.*/
 
-export default class LeadershipGallery extends Component{
-    render(){
+export default function LeadershipGallery ({board, council}) {
+    return(
+        <>
 
-        return(
-            <div className = 'gallery_background'>
+            <h1 className = 'gallery_heading'>BOARD</h1>
 
-                <h1 className = 'gallery_heading'>BOARD</h1>
+            <CommitteeGrid committeeRows = {board} />
 
-                <CommitteeGrid committeeRows = {this.props.board} />
+            <h1 className = 'gallery_heading'>COUNCIL</h1>
 
-                <h1 className = 'gallery_heading'>COUNCIL</h1>
+            <CommitteeGrid committeeRows = {council} />
 
-                <CommitteeGrid committeeRows = {this.props.council} />
-
-            </div>
-        )
-    }
+        </>
+    )
 }
 
 /*================================================================================================== 
@@ -147,54 +144,46 @@ class CommitteeRow extends Component{
 **  RETURNS:
 **      Person component which renders a B&C member's image as well as accompanying styled information
 **==============================================================================================================*/
-class Person extends Component{
-    
-    /* main component render */
-    render(){
-        const imgSrc  = this.props.imgSrc
-        const title   = this.props.title
-        const info    = this.props.info
-    
-        /* if title was provided render it */
-        if(title){
-            var titleComponent =                 
-                <div className = 'person_text_container'>
-                    <h1 className = 'person_title'>{title.toUpperCase()}</h1>
-                </div>
-        }
-    
-        /* for each person in the info array, map over them and render a PersonInfo component with their information */
-        var infoComponent = 
-            <>
-                {info.map((item) => (
-                    <div className = 'person_info_container'>
-                        <PersonInfo name = {item.name} major = {item.major} email = {item.email} />
-                    </div>
-                ))}
-            </>
+function Person ({imgSrc, title, info}) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
 
-        return(
-            <Col>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.5}}
-                    className = 'person_container'>
-                    <div className = 'person_img_container'>
-                        <HashLink smooth to = {'/Bios#'+info[0].name} > {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
-                        {/* <a href = {'/Bios#'+info[0].name}> */}
-                            <img src={imgSrc} loading='lazy'/>
-                        {/* </a> */}
-                        </HashLink>
-                    </div>
-
-                    {infoComponent}
-                    {titleComponent}
-        
-                </motion.div>
-            </Col>
-        )
+    /* if title was provided render it */
+    if(title) {
+        var titleComponent =                 
+            <div className = 'person_text_container'>
+                <h1 className = 'person_title'>{title.toUpperCase()}</h1>
+            </div>
     }
+
+    /* for each person in the info array, map over them and render a PersonInfo component with their information */
+    var infoComponent = 
+        <>
+            {info.map((item) => (
+                <div className = 'person_info_container'>
+                    <PersonInfo name = {item.name} major = {item.major} email = {item.email} />
+                </div>
+            ))}
+        </>
+
+    return(
+        <Col>
+            <div className = 'person_container' ref={ref} style={{
+                transform: isInView ? "none" : "translateY(50px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+            }}>
+                <div className = 'person_img_container'>
+                    <HashLink smooth to = {'/Bios#'+info[0].name} > {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
+                        <img src={imgSrc} loading='lazy'/>
+                    </HashLink>
+                </div>
+
+                {infoComponent}
+                {titleComponent}
+            </div>
+        </Col>
+    )
 }
 
 /*==USAGE GUIDE===================================================================================================

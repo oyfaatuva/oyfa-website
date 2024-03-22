@@ -9,18 +9,19 @@
 
 import {Component} from 'react'
 import {Carousel} from 'react-bootstrap';
-import '../Stylesheets/homeTitle.css';
-import FadeOnLoadImg from '../../../ui/FadeOnLoadImg/FadeOnLoadImg';
-import Vignette from '../../../ui/Vignette/Vignette';
+import Vignette from '../../../components/ui/Vignette/Vignette';
+import FadeOnLoadImg from '../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
+import AppearingDiv from '../../../components/ui/AppearingText/AppearingDiv';
 
-/* parent TitleScreen class, render a Carousel and Title  */
-export default class TitleScreen extends Component{
+import '../Stylesheets/homeTitle.css';
+
+export default class HomeTitle extends Component{
     render(){
 
         /* Carousel Variables */
         const timeBeforeSwitch = 5000 //time in milliseconds
         const content = [] //push more content in the following format to automatically add new slides as you see fit
-        const imgDir = './Images/Home/' //images for this file are in public/Images/Home
+        const imgDir = './images/home/' //images for this file are in public/images/home
         
         content.push(
             {
@@ -59,31 +60,28 @@ export default class TitleScreen extends Component{
                 captionPara: 'Watch the performance',
                 link: 'https://www.youtube.com/watch?v=zWFKvAuphp8&ab_channel=OYFAatUVA'
             },
-            //continue as you see fit
+            //...continue as you see fit
         ) 
 
         return(
             <>
-                <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content = {content}/>
+                <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content={content}/>
                 <Title/>
             </>
         )
     }
 }
 
-class Title extends Component{
-    render(){
-        return(
-            <div className = 'title_parent'>
+function Title () {
+    return(
+            <AppearingDiv className={'title_parent'}>
                 <h1 className = 'title_h1'>
                     Organization of Young
                     <br></br>
                     Filipino Americans
                 </h1>
-
-          </div>
-        )
-    }
+            </AppearingDiv>
+    )
 }
 
 class TitleCarousel extends Component{
@@ -112,33 +110,27 @@ class TitleCarousel extends Component{
     }
 }
 
-class CarouselContent extends Component{
-    constructor(props){
-        super(props)
-    }
-    
-    render(){
-        return(
-            <>
-                <div className = 'title_img_container'>
-                    {this.props.index === 0 ?
-                        <FadeOnLoadImg imgPath={this.props.imgSrc}/>
-                        :
-                        <img src={this.props.imgSrc}/>
-                    }
-                    <Vignette/>
-                </div>
-                <Carousel.Caption className = 'title_caption'>
-                <h3 className = 'title_caption_header'>{this.props.captionHeader}</h3>
-                {this.props.link !== '' ?
-                    <a href = {this.props.link} target={this.props.link.charAt(0) === '/' ? '' : '_blank'} className = 'title_link'>
-                        <p className = 'title_caption_paragraph'>{this.props.captionPara}</p>
-                    </a>
+function CarouselContent ( {index, imgSrc, captionHeader, captionPara, link } ) {
+    return(
+        <>
+            <div className = 'title_img_container'>
+                {index === 0 ?
+                    <FadeOnLoadImg imgPath={imgSrc}/>
                     :
-                    <p className = 'title_caption_paragraph'>{this.props.captionPara}</p>
+                    <img src={imgSrc}/>
                 }
-                </Carousel.Caption>
-            </>
-        )
-    }
+                <Vignette/>
+            </div>
+            <Carousel.Caption className = 'title_caption'>
+            <AppearingDiv><h3 className = 'title_caption_header'>{captionHeader}</h3></AppearingDiv>
+            {link !== undefined && link !== ''  ?
+                <a href = {link} target={link.charAt(0) === '/' ? '' : '_blank'} className = 'title_link'>
+                    <AppearingDiv><p className = 'title_caption_paragraph'>{captionPara}</p></AppearingDiv>
+                </a>
+                :
+                <AppearingDiv><p className = 'title_caption_paragraph'>{captionPara}</p></AppearingDiv>
+            }
+            </Carousel.Caption>
+        </>
+    );
 }

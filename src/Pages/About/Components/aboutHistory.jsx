@@ -12,7 +12,7 @@ export default class History extends Component{
             /* quote section
             ** will render the quote and some decorative quotation marks on the left and right. There is some trouble in
             ** aesthetically aligning these quotation marks so keep playing with it. */
-            <div className = 'history_background'>
+            <div className = 'history_container'>
                 <h1 className = 'history_heading'>1988</h1>
 
                 <div className = 'history_quote_parent'>
@@ -53,9 +53,9 @@ export default class History extends Component{
                     <p className = 'history_quote'>{ABOUT_PRESENT_TEXT}</p>
 
                     <div className = 'history_img_parent'>
-                        <img className = 'history_img' src = './Images/About/About_Successful_People.jpeg'/>
-                        <img className = 'history_img' src = './Images/About/About_CIO_Award.jpg' />
-                        <img className = 'history_img' src = './Images/About/About_Trophy.jpeg' />   
+                        <img className = 'history_img' src = './images/about/About_Successful_People.jpeg'/>
+                        <img className = 'history_img' src = './images/about/About_CIO_Award.jpg' />
+                        <img className = 'history_img' src = './images/about/About_Trophy.jpeg' />   
                     </div>
 
                 </div>

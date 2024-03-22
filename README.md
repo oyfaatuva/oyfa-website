@@ -122,7 +122,7 @@ The project uses Node.js as a development platform, GIT as version control, and 
    ```
 4. Launch your new project view
    ```sh
-   npm start
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -144,8 +144,6 @@ pass those arrays as props to child Components, which then dynamically map over 
 
 - [ ] State-based maintenance form to replace Constants.js
 - [ ] Implement multiple-paragraph B&C bios, with links to social media/spotifys
-- [ ] Style overhaul
-    - [ ] Get feedback from all Oyfans and PR committee
 - [ ] HTTPS certificate
 - [ ] Overhaul Links, Archives, and Events
 
@@ -187,9 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Current OYFA Webmasters - [@oyfaatuva](https://www.instagram.com/oyfaatuva/) - oyfaatuvawebmasters@gmail.com
 
-Original Author - colby.le.623@gmail.com
-
-Additional Authors - sebastiangborromeo@gmail.com, 	christinnayang@gmail.com
+Authors - colby.le.623@gmail.com, sebastiangborromeo@gmail.com, christinnayang@gmail.com
 
 Project Link: [https://github.com/oyfaatuva/oyfa-website](https://github.com/oyfaatuva/oyfa-website)
 

@@ -1,7 +1,6 @@
 import {Component} from 'react'
-
-import HalfTitle from '../../../components/HalfTitle/HalfTitle';
-
+import { Helmet } from 'react-helmet';
+import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
 import History from './aboutHistory';
 import Mission from './aboutMission';
 
@@ -10,12 +9,13 @@ import Mission from './aboutMission';
 export default class About extends Component{
     render(){
         return(
-            <div>
-                <HalfTitle header = 'About' imgSrc = './Images/About/About_Title_Battle.jpeg'
+            <>
+                <Helmet><title>About</title></Helmet>
+                <HalfTitle header = 'About' imgSrc = './images/about/About_Title_Battle.jpeg'
                 brightness={80} position={40}/>
                 <History />
                 <Mission />
-            </div>
+            </>
         )
     }
 }

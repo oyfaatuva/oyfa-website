@@ -1,7 +1,9 @@
-import React, {Component} from 'react'
-import '../Stylesheets/leadershipBio.css'
-import Footer from '../../../components/Footer/Footer'
+import {Component, useEffect} from 'react'
+import { Helmet } from 'react-helmet';
+import { useOutletContext } from 'react-router';
 import {BOARD, COUNCIL} from '../../../Constants';
+
+import '../Stylesheets/leadershipBio.css'
 
 /********************************************************************************************************************
 ** This is a comprehensive file which contains, from the highest level to the lowest level, BioGrid, BioRow, and
@@ -10,27 +12,30 @@ import {BOARD, COUNCIL} from '../../../Constants';
 ** committee info if you wish to rearrange things your own way.
 ********************************************************************************************************************/
 
-export default class LeadershipBio extends Component{
-    render(){        
-        /* BOARD and COUNCIL arrays were originally modeled for just the LeadershipGallery calls. Recall that a 
-        ** CommitteeGrid is 2 dimensional (RowsXColumns, but you could say 3-D because each Committee has an
-        ** array of people/info), but a BioGrid is just 1 dimensional (Rows where each row is one person).
-        ** This means we have to remove an extraneous layer of the array structure (remove a set of brackets)
-        ** with the flat(1) method to be able to use the information in our BioGrid call */
-        return(
-            <div>
-                <div className = 'bio_background'>
-                    <h1 className = 'bio_heading'>BOARD</h1>
-                    <BioGrid bioRows = {BOARD.flat(1)} />
+export default function LeadershipBio() {
+    const { setTransition } = useOutletContext();
 
-                    <h1 className = 'bio_heading'>COUNCIL</h1>
-                    <BioGrid bioRows = {COUNCIL.flat(1)} />
-                </div>
+    useEffect(() => {
+        setTransition(false);
+    })
+    
+    /* BOARD and COUNCIL arrays were originally modeled for just the LeadershipGallery calls. Recall that a 
+    ** CommitteeGrid is 2 dimensional (RowsXColumns, but you could say 3-D because each Committee has an
+    ** array of people/info), but a BioGrid is just 1 dimensional (Rows where each row is one person).
+    ** This means we have to remove an extraneous layer of the array structure (remove a set of brackets)
+    ** with the flat(1) method to be able to use the information in our BioGrid call */
+    return(
+        <div>
+            <Helmet><title>Bios</title></Helmet>
+            <>
+                <h1 className = 'bio_heading'>BOARD</h1>
+                <BioGrid bioRows = {BOARD.flat(1)} />
 
-                <Footer />
-            </div>
-        )
-    }
+                <h1 className = 'bio_heading'>COUNCIL</h1>
+                <BioGrid bioRows = {COUNCIL.flat(1)} />
+            </>
+        </div>
+    )
 }
 
 /*==USAGE GUIDE===================================================================================================
@@ -54,7 +59,7 @@ class BioGrid extends Component{
         return(
             <div className = 'bio_grid_parent'>
                 {bioRows.map((row, index) => (
-                    <div>
+                    <div key={index}>
                         {row.info.map((info, infoIndex) => (
                             //if bioImgSrc specified in info, use it, otherwise default to the generic committee image
                             <BioRow key={infoIndex} imgSrc={info.bioImgSrc ? info.bioImgSrc : row.imgSrc} info={info} />

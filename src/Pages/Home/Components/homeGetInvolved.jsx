@@ -1,10 +1,13 @@
 import {Component} from 'react'
-import SocialMedia from '../../../components/SocialMedia/Socialmedia'
-import YoutubeEmbed from '../../../components/YoutubeEmbed/YoutubeEmbed'
-import {EmailSignupWithName} from '../../../components/Emailsignup/Emailsignup'
-import '../Stylesheets/homeGetInvolved.css'
-import * as Constants from '../../../Constants'
+import { EmailSignupWithName } from '../../../components/forms/Emailsignup/Emailsignup';
+import SocialMedia from '../../../components/ui/SocialMedia/Socialmedia';
+import YoutubeEmbed from '../../../components/media/YoutubeEmbed/YoutubeEmbed';
+
 import { useMediaQuery } from 'react-responsive'
+import * as Constants from './../../../Constants';
+
+import '../Stylesheets/homeGetInvolved.css'
+
 
 /* ATTENTION: If you are performing yearly upkeep, you will want to change the venmo link
 ** in the src/Constants file to the current Treasurer...
@@ -69,7 +72,7 @@ class HomeDonate extends Component{
         return(
             <div className = {get_involved_parent_class}>
                 <div className = 'get_involved_div'>
-                    <img src = './Images/Home/Get_Involved_Sports.jpeg'
+                    <img src = './images/home/Get_Involved_Sports.jpeg'
                     className = 'get_involved_img'/>
                 </div>
                 <div className = 'get_involved_div'>
@@ -103,7 +106,7 @@ class HomeEmail extends Component{
                     <EmailSignupWithName className = 'get_involved_email'/>
                 </div>
                 <div className = 'get_involved_div'>
-                    <img src = './Images/Home/Get_Involved_35th_B&C.jpeg'
+                    <img src = './images/home/Get_Involved_35th_B&C.jpeg'
                     className = 'get_involved_img' />
                 </div>
             </div>

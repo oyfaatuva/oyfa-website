@@ -7,14 +7,11 @@ export default class LinkGallery extends Component{
     render(){
 
         return(
-            <div className = 'links_background'>
-                <div>
-                    {LINKS.map((section, index) => (
-                            <LinkSection key = {index} sectionTitle = {section.sectionTitle} links = {section.links} imgSrc = {section.imgSrc}/>
-                    ))}
-                </div>
-
-            </div>
+            <>
+                {LINKS.map((section, index) => (
+                        <LinkSection key = {index} sectionTitle = {section.sectionTitle} links = {section.links} imgSrc = {section.imgSrc}/>
+                ))}
+            </>
         )
     }
 }

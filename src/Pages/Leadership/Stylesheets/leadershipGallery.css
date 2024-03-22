@@ -1,15 +1,12 @@
 /*=============Gallery-Wide Classes=================*/
 
 .gallery_heading{
-    padding-top: 1%;
+    font-family: 'Poppins';
+    padding-top: 0.5rem;
     margin-bottom: 1%;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 400;
     text-align: center;
-}
-
-.gallery_background{
-    background-color: var(--off-white);
 }
 
 /*=============Person Classes=================*/
@@ -19,13 +16,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /* class for person div container */
 .person_img_container{
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 380px;
+    max-height: 380px;
     display: flex;
     margin: 0 auto;
     overflow: hidden;
@@ -92,12 +89,13 @@
 }
 
 .committee_grid_container{
-    width: 70%;
+    width: 80%;
+    padding-bottom: 10px;
 }
 
 .person_row{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 

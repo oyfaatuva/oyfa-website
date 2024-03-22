@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "oyfa-website",
   "homepage": "http://www.oyfaatuva.com/",
   "version": "0.1.0",
   "private": true,
@@ -10,25 +10,27 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.0",
     "framer-motion": "^11.0.5",
     "jsonp": "^0.2.1",
     "modern-normalize": "^2.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.4",
+    "react-bootstrap": "^2.10.1",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.22.0",
     "react-router-hash-link": "^2.4.3",
-    "vite-tsconfig-paths": "^4.3.1",
-    "web-vitals": "^3.5.2"
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },
   "eslintConfig": {
     "extends": [
@@ -53,8 +55,8 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.1.2"

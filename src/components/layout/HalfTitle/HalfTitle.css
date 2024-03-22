@@ -1,0 +1,60 @@
+.half_title_container {
+    background-color: rgb(27, 27, 27);
+    height: 400px;
+}
+
+.header_container {
+    position: relative;
+    height: auto;
+    bottom: 150px;
+}
+
+.half_title_heading{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 6rem;
+    word-break: break-all;    
+    margin-left: 5%;
+    color: white;
+}
+
+.half_title_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.half_title_caption{
+    position: absolute;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 2.1rem;
+    top: 220px;
+    margin-left: 5.5%;
+    color: var(--off-white);
+}
+
+@media screen and (max-width : 1000px) /* Phone Rules */
+{
+    .half_title_container {
+        height: 300px;
+    }
+
+    .header_container {
+        bottom: 100px;
+    }
+
+    .half_title_heading{
+        font-size: 10vw;
+        font-weight: bolder; 
+    }
+
+    .half_title_caption{
+        font-size: 3.5vw;
+        top: 190px;
+    }
+}
