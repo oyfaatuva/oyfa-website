@@ -19,7 +19,7 @@
 <div align="center">
 
   <a href="http://www.oyfaatuva.com">
-    <img src="public/Images/_Common/Navbar_OYFA_Logo.png" alt="Logo" width="100" height="100"></img>
+    <img src="public/images/_common/Navbar_OYFA_Logo.png" alt="Logo" width="100" height="100"></img>
   </a>
 
   <h3 align="center">OYFA Website - React</h3>
@@ -204,7 +204,7 @@ Project Link: [https://github.com/oyfaatuva/oyfa-website](https://github.com/oyf
 [issues-url]: https://github.com/oyfaatuva/oyfa-website/issues
 [license-shield]: https://img.shields.io/github/license/colbyle25/website.svg?style=for-the-badge
 [license-url]: https://github.com/oyfaatuva/oyfa-website/blob/master/LICENSE.txt
-[product-screenshot]: public/Images/_Common/README_Product_Screenshot.png
+[product-screenshot]: public/images/_common/README_Product_Screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
