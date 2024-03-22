@@ -1,0 +1,21 @@
+.leadership_heading{
+    padding-top: 2rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width : 600px) /* Phones */
+{
+    .leadership_heading {
+        font-size: 1.8rem;
+    }
+}
+
+.leadership_youtube_container{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    transform: translate(25%, 0);
+}

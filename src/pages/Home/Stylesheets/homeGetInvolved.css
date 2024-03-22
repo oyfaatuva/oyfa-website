@@ -1,0 +1,90 @@
+.get_involved_parent{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-bottom: 3vh;
+}
+
+/* for mobile, because the rows will render in a column, the images will end up on top of the text instead of the bottom, so flip it */
+.get_involved_parent_mobile_reverse{
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+}
+
+.get_involved_div{
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.get_involved_padding{
+    margin-bottom: 3%;
+}
+
+.get_involved_h1{
+    margin-top: 10%;
+    margin-bottom: 3%;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.get_involved_h3{
+    font-family: 'Open Sans';
+    font-size: 1.3em;
+    margin-bottom: 3%;
+}
+
+.get_involved_social_media_container{
+    margin-top: 5%;
+    font-size: 70%;
+    width: 80%;
+    transform: translate(10%, 0);
+}
+
+/* this is like a highlighter effect, apply it to the h1s. idk if i liked it or not so i left it off */
+.mark {
+    background: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 225, 0, 0.1),
+      rgba(234, 223, 191, 0.473) 4%,
+      rgba(255, 225, 0, 0.3)
+    );
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+.get_involved_img{
+    /*width: 580px;
+    height: 315px;*/
+    box-shadow: 0.5vh 0.5vh 0.5vh rgb(141, 141, 141);
+    width: 90%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.get_involved_email{
+    align-items: center;
+}
+
+/* Re-orie*/
+@media screen and (max-width : 1000px) /* Phone Rules */
+{
+    /* */
+    .get_involved_img{
+        box-shadow: unset;
+        width: unset;
+        max-width: 95%;
+        height: 40vh;
+        padding-top: 3vh;
+        object-fit: cover;
+    }
+    .get_involved_parent{
+        padding-bottom: unset;
+        flex-direction: column-reverse;
+    }
+}
