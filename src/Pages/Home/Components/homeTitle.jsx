@@ -65,25 +65,23 @@ export default class HomeTitle extends Component{
 
         return(
             <>
-                <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content = {content}/>
+                <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content={content}/>
                 <Title/>
             </>
         )
     }
 }
 
-class Title extends Component{
-    render(){
-        return(
-                <AppearingDiv className={'title_parent'}>
-                    <h1 className = 'title_h1'>
-                        Organization of Young
-                        <br></br>
-                        Filipino Americans
-                    </h1>
-                </AppearingDiv>
-        )
-    }
+function Title () {
+    return(
+            <AppearingDiv className={'title_parent'}>
+                <h1 className = 'title_h1'>
+                    Organization of Young
+                    <br></br>
+                    Filipino Americans
+                </h1>
+            </AppearingDiv>
+    )
 }
 
 class TitleCarousel extends Component{

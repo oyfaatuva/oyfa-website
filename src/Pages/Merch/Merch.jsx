@@ -30,7 +30,7 @@ export default function Merch() {
         {category: "Unisex T-Shirt, S-L", name: "2022 Barrio T-Shirt", price: 25.078, stock: 0, images: ['OYFABuddy.JPG']},
         {category: "Unisex T-Shirt, S-L", name: "2023 Barrio T-Shirt", price: 25.078, stock: 0, images: ["SamExample.JPG", "SamExample.JPG", "SamExample.JPG"]}]
     
-    const GALLERY_IMAGES = ['/images/merch/Komiks_Banner.png', '/images/merch/beAModelIBeg.jpg' , '/images/merch/seb.jpg'];
+    const GALLERY_IMAGES = ['Komiks_Banner.png', 'beAModelIBeg.jpg' , 'seb.jpg'];
 
     useEffect(() => {
         if(currentItem == null)
@@ -46,7 +46,7 @@ export default function Merch() {
             
             <div className='mb-4'>
                 <p className={styles.gallery_title}>Showcase</p>
-                <MerchCarousel images={GALLERY_IMAGES}/>
+                <MerchCarousel images={GALLERY_IMAGES} imageDir={IMAGE_DIR}/>
             </div>
             <p className={styles.gallery_title}>Collection</p>
             <Suspense

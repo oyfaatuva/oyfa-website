@@ -34,7 +34,7 @@ export default function HalfTitle ({header, imgSrc, brightness = 100, position =
         <div className = 'half_title_container'>
             <FadeOnLoadImg imgPath={imgSrc} className='half_title_img' style={imageStyle}/>
             <Vignette/>
-            <AppearingDiv>
+            <AppearingDiv className='header_container'>
                 <h1 className ='half_title_heading'>{header}</h1>
             </AppearingDiv>
             <Link to={captionLink} target={newTab ? '_blank' : ''}>

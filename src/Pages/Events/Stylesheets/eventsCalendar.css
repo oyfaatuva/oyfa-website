@@ -21,9 +21,6 @@
 
 @media screen and (max-width : 1000px) /* Phone Rules */
 {
-    .events_heading{
-        font-size: 6vh;
-    }
     .events_calendar_iframe{
         padding-top: 3%;
         width: 90%;

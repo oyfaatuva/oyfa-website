@@ -22,9 +22,7 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
     };
 
     const closeMobileMenu = () => {
-        if (isMobile) {
-            setIsMenuOpen(false);
-        }
+        if (isMobile) { setIsMenuOpen(false); }
     };
 
     return (

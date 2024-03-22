@@ -4,10 +4,22 @@
 }
 
 .slider-container {
+  width: 100%;
   max-width: 1200px;
-  width: clamp(200px, 100%, 1200px);;
 }
 
+.image-slide {
+  height: clamp(250px, 50vw, 370px); 
+}
+
+.image-slide img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Slider fixes */
 .slides {
   position: relative;    
 }
@@ -33,21 +45,4 @@
 
 .slick-slider {
   z-index: 0;
-}
-
-.image-slide {
-  height: clamp(250px, 50vw, 370px); 
-}
-
-.image-slide img {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-@media screen and (max-width: 1000px) {
-  .slick-prev::before, .slick-next::before {
-    font-size: 30px;
-  }
 }

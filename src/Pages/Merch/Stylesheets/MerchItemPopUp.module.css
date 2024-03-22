@@ -1,19 +1,24 @@
-.popup_container {
+.popup_tab {
     display: flex;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     width: 100vw;
     padding: 10px;
     padding-top: 70px;
     height: calc(100% - 50px);
-    background-color: rgb(248, 246, 243);
+    background-color: rgb(247, 245, 243);
+}
 
-    overflow-y: auto;
+.popup_container {
+    display: flex;
+    width: clamp(200px, 100%, 1300px);
 }
 
 .gallery_column {
     flex: 0 0 50%;
-    max-width: 600px;
+    max-width: 550px;
+    overflow-x: hidden;
 }
 
 .gallery {
@@ -23,9 +28,10 @@
 }
 
 .gallery_images_column {
+    flex: 0 0 10%;
     display: flex;
     flex-direction: column;
-    width: 70px;
+    max-width: 70px;
     margin-right: 10px;
 }
 
@@ -34,7 +40,6 @@
     margin: 5px;
     margin-top: 0;
     padding-top: 80%;
-    border-radius: 5%;
     cursor: pointer;
 }
 
@@ -44,24 +49,42 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: inherit;
+    border-radius: 5%;
+    filter: blur(.3px);
 }
 
 .image_container {
     position: relative;
-    width: 100%;
+    width: 80%;
+    padding-top: 80%;
     margin-bottom: 5px;
-    padding-top: 90%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
-                        Position of the img will have to be relative because of it*/
 }
 
 .image_container img {
     position: absolute;
+    object-fit: cover;
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+.main_image_slider {
+    width: 80%;
+}
+
+.slider_image_container {
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: 5px;
+}
+
+.slider_image_container img {
+    position: absolute;
+    top: 0;
     object-fit: cover;
-    border-radius: 1%;
+    object-position: center;
+    width: 100%;
+    height: 100%;
 }
 
 .info_column {
@@ -69,8 +92,7 @@
     height: auto;
     padding-left: 30px;
     padding-right: 30px;
-
-    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .info_column p {
@@ -113,8 +135,12 @@
 }
 
 @media screen and (max-width : 800px) {
+    .popup_tab {
+        overflow-y: auto;
+    }
+
     .popup_container {
-        padding-top: 45px;
+        justify-content: flex-start;
     }
 
     .close {
@@ -123,22 +149,43 @@
     }
 
     .gallery_column {
+        overflow-x: visible;   
         max-width: none;
+        flex-basis: auto;
     }
 
     .gallery {
         margin: 2%;
     }
 
-    .image_container img {
-        border-radius: 5px;
-    }
-
     .info_column {
-        overflow-x: visible;
+        overflow-y: visible;
     }
 
     .popup_container {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .info_name { font-size: 1.8rem;}
+    .info_category { font-size: 1.2rem;}
+    .info_description { font-size: 1rem; }
+
+    .gallery_images_column {
+        display: none;
+    }
+
+    .main_image_slider {
+        width: 100%;
+    }
+
+    .image_container {
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .info_column {
+        padding: 10px;
     }
 }
