@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import '../Stylesheets/aboutHistory.css'
+import '../Stylesheets/AboutHistory.css'
 import { ABOUT_QUOTE_TEXT, ABOUT_PRESENT_TEXT } from '../../../Constants'
 
 /* This file renders the first section, titled 1988 and {currYear}, of the About page. No fancy classes or usages here */

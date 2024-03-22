@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import '../Stylesheets/aboutMission.css'
+import '../Stylesheets/AboutMission.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'

@@ -10,13 +10,13 @@
 
 import {Component} from 'react'
 import { Link } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import HomeGetInvolved from './homeGetInvolved';
-import '../Stylesheets/homeIntro.css'
+import HomeGetInvolved from './HomeGetInvolved';
 import { OYFA_AGE } from '../../../Constants';
 import { toOrdinalNumber } from './../../../utils/toOrdinalNumber';
+
+import '../Stylesheets/HomeIntro.css'
 
 export default class Introduction extends Component{
 

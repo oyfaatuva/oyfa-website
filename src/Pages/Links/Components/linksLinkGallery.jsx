@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import '../Stylesheets/linksLinkGallery.css';
+import '../Stylesheets/LinksLinkGallery.css';
 import { LINKS } from '../../../Constants';
 
 /* Uses LINKS, an array of link sections which are themselves arrays of links, to render the LinkGallery */

@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import { Helmet } from 'react-helmet';
 import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle'
-import LinkGallery from './linksLinkGallery';
+import LinkGallery from './LinksLinkGallery';
 
 /* Main export file to index that combines all "links" components */
 

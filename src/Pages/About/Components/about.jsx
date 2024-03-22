@@ -1,8 +1,8 @@
 import {Component} from 'react'
 import { Helmet } from 'react-helmet';
 import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
-import History from './aboutHistory';
-import Mission from './aboutMission';
+import History from './AboutHistory';
+import Mission from './AboutMission';
 
 /* Main export component to index that combines all "About" components */
 

@@ -13,7 +13,7 @@ import Vignette from '../../../components/ui/Vignette/Vignette';
 import FadeOnLoadImg from '../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
 import AppearingDiv from '../../../components/ui/AppearingText/AppearingDiv';
 
-import '../Stylesheets/homeTitle.css';
+import '../Stylesheets/HomeTitle.css';
 
 export default class HomeTitle extends Component{
     render(){

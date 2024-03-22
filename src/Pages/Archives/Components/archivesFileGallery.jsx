@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import '../Stylesheets/archivesFileGallery.css'
+import '../Stylesheets/ArchivesFileGallery.css'
 import {FILES} from '../../../Constants'
 
 /********************************************************************************************************************

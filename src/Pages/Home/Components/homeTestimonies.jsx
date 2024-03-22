@@ -1,6 +1,7 @@
 import {Component} from 'react'
-import '../Stylesheets/homeTestimonies.css'
 import { Carousel } from 'react-bootstrap'
+
+import '../Stylesheets/HomeTestimonies.css'
 
 /* To add more Testimonies, simply fill out the content array below accordingly and everything will be 
 dynamically rendered for you */

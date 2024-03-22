@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useOutletContext } from 'react-router';
 import {BOARD, COUNCIL} from '../../../Constants';
 
-import '../Stylesheets/leadershipBio.css'
+import '../Stylesheets/LeadershipBio.css'
 
 /********************************************************************************************************************
 ** This is a comprehensive file which contains, from the highest level to the lowest level, BioGrid, BioRow, and

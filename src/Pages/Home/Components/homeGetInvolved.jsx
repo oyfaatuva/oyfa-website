@@ -6,7 +6,7 @@ import YoutubeEmbed from '../../../components/media/YoutubeEmbed/YoutubeEmbed';
 import { useMediaQuery } from 'react-responsive'
 import * as Constants from './../../../Constants';
 
-import '../Stylesheets/homeGetInvolved.css'
+import '../Stylesheets/HomeGetInvolved.css'
 
 
 /* ATTENTION: If you are performing yearly upkeep, you will want to change the venmo link
