@@ -3,7 +3,6 @@ import styles from './NotFound.module.css'
 
 export default function NotFound() {
     return (
-        <>
         <div className={styles.container}>
             <div className={styles.info_column}>
             <img src='/images/_common/Navbar_OYFA_Logo.png' className={styles.logo}/>
@@ -18,6 +17,5 @@ export default function NotFound() {
                 <img src='/images/_common/OYFABuddy.JPG' className={styles.photo}/>
             </div>            
         </div>
-        </>
     );
 }
