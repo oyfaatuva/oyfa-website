@@ -8,8 +8,8 @@ export default function NotFound() {
             <div className={styles.info_column}>
             <img src='/images/_common/Navbar_OYFA_Logo.png' className={styles.logo}/>
                 <h1 className={styles.oops_header}>Oops!</h1>
-                <p className={styles.caption}>The page you were looking for doesn't exist</p>
-                <button>
+                <p className={styles.caption}>The page you were looking for doesn't exist.</p>
+                <button className={styles.button}>
                     <Link to='/'>Back to Home</Link>
                 </button>
             </div>
