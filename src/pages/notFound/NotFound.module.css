@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    margin-top: 80px;
+    height: 100vh;
+    max-height: 600px;
+}
+
+.info_column {
+    flex: 1 1 45%;
+    margin-bottom: 50px;
+}
+
+.oops_header {
+    font-family: 'Poppins';
+    font-size: 10rem;
+}
+
+.caption {
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.photo_column {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 50%;
+}
+
+.logo {
+    margin-top: 20px;
+    width: 120px;
+}
+
+.photo {
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width : 600px) {
+    .oops_header {
+        font-family: 'Poppins';
+        font-size: 7rem;
+    }
+    
+    .caption {
+        font-family: 'Poppins';
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}

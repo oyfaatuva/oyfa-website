@@ -15,7 +15,7 @@ import { AuthLayout } from './pages/AuthLayout';
 import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard';
 import AdminLayout from './pages/admin/AdminLayout';
 import PageLayout from './pages/PageLayout';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/notFound/NotFound';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main component of your page 
