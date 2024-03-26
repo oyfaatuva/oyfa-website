@@ -5,22 +5,22 @@ import { useLocalStorage } from "../hooks/useLocalStorage";
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-    const [user, setUser] = useLocalStorage("user", null);
+    const [token, setToken] = useLocalStorage("ACCESS_TOKEN", null);
     const navigate = useNavigate();
 
-    const login = async (data) => {
-        setUser(data);
+    const login = async (token) => {
+        setToken(token);
         navigate("/admin/dashboard");
     };
 
     const logout = () => {
-        setUser(null);
+        setToken(null);
         navigate("/admin/login", { replace: true });
     };
 
     const value = useMemo(() => ({
-        user, login, logout,
-        }), [user]
+        token, login, logout,
+        }), [token]
     );
     return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

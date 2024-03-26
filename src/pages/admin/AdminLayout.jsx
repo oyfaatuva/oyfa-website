@@ -6,11 +6,11 @@ import { useEffect } from "react";
 
 export default function AdminLayout() {
     const navigate = useNavigate();
-    const { user } = useAuth();
+    const { token } = useAuth();
 
     useEffect(() => {
         // TODO: add message when logged state changes and logged off 
-        if (!user) 
+        if (!token) 
             navigate('/admin/login', {replace: true})
     })
     

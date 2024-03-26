@@ -1,25 +1,21 @@
-import axios from "axios";
+import axiosClient from "../../../utils/axiosClient";
 
 export default function AdminMerch() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        try {
+        try {              
             const body = {
-                name: 'ItemA',
-                category: 'TestItem',
+                name: "ItemA",
+                category: "TestItem",
                 price: 12.00,
                 stock: 10,
-                description: 'Test Item added through API'
+                description: "Test Item added through API"
             };
 
-            const headers = {
-                'Authorization': `Bearer ${localStorage.getItem('token')}`,
-                'Content-Type': 'application/json'
-            };
-
-            const response = await axiosClient.post('/merch', body, { headers });
+            const response = await axiosClient.post('/merch', body);
             const data = await response.data;
+            console.log(response);
         
             if (data.status === 200) {
                 alert('Sucessfully inserted');
@@ -28,7 +24,11 @@ export default function AdminMerch() {
                 alert('Could not insert');
             }        
         } catch (error) {
-            console.error('An error occurred:', error);
+            if (error.response && error.response.status === 401) {
+                alert('No longer authenticated. Please login again')
+            } else {
+                console.error('Error:', error.message);
+            }
         }
 
     };
