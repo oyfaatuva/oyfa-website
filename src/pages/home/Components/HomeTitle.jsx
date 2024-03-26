@@ -119,7 +119,7 @@ function CarouselContent ( {index, imgSrc, captionHeader, captionPara, link } ) 
                     :
                     <img src={imgSrc}/>
                 }
-                <Vignette/>
+                <Vignette blur={350} radius={20}/>
             </div>
             <Carousel.Caption className = 'title_caption'>
             <AppearingDiv><h3 className = 'title_caption_header'>{captionHeader}</h3></AppearingDiv>
