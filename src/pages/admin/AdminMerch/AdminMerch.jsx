@@ -5,22 +5,24 @@ export default function AdminMerch() {
         e.preventDefault();
 
         try {
-            const response = await axios.post('https://oyfaatuva.com/api/index.php', {
-                name: "addMerch",
-                headers: {
-                    'Authorization': `Bearer ${localStorage.getItem('token')}`
-                },
-                param: {
-                    name: "example",
-                    category: "example",
-                    price: "10",
-                    stock: "2",
-                }
-            });
+            const body = {
+                name: 'ItemA',
+                category: 'TestItem',
+                price: 12.00,
+                stock: 10,
+                description: 'Test Item added through API'
+            };
+
+            const headers = {
+                'Authorization': `Bearer ${localStorage.getItem('token')}`,
+                'Content-Type': 'application/json'
+            };
+
+            const response = await axiosClient.post('/merch', body, { headers });
             const data = await response.data;
         
             if (data.status === 200) {
-                
+                alert('Sucessfully inserted');
             }
             else {
                 alert('Could not insert');
@@ -33,7 +35,7 @@ export default function AdminMerch() {
 
     return (
         <>
-            <button onClick={handleSubmit}>Button</button>
+            <button onClick={handleSubmit}>Create Test Merch Item</button>
         </>
     );
 }
