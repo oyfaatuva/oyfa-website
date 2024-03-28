@@ -19,10 +19,8 @@ export default function AdminLogin () {
                 user: username,
                 pass: password,
             });
-            const data = await response.data;
-            console.log(response);
         
-            if (data.error != 'Unauthorized') {
+            if (response.status == 200) {
                 const token = response.data.token;
                 await login(token);    
             }
@@ -30,7 +28,7 @@ export default function AdminLogin () {
                 alert('Invalid username or password');
             }        
         } catch (error) {
-            console.error('An error occurred:', error);
+            alert('Invalid username or password');
         }
     };
 
