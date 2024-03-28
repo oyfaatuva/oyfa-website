@@ -1,0 +1,28 @@
+.app_container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.sidebar li {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.main_content {
+    flex: 1;    
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
