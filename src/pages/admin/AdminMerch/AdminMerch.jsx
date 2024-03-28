@@ -1,7 +1,8 @@
 import { Suspense, useState } from "react";
 import { Await, useLoaderData } from "react-router-dom";
 import axiosClient from "../../../utils/axiosClient";
-import MerchGallery from "../../merch/Components/MerchGallery";
+import MerchGallery, { MerchItem } from "../../merch/Components/MerchGallery";
+import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
 
 const IMAGE_DIR = 'images/merch/'
 
@@ -79,6 +80,15 @@ export default function AdminMerch() {
                             {merch.map((merchItem, index) => (
                                 merchItem.name + ' '+ merchItem.stock
                             ))}
+                            <UniformGrid gridGap={0}>
+                                {merch.map(item => (
+                                    <UniformGrid.Item key={item.id}>
+                                        <MerchItem item={item} imageDir={IMAGE_DIR}/>
+                                        <button>EDIT</button>
+                                        {/* {item.name} */}
+                                    </UniformGrid.Item>
+                                ))}
+                            </UniformGrid>
                         </>
                     )}
                 </Await>

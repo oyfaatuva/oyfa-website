@@ -12,7 +12,7 @@ export default function MerchGallery({ merch, setCurrentItem = null, imageDir })
     );
 }
 
-function MerchItem({ item, setCurrentItem, imageDir }) {
+export function MerchItem({ item, setCurrentItem = null, imageDir }) {
     return (
         <div className={styles.merch_container} style={{ cursor: 'pointer' }} onClick={() => setCurrentItem(item)}>
             <div className={styles.merch_img_container}>
