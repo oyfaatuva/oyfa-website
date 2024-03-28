@@ -24,9 +24,9 @@ export default function AdminMerch() {
         }));
     };
 
-    const handleNumberInput = (e) => {
+    const handleOnBlur = (e) => {
         if (!e.target.validity.valid) {
-            e.target.value = e.target.value;
+            e.target.value = '';
         }
     };
 
@@ -87,8 +87,8 @@ export default function AdminMerch() {
             <form onSubmit={handleSubmit}>
                 <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Name" className="form_input" maxLength="50" required/>
                 <input type="text" id="category" name="category "value={formData.category} onChange={handleChange} placeholder="Category" className="form_input" maxLength="50" required/>
-                <input type="number" id="price" name="price" value={formData.price} onChange={handleChange} placeholder="Price" className="form_input" min="0" max="999" required/>
-                <input type="number" id="stock" name="stock" value={formData.stock} onChange={handleChange} placeholder="Stock" className="form_input" min="0" max="999" onInput={handleNumberInput} required/>
+                <input type="number" step="0.01" id="price" name="price" value={formData.price} onChange={handleChange} placeholder="Price" className="form_input" min="0" max="999" onBlur={handleOnBlur} required/>
+                <input type="number" id="stock" name="stock" value={formData.stock} onChange={handleChange} placeholder="Stock" className="form_input" min="0" max="999" onBlur={handleOnBlur} required/>
                 <textarea  type="text" id="description" name="description" value={formData.description} onChange={handleChange} placeholder="Descrition" className="form_input" maxLength="600" required/>
                 <button type="submit" className="button">CREATE</button>
             </form>
