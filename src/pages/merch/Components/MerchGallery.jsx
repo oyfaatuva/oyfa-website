@@ -4,9 +4,11 @@ export default function MerchGallery({ merch, setCurrentItem = null, imageDir })
     return (
         <div className={styles.merch_grid_container}>
             <div className={styles.merch_grid}>
-                {merch.map((merchItem, index) => (
+                {merch.map((merchItem, index) => { return(
+                    (merchItem.visible === 1 && merchItem.approved === 1) && 
                     <MerchItem key={index} item={merchItem} setCurrentItem={setCurrentItem} imageDir={imageDir}/>
-                ))}
+                )
+                })}
             </div>
         </div>
     );
