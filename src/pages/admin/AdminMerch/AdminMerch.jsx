@@ -75,25 +75,24 @@ export default function AdminMerch() {
                     }
                 >
                     {(merch) => {
-                        const visibleMerch = merch.filter(merchItem => merchItem.visible === 1 && merchItem.approved === 1);
+                        const [visibleMerch, setVisibleMerch] = useState(merch.filter(merchItem => merchItem.visible === 1 && merchItem.approved === 1));
                         const hiddenMerch = merch.filter(merchItem => merchItem.visible === 0 && merchItem.approved === 1);
                         const unapprovedMerch = merch.filter(merchItem => merchItem.approved !== 1);
 
+                        const [draggedIndex, setDraggedIndex] = useState(null);
+
                         return (
                         <>
-                            {merch.map((merchItem, index) => (
-                                merchItem.name + ' '+ merchItem.stock
-                            ))}
-                            <h1>Visible Merch</h1>
+                            <h2>Visible Merch</h2>
                             <UniformGrid gridGap={10}>
-                                {visibleMerch.map(item => (
-                                    <UniformGrid.Item key={item.id}>
+                                {visibleMerch.map((item, index) => (
+                                    <UniformGrid.DraggableItem key={item.id} index={index} items={visibleMerch} setItems={setVisibleMerch} draggedIndex={draggedIndex} setDraggedIndex={setDraggedIndex}>
                                         <MerchItem item={item} imageDir={IMAGE_DIR}/>
-                                    </UniformGrid.Item>
+                                    </UniformGrid.DraggableItem>
                                 ))}
                             </UniformGrid>
 
-                            {hiddenMerch.length > 0 && <h1>Hidden Merch</h1>}
+                            {hiddenMerch.length > 0 && <h2>Hidden Merch</h2>}
                             <UniformGrid gridGap={10}>
                                 {hiddenMerch.map(item => (
                                     <UniformGrid.Item key={item.id}>
@@ -102,7 +101,7 @@ export default function AdminMerch() {
                                 ))}
                             </UniformGrid>
 
-                            {unapprovedMerch.length > 0 && <h1>Pending Approval</h1>}
+                            {unapprovedMerch.length > 0 && <h2>Pending Approval</h2>}
                             <UniformGrid gridGap={10}>
                                 {unapprovedMerch.map(item => (
                                     <UniformGrid.Item key={item.id}>

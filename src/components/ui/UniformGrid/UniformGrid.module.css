@@ -1,13 +1,17 @@
 .grid_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); 
 }
 
 .grid_item {
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, opacity 0.1s;
     box-shadow: 0 0 0 transparent;
 }
 
 .grid_item:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dragging {
+  opacity: 0.5; 
 }
