@@ -74,23 +74,45 @@ export default function AdminMerch() {
                         <p>Error loading merchanise</p>
                     }
                 >
-                    {(merch) => (
+                    {(merch) => {
+                        const visibleMerch = merch.filter(merchItem => merchItem.visible === 1 && merchItem.approved === 1);
+                        const hiddenMerch = merch.filter(merchItem => merchItem.visible === 0 && merchItem.approved === 1);
+                        const unapprovedMerch = merch.filter(merchItem => merchItem.approved !== 1);
+
+                        return (
                         <>
-                            <MerchGallery merch={merch} imageDir={IMAGE_DIR}/>
                             {merch.map((merchItem, index) => (
                                 merchItem.name + ' '+ merchItem.stock
                             ))}
-                            <UniformGrid gridGap={0}>
-                                {merch.map(item => (
+                            <h1>Visible Merch</h1>
+                            <UniformGrid gridGap={10}>
+                                {visibleMerch.map(item => (
                                     <UniformGrid.Item key={item.id}>
                                         <MerchItem item={item} imageDir={IMAGE_DIR}/>
-                                        <button>EDIT</button>
-                                        {/* {item.name} */}
+                                    </UniformGrid.Item>
+                                ))}
+                            </UniformGrid>
+
+                            {hiddenMerch.length > 0 && <h1>Hidden Merch</h1>}
+                            <UniformGrid gridGap={10}>
+                                {hiddenMerch.map(item => (
+                                    <UniformGrid.Item key={item.id}>
+                                        <MerchItem item={item} imageDir={IMAGE_DIR}/>
+                                    </UniformGrid.Item>
+                                ))}
+                            </UniformGrid>
+
+                            {unapprovedMerch.length > 0 && <h1>Pending Approval</h1>}
+                            <UniformGrid gridGap={10}>
+                                {unapprovedMerch.map(item => (
+                                    <UniformGrid.Item key={item.id}>
+                                        <MerchItem item={item} imageDir={IMAGE_DIR}/>
                                     </UniformGrid.Item>
                                 ))}
                             </UniformGrid>
                         </>
-                    )}
+                        );
+                    }}
                 </Await>
             </Suspense>
 

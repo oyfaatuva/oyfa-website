@@ -12,11 +12,13 @@ export default function AdminLayout() {
     const navigate = useNavigate();
     const { token } = useAuth();
 
-
     async function validateToken() {
-        await axiosClient.get('/auth/validateToken').catch(error => {
+        try {
+            await axiosClient.get('/auth/validateToken');
+        } catch (error) {
             console.error('Token validation failed:', error);
-        });
+            navigate('/admin/login', { replace: true });
+        }
     }
 
     useEffect(() => {
