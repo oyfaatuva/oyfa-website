@@ -1,6 +1,6 @@
 import styles from '../Stylesheets/MerchGallery.module.css'
 
-export default function MerchGallery({ merch, setCurrentItem, imageDir }) {
+export default function MerchGallery({ merch, setCurrentItem = null, imageDir }) {
     return (
         <div className={styles.merch_grid_container}>
             <div className={styles.merch_grid}>
