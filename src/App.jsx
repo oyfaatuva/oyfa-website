@@ -16,6 +16,7 @@ import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard';
 import AdminLayout from './pages/admin/AdminLayout';
 import PageLayout from './pages/PageLayout';
 import NotFound from './pages/notFound/NotFound';
+import AdminMerch from './pages/admin/AdminMerch/AdminMerch';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main component of your page 
@@ -42,9 +43,10 @@ const router = createBrowserRouter(
             <Route path='admin' element={<AdminLayout/>}>
                 <Route index element={<AdminDashboard/>}/> 
                 <Route path='dashboard' element={<AdminDashboard/>}/>
-                <Route path='merch'/> 
+                <Route path='merch' element={<AdminMerch/>}
+                    loader={merchLoader}/> 
             </Route>
-            <Route path="*" element={<NotFound/>} />
+            <Route path="*" element={<NotFound/>}/>
         </Route>
     )
 );
