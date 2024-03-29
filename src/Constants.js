@@ -58,9 +58,7 @@ export const LINKS =
             links: 
                 [
                     {header: 'Official Facebook Group', para: 'Official channels for news and info. Find our other socials at the bottom of the page!', link: 'https://www.facebook.com/groups/oyfaatuva/'},
-                    {header: 'Chilling Out With OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'},
-                    {header: 'OYFA Kickboxing Messenger Chat', para: 'Learn kickboxing, exercise, and de-stress', link:'https://m.me/j/AbaysYg9tnmQnxTJ/'}
-                ]
+                    {header: 'Chilling Out With OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'}                ]
         },
 
         { 
@@ -304,11 +302,6 @@ export const COUNCIL =
 /* Youtube embed id of the B&C promo video to be displayed on LeadershipIntro component. You can find this by clicking share,
 ** embed on the current year's video. If there isn't a video for this year leave equal to empty string '' */
 export const B_C_YOUTUBE_EMBED_ID = ''
-
-
-
-
-
 
 /* The following constants probably will not need to change often */
 /*=================LESS LIKELY TO CHANGE YEAR-TO-YEAR=====================================================================*/
