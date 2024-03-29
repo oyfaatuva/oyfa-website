@@ -22,7 +22,7 @@
 
 .main_content {
     flex: 1;    
-    padding: 20px;
+    padding: 5px 20px;
     background-color: #f4f4f4;
     overflow-y: auto;
 }

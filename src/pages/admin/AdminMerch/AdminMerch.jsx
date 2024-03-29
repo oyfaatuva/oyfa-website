@@ -1,13 +1,18 @@
 import { Suspense, useState } from "react";
-import { Await, useLoaderData } from "react-router-dom";
+import { Await, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import axiosClient from "../../../utils/axiosClient";
-import MerchGallery, { MerchItem } from "../../merch/Components/MerchGallery";
+import { MerchItem } from "../../merch/Components/MerchGallery";
 import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
+
+import styles from './AdminMerch.module.css'; 
 
 const IMAGE_DIR = 'images/merch/'
 
 export default function AdminMerch() {
+    const navigate = useNavigate();
     const loaderData = useLoaderData();
+    const { itemId } = useParams();
+    const [viewSelected, setViewSelected] = useState('gallery');
 
     const [formData, setFormData] = useState({
         name: '',
@@ -65,6 +70,10 @@ export default function AdminMerch() {
 
     return (
         <>
+            <div className={styles.view_bar}>
+                <button className={styles.view_bar_button + ' ' + (viewSelected === 'gallery' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('gallery')}>Gallery</button>
+                <button className={styles.view_bar_button + ' ' + (viewSelected === 'table' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('table')}>Table</button>
+            </div>
             <Suspense
                 fallback={<p>Loading merchandise...</p>}
             >
@@ -81,36 +90,43 @@ export default function AdminMerch() {
 
                         const [draggedIndex, setDraggedIndex] = useState(null);
 
-                        return (
-                        <>
-                            <h2>Visible Merch</h2>
-                            <UniformGrid gridGap={10}>
-                                {visibleMerch.map((item, index) => (
-                                    <UniformGrid.DraggableItem key={item.id} index={index} items={visibleMerch} setItems={setVisibleMerch} draggedIndex={draggedIndex} setDraggedIndex={setDraggedIndex}>
-                                        <MerchItem item={item} imageDir={IMAGE_DIR}/>
-                                    </UniformGrid.DraggableItem>
-                                ))}
-                            </UniformGrid>
+                        if(viewSelected === 'gallery') {
+                            return (
+                            <> 
+                                <h2>Visible Merch</h2>
+                                <UniformGrid gridGap={10}>
+                                    {visibleMerch.map((item, index) => (
+                                        <UniformGrid.DraggableItem key={item.id} index={index} items={visibleMerch} setItems={setVisibleMerch} draggedIndex={draggedIndex} setDraggedIndex={setDraggedIndex}>
+                                            <MerchItem item={item} imageDir={IMAGE_DIR} setCurrentItem={(item) => navigate(`/admin/merch/${item.id}`)}/>
+                                            <button className={styles.edit_button}>EDIT</button>
+                                        </UniformGrid.DraggableItem>
+                                    ))}
+                                </UniformGrid>
 
-                            {hiddenMerch.length > 0 && <h2>Hidden Merch</h2>}
-                            <UniformGrid gridGap={10}>
-                                {hiddenMerch.map(item => (
-                                    <UniformGrid.Item key={item.id}>
-                                        <MerchItem item={item} imageDir={IMAGE_DIR}/>
-                                    </UniformGrid.Item>
-                                ))}
-                            </UniformGrid>
+                                {hiddenMerch.length > 0 && <h2>Hidden Merch</h2>}
+                                <UniformGrid gridGap={10}>
+                                    {hiddenMerch.map(item => (
+                                        <UniformGrid.Item key={item.id}>
+                                            <MerchItem item={item} imageDir={IMAGE_DIR}/>
+                                        </UniformGrid.Item>
+                                    ))}
+                                </UniformGrid>
 
-                            {unapprovedMerch.length > 0 && <h2>Pending Approval</h2>}
-                            <UniformGrid gridGap={10}>
-                                {unapprovedMerch.map(item => (
-                                    <UniformGrid.Item key={item.id}>
-                                        <MerchItem item={item} imageDir={IMAGE_DIR}/>
-                                    </UniformGrid.Item>
-                                ))}
-                            </UniformGrid>
-                        </>
-                        );
+                                {unapprovedMerch.length > 0 && <h2>Pending Approval</h2>}
+                                <UniformGrid gridGap={10}>
+                                    {unapprovedMerch.map(item => (
+                                        <UniformGrid.Item key={item.id}>
+                                            <MerchItem item={item} imageDir={IMAGE_DIR}/>
+                                        </UniformGrid.Item>
+                                    ))}
+                                </UniformGrid>
+                                
+                            </>
+                            );
+                        }
+                        else {
+                            return (<p>TableView</p>);
+                        }
                     }}
                 </Await>
             </Suspense>

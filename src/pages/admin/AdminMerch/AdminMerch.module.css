@@ -1,0 +1,51 @@
+.view_bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 2px solid rgb(45, 45, 45);
+    margin-bottom: 10px;
+}
+
+.view_bar_button {
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    border: none;
+    padding: 7px 15px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.view_bar button:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.view_bar_button_selected {
+    color: #e7bc00;
+}
+
+.shadow_item {
+    transition: box-shadow 0.3s, opacity 0.1s;
+    box-shadow: 0 0 0 transparent;
+}
+
+.shadow_item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+
+.edit_button {
+    width: 100%;
+    padding: 10px 10px;
+    margin-bottom: 1rem;
+    background-color: #ffd900;
+    color: rgb(45, 45, 45);
+    border: 5px solid transparent;
+    border-radius: 5px; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit_button:hover {
+    background-color: #e7bc00;
+}
