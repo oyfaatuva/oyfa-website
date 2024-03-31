@@ -1,5 +1,5 @@
 import { Suspense, useState } from "react";
-import { Await, useLoaderData, useNavigate, useParams } from "react-router-dom";
+import { Await, Outlet, useLoaderData, useNavigate } from "react-router-dom";
 import axiosClient from "../../../utils/axiosClient";
 import { MerchItem } from "../../merch/Components/MerchGallery";
 import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
@@ -11,7 +11,6 @@ const IMAGE_DIR = 'images/merch/'
 export default function AdminMerch() {
     const navigate = useNavigate();
     const loaderData = useLoaderData();
-    const { itemId } = useParams();
     const [viewSelected, setViewSelected] = useState('gallery');
 
     const [formData, setFormData] = useState({
@@ -99,7 +98,7 @@ export default function AdminMerch() {
                                         <UniformGrid.DraggableItem key={item.id} index={index} items={visibleMerch} setItems={setVisibleMerch} draggedIndex={draggedIndex} setDraggedIndex={setDraggedIndex}>
                                             <MerchItem item={item} imageDir={IMAGE_DIR}/>
                                             <div className={styles.edit_button_container}>
-                                                <button className={styles.edit_button} onClick={(item) => navigate(`/admin/merch/${item.id}`)}>EDIT</button>
+                                                <button className={styles.edit_button} onClick={() => navigate(`/admin/merch/${item.id}`)}>EDIT</button>
                                             </div>
                                         </UniformGrid.DraggableItem>
                                     ))}
@@ -141,6 +140,8 @@ export default function AdminMerch() {
                 <textarea  type="text" id="description" name="description" value={formData.description} onChange={handleChange} placeholder="Descrition" className="form_input" maxLength="600" required/>
                 <button type="submit" className="button">CREATE</button>
             </form>
+
+            <Outlet/>
         </>
     );
 }
