@@ -30,16 +30,21 @@
 
 .shadow_item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  }
+}
 
-.edit_button {
-    width: 100%;
-    padding: 10px 10px;
+.edit_button_container {
+    display: flex;
+    justify-content: center;
+}
+
+.edit_button_container button {
+    width: 40%;
+    padding: 10px 0px;
     margin-bottom: 1rem;
     background-color: #ffd900;
     color: rgb(45, 45, 45);
-    border: 5px solid transparent;
-    border-radius: 5px; 
+    border: 0px;
+    border-radius: 15px; 
     text-align: center;
     text-decoration: none;
     cursor: pointer;

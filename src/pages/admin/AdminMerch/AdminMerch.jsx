@@ -97,8 +97,10 @@ export default function AdminMerch() {
                                 <UniformGrid gridGap={10}>
                                     {visibleMerch.map((item, index) => (
                                         <UniformGrid.DraggableItem key={item.id} index={index} items={visibleMerch} setItems={setVisibleMerch} draggedIndex={draggedIndex} setDraggedIndex={setDraggedIndex}>
-                                            <MerchItem item={item} imageDir={IMAGE_DIR} setCurrentItem={(item) => navigate(`/admin/merch/${item.id}`)}/>
-                                            <button className={styles.edit_button}>EDIT</button>
+                                            <MerchItem item={item} imageDir={IMAGE_DIR}/>
+                                            <div className={styles.edit_button_container}>
+                                                <button className={styles.edit_button} onClick={(item) => navigate(`/admin/merch/${item.id}`)}>EDIT</button>
+                                            </div>
                                         </UniformGrid.DraggableItem>
                                     ))}
                                 </UniformGrid>
