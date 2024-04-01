@@ -18,9 +18,11 @@ export default function AdminLayout() {
 
     useEffect(() => {
         // TODO: add message when logged state changes and logged off
-        validateToken();
         if (!token) 
             navigate('/admin/login', {replace: true})
+        else {
+            validateToken();
+        }
     }, [token])
     
     return(      
