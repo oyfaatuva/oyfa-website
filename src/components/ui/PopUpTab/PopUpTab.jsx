@@ -3,10 +3,11 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
-import styles from './WideModal.module.css'; 
+import styles from './PopUpTab.module.css'; 
 
 export default function WideModal({ open, closeLink, children }) {
     const navigate = useNavigate();
+    document.body.style.overflow = 'hidden';
 
     const modalVariants = {
         hidden: {

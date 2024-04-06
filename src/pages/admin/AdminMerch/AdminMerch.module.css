@@ -1,9 +1,13 @@
+:root{
+    --view-bar-height: 45px;
+}
+
 .view_bar {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border-bottom: 2px solid rgb(45, 45, 45);
-    margin-bottom: 10px;
+    height: var(--view-bar-height);
+    border-bottom: 2px solid rgb(93, 93, 93);
 }
 
 .view_bar_button {
@@ -21,6 +25,16 @@
 
 .view_bar_button_selected {
     color: #e7bc00;
+}
+
+.content {
+    position: relative;
+}
+
+.merch_container {
+    height: 100vh;
+    position: static;
+    overflow-y: auto;
 }
 
 .shadow_item {
