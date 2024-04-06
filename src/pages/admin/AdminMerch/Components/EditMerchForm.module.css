@@ -1,0 +1,180 @@
+.popup_container {
+    display: flex;
+    width: clamp(200px, 100%, 1300px);
+}
+
+.gallery_column {
+    flex: 0 0 50%;
+    max-width: 550px;
+    overflow-x: hidden;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.gallery_images_column {
+    flex: 0 0 10%;
+    display: flex;
+    flex-direction: column;
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.gallery_images_container {
+    position: relative;
+    margin: 5px;
+    margin-top: 0;
+    padding-top: 80%;
+    cursor: pointer;
+}
+
+.gallery_images_container img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    filter: blur(.3px);
+}
+
+.image_container {
+    position: relative;
+    width: 80%;
+    padding-top: 80%;
+    margin-bottom: 5px;
+}
+
+.image_container img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_image_slider {
+    width: 80%;
+}
+
+.slider_image_container {
+    position: relative;
+    padding-top: 100%;
+    margin-bottom: 5px;
+}
+
+.slider_image_container img {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.info_column {
+    flex: 1;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: auto;
+}
+
+.info_column p {
+    word-break: break-word;
+}
+
+.info_container {
+    height: auto;
+    border-bottom: 1px solid gray;
+}
+
+.info_name {
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.info_category {
+    font-size: 1.4rem;
+}
+
+.info_description {
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info_price {
+    margin-top: 25px;
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width : 1000px) {
+    .popup_tab {
+        overflow-y: auto;
+    }
+
+    .popup_container {
+        justify-content: flex-start;
+    }
+
+    .close {
+        top: .8rem;
+        right: .8rem;
+    }
+
+    .gallery_column {
+        overflow-x: visible;   
+        max-width: none;
+        flex-basis: auto;
+    }
+
+    .gallery {
+        margin: 2%;
+    }
+
+    .info_column {
+        overflow-y: visible;
+    }
+
+    .popup_container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .info_name { font-size: 1.8rem;}
+    .info_category { font-size: 1.2rem;}
+    .info_description { font-size: 1rem; }
+
+    .gallery_images_column {
+        display: none;
+    }
+
+    .main_image_slider {
+        width: 100%;
+    }
+
+    .image_container {
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .info_column {
+        padding: 10px;
+    }
+}

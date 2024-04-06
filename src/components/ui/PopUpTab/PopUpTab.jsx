@@ -41,8 +41,9 @@ export default function WideModal({ open, closeLink, children }) {
             mode="wait"
         >
             {open &&
+            <>
                 <motion.div
-                    className={styles.modal}
+                    className={styles.popup}
                     variants={modalVariants}
                     initial="hidden"
                     animate="visible"
@@ -51,6 +52,8 @@ export default function WideModal({ open, closeLink, children }) {
                     <div className={styles.close} onClick={() => navigate(closeLink)}><FontAwesomeIcon icon={faXmark} /></div>
                     {children}
                 </motion.div>
+                <motion.div className={styles.dark_background} animate={{ opacity: '70%' }} exit={{ opacity: 0 }}/>
+                </>
             }
         </AnimatePresence>
     );

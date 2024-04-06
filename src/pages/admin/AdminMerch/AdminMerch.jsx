@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useState } from "react";
 import { Await, Outlet, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { MerchItem } from "../../merch/Components/MerchGallery";
 import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
@@ -27,30 +27,31 @@ export default function AdminMerch() {
                     }
                 >
                     {(merch) => {
-                        const [visibleMerch, setVisibleMerch] = useState(merch.filter(merchItem => merchItem.approved === 1));
+                        const originalMerchOrder = merch.filter(merchItem => merchItem.approved === 1);
+                        const [visibleMerch, setVisibleMerch] = useState(originalMerchOrder);
                         const unapprovedMerch = merch.filter(merchItem => merchItem.approved !== 1);
-
                         const [draggedIndex, setDraggedIndex] = useState(null);
 
-                        if(viewSelected === 'gallery') {
-                            return (
-                            <> 
-                                <WideModal open={itemId != undefined} closeLink={'/admin/merch'}>
-                                    <Outlet context={[merch.find(item => item.id == itemId)]}/>
-                                </WideModal>
+                        return (
+                        <> 
+                            <WideModal open={itemId != undefined} closeLink={'/admin/merch'}>
+                                <Outlet context={[merch.find(item => item.id == itemId), IMAGE_DIR]}/>
+                            </WideModal>
 
+                            <div className={styles.view_bar}>
+                                <button className={styles.view_bar_button + ' ' + (viewSelected === 'gallery' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('gallery')}>Gallery</button>
+                                <button className={styles.view_bar_button + ' ' + (viewSelected === 'table' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('table')}>Table</button>
+                            </div>
+
+                            {viewSelected === 'gallery' &&
                                 <div className={styles.merch_container}>
-                                    <div className={styles.view_bar}>
-                                        <button className={styles.view_bar_button + ' ' + (viewSelected === 'gallery' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('gallery')}>Gallery</button>
-                                        <button className={styles.view_bar_button + ' ' + (viewSelected === 'table' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('table')}>Table</button>
-                                    </div>
                                     <h2>Approved Merch</h2>
                                     <UniformGrid gridGap={10}>
                                         {visibleMerch.map((item, index) => (
                                             <UniformGrid.DraggableItem key={item.id} index={index} items={visibleMerch} setItems={setVisibleMerch} draggedIndex={draggedIndex} setDraggedIndex={setDraggedIndex}>
                                                 <MerchItem item={item} imageDir={IMAGE_DIR} setCurrentItem={() => {return}}/>
                                                 <div className={styles.edit_button_container}>
-                                                    <button className={styles.edit_button} onClick={() => navigate(`/admin/merch/${item.id}`)}>EDIT</button>
+                                                    <button className={styles.button} onClick={() => navigate(`/admin/merch/${item.id}`)}>EDIT</button>
                                                 </div>
                                             </UniformGrid.DraggableItem>
                                         ))}
@@ -63,16 +64,21 @@ export default function AdminMerch() {
                                             </UniformGrid.Item>
                                         ))}
                                     </UniformGrid>
+                                    
+                                    {JSON.stringify(originalMerchOrder) !== JSON.stringify(visibleMerch) &&
+                                        <button className={styles.update_order_button + " " + styles.button}>
+                                            Update Order
+                                        </button>
+                                    }
                                     <CreateMerchForm/>
                                 </div>
-                            </>
-                            );
-                        }
-                        else {
-                            return (
-                                <p>TableView</p>
-                            );
-                        }
+                            }
+
+                            {viewSelected === 'table' && <> 
+                            <p>TableView</p>
+                            </>}
+                        </>
+                        );
                     }}
                 </Await>
             </Suspense>
