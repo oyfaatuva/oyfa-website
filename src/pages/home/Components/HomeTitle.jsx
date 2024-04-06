@@ -25,6 +25,12 @@ export default class HomeTitle extends Component{
         
         content.push(
             {
+                imgSrc: imgDir + 'lerrbear.JPG',
+                captionHeader: 'Lerrbear',
+                captionPara: 'Lerrbear',
+                link: '/public/images/home/lerrbear.JPG'
+            },
+            {
                 imgSrc: imgDir + '36th_BnC.jpg',
                 captionHeader: '36th Board and Council',
                 captionPara: 'Meet our leadership team',
