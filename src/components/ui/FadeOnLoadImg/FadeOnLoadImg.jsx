@@ -1,26 +1,27 @@
-import { useEffect, useState } from "react";
-import styles from "./FadeOnLoadImg.module.css"
+import { useState } from "react";
+import { motion } from 'framer-motion';
 
 export default function FadeOnLoadImg({ imgPath, alt, className, style }) {   
     const [loaded, setImageLoaded] = useState(false);
 
-    useEffect(() => {
-        const image = new Image();
-        image.onload = () => {
-          setImageLoaded(true);
-        };
-        image.src = imgPath;
-    
-        return () => {
-          image.onload = null;
-        };
-      }, []);
+    const imageLoaded = () => {
+        setImageLoaded(true);
+    };
 
     return (
-        <>
-        {loaded && (
-            <img src={imgPath} alt={alt} className={styles.fade_in_image + ' ' + (className || '')} style={style}/>
-        )}
-        </>  
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: loaded ? 1 : 0
+          }}
+          transition={
+            { opacity: { delay: 0.5, duration: 0.4 } }
+          }
+          onLoad={imageLoaded}
+          className={className}
+          style={style}
+          src={imgPath}
+          alt={alt}
+        />
     );
 }
