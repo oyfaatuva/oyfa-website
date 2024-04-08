@@ -31,7 +31,7 @@ export default function AdminLayout() {
     
     return(      
         <div className={styles.app_container}>
-            <Sidebar sidebarTabs={ADMIN_TABS}/>
+            <Sidebar logoImgSrc={'/images/_common/Navbar_OYFA_Logo.png'} title={'ADMIN'} sidebarTabs={ADMIN_TABS}/>
             <div className={styles.main_content}>
                 <Outlet/>
             </div>

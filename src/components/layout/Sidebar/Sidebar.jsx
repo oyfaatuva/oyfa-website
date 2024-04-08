@@ -1,25 +1,34 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faShirt, faArrowRightFromBracket, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRightFromBracket, faBars } from '@fortawesome/free-solid-svg-icons'
+import { useAuth } from "../../AuthContext";
 
 import styles from './Sidebar.module.css' 
 
-export default function Sidebar({ logoImgSrc, sidebarTabs }) {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Sidebar({ logoImgSrc, title, sidebarTabs }) {
+    const { logout } = useAuth();
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
 
     return (
         <>
-            <nav className={styles.sidebar + " " + (isMenuOpen ? "" : styles.hide)}> 
+            <nav className={styles.sidebar} style={isMenuOpen ? {} : {width: '57px'}}> 
                 <h2 className={styles.navbar_title}>
-                    <img className={styles.logo} src="/images/_common/Navbar_OYFA_Logo.png"/>
-                    ADMIN
-                    <button id="nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <img className={styles.logo} src={logoImgSrc} style={isMenuOpen ? {} : {opacity: '0'}}/>
+                    <span style={isMenuOpen ? {} : {opacity: '0'}}>{title}</span>
+                    <button className={styles.toggle} id="nav-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                         <FontAwesomeIcon icon={faBars} />
                     </button>
                 </h2>
                 <SideBarLinks sideBarLinksDict={sidebarTabs} isMenuOpen={isMenuOpen}/>
-                <FontAwesomeIcon icon={faArrowRightFromBracket}/>
+                <div className={styles.bottom_section}>
+                    <button className={styles.logout_button} onClick={() => logout()} style={isMenuOpen ? {} : {paddingLeft: '0.9rem'}}>
+                        <FontAwesomeIcon icon={faArrowRightFromBracket}/>
+                        <span style={isMenuOpen ? {} : {opacity: '0'}}>
+                            LOG OUT
+                        </span>
+                    </button>
+                </div>
             </nav>
         </>
     );
@@ -27,7 +36,7 @@ export default function Sidebar({ logoImgSrc, sidebarTabs }) {
 
 function SideBarLinks({ sideBarLinksDict, isMenuOpen }) {
     return (
-        <ul className={styles.sidebar_list}>
+        <ul className={styles.sidebar_list} style={isMenuOpen ? {} : {paddingLeft: '0.2rem'}}>
             {Object.keys(sideBarLinksDict).map((componentKey) => (
                 <SideBarLink key={componentKey} {...sideBarLinksDict[componentKey]} isMenuOpen={isMenuOpen}/>
             ))}
@@ -40,9 +49,9 @@ function SideBarLink( { name, icon, url, isMenuOpen } ) {
         <li>
             <NavLink to={url.toLowerCase()} className={styles.nav_link}>
                 <FontAwesomeIcon icon={icon}/>
-                <p className={( isMenuOpen ? "" : styles.nav_link_text_hidden)}>
+                <span style={isMenuOpen ? {} : {opacity: '0'}}>
                     {name.toUpperCase()}
-                </p>
+                </span>
             </NavLink>
         </li>
     )

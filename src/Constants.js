@@ -375,3 +375,10 @@ export const FILES =
 ]
  
 export const B_C_YOUTUBE_EMBED_ID_35 = 'lRoajvsa004'
+
+import { faHouse, faShirt } from "@fortawesome/free-solid-svg-icons";
+
+export const ADMIN_TABS = {
+    dashboard: { name: "Dashboard", icon: faHouse, url: "/admin/dashboard" },
+    merch: { name: "Merch", icon: faShirt, url: "/admin/merch" },
+};
