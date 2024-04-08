@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+import useScrollPosition from "/src/hooks/useScrollPosition";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
-import { useMediaQuery } from "react-responsive";
+
 import classes from "./Navbar.module.css";
-import useScrollPosition from "/src/hooks/useScrollPosition";
 
 /**
  * USAGE GUIDE: to be made... I am lazy

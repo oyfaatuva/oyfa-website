@@ -9,15 +9,31 @@
     color: #fff;
 }
 
-.sidebar ul {
+.navbar_title {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+}
+
+.logo {
+    width: 40px;
+    margin: 8px 10px 10px 20px;
+}
+
+.sidebar_list {
     list-style-type: none;
     padding-left: 1rem;
 }
 
-.sidebar li {
+.sidebar_list li {
+    margin: 20px 10px;
     font-family: 'Poppins';
     font-weight: 200;
     font-size: 1.5rem;
+}
+
+.sidebar_list svg {
+    margin-right: 10px;
 }
 
 .main_content {

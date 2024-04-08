@@ -20,15 +20,14 @@ export default class HomeTitle extends Component{
 
         /* Carousel Variables */
         const timeBeforeSwitch = 5000 //time in milliseconds
-        const content = [] //push more content in the following format to automatically add new slides as you see fit
         const imgDir = './images/home/' //images for this file are in public/images/home
         
-        content.push(
+        const content = [
             {
                 imgSrc: imgDir + 'lerrbear.JPG',
                 captionHeader: 'Lerrbear',
                 captionPara: 'Lerrbear',
-                link: '/public/images/home/lerrbear.JPG'
+                link: '/images/home/lerrbear.JPG'
             },
             {
                 imgSrc: imgDir + '36th_BnC.jpg',
@@ -67,7 +66,7 @@ export default class HomeTitle extends Component{
                 link: 'https://www.youtube.com/watch?v=zWFKvAuphp8&ab_channel=OYFAatUVA'
             },
             //...continue as you see fit
-        ) 
+        ]
 
         return(
             <>

@@ -1,0 +1,57 @@
+:root {
+    --navbar-height: 3.5rem;
+    --text-color: white;
+    --text-highlight-color: hsl(47, 88%, 62%);
+
+    --sidebar-color: #333;
+    --buttons-color: white;
+
+    --text-font: "Poppins", sans-serif;
+    --font-size: 1.3rem;
+    --text-font-weight: 200;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.hide {
+    width: 80px;
+}
+
+.logo {
+    width: 40px;
+    margin: 8px 10px 10px 20px;
+}
+
+.sidebar_list {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.sidebar_list li {
+    margin: 20px 10px;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+}
+
+.sidebar_list svg {
+    margin-right: 10px;
+}
+
+.nav_link {
+    color: var(--text-color);
+    font-weight: var(--text-font-weight);
+    transition: color 0.4s, opacity 0.5s ease-in-out;
+}
+
+.nav_link_text_hidden {
+    opacity: 0;
+}
+   
+.nav_link:hover {
+    color: var(--text-highlight-color);
+}

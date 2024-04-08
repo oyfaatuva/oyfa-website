@@ -49,7 +49,7 @@ export default function WideModal({ open, closeLink, children }) {
                     animate="visible"
                     exit="exit"
                 >
-                    <div className={styles.close} onClick={() => navigate(closeLink)}><FontAwesomeIcon icon={faXmark} /></div>
+                    <div className={styles.close} onClick={() => navigate(closeLink)}><FontAwesomeIcon icon={faXmark}/></div>
                     {children}
                 </motion.div>
                 <motion.div className={styles.dark_background} animate={{ opacity: '70%' }} exit={{ opacity: 0 }}/>

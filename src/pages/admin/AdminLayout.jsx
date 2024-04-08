@@ -3,6 +3,10 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../../components/AuthContext";
 import axiosClient from './../../utils/axiosClient';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse, faShirt, faArrowRightFromBracket, faBars } from '@fortawesome/free-solid-svg-icons'
+import Sidebar from "../../components/layout/Sidebar/Sidebar";
+import { ADMIN_TABS } from "../../Constants";
 
 import styles from './AdminLayout.module.css'
 
@@ -27,13 +31,7 @@ export default function AdminLayout() {
     
     return(      
         <div className={styles.app_container}>
-            <div className={styles.sidebar}>
-                <h2>ADMIN PAGE</h2>
-                <ul>
-                    <li><Link to="/admin/dashboard">DASHBOARD</Link></li>
-                    <li><Link to="/admin/merch">MERCH</Link></li>
-                </ul>
-            </div>
+            <Sidebar sidebarTabs={ADMIN_TABS}/>
             <div className={styles.main_content}>
                 <Outlet/>
             </div>
