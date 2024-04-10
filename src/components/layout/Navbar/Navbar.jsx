@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import useScrollPosition from "/src/hooks/useScrollPosition";
@@ -13,10 +13,12 @@ import classes from "./Navbar.module.css";
 
 const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile"
 
-export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transitionScrollPositions, leaveGap = true }) {
+export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transitionScrollPositions, leaveGap = true, hide = false }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [hidden, setHidden] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH });
     const scrollPosition = useScrollPosition()
+    const [oldScrollPosition, setOldScrollPosition] = useState(0);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -25,11 +27,20 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
     const closeMobileMenu = () => {
         if (isMobile) { setIsMenuOpen(false); }
     };
+    
+    useEffect(() => {
+        if(scrollPosition < oldScrollPosition) {
+            setHidden(false);
+        } else if (scrollPosition > 50 && scrollPosition > oldScrollPosition) {
+            setHidden(true);
+        }
+        setOldScrollPosition(scrollPosition);
+    }, [scrollPosition]);
 
     return (
         <>
             {!useTransition && leaveGap && <div className={classes.header_space}/>}
-            <header className={classes.header}>
+            <header className={classes.header} style={hidden ? {transform: 'translateY(-60px)'} : {}}>
                 <nav className={classes.nav + ` ${useTransition ? 
                         classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')
                         : 
