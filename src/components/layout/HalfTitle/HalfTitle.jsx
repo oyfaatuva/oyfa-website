@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Vignette from '../../ui/Vignette/Vignette';
 import FadeOnLoadImg from '../../ui/FadeOnLoadImg/FadeOnLoadImg';
-import AppearingDiv from '../../ui/AppearingText/AppearingDiv';
+import AppearingDiv from '../../ui/AppearingDiv/AppearingDiv';
 
 import './HalfTitle.css'
 
@@ -38,9 +38,8 @@ export default function HalfTitle ({header, imgSrc, brightness = 100, position =
                 <h1 className ='half_title_heading'>{header}</h1>
             </AppearingDiv>
             <Link to={captionLink} target={newTab ? '_blank' : ''}>
-                <AppearingDiv><p className='half_title_caption'>{caption}</p></AppearingDiv>
+                <AppearingDiv className='half_title_caption'><p>{caption}</p></AppearingDiv>
             </Link>
-            
         </div>
     )
 }

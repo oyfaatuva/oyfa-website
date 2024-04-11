@@ -40,7 +40,7 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
     return (
         <>
             {!useTransition && leaveGap && <div className={classes.header_space}/>}
-            <header className={classes.header} style={hidden ? {transform: 'translateY(-60px)'} : {}}>
+            <header className={classes.header} style={(hide && hidden) ? {transform: 'translateY(-60px)'} : {}}>
                 <nav className={classes.nav + ` ${useTransition ? 
                         classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')
                         : 

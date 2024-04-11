@@ -2,7 +2,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import Home from './pages/home/Components/Home'
+import Home from './pages/home/Home'
 import About from './pages/about/Components/About'
 import Events from './pages/events/Components/Events'
 import Links from './pages/links/Components/Links'
@@ -20,10 +20,7 @@ import AdminMerch from './pages/admin/AdminMerch/AdminMerch';
 import EditMerchForm from './pages/admin/AdminMerch/Components/EditMerchForm';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
-** set the element to the main component of your page 
-**
-** Make sure you use React <Link> or useNavigate() instead of anchor <a href=''> for navigating between pages.
-** <a> triggers a refresh which can possibly reset any data we are potentially passing between pages */
+** set the element to the main component of your page  */
 
 const router = createBrowserRouter(
     createRoutesFromElements(

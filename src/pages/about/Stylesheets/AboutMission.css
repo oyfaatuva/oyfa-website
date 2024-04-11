@@ -3,20 +3,18 @@
 }
 
 .mission_subheading{
-    font-family: 'Playfair Display';
+    font-family: 'Poppins';
     margin-bottom: 3%;
     font-size: 6em;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .mission_text{
-    font-family: 'Open Sans';
     margin-bottom: 1%;
     font-size: 2.5vh;
 }
 
 .mission_img{
-    /*width: 90%;*/
     height: 55vh;
     min-width: 35vh;
     max-width: 40vh;
@@ -25,7 +23,6 @@
 }
 
 .mission_img_caption{
-    font-family: 'Open Sans';
     margin-top: 3%;
     margin-bottom: 1%;
     font-size: 1.2em;

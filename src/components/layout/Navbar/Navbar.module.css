@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out 0.1s;
 }
 
 .header_space {
