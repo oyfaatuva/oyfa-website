@@ -48,10 +48,6 @@
     aspect-ratio: 1 / 1;
 }
 
-.grid_item:nth-child(2) { transition-delay: .8s; }
-.grid_item:nth-child(3) { transition-delay: 1.2s; }
-.grid_item:nth-child(4) { transition-delay: 1.6s; }
-
 .grid_item svg {
     color: white;
     height: 5rem;

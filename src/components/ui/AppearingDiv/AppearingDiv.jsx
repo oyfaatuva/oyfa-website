@@ -7,7 +7,7 @@ export default function AppearingDiv ({ children, className, style, translateMea
 
     return (    
         <div className={className} ref={ref} style={{
-            transform: isInView ? "none" : `translate${translateAxis}(${translateMeasurement}px)`,
+            transform: isInView ? "none" : `translate${translateAxis}(${translateMeasurement}px)`, WebkitTransform: `translate${translateAxis}(${translateMeasurement}px)`,
             opacity: isInView ? 1 : 0,
             transition: `opacity ${duration}s ease-in-out ${delay}s, transform ${duration}s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
             ...style

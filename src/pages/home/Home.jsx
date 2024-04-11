@@ -41,25 +41,25 @@ export default function Home () {
                     THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS
                 </div>
                 <AppearingDiv className='hello_photo_box2'/>
-                <AppearingDiv className='hello_photo' translateAxis='X' translateMeasurement={350}>
+                <AppearingDiv className='hello_photo' translateAxis='X' translateMeasurement={350} delay={1}>
                     <img src='/images/home/Intro_Culturefest_Panorama.jpeg'/>
                 </AppearingDiv>
             </div>
 
             <div className='link_gallery'>
-                <div className='link_gallery_column'>
+                <Link to='/events' className='link_gallery_column'>
                     <div className='link_gallery_photo_overlay'/>
-                    <AppearingDiv><h1 className='link_gallery_top_title'>Events</h1></AppearingDiv>
+                    <AppearingDiv delay={0.7} margin='0px 100px -480px 0px' className='link_gallery_title'><h1 className='link_gallery_top_title'>Events</h1></AppearingDiv>
                     <img className='link_gallery_photo' src='/images/home/Events.jpg'/>
-                </div>
-                <div className='link_gallery_column'>
+                </Link>
+                <Link to='/leadership' className='link_gallery_column'>
                     <div className='link_gallery_photo_overlay'/>
-                    <AppearingDiv><h1 className='link_gallery_bottom_title'>Leadership</h1></AppearingDiv>
+                    <AppearingDiv delay={0.9} margin='0px 100px -20px 0px' className='link_gallery_title'><h1 className='link_gallery_bottom_title'>Leadership</h1></AppearingDiv>
                     <img className='link_gallery_photo_middle' src='/images/home/Leadership.jpg'/>
-                </div>
+                </Link>
                 <a href='https://uvaoyfa.myportfolio.com/oyfa-2023-2024' className='link_gallery_column'>
                     <div className='link_gallery_photo_overlay'/>
-                    <AppearingDiv><h1 className='link_gallery_top_title'>Photos</h1></AppearingDiv>
+                    <AppearingDiv delay={1.1} margin='0px 100px -480px 0px' className='link_gallery_title'><h1 className='link_gallery_top_title'>Photos</h1></AppearingDiv>
                     <img className='link_gallery_photo' src='/images/home/Photos.jpg'/>
                 </a>
             </div>
