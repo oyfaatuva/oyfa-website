@@ -42,8 +42,9 @@ const router = createBrowserRouter(
                 <Route index element={<AdminDashboard/>}/> 
                 <Route path='dashboard' element={<AdminDashboard/>}/>
                 <Route path='merch' element={<AdminMerch/>}
-                    loader={merchLoader}>
-                        <Route path=':itemId' element={<EditMerchForm/>}/>
+                    loader={merchLoader}
+                >
+                    <Route path=':itemId' element={<EditMerchForm/>}/>
                 </Route> 
             </Route>
             <Route path='*' element={<NotFound/>}/>

@@ -26,9 +26,16 @@ export default function HomeTitle () {
     
     const content = [
         {
+            imgSrc: imgDir + 'yatrick.JPG',
+            captionHeader: 'Kimi no Na wa',
+            captionPara: 'April 13th, 2-5pm MLK Performing Arts Center @ Charlottesville High School, Barrio Fiesta 2024 - Journey: Paglalakbay',
+            link: 'https://www.youtube.com/watch?v=h0Dh1k9tciY',
+            objectPosition: 'center 30%'
+        },
+        {
             imgSrc: imgDir + 'lerrbear.JPG',
             captionHeader: 'Lerrbear',
-            captionPara: 'Lerrbear',
+            captionPara: 'April 13th, 2-5pm MLK Performing Arts Center @ Charlottesville High School, Barrio Fiesta 2024 - Journey: Paglalakbay',
             link: '/images/home/lerrbear.JPG'
         },
         {
@@ -113,6 +120,7 @@ function TitleCarousel ({timeBeforeSwitch, content, isMobile}) {
                         captionPara={item.captionPara}
                         link={item.link}
                         brightness={item.brightness}
+                        objectPosition={item.objectPosition}
                         isMobile={isMobile}
                     />
                 </Carousel.Item>
@@ -121,14 +129,14 @@ function TitleCarousel ({timeBeforeSwitch, content, isMobile}) {
     )
 }
 
-function CarouselContent ( {index, imgSrc, captionHeader, captionPara, link, brightness, isMobile } ) {
+function CarouselContent ( {index, imgSrc, captionHeader, captionPara, link, brightness, objectPosition, isMobile} ) {
     return(
         <>
             <div className = 'title_img_container'>
                 {index === 0 ?
-                    <FadeOnLoadImg imgPath={imgSrc}/>
+                    <FadeOnLoadImg imgPath={imgSrc} style={{filter: `brightness(${brightness}%)`, objectPosition: `${objectPosition}`}}/>
                     :
-                    <img src={imgSrc} style={{filter: `brightness(${brightness}%)`}}/>
+                    <img src={imgSrc} style={{filter: `brightness(${brightness}%)`, objectPosition: `${objectPosition}`}}/>
                 }
                 <Vignette blur={250} radius={isMobile ? 120 : 180} opacity={0.62}/>
             </div>

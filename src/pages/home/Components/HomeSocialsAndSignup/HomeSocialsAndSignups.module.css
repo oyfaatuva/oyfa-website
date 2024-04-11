@@ -1,0 +1,203 @@
+.container {
+    display: flex;
+    padding: 0px 30px;
+    background-color: rgb(20, 20, 27);
+    height: 40vw;
+    max-height: 600px;
+}
+
+.social_media_container {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.header {
+    margin-top: 2.4rem;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 3.8rem;
+    letter-spacing: -0.2rem;
+}
+
+.social_media_container h1 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.grid_container {
+    width: 70%;
+    max-width: 400px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 10px), 1fr));
+    gap: 10px; 
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    aspect-ratio: 1 / 1;
+}
+
+.grid_item:nth-child(2) { transition-delay: .8s; }
+.grid_item:nth-child(3) { transition-delay: 1.2s; }
+.grid_item:nth-child(4) { transition-delay: 1.6s; }
+
+.grid_item svg {
+    color: white;
+    height: 5rem;
+}
+
+.wio_container {
+    flex: 1;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wio_header {
+    margin-top: 1.3rem;
+    width: 100%;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 3.8rem;
+    letter-spacing: -0.2rem;
+}
+
+.wio_logo {
+    position: absolute;
+    bottom: 8%;
+    right: 0;
+    height: 60%;
+    width: 40%;
+    object-fit: contain;
+    max-width: 360px;
+}
+
+.wio_form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 7%;
+    height: 60%;
+    width: 55%;
+}
+
+.wio_input_container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.wio_input_container:nth-child(3) input {
+    flex: 1;
+    border-bottom: none;
+    margin-left: 0;
+}
+
+.wio_input {
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    padding: 7px;
+    padding-left: 3px;
+    margin-left: 8px;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 1px white solid;
+    outline: none;
+}
+
+.wio_input:-webkit-autofill,
+.wio_input:-webkit-autofill:hover,
+.wio_input:-webkit-autofill:focus,
+.wio_input:-webkit-autofill:active {
+    transition: background-color 9999s ease-in-out 0s;
+    -webkit-text-fill-color: #fff;
+}
+
+.wio_input::placeholder {
+    color: white;
+}
+
+.wio_input_button_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 8px;
+    border-bottom: 1px white solid;
+}
+
+.wio_button {
+    background: transparent;
+    color: white;
+    border: none;
+    height: 40px;
+}
+
+@media (max-width: 1700px) {
+    .header {
+        font-size: 3.3rem;
+    }
+}
+
+@media (max-width: 1480px) {
+    .header {
+        font-size: 2.9rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .header {
+        font-size: 2.1rem;
+        letter-spacing: -0.1rem;
+    }
+
+    .social_media_container h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        font-size: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 900px;
+        max-height: none;
+    }
+
+    .social_media_container {
+        padding: 0;
+    }
+
+    .grid_container {
+        width: 90%;
+    }
+
+    .grid_item svg {
+        height: 40%;
+    }
+
+    .wio_input {
+        font-size: 2.7vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .wio_input {
+        font-size: 1rem;
+    }
+}

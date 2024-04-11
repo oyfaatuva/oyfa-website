@@ -17,7 +17,7 @@ export function MerchItem({ item, setCurrentItem = null, imageDir }) {
         <div className={styles.merch_container} style={{ cursor: 'pointer' }} onClick={() => setCurrentItem(item)}>
             <div className={styles.merch_img_container}>
                 {item.images && item.images.length > 0  && 
-                <img src={imageDir + item.images[0]}/>}
+                <img src={imageDir + item.images[0]} draggable={false}/>}
             </div>
             <p className={styles.merch_category}>{item.category.toUpperCase()}</p>
             <p className={styles.merch_name}>{item.name}</p>

@@ -1,8 +1,9 @@
 .testimonies_parent{
-    background-color: #ffb300;
+    background-color: #eaab00;
     display: flex;
     justify-content: center;
     height: 100vh;
+    min-height: 820px;
 }
 
 .testimonies_margins{
@@ -14,31 +15,31 @@
 .testimonies_h1{
     margin-bottom: 3%;
     font-weight: bold;
-    font-family: 'Playfair Display';
-    font-size:8vh;
+    font-family: 'Poppins';
+    font-size: 3rem;
     color: var(--off-white);
 }
 
 .testimonies_h2{
-    font-family: 'Playfair Display';
+    font-family: 'Roboto';
     font-weight: bold;
-    font-size:6vh;
+    font-size: 2.5rem;
     text-align: left;
     color: var(--off-white);
 }
 
 .testimonies_year{
-    font-family: 'Open Sans';
+    font-family: 'Poppins';
     padding-top: 1%;
-    font-size:3vh;
+    font-size: 1.4rem;
     text-align: left;
     color: var(--off-white);
 }
 
 .testimonies_p{
-    font-family: 'Open Sans';
     margin-bottom: 7%;
-    font-size:3vh;
+    font-size: 1.8rem;
+    font-weight: 500;
     text-align: left;
     color: var(--off-white);
 }
@@ -47,20 +48,15 @@
 {
     /* decrease the size of stuff, throw the links into a flexbox to limit width and auto-c */
     .testimonies_parent{
-        height: 110vh;
+        height: 100vh;
     }
-    .testimonies_h1{
-        margin-bottom: 3vh;
-        font-size:6vh;
-    }
-    .testimonies_h2{
-        font-size:4vh;
-    }
-    .testimonies_year{
-        font-size:3vh;
-    }
+
     .testimonies_p{
-        margin-bottom: 25%;
-        font-size:2vh;
+        font-size: 1rem;
+        padding-bottom: 25%;
+    }
+
+    .testimonies_h1 {
+        font-size: 2.5rem;
     }
 }

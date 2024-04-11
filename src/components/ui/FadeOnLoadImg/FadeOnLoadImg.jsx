@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 
-export default function FadeOnLoadImg({ imgPath, alt, className, style }) {   
+export default function FadeOnLoadImg({ imgPath, alt, className, style, duration = 0.4, inViewRequired = true }) {   
     const [loaded, setImageLoaded] = useState(false);
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: '0px 100px -50px 0px' });
 
     const imageLoaded = () => {
         setImageLoaded(true);
@@ -12,16 +15,17 @@ export default function FadeOnLoadImg({ imgPath, alt, className, style }) {
         <motion.img
           initial={{ opacity: 0 }}
           animate={{
-            opacity: loaded ? 1 : 0
+            opacity: loaded && (inViewRequired ? isInView : true) ? 1 : 0
           }}
           transition={
-            { opacity: { delay: 0.5, duration: 0.4 } }
+            { opacity: { delay: 0.5, duration: duration } }
           }
           onLoad={imageLoaded}
           className={className}
           style={style}
           src={imgPath}
           alt={alt}
+          ref={ref}
         />
     );
 }

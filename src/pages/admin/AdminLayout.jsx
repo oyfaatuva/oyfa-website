@@ -2,9 +2,6 @@ import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../../components/AuthContext";
 import axiosClient from './../../utils/axiosClient';
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faShirt, faArrowRightFromBracket, faBars } from '@fortawesome/free-solid-svg-icons'
 import Sidebar from "../../components/layout/Sidebar/Sidebar";
 import { ADMIN_TABS } from "../../Constants";
 
