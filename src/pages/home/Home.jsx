@@ -1,6 +1,7 @@
 import { useOutletContext } from 'react-router';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import HomeTitle from './Components/HomeTitle';
 import Testimonies from './Components/HomeTestimonies';
 import HomeSocialsAndSignup from './Components/HomeSocialsAndSignup/HomeSocialsAndSignup';
@@ -14,7 +15,8 @@ export default function Home () {
     const {setNavbarScrollPosition, setNavbarScrollPositionMobile, setHide} = useOutletContext();
     const {height} = useWindowDimensions(); 
     const scrollPosition = useScrollPosition()
-    
+    const isMobile = useMediaQuery({ maxWidth: '1000px' });
+
     setNavbarScrollPosition(height - 70);
     setNavbarScrollPositionMobile(430);
     setHide(true);
@@ -38,10 +40,10 @@ export default function Home () {
                     <Link to='/about'>About Us</Link>
                 </AppearingDiv>
                 <div className="scrolling_text" style={{ transform: `translateX(${scrollPosition/3 - 1400}px)`, bottom: '20px'}}>
-                    THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS
+                    THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS • THE ORGANIZATION OF YOUNG FILIPINO AMERICANS
                 </div>
                 <AppearingDiv className='hello_photo_box2'/>
-                <AppearingDiv className='hello_photo' translateAxis='X' translateMeasurement={350} delay={1}>
+                <AppearingDiv className='hello_photo' translateAxis='X' translateMeasurement={250} delay={0.7}>
                     <img src='/images/home/Intro_Culturefest_Panorama.jpeg'/>
                 </AppearingDiv>
             </div>
@@ -49,17 +51,23 @@ export default function Home () {
             <div className='link_gallery'>
                 <Link to='/events' className='link_gallery_column'>
                     <div className='link_gallery_photo_overlay'/>
-                    <AppearingDiv delay={0.7} margin='0px 100px -480px 0px' className='link_gallery_title'><h1 className='link_gallery_top_title'>Events</h1></AppearingDiv>
+                    <AppearingDiv delay={0.7} margin={isMobile ? '0px 100px -100px 0px' : '0px 100px -40% 0px'} className='link_gallery_title'>
+                        <h1 className='link_gallery_top_title'>Events</h1>
+                    </AppearingDiv>
                     <img className='link_gallery_photo' src='/images/home/Events.jpg'/>
                 </Link>
                 <Link to='/leadership' className='link_gallery_column'>
                     <div className='link_gallery_photo_overlay'/>
-                    <AppearingDiv delay={0.9} margin='0px 100px -20px 0px' className='link_gallery_title'><h1 className='link_gallery_bottom_title'>Leadership</h1></AppearingDiv>
+                    <AppearingDiv delay={0.9} margin={isMobile ? '0px 100px -100px 0px' : '0px 100px 0px 0px'} className='link_gallery_title'>
+                        <h1 className='link_gallery_bottom_title'>Leadership</h1>
+                        </AppearingDiv>
                     <img className='link_gallery_photo_middle' src='/images/home/Leadership.jpg'/>
                 </Link>
                 <a href='https://uvaoyfa.myportfolio.com/oyfa-2023-2024' className='link_gallery_column'>
                     <div className='link_gallery_photo_overlay'/>
-                    <AppearingDiv delay={1.1} margin='0px 100px -480px 0px' className='link_gallery_title'><h1 className='link_gallery_top_title'>Photos</h1></AppearingDiv>
+                    <AppearingDiv delay={1.1} margin={isMobile ? '0px 100px -100px 0px' : '0px 100px -40% 0px'} className='link_gallery_title'>
+                        <h1 className='link_gallery_top_title'>Photos</h1>
+                    </AppearingDiv>
                     <img className='link_gallery_photo' src='/images/home/Photos.jpg'/>
                 </a>
             </div>

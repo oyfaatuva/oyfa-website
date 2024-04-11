@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import jsonp from 'jsonp';
 import AppearingDiv from '../../../../components/ui/AppearingDiv/AppearingDiv';
 import FadeOnLoadImg from '../../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
@@ -9,6 +10,7 @@ import { FACEBOOK_LINK, INSTAGRAM_LINK, MAILCHIMP_BASE_URL, TWITTER_LINK, YOUTUB
 import styles from './HomeSocialsAndSignups.module.css'
 
 export default function HomeSocialsAndSignup() {
+    const isMobile = useMediaQuery({ maxWidth: '1000px' });
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -28,12 +30,12 @@ export default function HomeSocialsAndSignup() {
                 <h1 className={styles.header}>Follow our Social Media</h1>
                 <div className={styles.grid_container}>
                     <div className={styles.grid}>
-                        <AppearingDiv margin={'0px 100px -200px 0px'}>
+                        <AppearingDiv delay={0.5} {...(isMobile ? {} : {margin: '0px 100px -200px 0px'})}>
                             <a href={FACEBOOK_LINK} target='_blank' className={styles.grid_item}>
                                 <FontAwesomeIcon icon={faFacebook}/>
                             </a>
                         </AppearingDiv>
-                        <AppearingDiv margin={'0px 100px -200px 0px'} delay={0.7}>
+                        <AppearingDiv delay={0.7}  {...(isMobile ? {} : {margin: '0px 100px -200px 0px'})}>
                             <a href={INSTAGRAM_LINK} target='_blank' className={styles.grid_item}>
                                 <FontAwesomeIcon icon={faInstagram}/>
                             </a>
@@ -52,7 +54,7 @@ export default function HomeSocialsAndSignup() {
                 </div>
             </div>
             <div className={styles.wio_container} translateY={0} duration={0.7}>
-                <AppearingDiv translateAxis='X' translateMeasurement={350}>
+                <AppearingDiv translateAxis='X' translateMeasurement={100} percent={true}>
                     <h1 className={styles.header}>Sign up for our weekly newsletter <br/> "This Week in OYFA"</h1>
                 </AppearingDiv>
                 <FadeOnLoadImg className={styles.wio_logo} imgPath='/images/home/wio.png' duration={1.1}/>

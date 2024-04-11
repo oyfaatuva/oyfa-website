@@ -22,7 +22,7 @@
 
 .hello_text_container {
     width: 38%;
-    margin-left: 70px;
+    margin-left: 4%;
     font-family: 'Poppins';
     color: rgb(9, 9, 9);
 }
@@ -208,13 +208,13 @@
     .hello_container {
         flex-direction: column;
         height: auto;
+        min-height: 0;
         max-height: none;
-        padding-bottom: 12%;
     }
 
     .hello_text_container {
         width: 100%;
-        margin: 12% 0px 20px 0px;
+        margin: calc(12% + 10px) 0px 20px 0px;
         padding: 0px 15px;
         text-align: center;
     }
@@ -224,18 +224,20 @@
     }
     
     .hello_text_container p {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         font-weight: 500;
+        word-spacing: normal;
     }
     
     .hello_text_container a {
-        font-size: 1.2rem;
+        font-size: 4vw;
     }
 
     .hello_photo {
         position: static;
         width: 95%;
         height: 30%;
+        margin-bottom: calc(12% + 18px);
     }
 
     .hello_photo img {
@@ -244,6 +246,7 @@
         width: 100%;
         height: 100%;
         border-radius: 15px;
+        translate: 0;
     }
 
     .hello_photo_box2 {
@@ -251,7 +254,7 @@
     }
 
     .scrolling_text {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
     .link_gallery {
@@ -284,5 +287,11 @@
 
     .thank_you h3 {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .hello_text_container p {
+        font-size: 3.5vw;
     }
 }
