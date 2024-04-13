@@ -18,6 +18,7 @@ import PageLayout from './pages/PageLayout';
 import NotFound from './pages/notFound/NotFound';
 import AdminMerch from './pages/admin/AdminMerch/AdminMerch';
 import EditMerchForm from './pages/admin/AdminMerch/Components/EditMerchForm';
+import LeadershipBios from './pages/leadership/bios/LeadershipBios';
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
 ** set the element to the main component of your page  */
@@ -30,20 +31,21 @@ const router = createBrowserRouter(
                 <Route path='about' element={<About/>}/>
                 <Route path='events' element={<Events/>}/>
                 <Route path='links' element={<Links/>}/>
-                <Route path='leadership' element={<Leadership/>}/>
+                <Route path='leadership'> 
+                    <Route index element={<Leadership/>}/>
+                    <Route path='bios' element={<LeadershipBios/>}/>
+                </Route>
+                <Route path='bios' element={<LeadershipBio/>}/>
                 <Route path='merch' element={<Merch/>}
                     loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
-                <Route path='bios' element={<LeadershipBio/>}/>
             </Route>
 
             <Route path='admin/login' element={<AdminLogin/>}/>
             <Route path='admin' element={<AdminLayout/>}>
                 <Route index element={<AdminDashboard/>}/> 
                 <Route path='dashboard' element={<AdminDashboard/>}/>
-                <Route path='merch' element={<AdminMerch/>}
-                    loader={merchLoader}
-                >
+                <Route path='merch' element={<AdminMerch/>} loader={merchLoader}>
                     <Route path=':itemId' element={<EditMerchForm/>}/>
                 </Route> 
             </Route>

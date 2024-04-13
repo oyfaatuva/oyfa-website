@@ -1,0 +1,28 @@
+.committee_bio {
+    display: flex;
+    width: 100vw;
+    border: 5px solid black;
+}
+
+.committee_img_container {
+    flex: 1;
+}
+
+.committee_img {
+    object-fit: cover;
+    width: 80%;
+}
+
+.committee_text_container {
+    flex: 1;
+}
+
+.commitee_text_section {
+
+}
+
+.name {
+    font-family: 'Poppins';
+    font-size: 5rem;
+    font-weight: 500;
+}

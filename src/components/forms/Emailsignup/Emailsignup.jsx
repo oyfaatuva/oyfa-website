@@ -27,7 +27,7 @@ function EmailSignup(){
         return(
             <section>
                 <form onSubmit={onSubmit} method="post" id="mc-embedded-subscribe-form" 
-                name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+                name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 
                     <div className="email_no_name_parent">
                         <div className = 'email_label_parent'>

@@ -1,43 +1,25 @@
-import {useEffect, useRef, useState} from 'react'
+import { useMemo, useState} from 'react'
 import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
 import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
-import LeadershipGallery from './LeadershipGallery';
 import LeadershipIntro from './LeadershipIntro';
 import LeadershipArchive from './LeadershipArchive';
-import { CURRENT_BNC, BOARD, COUNCIL } from '/src/Constants';
-import { BNC_ARCHIVE } from '../../../constants/bncArchive';
+import { BNC_ARCHIVE, BNC } from '../../../constants/bncArchive';
+import LeadershipGallery from './LeadershipGallery/LeadershipGallery';
+import { CURRENT_BNC } from '../../../Constants';
 
 /* Main export file to index that combines all "leadership" components */
 
-export default function Leadership() {
+export default function Leadership () {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [dataFetched, setDataFetched] = useState(false); //Need to keep track of state as useEffect occurs after render
+    const [bncNum, setBnCNum] = useState(searchParams.get('bnc') || CURRENT_BNC);
 
-    const bncNum = useRef(CURRENT_BNC); //NOTE: useRef wraps input in an object with the "current" value
-    const board = useRef(BOARD);
-    const council = useRef(COUNCIL);
-
-    useEffect(() => {
-        if(searchParams.has('bnc')) {
-            let archive = BNC_ARCHIVE.find(obj => obj.bncNum.toString() === searchParams.get('bnc'));
-            if(archive !== undefined) {
-                bncNum.current = searchParams.get('bnc');
-                board.current = archive.board;
-                council.current = archive.council;
-            }
-            else {
-                setSearchParams('')
-            }  
-        }
-        else {
-            setSearchParams('');
-            bncNum.current = CURRENT_BNC;
-            board.current = BOARD;
-            council.current = COUNCIL;
-        }
-        setDataFetched(true);
-    }, [searchParams, dataFetched]);
+    const cuurent = useMemo(() => {
+        return bncNum === undefined ? BNC : BNC_ARCHIVE.find((bnc) => bnc.bncNum == bncNum)?.bnc || BNC;
+    });
+    const currentBNC = useMemo(() => {
+        return bncNum === undefined ? BNC : BNC_ARCHIVE.find((bnc) => bnc.bncNum == bncNum)?.bnc || BNC;
+    });
 
     const updateBnC = (params) => {
         setSearchParams(params);
@@ -47,10 +29,10 @@ export default function Leadership() {
     return(
         <>
             <Helmet><title>Leadership</title></Helmet>
-            <HalfTitle header = 'Leadership' imgSrc = {'/images/leadership/Leadership_Title_' + bncNum.current + 'B&C.jpg'} brightness={65} position={35} caption='Read Bios' captionLink='/Bios'/>
-            <LeadershipArchive updateBnC = {updateBnC} /> {/*TODO: MAKE THIS ALSO TAKE PROPS FOR ENTIRE ARCHIVE BC GOOD PROGRAMMING I AM GOOD PROGRAMMER (COMPS SHOULD NOT CALL CONSTANTS) */}
-            <LeadershipIntro bncNum = {bncNum.current} />
-            <LeadershipGallery board = {board.current} council = {council.current} />
+            <HalfTitle header = 'Leadership' imgSrc = {`/images/leadership/bnc${bncNum}/Leadership_Title.jpg`} brightness={65} position={35} caption='Read Bios' captionLink='/Bios'/>
+            <LeadershipArchive archive={BNC_ARCHIVE} updateBnC={updateBnC} />
+            <LeadershipIntro bncNum = {bncNum} />
+            <LeadershipGallery bnc={currentBNC}/>
         </>
     )
 }

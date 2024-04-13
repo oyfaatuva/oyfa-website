@@ -1,0 +1,111 @@
+.gallery_heading{
+    font-family: 'Poppins';
+    padding-top: 0.5rem;
+    margin-bottom: 1%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); 
+}
+
+.person_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* class for person div container */
+.person_img_container{
+    max-width: 380px;
+    max-height: 380px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    filter: drop-shadow(rgba(0, 0, 0, 0.08) 6px 6px 10px);
+    border-radius: 4px;
+}
+
+/* class for person img. you will probably want to adjust the width depending on what pics historic provides that year */
+.person_img_container img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+/* zoom on hover animation for person img */
+.person_img_container img:hover {
+    transform: scale(1.1);
+}
+
+/* force text to wrap */
+/* you will probably want to adjust the width depending on what pics historic provides that year */
+.person_text_container{
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* create buffer of space between person information */
+.person_info_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person_name{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 5%;
+}
+
+.person_major{
+    font-size: 1.5em;
+    color: black;
+    margin-top: 5%;
+}
+
+.person_email{
+    font-size: 1.3em;
+    color: black;
+    margin-top: 5%;
+}
+
+.person_title{
+    font-family: 'Poppins';
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: black;
+}
+
+.committee_grid_container{
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.person_row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+@media screen and (max-width : 1000px) /* Phone Rules */
+{
+    .person_text_container{
+        width: 50vw;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .person_img_container{
+        width: 50vw;
+        max-width: 500px;
+        max-height: 500px;
+    }
+}

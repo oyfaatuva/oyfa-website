@@ -4,6 +4,7 @@ import { useOutletContext } from 'react-router';
 import {BOARD, COUNCIL} from '../../../Constants';
 
 import '../Stylesheets/LeadershipBio.css'
+import AppearingDiv from '../../../components/ui/AppearingDiv/AppearingDiv';
 
 /********************************************************************************************************************
 ** This is a comprehensive file which contains, from the highest level to the lowest level, BioGrid, BioRow, and

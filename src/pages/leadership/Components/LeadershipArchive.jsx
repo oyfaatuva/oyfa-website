@@ -1,11 +1,10 @@
 import { useState} from 'react'
 import { motion } from "framer-motion"
 import { toOrdinalNumber } from '../../../utils/toOrdinalNumber';
-import { BNC_ARCHIVE } from '../../../constants/bncArchive';
 
 import styles from '../Stylesheets/LeadershipArchive.module.css'
 
-export default function LeadershipArchive({ updateBnC }) {
+export default function LeadershipArchive({ archive, updateBnC }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const archiveVariants = {
@@ -33,10 +32,9 @@ export default function LeadershipArchive({ updateBnC }) {
             >
                 <div className={styles.archive_container}>
                     <p className={styles.archive_header}>ARCHIVE</p>
-                    <ArchiveGrid archive={BNC_ARCHIVE} updateBnC={updateBnC}/>
+                    <ArchiveGrid archive={archive} updateBnC={updateBnC}/>
                 </div>
             </motion.div>
-
         </div>
     )   
 }
@@ -44,8 +42,8 @@ export default function LeadershipArchive({ updateBnC }) {
 function ArchiveGrid({ archive, updateBnC }) {
     return (
         <div className={styles.archive_grid}>
-            {archive.map((bnc, index) => (
-                <ArchivedBNC key={index} bnc={bnc} updateBnC={updateBnC}/>
+            {archive.map((bnc) => (
+                <ArchivedBNC key={bnc.bncNum} bnc={bnc} updateBnC={updateBnC}/>
             ))}
         </div>
     );
@@ -55,7 +53,7 @@ function ArchivedBNC({ bnc, updateBnC }) {
     return (
         <div className={styles.archived_bnc_container}>
             <div className={styles.archived_bnc_img_container}>
-                <img src={bnc.imgPath} onClick={() => updateBnC({ bnc : bnc.bncNum})} style={{ cursor: 'pointer' }} />
+                <img src={bnc.imgPath} onClick={() => updateBnC({ bnc : bnc.bncNum})} style={{ cursor: 'pointer', objectPosition: `center ${bnc.position}%` }} />
             </div>
             <p className={styles.archived_bnc_title}>{`${toOrdinalNumber(bnc.bncNum)} BOARD AND COUNCIL`}</p>
         </div>
