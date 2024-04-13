@@ -65,14 +65,15 @@ function PersonText ({ name, major, email }) {
     let emailComponent
 
     if(name)  nameComponent  = <h1 className={styles.person_name}>{name}</h1>
-    if(major) majorComponent = <h2 className = 'person_major'>{major}</h2>
-    if(email) emailComponent = <h2 className = 'person_email'>{email}</h2>
+    if(major) majorComponent = <h2 className = {styles.person_major}>{major}</h2>
+    if(email) emailComponent = <h2 className = {styles.person_email}>{email}</h2>
 
     return(
-        <div className = 'person_text_container'>
+        <div className = {styles.person_text_container}>
             {nameComponent}
             {/* {majorComponent} */}
             {/* {emailComponent} */}
         </div>
         )
 }
+
