@@ -23,7 +23,7 @@ export default class Testimonies extends Component{
 
            {name: 'Jana Mirafuente',
            startYear: '2018',
-           endYear: 'Present',
+           endYear: '2022',
            paragraph: "Being apart of OYFA allows me to explore my Filipino identity in a space that is accepting of learning about the culture, and the processes that come along with this. I came to college during a time when I was confused with my cultural identity and had limited connection to other Filipinos outside of my family. OYFA offers a space of acceptance, growth, and a new family away from home. I am so thankful that I made the decision to join my first year. OYFA has shaped my college experience in the best way, and I am forever grateful for the opportunities this organization has afforded me."
           },
 
