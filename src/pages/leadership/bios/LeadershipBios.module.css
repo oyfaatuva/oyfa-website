@@ -1,28 +1,56 @@
 .committee_bio {
     display: flex;
     width: 100vw;
-    border: 5px solid black;
+    min-height: 45vw;
+    padding-left: 6%;
+    padding-right: 10%;
+}
+
+.committee_img_column {
+    flex: 1;
+    display: flex;
+    align-items: top;
+    justify-content: right;
+    margin-top: 5%;
 }
 
 .committee_img_container {
-    flex: 1;
+    position: relative;
+    object-fit: cover;
+    width: 85%;
+    max-width: 550px;
 }
 
 .committee_img {
     object-fit: cover;
-    width: 80%;
+    width: 100%;
+}
+
+.committee_img_container::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background-image: url('images/_common/dotted.jpg');
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 400px;
 }
 
 .committee_text_container {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
 }
 
 .commitee_text_section {
-
+    font-size: 1.4rem;
 }
 
 .name {
     font-family: 'Poppins';
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 500;
 }

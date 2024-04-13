@@ -4,6 +4,7 @@ import AppearingDiv from '../../../components/ui/AppearingDiv/AppearingDiv';
 import { BNC_ARCHIVE, BNC } from '../../../constants/bncArchive';
 
 import styles from './LeadershipBios.module.css'
+
 import { useEffect, useMemo } from 'react';
 
 export default function LeadershipBios () {
@@ -34,8 +35,8 @@ export default function LeadershipBios () {
 function CommitteeBio ({ bio }) {
     return (
         <div className={styles.committee_bio}>
-            <AppearingDiv className={styles.committee_img_container}>
-                <img src={bio.bioImgSrc} className={styles.committee_img}/>
+            <AppearingDiv className={styles.committee_img_column} translateMeasurement={200} margin='0px 100px -10% 0px'>
+                <div className={styles.committee_img_container}><img src={bio.bioImgSrc} className={styles.committee_img + " bio_imgg"}/></div>
             </AppearingDiv>
             <CommitteeBioText bioText={bio.text}/>
         </div>
@@ -44,11 +45,11 @@ function CommitteeBio ({ bio }) {
 
 function CommitteeBioText ({ bioText }) {
     return (  
-        <div className={styles.committee_text_container}>
+        <AppearingDiv className={styles.committee_text_container}>
             {bioText.map((textSection) => (
                 <CommitteeBioTextSection key={textSection.name} textSection={textSection}></CommitteeBioTextSection>
             ))}
-        </div>
+        </AppearingDiv>
     );
 }
 
