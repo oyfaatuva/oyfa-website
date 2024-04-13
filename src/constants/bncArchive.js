@@ -4193,9 +4193,9 @@ export const BNC29 = [
 export const BNC_ARCHIVE = [
   { bncNum: 35, bnc: BNC35, imgPath: "/images/leadership/bnc35/Leadership_Title.jpg" },
   { bncNum: 34, bnc: BNC34, imgPath: "/images/leadership/bnc34/Leadership_Title.jpg", position: 20 },
-  { bncNum: 33, bnc: BNC33, imgPath: "/images/leadership/bnc33/Leadership_Title.jpg", position: 10 },
+  { bncNum: 33, bnc: BNC33, imgPath: "/images/leadership/bnc33/Leadership_Title.jpg", position: 0 },
   { bncNum: 32, bnc: BNC32, imgPath: "/images/leadership/bnc32/Leadership_Title.jpg", position: 30 },
   { bncNum: 31, bnc: BNC33, imgPath: "/images/leadership/bnc31/Leadership_Title.jpg", position: 25 },
-  { bncNum: 30, bnc: BNC30, imgPath: "/images/leadership/bnc30/Leadership_Title.jpg", position: 15 },
-  { bncNum: 29, bnc: BNC29, imgPath: "/images/leadership/bnc29/Leadership_Title.jpg", position: 0 },
+  { bncNum: 30, bnc: BNC30, imgPath: "/images/leadership/bnc30/Leadership_Title.jpg", position: 5 },
+  { bncNum: 29, bnc: BNC29, imgPath: "/images/leadership/bnc29/Leadership_Title.jpg", position: -5 },
 ];

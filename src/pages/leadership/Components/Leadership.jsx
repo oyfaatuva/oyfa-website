@@ -12,13 +12,20 @@ import { CURRENT_BNC } from '../../../Constants';
 
 export default function Leadership () {
     const [searchParams, setSearchParams] = useSearchParams();
-    const [bncNum, setBnCNum] = useState(searchParams.get('bnc') || CURRENT_BNC);
-
-    const cuurent = useMemo(() => {
-        return bncNum === undefined ? BNC : BNC_ARCHIVE.find((bnc) => bnc.bncNum == bncNum)?.bnc || BNC;
+    const archivedBNC = useMemo(() => {
+        return BNC_ARCHIVE.find((bnc) => bnc.bncNum == searchParams.get('bnc'));
     });
+    
+    const bncNum = useMemo(() => {
+        return (archivedBNC ? searchParams.get('bnc') : CURRENT_BNC);
+    });
+
     const currentBNC = useMemo(() => {
-        return bncNum === undefined ? BNC : BNC_ARCHIVE.find((bnc) => bnc.bncNum == bncNum)?.bnc || BNC;
+        return bncNum === undefined ? BNC : archivedBNC?.bnc || BNC;
+    });
+
+    const position = useMemo(() => {
+        return (archivedBNC ? archivedBNC.position : 35);
     });
 
     const updateBnC = (params) => {
@@ -29,7 +36,7 @@ export default function Leadership () {
     return(
         <>
             <Helmet><title>Leadership</title></Helmet>
-            <HalfTitle header = 'Leadership' imgSrc = {`/images/leadership/bnc${bncNum}/Leadership_Title.jpg`} brightness={65} position={35} caption='Read Bios' captionLink='/Bios'/>
+            <HalfTitle header = 'Leadership' imgSrc = {`/images/leadership/bnc${bncNum}/Leadership_Title.jpg`} brightness={65} position={position} caption='Read Bios' captionLink='/Bios'/>
             <LeadershipArchive archive={BNC_ARCHIVE} updateBnC={updateBnC} />
             <LeadershipIntro bncNum = {bncNum} />
             <LeadershipGallery bnc={currentBNC}/>
