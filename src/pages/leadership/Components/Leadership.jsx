@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
 import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
 import LeadershipIntro from './LeadershipIntro';
-import LeadershipArchive from './LeadershipArchive';
+import LeadershipArchive from './LeadershipArchive/LeadershipArchive';
 import { BNC_ARCHIVE, BNC } from '../../../constants/bncArchive';
 import LeadershipGallery from './LeadershipGallery/LeadershipGallery';
 import { CURRENT_BNC } from '../../../Constants';

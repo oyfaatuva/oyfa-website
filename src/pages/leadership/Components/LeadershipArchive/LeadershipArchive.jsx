@@ -1,8 +1,8 @@
 import { useState} from 'react'
 import { motion } from "framer-motion"
-import { toOrdinalNumber } from '../../../utils/toOrdinalNumber';
+import { toOrdinalNumber } from '../../../../utils/toOrdinalNumber';
 
-import styles from '../Stylesheets/LeadershipArchive.module.css'
+import styles from './LeadershipArchive.module.css'
 
 export default function LeadershipArchive({ archive, updateBnC }) {
     const [isOpen, setIsOpen] = useState(false);

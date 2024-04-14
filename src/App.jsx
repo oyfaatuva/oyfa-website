@@ -8,7 +8,6 @@ import Events from './pages/events/Components/Events'
 import Links from './pages/links/Components/Links'
 import Leadership from './pages/leadership/Components/Leadership'
 import Archives from './pages/archives/Components/Archives'
-import LeadershipBio from './pages/leadership/Components/LeadershipBio'
 import Merch, { merchLoader } from './pages/merch/Merch';
 import AdminLogin from './pages/admin/AdminLogin/AdminLogin';
 import { AuthLayout } from './pages/AuthLayout';
@@ -35,7 +34,6 @@ const router = createBrowserRouter(
                     <Route index element={<Leadership/>}/>
                     <Route path='bios' element={<LeadershipBios/>}/>
                 </Route>
-                <Route path='bios' element={<LeadershipBio/>}/>
                 <Route path='merch' element={<Merch/>}
                     loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
