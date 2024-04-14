@@ -32,28 +32,22 @@ export default function LeadershipArchive({ archive, updateBnC }) {
             >
                 <div className={styles.archive_container}>
                     <p className={styles.archive_header}>ARCHIVE</p>
-                    <ArchiveGrid archive={archive} updateBnC={updateBnC}/>
+                    <div className={styles.archive_grid}>
+                        {archive.map((bnc) => (
+                            <ArchivedBNC key={bnc.bncNum} bnc={bnc} updateBnC={updateBnC} setIsOpen={setIsOpen}/>
+                        ))}
+                    </div>
                 </div>
             </motion.div>
         </div>
     )   
 }
 
-function ArchiveGrid({ archive, updateBnC }) {
-    return (
-        <div className={styles.archive_grid}>
-            {archive.map((bnc) => (
-                <ArchivedBNC key={bnc.bncNum} bnc={bnc} updateBnC={updateBnC}/>
-            ))}
-        </div>
-    );
-}
-
-function ArchivedBNC({ bnc, updateBnC }) {
+function ArchivedBNC({ bnc, updateBnC, setIsOpen }) {
     return (
         <div className={styles.archived_bnc_container}>
             <div className={styles.archived_bnc_img_container}>
-                <img src={bnc.imgPath} onClick={() => updateBnC({ bnc : bnc.bncNum})} style={{ cursor: 'pointer', objectPosition: `center ${bnc.position}%` }} />
+                <img src={bnc.imgPath} onClick={() => {setIsOpen(false); updateBnC({ bnc : bnc.bncNum}); }} style={{ cursor: 'pointer', objectPosition: `center ${bnc.position}%` }} />
             </div>
             <p className={styles.archived_bnc_title}>{`${toOrdinalNumber(bnc.bncNum)} BOARD AND COUNCIL`}</p>
         </div>

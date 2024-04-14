@@ -38,9 +38,7 @@ function Committee ({ committee }) {
         <>
             {committee.bios.map((bio, index) => (
                 bio.text.map((personText, index2) => (
-                    <div key={index + index2} className={styles.person_info_container}>
-                        <PersonText name={personText.name} major={personText.major} email={personText.email} />
-                    </div>
+                    <PersonText key={index + index2} name={personText.name} major={personText.major} email={personText.email} />
                 )))
             )}
         </>
@@ -48,7 +46,7 @@ function Committee ({ committee }) {
     return(
         <AppearingDiv>
             <div className={styles.person_img_container}>
-                <HashLink smooth to={'bios#'+committee.bios[0].text.name}> {/* No idea why but when the page is first loaded the first link service will take you to the wrong section but going back a page and trying again it works perfectly...*/}
+                <HashLink smooth to={'bios#'+committee.bios[0].text[0].name}>
                     <img src={committee.committeeImgSrc} loading='lazy'/>
                 </HashLink>
             </div>

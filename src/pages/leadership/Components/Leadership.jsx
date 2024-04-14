@@ -24,13 +24,13 @@ export default function Leadership () {
         return bncNum === undefined ? BNC : archivedBNC?.bnc || BNC;
     });
 
-    const position = useMemo(() => {
-        return (archivedBNC ? archivedBNC.position : 35);
-    });
+    // Vertical position of HalfTitle
+    const position = archivedBNC ? archivedBNC.position : 35;
 
     const updateBnC = (params) => {
-        setSearchParams(params);
-        window.location.reload();
+        if(params['bnc'] != bncNum) {
+            setSearchParams(params);
+        }
     };
 
     return(

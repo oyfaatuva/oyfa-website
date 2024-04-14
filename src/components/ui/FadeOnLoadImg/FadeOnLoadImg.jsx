@@ -13,6 +13,7 @@ export default function FadeOnLoadImg({ imgPath, alt, className, style, duration
 
     return (
         <motion.img
+          key={imgPath}
           initial={{ opacity: 0 }}
           animate={{
             opacity: loaded && (inViewRequired ? isInView : true) ? 1 : 0
