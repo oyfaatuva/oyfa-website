@@ -1,6 +1,7 @@
 import { HashLink } from 'react-router-hash-link';
 import AppearingDiv from '../../../../components/ui/AppearingDiv/AppearingDiv';
 import styles from './LeadershipGallery.module.css'
+import { useSearchParams } from 'react-router-dom';
 
 export default function LeadershipGallery ({ bnc }) {
     return(
@@ -25,6 +26,8 @@ function CommitteeGrid ({ committees }) {
 }
 
 function Committee ({ committee }) {
+    const [searchParams] = useSearchParams();
+
     /* if title was provided render it */
     if(committee.committeeName) {
         var titleComponent =                 
@@ -46,7 +49,7 @@ function Committee ({ committee }) {
     return(
         <AppearingDiv>
             <div className={styles.person_img_container}>
-                <HashLink smooth to={'bios#'+committee.bios[0].text[0].name}>
+                <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: committee.committeeName}}>
                     <img src={committee.committeeImgSrc} loading='lazy'/>
                 </HashLink>
             </div>

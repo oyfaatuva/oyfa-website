@@ -1,14 +1,16 @@
-import { useMemo, useState} from 'react'
+import { useMemo } from 'react'
 import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
-import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
-import LeadershipIntro from './LeadershipIntro';
-import LeadershipArchive from './LeadershipArchive/LeadershipArchive';
-import { BNC_ARCHIVE, BNC } from '../../../constants/bncArchive';
-import LeadershipGallery from './LeadershipGallery/LeadershipGallery';
-import { CURRENT_BNC } from '../../../Constants';
+import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import LeadershipArchive from './Components/LeadershipArchive/LeadershipArchive';
+import { BNC_ARCHIVE, BNC } from '../../constants/bncArchive';
+import LeadershipGallery from './Components/LeadershipGallery/LeadershipGallery';
+import { CURRENT_BNC } from '../../Constants';
+import { B_C_YOUTUBE_EMBED_ID } from '/src/Constants';
+import YoutubeEmbed from '../../components/media/YoutubeEmbed/YoutubeEmbed';
+import { toOrdinalNumber } from '../../utils/toOrdinalNumber';
 
-/* Main export file to index that combines all "leadership" components */
+import styles from './Leadership.module.css'
 
 export default function Leadership () {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -38,7 +40,12 @@ export default function Leadership () {
             <Helmet><title>Leadership</title></Helmet>
             <HalfTitle header = 'Leadership' imgSrc = {`/images/leadership/bnc${bncNum}/Leadership_Title.jpg`} brightness={65} position={position} caption='Read Bios' captionLink='/Bios'/>
             <LeadershipArchive archive={BNC_ARCHIVE} updateBnC={updateBnC} />
-            <LeadershipIntro bncNum = {bncNum} />
+            <h1 className = {styles.leadership_heading}>{toOrdinalNumber(bncNum)} BOARD & COUNCIL</h1>        
+            {B_C_YOUTUBE_EMBED_ID != '' && 
+                <div className={styles.leadership_youtube_container}>
+                    <YoutubeEmbed embedId={B_C_YOUTUBE_EMBED_ID} embedWidth='50%' embedHeight='440px'/>
+                </div>
+            }
             <LeadershipGallery bnc={currentBNC}/>
         </>
     )

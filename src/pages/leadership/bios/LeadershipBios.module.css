@@ -2,8 +2,7 @@
     display: flex;
     width: 100vw;
     min-height: 45vw;
-    padding-left: 6%;
-    padding-right: 10%;
+    padding: 2% 9% 2% 2%;
 }
 
 .committee_img_column {
@@ -38,20 +37,20 @@
 }
 
 .committee_text_container {
-    flex: 1;
+    flex: 0 0 48%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 5%;
+    padding-left: 5%;
 }
 
 .commitee_text_section {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 .name {
     font-family: 'Poppins';
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -60,7 +59,7 @@
     .committee_bio {
         flex-direction: column;
         align-items: center;
-        padding: 0;
+        padding: 10% 0;
     }
 
     .committee_img_column {
@@ -68,7 +67,7 @@
     }
 
     .committee_img_container {
-        width: 100%;
+        width: 90%;
     }
 
     .bio_heading{
@@ -80,28 +79,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 15%;
-        margin-bottom: 15%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    /* give the text some room to breathe below the picture and center it */
-    .bio_name{
-        margin-top: 5%;
-        font-size: 4vh;
-        text-align: center;
-    }
-    
-    .bio_h2{
-        font-size: 3vh;
-        margin-top: 1%;
-        text-align: center;
-    }
-    
-    .bio_text{
-        font-size: 2vh;
-        text-align: center;
+        margin: 3% 3% 3% 3%;
     }
 
     .bio_img{

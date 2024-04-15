@@ -18,15 +18,17 @@ export default function LeadershipBios () {
     
     useEffect(() => {
         setTransition(false);
-    })
+    });
     
     return(
         <>
             <Helmet><title>Leadership Bios</title></Helmet>
             {archivedBNC.map((committee, index) => (
-                committee.bios.map((bio, index2) => (
-                    <CommitteeBio key={index + index2} bio={bio}/>
-                ))
+                <div key={index} id={committee.committeeName}>
+                    {committee.bios.map((bio, index2) => (
+                        <CommitteeBio key={index + index2} bio={bio}/>
+                    ))}
+                </div>
             ))}
         </>
     )
