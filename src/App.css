@@ -26,6 +26,10 @@ body {
     background-color: var(--background-color);
 }
 
+h1, h2, h3 {
+    font-family: 'Poppins';
+}
+
 p {
     margin-bottom: 0; /* Have to do this for now because of bootstrap, eventually will get rid of when bootstrap removed entirely */
 }

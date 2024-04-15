@@ -24,21 +24,21 @@ export default function LeadershipBios () {
         <>
             <Helmet><title>Leadership Bios</title></Helmet>
             {archivedBNC.map((committee, index) => (
-                <div key={index} id={committee.committeeName}>
+                <>
                     {committee.bios.filter(bio => bio.bioImgSrc).map((bio, index2) => (
-                        <CommitteeBio key={index + index2} bio={bio}/>
+                        <CommitteeBio key={index + index2} bio={bio} committeeName={committee.committeeName}/>
                     ))}
-                </div>
+                </>
             ))}
         </>
     )
 }
 
-function CommitteeBio ({ bio }) {
+function CommitteeBio ({ bio, committeeName }) {
     return (
         <div className={styles.committee_bio}>
             <AppearingDiv className={styles.committee_img_column} translateMeasurement={200} margin='0px 100px -10% 0px'>
-                <div className={styles.committee_img_container}><img src={bio.bioImgSrc} className={styles.committee_img + " bio_imgg"}/></div>
+                <div id={committeeName} className={styles.committee_img_container}><img src={bio.bioImgSrc} className={styles.committee_img + " bio_imgg"}/></div>
             </AppearingDiv>
             {bio.text && <CommitteeBioText bioText={bio.text}/>}
         </div>
@@ -67,7 +67,7 @@ function CommitteeBioTextSection ({ textSection }) {
             {textSection.quote && 
                 <>
                 <br/>
-                <h3><b>{textSection.name}'s Favorite Quote:</b></h3>
+                <h3>{textSection.name}'s Favorite Quote:</h3>
                     <p>{textSection.quote}</p>
                 </>
             }
@@ -75,6 +75,7 @@ function CommitteeBioTextSection ({ textSection }) {
             {textSection.extraText?.map((extraText) => (
                 <>
                     <br/>
+                    <h3>{extraText.header}</h3>
                     <p>{extraText.text}</p>
                 </>
             ))}

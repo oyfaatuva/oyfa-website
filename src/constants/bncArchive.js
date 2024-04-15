@@ -1,3 +1,5 @@
+import { text } from "@fortawesome/fontawesome-svg-core";
+
 const LEADERSHIP_FOLDER = "/images/leadership/bnc36";
 
 export const BNC = [
@@ -550,7 +552,8 @@ export const BNC = [
 ];  
 
 const LEADERSHIP_FOLDER_35 = "/images/leadership/bnc35";
-  
+
+//TODO: Ask Alyssa if she wants something differant for 35. Otherwise reuse 36th
 export const BNC35 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_35 + "/Leadership_President.png",
@@ -1087,6 +1090,7 @@ export const BNC35 = [
 
 const LEADERSHIP_FOLDER_34 = "/images/leadership/bnc34";
 
+//TODO: Check emails
 export const BNC34 = [
     {
       committeeImgSrc: LEADERSHIP_FOLDER_34 + "/Leadership_President.png",
@@ -1654,13 +1658,14 @@ export const BNC34 = [
 
 const LEADERSHIP_FOLDER_33 = "/images/leadership/bnc33";
 
+//TODO: Needs correct emails (they're copy-pasted values so incorrect)
 export const BNC33 = [
     {
       committeeImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_President.JPG",
       committeeName: "President",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/joshd.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/joshd.png",
           text: [
             {
               name: "Joshua Dano",
@@ -1684,14 +1689,13 @@ export const BNC33 = [
           bioImgSrc: LEADERSHIP_FOLDER_33 + "/michelle.png",
           text: [
             {
-              name: "Ariane Tiongco",
-              pronouns: "she/her",
-              year: "3rd Year",
-              major: "Medical Anthropology and Sociology",
+              name: "Michelle Hilado",
+              year: "4th Year",
+              major: "Biology",
               email: "apt3tv@virginia.edu",
-              city: "VA Beach, VA",
-              quote: "\"WROWROWROWROWRO\" - Bertha",
-              bio: "Hello, I'm Ariane, a 3rd year in the Comm school. I was born & raised in the 757, with 3 older brothers and then a little sister. I'm a die-hard nintendo kid. I love Zelda games, pokemon, and have a soft spot for forgotten Gameboy Advanced & Gamecube Games. I'm aquarius sun w/ a capricorn moon, so... idk how im in a relationship rn. I swear I have a leo rising somewhere tho because i crave love & attention hehe. I also have other miscellaneous hobbies, but if you wanna learn more about me hmu! we might have something in common <3"
+              city: "Woodbridge, VA",
+              extraText: [{text: "What I like about OYFA is that it connects me with other people who have a similar culture and/or upbringing to me! My favorite OYFA memories involve /attempting/ to dance at any Barrio or Culturefest practices (emphasis on attempting)."}],
+              bio: "Hello friends, my name is Michelle Hilado and I am excited to serve as OYFA's Vice President for the 2020-2021 school year! I am a 4th year student in the College majoring in Biology with a minor in American Sign Language. Some things that I like are summer, bad horror movies, cute animal tiktoks, and bagels!"
             },
           ],
         },
@@ -1705,14 +1709,13 @@ export const BNC33 = [
           bioImgSrc: LEADERSHIP_FOLDER_33 + "/taylor.png",
           text: [
             {
-              name: "Arabella Chiang",
-              pronouns: "she/her",
+              name: "Taylor Mendoza",
               year: "3rd Year",
-              major: "Statistics, East Asian Minor",
+              major: "Economics and Commerce",
               email: "jp5ycx@virginia.edu",
-              city: "Ashburn, VA",
-              quote: "\"It never hurts to keep looking for sunshine\" - Winnie the Pooh",
-              bio: "Hey guys!!!! I'm Arabella Chiang and I'm your Treasurer this year, so be on the look out for those Venmo requests ;) I'm currently a 3rd year majoring in Statistics and minoring in East Asian Studies. I was born in Montgomery, Maryland, but was raised in Ashburn, VA, so I'm another NOVA kid here at UVA. If anyone lives in NOVA and wants to hang out over breaks hit me up :))\n Just a little about me, I love being on the go, so come out and adventure with me. There's many mountains to hike and trails to walk in Cville! I also love to just be around people and is always down to hang. I am a talker and can talk your ear off, so if you're down to hang I'm here! I am also a huge foodie, so come get food with me too. Maybe I'll cook, you never know.\n Anyways, I somehow found my way into OYFA my first year and was able to find people who I call my best friends and practically my family. I remember being hesitant in joining, until Sofia dragged me out to make Tiktoks with her and then the rest was history!",
+              city: "Eldersburg, MD",
+              extraText: [{text: "My favorite OYFA memory is shredding the mountains of Massanutten like it was nothin’ alongside many of my friends in OYFA."}],
+              bio: "Howdy, OYFA. My name is Taylor Mendoza and I’ll be serving as this year's Treasurer on Board. I’m a third year in the McIntire School of Commerce, likely concentrating in Finance and IT in addition to an Economics Major. In my free time, I like to play tennis, watch movies, shoegaze, and play guitar. I’m quite excited to be serving on OYFA’s B&C again, and can’t wait to meet all of you throughout the year.",
             },
           ],
         },
@@ -1724,17 +1727,16 @@ export const BNC33 = [
       committeeName: "Corresponding Secretary",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Jazlyn.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/jaden.png",
           text: [
             {
-              name: "Jazlyn Nguyen",
-              pronouns: "she/her",
+              name: "Jaden Aponte",
               year: "4th Year",
-              major: "Cognitive Science concentrating in Computer Science",
+              major: "Statistics",
               email: "jan3wb@virginia.edu",
               city: "Stafford, VA",
-              quote: "\"Real pain for your sham friends, champagne for your real friends.\" - Anon",
-              bio: "Hey guys! My name is Jazlyn Nguyen, and I’m half-Filipino and half-Vietnamese. I was born in Washington state, and moved to Virginia when I was 6. I love my relationships, and I love building community to help people feel at home! My hobbies include making music, gaming, and reading tarot cards~ Let me know if you want to see your future! Hint: It’s in OYFA"
+              extraText: [{text: "My favorite Oyfa memory is Assassins, because I love building trust with my friends and then betraying them. 😈"}],
+              bio: "Hello hello ! It’s me, Jaden ! I am a 1975 and Carly Rae stan. Feel free to message me music recommendations please!"
             },
           ],
         },
@@ -1746,17 +1748,16 @@ export const BNC33 = [
       committeeName: "Recording Secretary",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Sam.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/chris.png",
           text: [
             {
-              name: "Sam Dioneda",
-              pronouns: "he/him",
+              name: "Christopher Collins",
               year: "2nd Year",
-              major: "Nursing",
+              major: "Architecture",
               email: "msd3gjj@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "\"Spread love everywhere you go. Let no one ever come to you without leaving happier.\" - Mother Teresa",
-              bio: "Hi hi friends - My name is Sam Dioneda, and I'm a second year nursing student serving as your Recording Secretary this school year. Outside of OYFA and being a nursing student, I am apart of MAN and was an OL this summer, so hi if you were an orientee of mine! When I'm not doing anything related to school or OYFA, I love to bake, cook, eat sugar lol, run, read manga, and binge anime.\nBesides the above, I also love to see people smile. Seeing people happy with who they are and what they do is as addicting as sugar to me, and I always strive to create that environment it whatever situation I am in.\nAs for OYFA, it may sound cliché, but OYFA has given me a home in the grand place that is UVA, and I am eternally grateful for that. Coming in as a first year during a pandemic was tough, but somehow, OYFA helped me grow in ways I never imagined, try new things I never would have given thought to (like dancing LOL), and let me meet and form friendships with people I will treasure or the rest of my life.\nSo enough of me already, we can talk about that another time. If you're reading this and you're on the website... see you at OYFA events and I hope to get to know you and see you smile :))"
+              city: "Virginia Beach, VA",
+              bio: "Ayo, was good - My name is Christopher Collins, aka your 2020-21 Recording SeChristary. I am a 2nd year in the A-school, majoring in Architecture on the pre-professional track. Besides that, I take photos, water my plants, and make a mean boba, so if any of those things interest you, hmu!",
+              extraText: [{text: "Def Lakas. After the volleyball tournament in 2019, I was introduced to so many of the best facets that oyfa has to offer that thereafter, I felt like I had a home on grounds with this org. This event was the first time I ever took photos, had a conversation with some really amazing people in my family, and played with volleyball with a group (tho I’m still negative good at it). From this event, I was opened to so many opportunities that oyfa had to offer, beyond the dance/party aspect of it (which tbh ain’t my speed), and realized that there’s something for everyone here in oyfa."}]
             },
           ],
         },
@@ -1768,17 +1769,16 @@ export const BNC33 = [
       committeeName: "Outreach Coordinator",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Angie.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/grace.png",
           text: [
             {
-              name: "Angelina Rodriguez",
-              pronouns: "she/her",
+              name: "Grace Yang",
               year: "3rd Year",
-              major: "Interdisciplinary in Biology, Psychology, and Anthropology",
+              major: "Biology and Entrepreneurship minor",
               email: "amr4rnq@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "“A hug is always the right size” - Winnie the Pooh",
-                bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
+              city: "Mclean, VA",
+              extraText: [{text: "I'll never forget first year during Assassins when I started talking to Monique in our COLA class to gain her trust, only to ask to see and hold her lime immunity because I couldn't tell if it was real. Owen swooped in from behind with his sock and made the kill. Love you Monique! <3"}],
+              bio: "Hey everyone! I'm Grace Yang, your Outreach Coordinator. As a 3rd year, I'll be majoring in Biology in the College! Once we're back in person, you'll find me with my pup (Luna) on Grounds! I love music (I play bass clarinet and ukelele-ish) so let's exchange music recommendations!"
             },
           ],
         },
@@ -1789,33 +1789,30 @@ export const BNC33 = [
       committeeName: "Culture",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Lauren.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/jazlyn.png",
           text: [
             {
-              name: "Lauren Manuel",
-              pronouns: "she/they",
-              year: "4th Year",
-              major: "Pre-med Psychology | Health and Well-Being minor",
+              name: "Jazlyn Nguyen",
+              year: "3rd Year",
+              major: "Cognitive Science",
               email: "llm6ee@virginia.edu@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"The flower that blooms in adversity is the most rare and beautiful of all.\" - The Emperor, Mulan",
-            bio: "Alas, I saw the bright light that dawned upon my wide eyes as I emerged from my mother's womb, and thus began the life I live today.\njk HAHA, hellOYFA all of you beautiful humans! my name is Lauren and I'm super excited to be serving as one of your Culture chairs for my last year here at UVA (': OYFA has given me some of the greatest experiences of my life throughout the past 3 years, and I can't wait to make even more memories with you all this year. outside of my academics, I enjoy being unapologetically myself, advocating for mental health and wellness (which I have struggled with for almost a decade so if you ever need someone to talk to I am always here!), and serving people in my community. my other hobbies include cooking yummy vegan recipes, going on hikes around the Blue Ridge area, tanning at the pool and beach, playing tennis, and singing even though I have awful performance anxiety. hmu if you wanna be friends <3\nPEACE. LOVE. KUL2RA."
+              city: "Stafford, VA",
+              extraText: [{text: "There I was, in the middle of the parking lot, left to my own devices (a nerf gun). It was dark, but not stormy, and I was petrified as I had to traverse the uneven gravel to arrive at the final destination: family reveal party. As I took a step into the unknown, I heard someone shout WATCH OUT,\" and I saw it. A nerf bullet. Coming in slow motion towards me. I bent backwards in hopes of surviving another day, and the bullet passed through the dense air. I looked around frantically, and saw a dark figure move quickly. This was my opportunity. This was my chance to prove myself worthy of OYFA. And so I lifted my nerf gun, and took a shot in the dark. I heard a grunt. I hit him. And that figure is now my big. All this to say, I love how people in OYFA go out of their way to make sure you're having a good time. The people I have met in this org will undoubtedly be my lifelong friends, and we will never stop having fun, dramatic, whacky times! #LiveLaughLOYFA\""}],
+              bio: "Heyo! My name is Jazlyn Nguyen and I am 1/2 of your culture chairs! I'm a 3rd year (ew) majoring in Cognitive Science. I like reading tarot cards, playing DnD, and making space dubstep. Hit me up if ya wanna know your future! (Hint: it's in OYFA)"
             },
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_JoshDa.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/sofia.png",
           text: [
             {
-              name: "Josh Dano",
-              bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Adrian.JPG",
-              pronouns: "he/him",
-              year: "4th year",
-              major: "Global Public Health and Computer Science",
+              name: "Sofia Protacio",
+              year: "2nd year",
+              major: "Nursing",
               email: "jgd5nm@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"The woods are lovely, dark and deep, but I have promises to keep, and miles to go before I sleep.\" – Robert Frost",
-            bio: "Helloyfa! My name is Josh, and I am one of your Culture Chairs this year! I'm a fourth year studying Global Public Health and Computer Science (still unclear what I'll do post-grad). In my free time, I enjoy playing volleyball, thrifting, and binge watching Netflix series. Find me procrastinating in the Multicultural Student Center!\nPEACE. LOVE. KUL2RA."
+              city: "Midlothian, VA",
+              extraText: [{text: "My favorite OYFA memory would be Culturefest season and growing close to the other first years through dance practices every night."}],
+              bio: "Hi everyone! My name is Sofia Protacio and I am one of the culture chairs! I am a 2nd year nursing major and a fun fact is that I am a Canadian citizen but I was born in Manila, Philippines!"
             },
           ],
         },
@@ -1826,32 +1823,30 @@ export const BNC33 = [
       committeeName: "Historic",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Annie.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/ken.png",
           text: [
             {
-              name: "Annie Trinh",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Global Public Health, Anthropology Minor",
+              name: "Art Ken Fontelera",
+              year: "4th Year",
+              major: "Mechanical Engineering",
               email: "ant2ms@virginia.edu",
-              city: "Richmond, VA",
-              quote: "\"Live your life like a Studio Ghibli film, where every moment, even seemingly insignificant, is beautiful.\" - Anon",
-              bio: "Hello hello, i'm Annie ! This is my first year on B&C but i'm beyond excited to be one half of your historic chairs! I'm a 2nd year, hopeful GPH major with a minor in Anthropology. I love film photography and learning languages (fun fact: i'm currently learning my 5th and 6th languages). Another thing I love doing is adding to +perfecting my coffee shop vibe playlist, so feel free to send me any good rnb/krnb/chinese-rnb song recs :))"
+              city: "Norfolk, VA",
+              extraText: [{text: "Hey it’s me, Ken. I am one of your historians as well as famheads! My hobbies include but aren’t limited to: cooking, playing tennis, playing the violin, teaching, taking photos/videos and of course getting to know all of you. Please don’t hesitate to reach out to me for anything!"}],
+              bio: "When Danielle and Michelle came from NOVA to my place in Norfolk. Chris joined us for the sleepover unplanned...ended up going to Walmart and then making ramen at around 3am."
             },
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Emile.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/monica.png",
           text: [
             {
-              name: "Emile Cohen Suárez",
-              pronouns: "he/him",
+              name: "Monica Do",
               year: "2nd year",
-              major: "Undecided",
-              email: "esc9jkx@virginia.edu",
-              city: "Alexandria, VA",
-              quote: "\"People say nothing is impossible, but I do nothing every day\" — Winnie the Pooh",
-              bio: "Hiii I'm Emile! Currently a second year, RA, and undecided major-wise but we'll figure it out! I'm so excited to be one of your historic chairs! I love watching an unhealthy amount of television and movies at 2am. I'm always up for discussing them too! I also like to go on walks in the rain :) listen to music, play video games, read, and climb trees. Feel free to reach out just to chat or for anything at all!"
+              major: "Economics and Sociology",
+              email: "@virginia.edu",
+              city: "Falls Church, VA",
+              extraText: [{text: "I love that everyone in OYFA is so welcoming and willing to have a conversation with you. Everyone is pretty much family!"}],
+              bio: "Hi Everyone! My name is Monica Thu Do and I am one of your Historic chairs! I'm a 2nd year majoring in Economics and Sociology in the College. I love writing calligraphy and painting, so hit me up if you want to do some art together."
             },
           ],
         },
@@ -1862,33 +1857,29 @@ export const BNC33 = [
       committeeName: "Membership",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_HannahS.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/maggie.png",
           text: [
             {
-              name: "Hannah So",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Biochemistry",
-              email: "hhs5suk@virginia.edu",
-              city: "Mechanicsburg, PA",
-              quote: "\"Quit, dont quit. Noodles, don't noodles. You are too concerned about what was and what will be. Yesterday is history, tomorrow is a mystery. But today is a gift, that is why it is called the 'present'\" - Master Oogway",
-              bio: "Hello! I am your membership chair along with Jake this year. In my free time I love listening to music, watching cooking YouTube videos, and lying down. I also like to ice skate and impulsively purchase things I do not need .I am super excited to meet new people and make some mems :) Hope to see you soon!"
-            },
+              name: "Maggie Encarnacion",
+              year: "2nd Year",
+              major: "Linguistics",
+              email: "@virginia.edu",
+              city: "Farmville, VA",
+              extraText: [{text: "There's too many to choose from ugh but one of my favorite OYFA memories would have to be our Secret Santa event. It was just so wholesome and seeing every smile with their gifts and people being excited to reveal who they were, coupled with that Christmas spirit, made my heart so happy. That whole time just feels like a nice warm hug."}],
+              bio: "Helloyfa! I'm Maggie Encarnacion and I'm one of your mem chairs! I'm a 2nd year potentially majoring in Linguistics. I can sign the ASL alphabet backwards, I'm like kinda really short, and I love making Google forms. Music also plays a pretty big role in my life s0o if you wanna drive down 64 while listening to music and question our existence or go to a concert (once it's safe again) pls don't be shy and reach out:)) I also really got into kdramas and BTS during quarantine so if you wanna fangirl about Park Seo-joon, I'm always down <3"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Jake.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/john.png",
           text: [
             {
-              name: "Jake Ochave",
-              pronouns: "he/him",
-              year: "3rd year",
-              major: "Commerce",
-              email: "jco9dz@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"I need a room full of mirror so I can be surrounded by winners.\" - Kanye West",
-              bio: "Who am I? I will tell you... I am Jake Ochave. The Jake Ochave. There are many stories about me. What stories have you heard? I am the Glob-glo-gab-galab. The shwabble-dabble-wabble-gabble flibba blabba blab. I'm full of shwibbly liber-kind. So please do not be in a bind, cuz' I have committed no crimes! So live life worrying about no dimes. Slime.\n*woosh *woosh*\n*Brown Streak zooms pass you and you are stunned by his stellar looks and steamy presence.*"
-            },
+              name: "John Le",
+              year: "2nd year",
+              major: "Global Public Health and Psychology",
+              email: "@virginia.edu",
+              city: "Sterling, VA",
+              extraText: [{text: "Have you ever seen Thor Ragnarok (ofc you have) when Odin says, \"Asgard is not a place, it's a people\". I truly believe the same applies to OYFA. My favorite aspect of this org are the amazing members- that always hype you up, are always supportive of you, and ready to lend a hand whenever you need. And because the people are so awesome, every event feels special and memorable. With that being said, some notable events would include Oyfassassins, Fam Week, and Culturefest! <3"}],
+              bio: "What's gooood! My name is John Le and I am literally so jazzed to be one of your MEMBERSHIP CHAIRS <3 I am currently on the pre-med track, hoping to major in GPH or Psychology! Since I love fun facts, and I will give you 3! 1. I love Hamilton 2. I once overdosed on gummy vitamins and had to get my stomach pumped, and 3. I can't wait to meet/reconnect with you all <3 HMU if you ever want to vibe, skate, edit videos, eat cheese ramen, or literally anything (that respects social distancing ;))! Stay fly and stay safe."},
           ],
         },
       ],
@@ -1898,33 +1889,29 @@ export const BNC33 = [
       committeeName: "Public Relations",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Sydney.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/arabella.png",
           text: [
             {
-                name: "Sydney Queener",
-                pronouns: "she/her",
-                year: "2nd year",
-                major: "Pre-Commerce, Anthropology Minor",
-                email: "scq2xe@virginia.edu",
-                city: "Springfield, VA",
-                quote: "Give man fish, he eats for a day. Give man fish man eat for life <3",
-                bio: "Hello! My name is Sydney Queener and I am one of the Public Relations chairs this year. I’m a second year majoring in Pre-Commerce and I am potentially minoring in Anthropology (honestly have no idea though? but it is fine). In my free time I like to shop (it is very much a problem), sew, bake, watch food videos on youtube, try new food and boba shops. I also really love dogs and cats."
-            },
+              name: "Arabella Chiang",
+              year: "2nd year",
+              major: "Pre-Comm",
+              email: "@virginia.edu",
+              city: "Ashburn, VA",
+              extraText: [{text: "There are so many OYFA memories I've created with my friends in the short year we had, but one of my favorites was for sure the dance practices for Culturefest and Barrio, even though I'm a terrible dancer. Everyone is always there to hype you up and there's never any judgement. It was always a fun time, and through these dance practices I was able to find people who I call my best friends today :)"}],
+              bio: "Hey guys!!!! I'm Arabella Chiang and I'm one of your PR chairs this year! I'm currently a 2nd year hoping to get into the Comm school, but we'll see how that goes. I'm an adventurer and love to explore the outdoors. If anyone is down to go hiking or exploring around Cville, be sure to reach out to me. Can't wait to see everyone's beautiful faces on ZOOM :)"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_HannahR.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/elise.png",
           text: [
             {
-              name: "Hannah Roldan",
-              pronouns: "she/her",
+              name: "Elise Nguyen",
               year: "2nd year",
-              major: "Psychology and Media Studies",
-              email: "hlr5dj@virginia.edu",
-              city: "Farmville, VA",
-              quote: "\"Just follow your heart, and keep smiling.\" - Kiki's Delivery Service (1989)",
-              bio: "hi hi hi OYFA! My name is Hannah Roldan, and I’ll be serving OYFA as one of your Public Relations chairs for the 2021-2022 year. I’m currently a second year in the College of Arts and Sciences and currently I plan on studying Psychology and maybe also Media Studies. I’m so excited to be serving on OYFA’s B&C for the first time—Sydney and I have so many ideas we can’t wait to share with you! In my free time, I’m a freelance artist and general anime enthusiast. I also do play Genshin Impact a lot (hit me up if you wanna co-op!), and I will not hesitate to bake you a fresh batch cookies if you tell me you’re having a tough day. I look forward to getting to know you all! <3"
-            },
+              major: "Pre-Comm and CS",
+              email: "@virginia.edu",
+              city: "Ashburn, VA",
+              extraText: [{text: "My favorite OYFA memory was meeting my big for the first time because I felt like I found someone who I was able to talk to about anything to, and create a lifelong connection!"}],
+              bio: "Hi! My name is Elise and I am one of the PR co-chairs this year! I love The Office so much that I listen to it as a podcast when I go to sleep. I also like playing Valorant but I'm not very good :( someone teach me how to click heads, uwu"},
           ],
         },
       ],
@@ -1934,33 +1921,29 @@ export const BNC33 = [
       committeeName: "Community",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Cheryll.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/nikolle.png",
           text: [
             {
-              name: "Cheryll Caalim",
-              pronouns: "she/her",
+              name: "Nikolle Esteban",
               year: "2nd year",
-              major: "Global Public Health",
-              email: "ctc7rv@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "“It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.” - Vincent Van Gogh",
-              bio: "I joined OYFA to learn more about my Filipino heritage, and it’s been a blast getting to know such amazing individuals along the way! Being community chair is only one way I can give back to this organization and to the rest of the world on whatever scale possible!"
-            },
+              major: "Anthropology; Pre-Med",
+              email: "@virginia.edu",
+              city: "Aldie, VA",
+              extraText: [{text: "My favorite OYFA memory was the last Culturefest run throughs because it showed the organization's naturally caring, hype-man, and supportive community :)"}],
+              bio: "Hello hello! I am so honored and excited to be one of OYFA's Community Chairs this year! I'm a 2nd year on the pre-med track with a currently undecided major :') I love watching movies and binging TV shows (as long as it's not horror heh) I'm also a big foodie so hmu if you want to cook or eat out together if my bank account allows!"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Patrick.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/isabel.png",
           text: [
             {
-              name: "Patrick Salvanera",
-              pronouns: "he/him",
+              name: "Isabel Carino",
               year: "2nd year",
-              major: "Chemical Engineering, Possible Sociology Minor",
-              email: "pms6py@virginia.edu",
-              city: "Stafford, VA",
-              quote: "\"All I've had is coffee and leftover pie.\" - Laufey",
-              bio: "My story?...still trying to figure it out ._."
-            },
+              major: "Cognitive Science",
+              email: "@virginia.edu",
+              city: "Centreville, VA",
+              extraText: [{text: "Some of my favorite OYFA memories are fam week and culture fest/barrio practices!! What I like most about OYFA is how supportive and welcoming everyone is, and it really is like your second family."}],
+              bio: "Helloyfa! My name is Isabel and I'm one of your Community chairs! I’m a 2nd year majoring in cognitive science interested in pursuing a pre-physician assistant track. Some things I like to do in my free time are spend quality time with friends and family, listen to music (I make way to many spotify playlists), and go thrifting!!"},
           ],
         },
       ],
@@ -1970,33 +1953,29 @@ export const BNC33 = [
       committeeName: "Social",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Ben.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/danielle.png",
           text: [
             {
-              name: "Ben Hill",
-              pronouns: "he/him",
+              name: "Danielle Borgonia",
               year: "4th year",
-              major: "Global Development Studies and Religious Studies",
-              email: "bjh8wt@virginia.edu",
-              city: "Manassas, VA",
-              quote: "\"What's so amazing that keeps us stargazing, and what do we think we might see?\" - Kermit the Frog              ",
-              bio: "What's up OYFA! My name is Ben and I'm excited to be one of your Social chairs this year! I am a fourth year studying Global Development Studies and Religion, so it's safe to say that I have NO clue what I want to do after college. I hail from the good ole 703 and my hobbies include impulsively buying vintage books, watching war movies, going to the gym, and singing covers of pop songs with 17 other guys. I can't wait to make wholesome AND heinous memories with everyone!!"
-            },
+              major: "Biology and Biostatistics",
+              email: "@virginia.edu",
+              city: "Leesburg, VA",
+              extraText: [{text: "My favorite memory of OYFA is definitely the hype circle the night before Barrio 2019. To see everyone excited and proud of what they've been able to accomplish over the past few months just made me really happy. And to celebrate with some of your closest friends is the best feeling in the world"}],
+              bio: "Hello hello! I'm Danielle Borgonia, one of your social chairs! I'm an old 4th year double majoring in Biology and Statistics and just trying to ~live~. Hit me up if you want to jam and play some music!"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Korey.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/ysabel.png",
           text: [
             {
-              name: "Korey Busby",
-              pronouns: "they/she",
+              name: "Ysabel Sprague",
               year: "4th year",
-              major: "Nursing, African American Studies Minor",
-              email: "kmb2rt@virginia.edu",
-              city: "Houston, TX",
-              quote: "\"She could beat me, but she could never beat my outfit.\" - Rihanna              ",
-              bio: "My name is Korey I use they/she pronouns. I am a posse scholar studying in the School of Nursing. I was born and raised in Houston, Texas (H-Town Hottie)! I enjoy making memories with my friends, expressing myself with makeup, and being active on social media. My passions include working with kids (I have been an orientation leader, Resident Advisor, and Camp Counselor) and learning about Black history (I minor in AAS studies). When I graduate I hope to find a way to incorporate my passions with Nursing and give back to the community I was raised in."
-            },
+              major: "English",
+              email: "@virginia.edu",
+              city: "Vienna, VA",
+              extraText: [{text: "My favorite OYFA memory would have to be the entirety of the Culturefest experience. It’s a new vibe every year! I love to watch the babies have fun learning the dances, rocking their performances on stage, and letting out all their crazy energy that night. It’s an OYFA tradition I hope everyone will get the chance to live out."}],
+              bio: "Hello OYFA! I’m Ysabel and this is my third and final time on OYFA B&C! I will be this year’s Social Chair along with the legend herself, Danielle Borgonia. I am a FOURTH year majoring in English. I’m ready to make the most out of this year and improve my cooking skills so hmu with some delicious recipes."},
           ],
         },
       ],
@@ -2006,33 +1985,29 @@ export const BNC33 = [
       committeeName: "Sports",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_JoshDe.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/jake.png",
           text: [
             {
-              name: "Josh De Vera",
-              pronouns: "he/him",
+              name: "Jake Ochave",
               year: "2nd year",
-              major: "Computer Science, Health and Well-Being Minor",
-              email: "jvd7eqj@virginia.edu",
-              city: "Manassas, VA",
-              quote: "\"The future belongs to those who believe in the beauty of their dreams\" - Shoyo Hinata",
-              bio: "Hey y'all! I'm Josh De Vera and I'm one of your sports chairs for this year! I'm a 2nd year CS student in the e-school hoping to focus in cybersecurity. I love playing all sports and staying healthy physically and mentally. Feel free to hit me up to play sports, relax, or just talk about random things. I'm excited to see where we go with all the Sports events this year and hope to see y'all there! Fly high!"
-            },
+              major: "Pre-Comm",
+              email: "@virginia.edu",
+              city: "Virginia Beach, VA",
+              extraText: [{text: "When I first laid eyes on Josh Dano... jk but that was also a great experience. What I really enjoy most about OYFA are all the little interactions I have with everyone in the organization. There is just a sense of community and inclusiveness that holds strong within the core of OYFA and that's why I love it so!"}],
+              bio: "SPIKE! Oh hey, didn't see you there. The name is Jake Ochave, but you can call me Brown Streak! I love to bomb hills down in Cville and I am a Spikeball master! I am a 2nd year attempting to get into the McIntire School! Maybe I'll catch ya on Zoom but I don't know if you can catch me hehe ;)"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Jay.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/sunny.png",
           text: [
             {
-              name: "Janegela \"Jay\" Inthavong",
-              pronouns: "she/her",
+              name: "Sunny Hwang",
               year: "4th year",
-              major: "Women and Gender Studies",
-              email: "ji2fb@virginia.edu",
-              city: "Philadelphia, PA",
-              quote: "\"You can fly even higher.\" - Kageyama to Hinata",
-              bio: "I am someone who is a weeb, loves edm/raves, and animals!! I also like having conversations about astrology and the universe :o Come out to volleyball and have fun with us!"
-            },
+              major: "Computer Engineering",
+              email: "@virginia.edu",
+              city: "Gainesville, VA",
+              extraText: [{text: "Hi there, It’s sunny (like the ☀️) I’m a fourth year majoring in computer engineering and am one of your sports chairs. Fun fact, I am an avid fan of all Washington sports teams especially the Washington Football Team (formerly known as Redsk***)"}],
+              bio: "Meeting my big for the first time. The man hid inside a box and bursted out of it."},
           ],
         },
       ],
@@ -2042,33 +2017,29 @@ export const BNC33 = [
       committeeName: "Advocacy",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Franky.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/frances.png",
           text: [
             {
-              name: "Franceska \"Franky\" Coo",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Computer Science",
-              email: "fdp6kz@virginia.edu",
-              city: "Alexandria, VA",
-              quote: "\"Promise me you'll think about the implications!\" - Paul, The Guy Who Didn't Like Musicals",
-              bio: "Heyyy! I'm Franky, and studying makes up 80% of my personality (yeah, I follow study accounts on every social media platform), which is why I'm one of your advocacy chairs! I think education and staying informed is one of the most important things any individual can do for their community. The other 20% of my personality consists of constantly attempting to critique different media like a professional, upcycling/thrifting, and tennis. I also love cooking/baking and using my brain for anything >:D ! Feel free to hit me up if you ever want to rally or hold a verzuz, but just know that I'm always right..."
-            },
+              name: "Frances Mendoza",
+              year: "4th year",
+              major: "Government",
+              email: "@virginia.edu",
+              city: "Virginia Beach, VA",
+              extraText: [{text: "This is cheesy, but what I like most about OYFA is the people, they're chill."}],
+              bio: "Hello hello, my name is Frances and I will be one of your advocATE's this year. I love singing even though I am GREATLY terrible at it. My go to karaoke song is anything by Celine Dion -- she is an ICON. If you ever want to sing karaoke hmu because I actually have a portable karaoke (IM ALWAYS READY TO SING)."},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Nikolle.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/jana.png",
           text: [
             {
-              name: "Nikolle Esteban ",
-              pronouns: "she/her",
+              name: "Jana Mirafuente",
               year: "3rd year",
-              major: "Medical Anthropology and Sociology",
-              email: "nve4njz@virginia.edu",
-              city: "Aldie, VA",
-              quote: "\"Tis better to have loved and lost, Than never to have loved at all\" - In Memoriam A.H.H. by Alfred Lord Tennyson",
-              bio: "Helloyfa! I'm excited to be your interim Advocacy chair this fall! We have a bunch of fun activities coming up so stay tuned!! Please reach out to me if you wanna talk, chill, or just vibe :)"
-            },
+              major: "Nursing",
+              email: "@virginia.edu",
+              city: "Winston Salem, NC",
+              extraText: [{text: "What I love most about OYFA is the fact that it gave me some of my closest friends. We're at a big school, and OYFA is pretty big as well, so it can get overwhelming sometimes, but finding even just a few people in an organization that (1) has a lot of people like me, and (2) already feels so close-knit like family changed my college experience in the best way possible."}],
+              bio: "Hello OYFAm~ I'm Jana, I use she/her pronouns, and I'm a 3rd-year nursing student serving as 1 of 2 Advocacy Chairs this school year. Outside of OYFA and being a nurse, I was also an OL these past 2 summers and am part of WAALI. I also love to draw, play guitar, experiment with makeup, watch anime, and read. Super excited to be with you all again for another year <3"},
           ],
         },
       ],
@@ -2078,33 +2049,29 @@ export const BNC33 = [
       committeeName: "District 7",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Maggie.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/angie.png",
           text: [
             {
-              name: "Maggie Encarnacion",
-              pronouns: "she/her",
+              name: "Angelina Rodriguez",
               year: "2nd year",
-              major: "Undecided 🤠",
-              email: "mme2hu@virginia.edu",
-              city: "Farmville, VA",
-              quote: "“I will not let the fact that I cannot do everything stop me from doing everything I can.” - and I forgot who said that but I read it in a book once and it stuck fnsnsmksk",
-              bio: "Helloyfa helloyfa! I’m Maggie, Margaret Ann, Magrat, Maggot, Mama Maggie, or whatever you wanna call me and I’m excited to be your :D7 rep this year! I’m still figuring out what I wanna do with my life, and if you are too, then we can do it together 🥰 I’m always down for a random adventure or deep conversations about random things, so feel free to reach out hehe :)"
-            },
+              major: "Echols Interdisciplinary Major",
+              email: "@virginia.edu",
+              city: "Chesapeake, VA",
+              extraText: [{text: "Hello hello, my name is Angie, and I am super excited to be 1/2 of your D7 reps this year (fun fact: I am also the D7 secretary hehe)! My favorite thing to do is curl up in a blanket, especially when studying, so if you're ever in need, hmu and I might just be able to help! I know this year will be all kinds of things, so feel free to msg me about ANYTHING, and I'd love to chat with you :) Take care and stay safe!"}],
+              bio: "Everyone has their own experience within OYFA, but ultimately, they all stem from the same root: the family, support, and connections you find from it. That's the nature of OYFA; if you are a Oyfan, you are part of an extensive family, dating from alumni who even post-graduation will lend whatever help they can, to current members who share in your day-to-day life on grounds. This family that you find yourself in is incredibly supportive, something that some people never really get to experience in their lives. Whether you need someone to hype you up at an event, give you advice on classes/careers, walk you through a breakdown, or just chill with on a Friday night, there is someone--quite a few someones--who would do all that for you in a heartbeat. Frankly, you can't find better people :)"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Sarah.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/noah.png",
           text: [
             {
-              name: "Sarah Menchavez",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Undecided",
-              email: "sam7yr@virginia.edu",
-              city: "Leesburg, VA",
-              quote: "“Relax but don’t get comfortable” - Gucci Mane",
-              bio: "Helloyfa! I’m Sarah and I’m so hyped to be your D7 rep this year!! I love OYFA with my entire heart <333 I’m also involved with Greek life at UVA as a pi phi. Hit me up if ever wanna binge Daniel Padilla movies ;)"
-            },
+              name: "Noah Narciso",
+              year: "3rd year",
+              major: "Computer Science and Chemistry Minor",
+              email: "@virginia.edu",
+              city: "Clifton, VA",
+              extraText: [{text: "My favorite OYFA memory is performing at culturefest and seeing all of the upperclassmen cheer us on for our first performance."}],
+              bio: "Hello my name is Noah Narciso and I am one of the District 7 representatives. I am a 3rd year majoring in CS and minoring in Chemistry in the College. I love playing volleyball, making digital art, watching anime and cooking!"},
           ],
         },
       ],
@@ -2114,33 +2081,29 @@ export const BNC33 = [
       committeeName: "Webmasters",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Jared.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/joshb.png",
           text: [
             {
-              name: "Jared Mirt",
-              pronouns: "he/him",
-              year: "3rd year",
-              major: "Biomedical Engineering, Computer Science Minor",
-              email: "jam9qbq@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "“Sometimes life is scary and dark. That is why we must find the light.” - BMO",
-              bio: "What's up everyone! I'm Jared and I'm going to be one of your webmasters this year. I'm a third year studying biomedical engineer and still don't have a single clue of what I'm doing after college. I enjoy: cooking, snowboarding, anime, volleyball, scary movies, music and the limited edition lime straw from TroSmo (NOT Trop).\nI was lil late to the OYFA party and didn't join till my second semester of my first year. Even with my \"late\" start everyone was so welcoming and genuine. I quickly found my place at UVA within OYFA. So join ASAP! and come out to our meetings and events, fill out the little form, go to that dance practice even if you don't know anyone, the whole nine. I can't wait to meet you all."
-            },
+              name: "Josh Buckley",
+              year: "4th year",
+              major: "Computer Science",
+              email: "@virginia.edu",
+              city: "Danville, VA",
+              extraText: [{text: "One of my favorite OYFA memories is when I painted with my Big and his friends. We made Spongebob paintings, and I painted Patrick working out his exxtra thick glutes :O. It was so nice to have people to goof with-- I was worried I wouldn't find a group like that going into college."}],
+              bio: "Hello! My name is Josh and I am one of the Webmasters this year. I'm studying computer science in the school of Arts and Sciences. I love hiking, tennis, soccer, food, baking, and more! Message me if you would like someone to talk to /hike with/anything else!"},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Emil.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/anh.png",
           text: [
             {
-              name: "Emil Diaz",
-              pronouns: "he/him",
-              year: "4th year",
-              major: "Pre-med Biology, Computer Science Minor",
-              email: "ecd4wa@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"Everyone forgets that Icarus also flew.\" -- Jack Gilbert, Failing and Flying",
-              bio: "Hey everyone! My name is Emil, a fourth year pre-med student majoring in Biology and minoring in CS. A little about me, I was born in Manila and lived there for five years before my family moved to Virginia. I have a boxer back at home, her name is Allie. I love her with all my heart; a fun fact about her is that she sleeps like a human with her head always on a pillow and her bottom half under blanket. I like to play games--I recently migrated to PC gaming so woot woot. Some of my favorite games include the Dark Souls trilogy, Destiny, and Valorant; play with me some time! Also if you like to play chess, add me on chess.com so we can battle. Anyway, I'm really excited to meet all of you this year, and I can't wait to make memories with you all! :D"
-            },
+              name: "Anh Nguyen",
+              year: "2nd year",
+              major: "Computer Science",
+              email: "@virginia.edu",
+              city: "Ashburn, VA",
+              extraText: [{text: "One of my favorite memories in OYFA was when I went to events during fall fam week. I remember I showed up to one of the culturefest dance practices, and my fam head hyped me up and made me feel so confident even though I didn't meet her officially. Her, my bigs, and many more have made me feel so welcomed and loved at UVA."}],
+              bio: "Hi! My name is Anh Nguyen and I am one of your webmaster chairs! I'm a 2nd year majoring in CS in the E-School. I love anime so lmk if you wanna binge anything or need recommendations :)"},
           ],
         },
       ],
@@ -2150,33 +2113,29 @@ export const BNC33 = [
       committeeName: "Scholarship",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Isabel.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/julia.png",
           text: [
             {
-              name: "Isabel Carino",
-              pronouns: "she/her",
-              year: "3rd year",
-              major: "Cognitive Science and Health and Well-Being",
-              email: "cmc8smh@virginia.edu",
-              city: "Centreville, VA",
-              quote: "“May the flowers remind us why the rain was so necessary.” - Anon",
-              bio: "I was born in Biñan, Laguna then moved to northern Virginia when I was 2 years old. I was grateful to grow up in such a diverse area in NOVA, but it wasn’t until I joined OYFA that I became more in touch with my Filipino roots. When I first came to UVA, I was really scared to be on my own for the first time, but OYFA quickly became a home away from home. I love having a community that I can share and appreciate my Filipino culture with! <3"
-            },
+              name: "Julia Nakamoto",
+              year: "4th year",
+              major: "Statistics",
+              email: "@virginia.edu",
+              city: "Burke, VA",
+              extraText: [{text: "KAMAYAN on 4/20!!!"}],
+              bio: "Hi!! My name is Julia and I'm one of your scholarship chairs. I'm a rising 4th year, majoring in Statistics. My hobbies are watching kdramas, playing video games, and napping."},
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Leigh.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/ariane.png",
           text: [
             {
-              name: "Leigh Mante",
-              pronouns: "she/her",
-              year: "4th year",
-              major: "Global Public Health and Stastics, Global Sustainability Minor",
-              email: "lm2uq@virginia.edu",
+              name: "Ariane Tiongco",
+              year: "2nd year",
+              major: "Pre-Comm",
+              email: "@virginia.edu",
               city: "Virginia Beach, VA",
-              quote: "\"Live fast, die young, bad girls do it well.\" - M.I.A.",
-              bio: "I was born in Bohol, Philippines and moved to Virginia Beach when I was three. So obviously, my favorite thing to do in my free time is go to the beach, but I also enjoy thrifting, cooking, playing volleyball, working out, and getting ice cream with friends. :P My favorite time of day is golden hour, and if I could listen to one album for the rest of my life it would be Ctrl by SZA."
-            },
+              extraText: [{text: "My favorite OYFA memories are probably spending sleepless nights at Clark or 1815 and going in spontaneous 2am cookout runs (o^^o)"}],
+              bio: "Helloyfa! My name is Ariane, and I’m 1/2 of your scholarship chair! I’m a 2nd year on the pre-Comm school track. I love watching anime, drawing, cooking, and grinding late nights at Clark with friends. Feel free to ask me for anime or manga recommendations or if you just want to hangout."},
           ],
         },
       ],
@@ -2186,32 +2145,25 @@ export const BNC33 = [
       committeeName: "Student Advisors",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Jana.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_33 + "/dre and owen.png",
           text: [
             {
-              name: "Jana Mirafuente",
-              pronouns: "she/her",
+              name: "Andrea Dilao",
               year: "4th year",
-              major: "Nursing",
-              email: "jbm3bd@virginia.edu",
-              city: "Winston Salem, NC",
-              quote: "“The butterfly counts not months but moments, and has time enough.” -Rabindranath Tagore",
-              bio: "Ever since I was a kid I was always attracted to creating and making. I taught myself how to draw, paint, make jewelry, and have used creative writing as a channel for self-expression as well! This outlet has helped me a lot with mental health and personal growth/wellness, both of which I’m also really passionate about. Every day I hope to share this with my communities and to open others to their creative, freely expressive sides."
+              major: "Global Development Studies and Economics",
+              email: "@virginia.edu",
+              city: "Falls Church, VA",
+              extraText: [{text: "OYFA takes me for who I am, and gave me my forever friends- the people who know all of my secrets and love me anyway, and the ones I'll grow old with and invite to my deathbed."}],
+              bio: "hi there! Thanks for visiting the bio page of the OYFA website. I'm Dre Dilao and I'm one of OYFA's Student Advisors (SA). It's my last year at UVA and I am juicing all of the fun and opportunities out of it, in spite of the craziness that this world has descended into. Maningkamot at magtipid. Black Lives Matter."
             },
-          ],
-        },
-        {
-          bioImgSrc: LEADERSHIP_FOLDER_33 + "/Leadership_Grace.JPG",
-          text: [
             {
-              name: "Grace Yang",
-              pronouns: "she/her",
+              name: "Owen Haines",
               year: "4th year",
-              major: "Biology, Social Entrepreneurship Minor",
-              email: "gsy3ays@virginia.edu",
-              city: "McLean, VA",
-              quote: "\"I have realized that the past and future are real illusions, that they exist in the present, which is what there is and all there is.\" - Alan Watts",
-              bio: "HELLOyfa it's Grace Yang one of your student advisors, and I'm so excited to see everyone back on grounds!! In my free time you can find me with my pup Luna, roller skating, or cooking--definitely hit me up if you want to explore fun things outside this year <3"
+              major: "Systems Engineering",
+              email: "@virginia.edu",
+              city: "Vienne, VA",
+              extraText: [{text: "My favorite thing about OYFA is the sense of community and family."}],
+              bio: "Hello! My name is Owen Haines and I am one of the Student Advisors for this year! I'm a 4th year majoring in Systems Engineering. 4th year is fake and I'm in barely any classes, so hmu anytime if you want to do some distanced chilling <3"
             },
           ],
         },
@@ -2221,6 +2173,7 @@ export const BNC33 = [
 
 const LEADERSHIP_FOLDER_32 = "/images/leadership/bnc32";
 
+//TODO: Search GitHub if missing bios ever were filled
 export const BNC32 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/president.png",
@@ -2230,14 +2183,9 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/president.png",
         text: [
           {
-            name: "Joshua Dano",
-            pronouns: "he/him",
-            year: "3rd Year",
-            major: "Computer Science and Global Public Health",
-            email: "jgd5nm@virginia.edu",
-            city: "Virginia Beach, VA",
-            bio: "Helloyfa! My name is Joshua Dano, and I am the OYFA President for this year! I'm a 3rd year majoring in Computer Science and Global Public Health (what am I doing after I graduate? Hoo knows honestly) My favorite pastimes are practicing calligraphy during class instead of actually taking notes, changing my major and life plan, and binge watching new Netflix shows!",
-              extraText: [{text: "My favorite OYFA memory is the Culturefest Night Before Run Throughs during my first year. That's the moment I truly realized that OYFA was my home away from home and from then on I knew I wanted to give back to this organization as much as I can."},]
+            name: "Ysabel Sprague",
+            bio: "Ysabel is a 3rd year English major! She is from the town of Vienna, Virginia and joined OYFA her first year to explore her Filipino culture. She ran for President because she has a vision for what the organization can be in regards to the increased awareness of Filipino culture for both OYFA's members and the UVA/Charlottesville community. She also wants to offer a space for people Filipino and Non-Filipino alike to create lasting bonds and to feel as if they can be themselves at our university.",
+            extraText: [{text: "She's happiest when she is talking and connecting with others. Her favorite quote is from the new Cinderella movie with Lily James, \"Have courage and be kind.\""},]
           },
         ],
       },
@@ -2251,14 +2199,9 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/vp.png",
         text: [
           {
-            name: "Ariane Tiongco",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Medical Anthropology and Sociology",
-            email: "apt3tv@virginia.edu",
-            city: "VA Beach, VA",
-            quote: "\"WROWROWROWROWRO\" - Bertha",
-            bio: "Hello, I'm Ariane, a 3rd year in the Comm school. I was born & raised in the 757, with 3 older brothers and then a little sister. I'm a die-hard nintendo kid. I love Zelda games, pokemon, and have a soft spot for forgotten Gameboy Advanced & Gamecube Games. I'm aquarius sun w/ a capricorn moon, so... idk how im in a relationship rn. I swear I have a leo rising somewhere tho because i crave love & attention hehe. I also have other miscellaneous hobbies, but if you wanna learn more about me hmu! we might have something in common <3"
+            name: "Andrea Dilao",
+            bio: "Dre is a 3rd year Global Development Studies and Economics double major! She is from Falls Church, Virginia and joined OYFA her first year to maintain a connection to her Filipino identity in college. She ran for Vice President because she loved her experiences on B&C (#dubsonly Sports Chair) and wanted to build on the ways in which B&C members could feel more engaged and empowered in their personal roles and in OYFA as a whole. But it's mostly because she's obsessed with Google Forms, spreadsheets, and slides.",
+            extraText: [{text: "Dre's favorite quote is \"Go ahead, make my day\", as made famous by Clint Eastwood. She is happiest when she's doing completely spontaenous activities or travel with no planning involved."},]
           },
         ],
       },
@@ -2272,14 +2215,9 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/treasurer.png",
         text: [
           {
-            name: "Arabella Chiang",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Statistics, East Asian Minor",
-            email: "jp5ycx@virginia.edu",
-            city: "Ashburn, VA",
-            quote: "\"It never hurts to keep looking for sunshine\" - Winnie the Pooh",
-            bio: "Hey guys!!!! I'm Arabella Chiang and I'm your Treasurer this year, so be on the look out for those Venmo requests ;) I'm currently a 3rd year majoring in Statistics and minoring in East Asian Studies. I was born in Montgomery, Maryland, but was raised in Ashburn, VA, so I'm another NOVA kid here at UVA. If anyone lives in NOVA and wants to hang out over breaks hit me up :))\n Just a little about me, I love being on the go, so come out and adventure with me. There's many mountains to hike and trails to walk in Cville! I also love to just be around people and is always down to hang. I am a talker and can talk your ear off, so if you're down to hang I'm here! I am also a huge foodie, so come get food with me too. Maybe I'll cook, you never know.\n Anyways, I somehow found my way into OYFA my first year and was able to find people who I call my best friends and practically my family. I remember being hesitant in joining, until Sofia dragged me out to make Tiktoks with her and then the rest was history!",
+            name: "Owen Haines",
+            bio: "Owen is a 3rd year Systems Engineering major. He is from Vienna, Virginia and joined OYFA his first year. He ran for treasurer in order to further give back and help promote financial accesibility in OYFA.",
+            extraText: [{text: "His favorite quote is any of the dumb sayings on the side of those Lulu Lemon Bags and you can hit him up on venmo @ohainesva."},]
           },
         ],
       },
@@ -2294,14 +2232,9 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/oc.png",
         text: [
           {
-            name: "Jazlyn Nguyen",
-            pronouns: "she/her",
-            year: "4th Year",
-            major: "Cognitive Science concentrating in Computer Science",
-            email: "jan3wb@virginia.edu",
-            city: "Stafford, VA",
-            quote: "\"Real pain for your sham friends, champagne for your real friends.\" - Anon",
-            bio: "Hey guys! My name is Jazlyn Nguyen, and I’m half-Filipino and half-Vietnamese. I was born in Washington state, and moved to Virginia when I was 6. I love my relationships, and I love building community to help people feel at home! My hobbies include making music, gaming, and reading tarot cards~ Let me know if you want to see your future! Hint: It’s in OYFA"
+            name: "Sophia Molly Williams",
+            bio: "Sophia Williams is a 4th year Foreign Affairs major. She is from Virginia Beach and joined OYFA her first year. She ran for Outreach Coordinator because she wanted to support and represent OYFA, implement meaningful changes, and give back to the organization.",
+            extraText: [{text: "Sophia's favorite quote is \"Anakin, my allegiance is to the republic, to democracy!\". She is happiest when she is vibing with good music while on a road trip with friends."}]
           },
         ],
       },
@@ -2316,14 +2249,9 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/cosec.png",
         text: [
           {
-            name: "Sam Dioneda",
-            pronouns: "he/him",
-            year: "2nd Year",
-            major: "Nursing",
-            email: "msd3gjj@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "\"Spread love everywhere you go. Let no one ever come to you without leaving happier.\" - Mother Teresa",
-            bio: "Hi hi friends - My name is Sam Dioneda, and I'm a second year nursing student serving as your Recording Secretary this school year. Outside of OYFA and being a nursing student, I am apart of MAN and was an OL this summer, so hi if you were an orientee of mine! When I'm not doing anything related to school or OYFA, I love to bake, cook, eat sugar lol, run, read manga, and binge anime.\nBesides the above, I also love to see people smile. Seeing people happy with who they are and what they do is as addicting as sugar to me, and I always strive to create that environment it whatever situation I am in.\nAs for OYFA, it may sound cliché, but OYFA has given me a home in the grand place that is UVA, and I am eternally grateful for that. Coming in as a first year during a pandemic was tough, but somehow, OYFA helped me grow in ways I never imagined, try new things I never would have given thought to (like dancing LOL), and let me meet and form friendships with people I will treasure or the rest of my life.\nSo enough of me already, we can talk about that another time. If you're reading this and you're on the website... see you at OYFA events and I hope to get to know you and see you smile :))"
+            name: "Cindy Bui",
+            bio: "Cindy is a 4th year Psychology and Spanish double major in the College of Arts and Sciences. She is from Atlanta, GA and joined OYFA her first year. She ran for Corresponding Secretary in order to ensure that OYFA inhabits the space they need and deserve. In addition to enjoying the plethora of spreadsheets and emails, she loves to empower others to find importance in their presence and recognize that space is more than these four walls!",
+            extraText: [{text: "Cindy acknowledges that it is a hot take to favor the 2013 version of The Great Gatsby starring Leonardo DiCaprio, however, she is willing to discuss this with anyone that wants to share their opinion! \"So we beat on, boats against the current, born ceaselessly into the past.\""}]
           },
         ],
       },
@@ -2338,14 +2266,9 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/recsec.png",
         text: [
           {
-            name: "Angelina Rodriguez",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
+            name: "Taylor Mendoza",
+            bio: "Taylor is a second year majoring in Economics. He is from Eldersburg, Maryland and he joined OFYA his first year. He ran for Recording Secretary to connect people and share information about OYFA's awesome programming.",
+            extraText: [{text: "Taylor is happiest playing tennis, and his favorite quote is the Lego r2d2 death sound."}]
           },
         ],
       },
@@ -2359,14 +2282,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/advocacy.png",
         text: [
           {
-            name: "Lauren Manuel",
-            pronouns: "she/they",
-            year: "4th Year",
-            major: "Pre-med Psychology | Health and Well-Being minor",
-            email: "llm6ee@virginia.edu@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"The flower that blooms in adversity is the most rare and beautiful of all.\" - The Emperor, Mulan",
-          bio: "Alas, I saw the bright light that dawned upon my wide eyes as I emerged from my mother's womb, and thus began the life I live today.\njk HAHA, hellOYFA all of you beautiful humans! my name is Lauren and I'm super excited to be serving as one of your Culture chairs for my last year here at UVA (': OYFA has given me some of the greatest experiences of my life throughout the past 3 years, and I can't wait to make even more memories with you all this year. outside of my academics, I enjoy being unapologetically myself, advocating for mental health and wellness (which I have struggled with for almost a decade so if you ever need someone to talk to I am always here!), and serving people in my community. my other hobbies include cooking yummy vegan recipes, going on hikes around the Blue Ridge area, tanning at the pool and beach, playing tennis, and singing even though I have awful performance anxiety. hmu if you wanna be friends <3\nPEACE. LOVE. KUL2RA."
+            name: "Ben Hill",
+            bio: "Ben is a second year double majoring in Religious Studies and Global Security and Justice. He is from Manassas, Virginia and joined OYFA his first year. He ran for Advocacy because he wanted to deepen his connection with his heritage and help connect others to Filipino culture.",
+            extraText: [{text: "At 10 years old, Ben wanted to be a Pokemon trainer. However, given the moral implications, he has since changed his mind. His hidden talent is that he is a pro at stream-of-consciousnesses writing, and his favorite quote is \"Segundo, minuto, oras at buwan- hindi pa magiging sapat.\""}]
+          },
+          {
+            name: "Noah Narciso",
+            bio: "Noah is a 2nd year Computer Science major with a minor in Chemistry. He is from Clifton, Virginia and joined OYFA his first year. He ran for Advocacy because he wanted to have an impact on the organization. He wanted to help educate the members of the organization about different political, social and cultural events that happen in Filipino and Filipino-American peoples.",
+            extraText: [{text: "Noah is happiest when he is eating any type of food. His favorite quote is \"Why do we Shower?\""}]
           },
         ],
       },
@@ -2380,14 +2303,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/community.png",
         text: [
           {
-            name: "Annie Trinh",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health, Anthropology Minor",
-            email: "ant2ms@virginia.edu",
-            city: "Richmond, VA",
-            quote: "\"Live your life like a Studio Ghibli film, where every moment, even seemingly insignificant, is beautiful.\" - Anon",
-            bio: "Hello hello, i'm Annie ! This is my first year on B&C but i'm beyond excited to be one half of your historic chairs! I'm a 2nd year, hopeful GPH major with a minor in Anthropology. I love film photography and learning languages (fun fact: i'm currently learning my 5th and 6th languages). Another thing I love doing is adding to +perfecting my coffee shop vibe playlist, so feel free to send me any good rnb/krnb/chinese-rnb song recs :))"
+            name: "Alanna Zoscak",
+            bio: "Alanna is a 2nd year Computer Science major. She is from Haymarket, Virginia and joined OYFA her first year. She ran for Community because she has a passion for giving back through service.",
+            extraText: [{text: "She loves writing, and her favorite quote is \"Nothing works unless you do,\" by Maya Angelou."}]
+          },
+          {
+            name: "Leigh Mante",
+            bio: "Leigh is a second year studying Global Public Health and Statistics. Born in Bohol, she moved to Virginia Beach when she was three (#757). She joined OYFA her first year and loved every second of it. She ran for Community because she wanted to give back to the organization and encourage members to explore the power and strength of their identities on a bigger scale while connecting to the greater Charlottesville and UVA community.",
+            extraText: [{text: "Leigh is most happy when she's driving down London Bridge Road in Virginia Beach with the windows down during golden hour on a warm summer day blasting \"Electric Love\" by Borns or when drinking taro milk tea with 30% sugar and oreo crumble. Her favorite quote is \"purpose fuels passion.\""}]
           },
         ],
       },
@@ -2401,14 +2324,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/culture.png",
         text: [
           {
-            name: "Hannah So",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Biochemistry",
-            email: "hhs5suk@virginia.edu",
-            city: "Mechanicsburg, PA",
-            quote: "\"Quit, dont quit. Noodles, don't noodles. You are too concerned about what was and what will be. Yesterday is history, tomorrow is a mystery. But today is a gift, that is why it is called the 'present'\" - Master Oogway",
-            bio: "Hello! I am your membership chair along with Jake this year. In my free time I love listening to music, watching cooking YouTube videos, and lying down. I also like to ice skate and impulsively purchase things I do not need .I am super excited to meet new people and make some mems :) Hope to see you soon!"
+            name: "Joshua Dano",
+            bio: "Josh is a 2nd year studying Computer Science. He is from Virginia Beach, Virginia and joined OYFA his first year. Coming to UVa, though, he realized the importance of education of culture and the need for representation within our University.",
+            extraText: [{text: "He spends a lot of time practicing calligraphy during class instead of actually taking notes, and he has had many major changes during the past two years at UVa (including dropping pre-med), but has finally decided on Computer Science (or so he hopes)! His favorite quote is \"I didn't come this far, to only come this far.\""}]
+          },
+          {
+            name: "Lauren Manuel",
+            bio: "Lauren is a 2nd year studying Psychology with minors in Health and Well-Being and Bioethics. Through participating in Culturefest and Barrio her first year, this organization quickly became a home for her. As OYFA Culture Chair, she will continue to discover even more about her own culture and provide the incoming OYFA members with just as enriching of an experience as she had.",
+            extraText: [{text: "Lauren's favorite hobbies include working out at the AFC and cooking up some yummy vegan dishes, and binge-watching High School Musical: The Musical: The Series for Joshua Bassett's beauty."}]
           },
         ],
       },
@@ -2422,14 +2345,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/d7.png",
         text: [
           {
-              name: "Sydney Queener",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Pre-Commerce, Anthropology Minor",
-              email: "scq2xe@virginia.edu",
-              city: "Springfield, VA",
-              quote: "Give man fish, he eats for a day. Give man fish man eat for life <3",
-              bio: "Hello! My name is Sydney Queener and I am one of the Public Relations chairs this year. I’m a second year majoring in Pre-Commerce and I am potentially minoring in Anthropology (honestly have no idea though? but it is fine). In my free time I like to shop (it is very much a problem), sew, bake, watch food videos on youtube, try new food and boba shops. I also really love dogs and cats."
+            name: "Ciara Barrago",
+            bio: "No Bio",
+            extraText: [{text: ""}]
+          },
+          {
+            name: "Emil Diaz",
+            bio: "Emil Lorenzo Cunanan Diaz is a 2nd year Biology major with a CS minor! He lives in the city of Virginia Beach, VA with his mom and dog. He joined OYFA his first year and ran for D7 because he wanted to connect not only his fellow Filipinos at UVA but as many from any other schools as possible! Culture thrives through connectivity!",
+            extraText: [{text: "Emil is most happy when he is rubbing his dog's belly and laughing with friends during the late hours of the night. When he was 10, he really wanted to become a pilot, but alas, his eyes yeeted on him making him almost legally blind, crushing his childhood dream. That's okay though, because he has realized that becoming a doctor has been his true passion all along. He's also a sucker for good quotes, but his all time favorite quote is from Albert Camus, “In the midst of winter, I found there was, within me, an invincible summer.”"}]
           },
         ],
       },
@@ -2443,14 +2366,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/historic.png",
         text: [
           {
-            name: "Cheryll Caalim",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health",
-            email: "ctc7rv@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.” - Vincent Van Gogh",
-            bio: "I joined OYFA to learn more about my Filipino heritage, and it’s been a blast getting to know such amazing individuals along the way! Being community chair is only one way I can give back to this organization and to the rest of the world on whatever scale possible!"
+            name: "Jana Mirafuente",
+            bio: "No Bio",
+            extraText: [{text: ""}]
+          },
+          {
+            name: "Grace Yang",
+            bio: "Grace is a second year studying biology. She is from Mclean, Virginia, and she joined OYFA her first year. She decided to run for Historic because she wanted to capture and share experiences and memories with our UVA and Charlottesville community.",
+            extraText: [{text: "Grace's hidden talent is that she can crack pretty much every bone in her body, and her favorite quote is \"It's a weird life, but it’s where I’m at right now.\" - Nick Miller from New Girl"}]
           },
         ],
       },
@@ -2464,14 +2387,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/membership.png",
         text: [
           {
-            name: "Ben Hill",
-            pronouns: "he/him",
-            year: "4th year",
-            major: "Global Development Studies and Religious Studies",
-            email: "bjh8wt@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"What's so amazing that keeps us stargazing, and what do we think we might see?\" - Kermit the Frog              ",
-            bio: "What's up OYFA! My name is Ben and I'm excited to be one of your Social chairs this year! I am a fourth year studying Global Development Studies and Religion, so it's safe to say that I have NO clue what I want to do after college. I hail from the good ole 703 and my hobbies include impulsively buying vintage books, watching war movies, going to the gym, and singing covers of pop songs with 17 other guys. I can't wait to make wholesome AND heinous memories with everyone!!"
+            name: "Jazlyn Nguyen",
+            bio: "Jazlyn is a second year studing Cognitive Science with a concentration in Computer Science and Philosophy. She's from Stafford, VA and joined OYFA her first year. She wanted to be Membership to give back to OYFA and give its members a time that was as great as hers was. She was also inspired by her relationship with her big. But there’s way more to Membership than the Big/Little system, and honestly learning about those deeper things got her to love (and hate) the position so much. The best thing about Membership to her is the people that you connect with, and the bridges you build between others.",
+            extraText: [{text: "In her free time, Jazlyn likes to read tarot cards, and her favorite quote is \"Champagne for my real friends real pain for my sham friends\" — Happy Endings"}]
+          },
+          {
+            name: "Seth Miller",
+            bio: "No Bio",
+            extraText: [{text: ""}]
           },
         ],
       },
@@ -2485,14 +2408,14 @@ export const BNC32 = [
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/pr.png",
         text: [
           {
-            name: "Josh De Vera",
-            pronouns: "he/him",
-            year: "2nd year",
-            major: "Computer Science, Health and Well-Being Minor",
-            email: "jvd7eqj@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"The future belongs to those who believe in the beauty of their dreams\" - Shoyo Hinata",
-            bio: "Hey y'all! I'm Josh De Vera and I'm one of your sports chairs for this year! I'm a 2nd year CS student in the e-school hoping to focus in cybersecurity. I love playing all sports and staying healthy physically and mentally. Feel free to hit me up to play sports, relax, or just talk about random things. I'm excited to see where we go with all the Sports events this year and hope to see y'all there! Fly high!"
+            name: "Candace Miu",
+            bio: "Candace is a 2nd year majoring in Systems Engineering in the School of Engineering and Applied Science. She is from Oakton, VA and joined OYFA during her first year. Candace ran for Public Relations because she is passionate about graphic design and wanted to build a stronger relationship between the organization and the public, and further reach out to surrounding communities.",
+            extraText: [{text: "Candace is most happy when she's doing anything with her friends and having a good conversation over some good food. She also likes dancing and filming tiktoks in her spare time."}]
+          },
+          {
+            name: "Tiffany Nguyen",
+            bio: "Tiffany is a 2nd year intending to double major in Spanish and Economics in the CLAS. She is from Richmond, VA, and she joined OYFA her first year. Tiffany decided to run for Public Relations due to her interest in graphic design and hope to keep general members included and informed about events happening in the organization.",
+            extraText: [{text: "Tiffany enjoys watching the Bachelor/ette, spending quality time with friends, and exploring new restaurants in her free time."}]
           },
         ],
       },
@@ -2500,20 +2423,20 @@ export const BNC32 = [
   },
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/sa.png",
-    committeeName: "Advocacy",
+    committeeName: "Student Advisors",
     bios: [
       {
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/sa.png",
         text: [
           {
-            name: "Franceska \"Franky\" Coo",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Computer Science",
-            email: "fdp6kz@virginia.edu",
-            city: "Alexandria, VA",
-            quote: "\"Promise me you'll think about the implications!\" - Paul, The Guy Who Didn't Like Musicals",
-            bio: "Heyyy! I'm Franky, and studying makes up 80% of my personality (yeah, I follow study accounts on every social media platform), which is why I'm one of your advocacy chairs! I think education and staying informed is one of the most important things any individual can do for their community. The other 20% of my personality consists of constantly attempting to critique different media like a professional, upcycling/thrifting, and tennis. I also love cooking/baking and using my brain for anything >:D ! Feel free to hit me up if you ever want to rally or hold a verzuz, but just know that I'm always right..."
+            name: "Dorian Nguyen",
+            bio: "No Bio",
+            extraText: [{text: ""}]
+          },
+          {
+            name: "Dana Kim",
+            bio: "Dana is a 4th year Psychology major and Sociology minor in the CLAS. She's from Springfield, VA and joined OYFA in 2016 her first year. She applied to be a Student Advisor to support OYFA by alleviating the stress some B&C members may feel. She wants to create a healthy mindset for those dedicating their time to the organization.",
+            extraText: [{text: "She's happiest when she's spending quality time with her friends, family, and herself!"}]
           },
         ],
       },
@@ -2521,20 +2444,20 @@ export const BNC32 = [
   },
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/scholarship.png",
-    committeeName: "District 7",
+    committeeName: "Scholarship",
     bios: [
       {
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/scholarship.png",
         text: [
           {
-            name: "Maggie Encarnacion",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Undecided 🤠",
-            email: "mme2hu@virginia.edu",
-            city: "Farmville, VA",
-            quote: "“I will not let the fact that I cannot do everything stop me from doing everything I can.” - and I forgot who said that but I read it in a book once and it stuck fnsnsmksk",
-            bio: "Helloyfa helloyfa! I’m Maggie, Margaret Ann, Magrat, Maggot, Mama Maggie, or whatever you wanna call me and I’m excited to be your :D7 rep this year! I’m still figuring out what I wanna do with my life, and if you are too, then we can do it together 🥰 I’m always down for a random adventure or deep conversations about random things, so feel free to reach out hehe :)"
+            name: "Michelle Hilado",
+            bio: "Michelle is a third year majoring in Biology with a minor in American Sign Language in the College! She is from Woodbridge, VA (703 nova gang) and joined OYFA her first year but didn't become an active member until her second year. She ran for Scholarship because she wanted to create a supportive and welcoming environment, both socially and academically, for not only the incoming first years but everyone within OYFA.",
+            extraText: [{text: "Michelle is happiest when she is awake at odd hours of the night with her best friends for no reason because she has no business doing that. Her favorite quote is \"bababa ba?\" -Filipinos"}]
+          },
+          {
+            name: "Calathea Pacifica",
+            bio: "No Bio",
+            extraText: [{text: ""}]
           },
         ],
       },
@@ -2542,20 +2465,20 @@ export const BNC32 = [
   },
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/social.png",
-    committeeName: "Webmasters",
+    committeeName: "Social",
     bios: [
       {
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/social.png",
         text: [
           {
-            name: "Jared Mirt",
-            pronouns: "he/him",
-            year: "3rd year",
-            major: "Biomedical Engineering, Computer Science Minor",
-            email: "jam9qbq@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“Sometimes life is scary and dark. That is why we must find the light.” - BMO",
-            bio: "What's up everyone! I'm Jared and I'm going to be one of your webmasters this year. I'm a third year studying biomedical engineer and still don't have a single clue of what I'm doing after college. I enjoy: cooking, snowboarding, anime, volleyball, scary movies, music and the limited edition lime straw from TroSmo (NOT Trop).\nI was lil late to the OYFA party and didn't join till my second semester of my first year. Even with my \"late\" start everyone was so welcoming and genuine. I quickly found my place at UVA within OYFA. So join ASAP! and come out to our meetings and events, fill out the little form, go to that dance practice even if you don't know anyone, the whole nine. I can't wait to meet you all."
+            name: "Ashley Deng",
+            bio: "Ashley is a second year in the College of Arts and Sciences. She is from Manassas, VA and joined OYFA spring semester of her first year. She ran for Social to make sure that everyone can feel comfortable at parties, whether they drink alcohol or not, and to create fun inclusive events throughout the year.",
+            extraText: [{text: "When she was little, Ashley wanted to be a dentist, but that was before she realized how bad she was at science:( Also, her hidden talent is that she can bend her elbows backwards!"}]
+          },
+          {
+            name: "Kenneth Ross",
+            bio: "No Bio",
+            extraText: [{text: ""}]
           },
         ],
       },
@@ -2563,107 +2486,111 @@ export const BNC32 = [
   },
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/sports.png",
-    committeeName: "Scholarship",
+    committeeName: "Sports",
     bios: [
       {
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/sports.png",
         text: [
           {
-            name: "Isabel Carino",
-            pronouns: "she/her",
-            year: "3rd year",
-            major: "Cognitive Science and Health and Well-Being",
-            email: "cmc8smh@virginia.edu",
-            city: "Centreville, VA",
-            quote: "“May the flowers remind us why the rain was so necessary.” - Anon",
-            bio: "I was born in Biñan, Laguna then moved to northern Virginia when I was 2 years old. I was grateful to grow up in such a diverse area in NOVA, but it wasn’t until I joined OYFA that I became more in touch with my Filipino roots. When I first came to UVA, I was really scared to be on my own for the first time, but OYFA quickly became a home away from home. I love having a community that I can share and appreciate my Filipino culture with! <3"
+            name: "Ravael Loho",
+            bio: "Ravael is a third year double majoring in Global Development Studies and Anthropology in the CLAS. He is from Philadelphia, and he joined OYFA this year. He decided to run for Sports because he wants to get people up and active both to promote health and as a way for members to build each other up!",
+            extraText: [{text: "Ravael's hidden talent is that he is really good at horticulture, and his favorite quote is \"The most difficult thing is the decision to act, the rest is merely tenacity.\" -Amelia Earhart"}]
+          },
+          {
+            name: "Isabelle Talicuran",
+            bio: "Izzy is a second year studying Biomedical Engineering and minoring in Computer Science. She is from Virginia Beach, VA (ayeee 757), and joined OYFA her first year. She ran to help foster community within OYFA through sports and other fun activities. Another one of her goals was to promote and maintain good mental health through education and activities as well.",
+            extraText: [{text: "Izzy's hidden talent is that she can belly roll, and her favorite quote is \"Open your eyes and see what you can with them before they close forever\" - Anthony Doerr"}]
           },
         ],
       },
+      {
+        name: "Joey Havens",
+      }
     ],
   },
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/webmasters.jpg",
-    committeeName: "Webmaster",
+    committeeName: "Webmasters",
     bios: [
       {
         bioImgSrc: LEADERSHIP_FOLDER_32 + "/webmasters.jpg",
         text: [
           {
-            name: "Mira",
-            pronouns: "she/her",
-            year: "4th year",
-            major: "Nursing",
-            email: "jbm3bd@virginia.edu",
-            city: "Winston Salem, NC",
-            quote: "“The butterfly counts not months but moments, and has time enough.” -Rabindranath Tagore",
-            bio: "Ever since I was a kid I was always attracted to creating and making. I taught myself how to draw, paint, make jewelry, and have used creative writing as a channel for self-expression as well! This outlet has helped me a lot with mental health and personal growth/wellness, both of which I’m also really passionate about. Every day I hope to share this with my communities and to open others to their creative, freely expressive sides."
+            name: "Mara Li Hart",
+            bio: "Mara is a 2nd year computer science major in the engineering school! She's from Virginia Beach and joined OYFA her first year. Before this role, she didn't know where to start with web development, but quickly learned. She ran for webmaster because she wanted to use technology to teach others what Filipino culture at UVA means!",
+            extraText: [{text: "She's happiest when she's planning her next to-do whether it's coding projects, travel itineraries, or passion projects. Her favorite quote is \"Our parents didn't give us this planet; our children loaned it to us\" by unknown."}]
           },
         ],
       },
+      {
+        name: "Brandon Ongtingco"
+      }
     ],
   },
 ];
 
+const LEADERSHIP_FOLDER_31 = "/images/leadership/bnc31";
+
+//TODO: Create entire bio from old php files
 export const BNC31 = [
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/joe.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/joe.jpg",
     committeeName: "President",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/joe.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/joe.jpg",
         text: [
           {
             name: "Joseph Malasa",
-            pronouns: "he/him",
-            year: "3rd Year",
-            major: "Computer Science and Global Public Health",
-            email: "jgd5nm@virginia.edu",
-            city: "Virginia Beach, VA",
-            bio: "Helloyfa! My name is Joshua Dano, and I am the OYFA President for this year! I'm a 3rd year majoring in Computer Science and Global Public Health (what am I doing after I graduate? Hoo knows honestly) My favorite pastimes are practicing calligraphy during class instead of actually taking notes, changing my major and life plan, and binge watching new Netflix shows!",
-              extraText: [{text: "My favorite OYFA memory is the Culturefest Night Before Run Throughs during my first year. That's the moment I truly realized that OYFA was my home away from home and from then on I knew I wanted to give back to this organization as much as I can."},]
+            year: "2019",
+            major: "Psychology/American Studies",
+            email: "jpm5ye@virginia.edu",
+            extraText: [
+              {
+                header: "Why did you decide to run for this position?",
+                text: "Knowing the impact OYFA has had on my life, I knew that this position involved tremendous pressure. Because of OYFA, I was supported by so many people during one of the most difficult and shifting periods of my life. I believed that OYFA was invaluable and unexplainably amazing, so I struggled to see myself as the facilitator for more. Although I love OYFA to death, I saw so many parts of the organization that made my life more stressful and challenging. The first time I ran for President, I set out to make a change to make the organization the best place to be the best version of themselves. The reason I ran a second time, I realized that I still want to make that change. We can constantly revise the organization to reflect what the community needs. However, before I leave UVA, I want to call out the issues affecting the whole University and hold administration accountable so that OYFA and the AAPI community can thrive. OYFA deserves to be a space where students at UVA can celebrate what it means to be Filipino-American, and I intend to make that last for generations."
+              },
+              {
+                header: "What is your favorite OYFA memory?",
+                text: "My favorite OYFA memories are any opportunity OYFA has given me to yell at the top of my lungs. I remember losing my voice at parties, at Tom Deluca, at conferences, at hangouts, and at elections. I will never forget how many times I loudly told someone to make the best decision you'll ever make by joining OYFA at the Activities Fair. Whether it be screaming out to my upperclassmen when they are walking across the stage getting their diploma or my first baby class when they danced during Barrio, I am always so grateful for OYFA giving me a reason to raise my voice. I've been empowered by the people I've met in this org to use my voice, not just for me, but my community."
+              },
+              {
+                header: "What is one goal you want to accomplish by the end of the year?",
+                text: "Throughout my life, but especially during my college career, I've struggled with my identity regarding mental health and Asian masculinity. Raised in a family where my parents reserve discussing their personal problems and surrounded in environments where I was supposed to be 'amazing at everything', I often felt inferior when it came to my appearance, body, and identity. These conversations are ones that I think a lot about more as I'm involved with Asian American representation, sexual assault prevention, and mental health awareness, but I still don't allow myself to feel or process through my insecurities about myself. By the end of next year, I need to find a therapist I trust and do what I need to do in order to become more comfortable with who I am as an individual. I don't want people to just hear about the goals that I'm comfortable in saying, I want people to hold me accountable for who I really am."
+              },
+              {
+                header: "Favorite class at UVA and why?",
+                text: "Asian American Studies with Sylvia Chong! This class really started my journey to understand what it means to be an Asian American in modern day America. Rather than consuming what mainstream white institutions have said about 'Asians', I was able to develop my own opinions about my identity. In the class we learned about what Asians have gone through in the past 200 years and how they are represented in today's society. Understanding that the racialization of people have hugely affected their livelihood is something that isn't really discussed in typical 'favorite' classes, especially about Asian Americans. So many diversity discussions are seen in black and white, so I will forever preach people to take the class!"
+              }
+            ]
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/reginah.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/reginah.jpg",
     committeeName: "Vice President",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/reginah.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/reginah.jpg",
         text: [
           {
             name: "Regina Yap",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Medical Anthropology and Sociology",
-            email: "apt3tv@virginia.edu",
-            city: "VA Beach, VA",
-            quote: "\"WROWROWROWROWRO\" - Bertha",
-            bio: "Hello, I'm Ariane, a 3rd year in the Comm school. I was born & raised in the 757, with 3 older brothers and then a little sister. I'm a die-hard nintendo kid. I love Zelda games, pokemon, and have a soft spot for forgotten Gameboy Advanced & Gamecube Games. I'm aquarius sun w/ a capricorn moon, so... idk how im in a relationship rn. I swear I have a leo rising somewhere tho because i crave love & attention hehe. I also have other miscellaneous hobbies, but if you wanna learn more about me hmu! we might have something in common <3"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/treasurer.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/treasurer.jpg",
     committeeName: "Treasurer",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/hurst.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/hurst.jpg",
         text: [
           {
             name: "Michael Hurst",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Statistics, East Asian Minor",
-            email: "jp5ycx@virginia.edu",
-            city: "Ashburn, VA",
-            quote: "\"It never hurts to keep looking for sunshine\" - Winnie the Pooh",
-            bio: "Hey guys!!!! I'm Arabella Chiang and I'm your Treasurer this year, so be on the look out for those Venmo requests ;) I'm currently a 3rd year majoring in Statistics and minoring in East Asian Studies. I was born in Montgomery, Maryland, but was raised in Ashburn, VA, so I'm another NOVA kid here at UVA. If anyone lives in NOVA and wants to hang out over breaks hit me up :))\n Just a little about me, I love being on the go, so come out and adventure with me. There's many mountains to hike and trails to walk in Cville! I also love to just be around people and is always down to hang. I am a talker and can talk your ear off, so if you're down to hang I'm here! I am also a huge foodie, so come get food with me too. Maybe I'll cook, you never know.\n Anyways, I somehow found my way into OYFA my first year and was able to find people who I call my best friends and practically my family. I remember being hesitant in joining, until Sofia dragged me out to make Tiktoks with her and then the rest was history!",
           },
         ],
       },
@@ -2671,21 +2598,14 @@ export const BNC31 = [
   },
   {
     committeeImgSrc:
-      LEADERSHIP_FOLDER_32 + "/kanata.jpg",
+      LEADERSHIP_FOLDER_31 + "/kanata.jpg",
     committeeName: "Outreach Coordinator",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/kanata.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/kanata.jpg",
         text: [
           {
             name: "Kanata Omori",
-            pronouns: "she/her",
-            year: "4th Year",
-            major: "Cognitive Science concentrating in Computer Science",
-            email: "jan3wb@virginia.edu",
-            city: "Stafford, VA",
-            quote: "\"Real pain for your sham friends, champagne for your real friends.\" - Anon",
-            bio: "Hey guys! My name is Jazlyn Nguyen, and I’m half-Filipino and half-Vietnamese. I was born in Washington state, and moved to Virginia when I was 6. I love my relationships, and I love building community to help people feel at home! My hobbies include making music, gaming, and reading tarot cards~ Let me know if you want to see your future! Hint: It’s in OYFA"
           },
         ],
       },
@@ -2693,21 +2613,14 @@ export const BNC31 = [
   },
   {
     committeeImgSrc:
-      LEADERSHIP_FOLDER_32 + "/chelsea.jpg",
+      LEADERSHIP_FOLDER_31 + "/chelsea.jpg",
     committeeName: "Corresponding Secretary",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/chelsea.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/chelsea.jpg",
         text: [
           {
             name: "Chelsea Bengson",
-            pronouns: "he/him",
-            year: "2nd Year",
-            major: "Nursing",
-            email: "msd3gjj@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "\"Spread love everywhere you go. Let no one ever come to you without leaving happier.\" - Mother Teresa",
-            bio: "Hi hi friends - My name is Sam Dioneda, and I'm a second year nursing student serving as your Recording Secretary this school year. Outside of OYFA and being a nursing student, I am apart of MAN and was an OL this summer, so hi if you were an orientee of mine! When I'm not doing anything related to school or OYFA, I love to bake, cook, eat sugar lol, run, read manga, and binge anime.\nBesides the above, I also love to see people smile. Seeing people happy with who they are and what they do is as addicting as sugar to me, and I always strive to create that environment it whatever situation I am in.\nAs for OYFA, it may sound cliché, but OYFA has given me a home in the grand place that is UVA, and I am eternally grateful for that. Coming in as a first year during a pandemic was tough, but somehow, OYFA helped me grow in ways I never imagined, try new things I never would have given thought to (like dancing LOL), and let me meet and form friendships with people I will treasure or the rest of my life.\nSo enough of me already, we can talk about that another time. If you're reading this and you're on the website... see you at OYFA events and I hope to get to know you and see you smile :))"
           },
         ],
       },
@@ -2715,483 +2628,350 @@ export const BNC31 = [
   },
   {
     committeeImgSrc:
-      LEADERSHIP_FOLDER_32 + "/megan.jpeg",
+      LEADERSHIP_FOLDER_31 + "/megan.jpeg",
     committeeName: "Recording Secretary",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/megan.jpeg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/megan.jpeg",
         text: [
           {
             name: "Megan Lee",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/rose.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/rose.jpg",
     committeeName: "Advocacy",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/rose.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/rose.jpg",
         text: [
           {
             name: "Roseanna Quinanola",
-            pronouns: "she/they",
-            year: "4th Year",
-            major: "Pre-med Psychology | Health and Well-Being minor",
-            email: "llm6ee@virginia.edu@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"The flower that blooms in adversity is the most rare and beautiful of all.\" - The Emperor, Mulan",
-          bio: "Alas, I saw the bright light that dawned upon my wide eyes as I emerged from my mother's womb, and thus began the life I live today.\njk HAHA, hellOYFA all of you beautiful humans! my name is Lauren and I'm super excited to be serving as one of your Culture chairs for my last year here at UVA (': OYFA has given me some of the greatest experiences of my life throughout the past 3 years, and I can't wait to make even more memories with you all this year. outside of my academics, I enjoy being unapologetically myself, advocating for mental health and wellness (which I have struggled with for almost a decade so if you ever need someone to talk to I am always here!), and serving people in my community. my other hobbies include cooking yummy vegan recipes, going on hikes around the Blue Ridge area, tanning at the pool and beach, playing tennis, and singing even though I have awful performance anxiety. hmu if you wanna be friends <3\nPEACE. LOVE. KUL2RA."
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/maryam.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/maryam.jpg",
     committeeName: "Advocacy",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/maryam.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/maryam.jpg",
         text: [
           {
             name: "Maryam Zaher",
-            pronouns: "she/they",
-            year: "4th Year",
-            major: "Pre-med Psychology | Health and Well-Being minor",
-            email: "llm6ee@virginia.edu@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"The flower that blooms in adversity is the most rare and beautiful of all.\" - The Emperor, Mulan",
-          bio: "Alas, I saw the bright light that dawned upon my wide eyes as I emerged from my mother's womb, and thus began the life I live today.\njk HAHA, hellOYFA all of you beautiful humans! my name is Lauren and I'm super excited to be serving as one of your Culture chairs for my last year here at UVA (': OYFA has given me some of the greatest experiences of my life throughout the past 3 years, and I can't wait to make even more memories with you all this year. outside of my academics, I enjoy being unapologetically myself, advocating for mental health and wellness (which I have struggled with for almost a decade so if you ever need someone to talk to I am always here!), and serving people in my community. my other hobbies include cooking yummy vegan recipes, going on hikes around the Blue Ridge area, tanning at the pool and beach, playing tennis, and singing even though I have awful performance anxiety. hmu if you wanna be friends <3\nPEACE. LOVE. KUL2RA."
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/celter.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/celter.jpg",
     committeeName: "Community",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/celter.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/celter.jpg",
         text: [
           {
             name: "Celeter Odango Jr.",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health, Anthropology Minor",
-            email: "ant2ms@virginia.edu",
-            city: "Richmond, VA",
-            quote: "\"Live your life like a Studio Ghibli film, where every moment, even seemingly insignificant, is beautiful.\" - Anon",
-            bio: "Hello hello, i'm Annie ! This is my first year on B&C but i'm beyond excited to be one half of your historic chairs! I'm a 2nd year, hopeful GPH major with a minor in Anthropology. I love film photography and learning languages (fun fact: i'm currently learning my 5th and 6th languages). Another thing I love doing is adding to +perfecting my coffee shop vibe playlist, so feel free to send me any good rnb/krnb/chinese-rnb song recs :))"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/gabbys.png",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/gabbys.jpg",
     committeeName: "Community",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/gabbys.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/gabbys.jpg",
         text: [
           {
             name: "Gabby Garvey",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health, Anthropology Minor",
-            email: "ant2ms@virginia.edu",
-            city: "Richmond, VA",
-            quote: "\"Live your life like a Studio Ghibli film, where every moment, even seemingly insignificant, is beautiful.\" - Anon",
-            bio: "Hello hello, i'm Annie ! This is my first year on B&C but i'm beyond excited to be one half of your historic chairs! I'm a 2nd year, hopeful GPH major with a minor in Anthropology. I love film photography and learning languages (fun fact: i'm currently learning my 5th and 6th languages). Another thing I love doing is adding to +perfecting my coffee shop vibe playlist, so feel free to send me any good rnb/krnb/chinese-rnb song recs :))"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/dan.png",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/dan.png",
     committeeName: "Culture",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/dan.png",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/dan.png",
         text: [
           {
             name: "Danielle Borgonia",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Biochemistry",
-            email: "hhs5suk@virginia.edu",
-            city: "Mechanicsburg, PA",
-            quote: "\"Quit, dont quit. Noodles, don't noodles. You are too concerned about what was and what will be. Yesterday is history, tomorrow is a mystery. But today is a gift, that is why it is called the 'present'\" - Master Oogway",
-            bio: "Hello! I am your membership chair along with Jake this year. In my free time I love listening to music, watching cooking YouTube videos, and lying down. I also like to ice skate and impulsively purchase things I do not need .I am super excited to meet new people and make some mems :) Hope to see you soon!"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/cindy.jpeg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/cindy.jpeg",
     committeeName: "Culture",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/cindy.jpeg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/cindy.jpeg",
         text: [
           {
             name: "Cindy Bui",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Biochemistry",
-            email: "hhs5suk@virginia.edu",
-            city: "Mechanicsburg, PA",
-            quote: "\"Quit, dont quit. Noodles, don't noodles. You are too concerned about what was and what will be. Yesterday is history, tomorrow is a mystery. But today is a gift, that is why it is called the 'present'\" - Master Oogway",
-            bio: "Hello! I am your membership chair along with Jake this year. In my free time I love listening to music, watching cooking YouTube videos, and lying down. I also like to ice skate and impulsively purchase things I do not need .I am super excited to meet new people and make some mems :) Hope to see you soon!"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/sophia.jpg",
-    committeeName: "District 7",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/sophia.jpg",
-        text: [
-          {
-              name: "Sophia Xiao",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Pre-Commerce, Anthropology Minor",
-              email: "scq2xe@virginia.edu",
-              city: "Springfield, VA",
-              quote: "Give man fish, he eats for a day. Give man fish man eat for life <3",
-              bio: "Hello! My name is Sydney Queener and I am one of the Public Relations chairs this year. I’m a second year majoring in Pre-Commerce and I am potentially minoring in Anthropology (honestly have no idea though? but it is fine). In my free time I like to shop (it is very much a problem), sew, bake, watch food videos on youtube, try new food and boba shops. I also really love dogs and cats."
-          },
-        ],
-      },
-    ],
-  },
-  {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/jess.jpg",
-    committeeName: "District 7",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/jess.jpg",
-        text: [
-          {
-              name: "Jessica Phan",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Pre-Commerce, Anthropology Minor",
-              email: "scq2xe@virginia.edu",
-              city: "Springfield, VA",
-              quote: "Give man fish, he eats for a day. Give man fish man eat for life <3",
-              bio: "Hello! My name is Sydney Queener and I am one of the Public Relations chairs this year. I’m a second year majoring in Pre-Commerce and I am potentially minoring in Anthropology (honestly have no idea though? but it is fine). In my free time I like to shop (it is very much a problem), sew, bake, watch food videos on youtube, try new food and boba shops. I also really love dogs and cats."
-          },
-        ],
-      },
-    ],
-  },
-  {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/doriann.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/doriann.jpg",
     committeeName: "Historic",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/doriann.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/doriann.jpg",
         text: [
           {
             name: "Dorian Nguyen",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health",
-            email: "ctc7rv@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.” - Vincent Van Gogh",
-            bio: "I joined OYFA to learn more about my Filipino heritage, and it’s been a blast getting to know such amazing individuals along the way! Being community chair is only one way I can give back to this organization and to the rest of the world on whatever scale possible!"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/catherine.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/catherine.jpg",
     committeeName: "Historic",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/catherine.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/catherine.jpg",
         text: [
           {
             name: "Catherine Phan",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health",
-            email: "ctc7rv@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.” - Vincent Van Gogh",
-            bio: "I joined OYFA to learn more about my Filipino heritage, and it’s been a blast getting to know such amazing individuals along the way! Being community chair is only one way I can give back to this organization and to the rest of the world on whatever scale possible!"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/ysabel.jpeg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/ysabel.jpeg",
     committeeName: "Membership",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/ysabel.jpeg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/ysabel.jpeg",
         text: [
           {
             name: "Ysabel Sprague",
-            pronouns: "he/him",
-            year: "4th year",
-            major: "Global Development Studies and Religious Studies",
-            email: "bjh8wt@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"What's so amazing that keeps us stargazing, and what do we think we might see?\" - Kermit the Frog              ",
-            bio: "What's up OYFA! My name is Ben and I'm excited to be one of your Social chairs this year! I am a fourth year studying Global Development Studies and Religion, so it's safe to say that I have NO clue what I want to do after college. I hail from the good ole 703 and my hobbies include impulsively buying vintage books, watching war movies, going to the gym, and singing covers of pop songs with 17 other guys. I can't wait to make wholesome AND heinous memories with everyone!!"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/phillip.jpeg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/phillip.jpeg",
     committeeName: "Membership",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/phillip.jpeg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/phillip.jpeg",
         text: [
           {
             name: "Philip Tran",
-            pronouns: "he/him",
-            year: "4th year",
-            major: "Global Development Studies and Religious Studies",
-            email: "bjh8wt@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"What's so amazing that keeps us stargazing, and what do we think we might see?\" - Kermit the Frog              ",
-            bio: "What's up OYFA! My name is Ben and I'm excited to be one of your Social chairs this year! I am a fourth year studying Global Development Studies and Religion, so it's safe to say that I have NO clue what I want to do after college. I hail from the good ole 703 and my hobbies include impulsively buying vintage books, watching war movies, going to the gym, and singing covers of pop songs with 17 other guys. I can't wait to make wholesome AND heinous memories with everyone!!"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/Barry.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/cec.jpg",
     committeeName: "Public Relations",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/Barry.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/cec.jpg",
         text: [
           {
-            name: "Baohan Do",
-            pronouns: "he/him",
-            year: "2nd year",
-            major: "Computer Science, Health and Well-Being Minor",
-            email: "jvd7eqj@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"The future belongs to those who believe in the beauty of their dreams\" - Shoyo Hinata",
-            bio: "Hey y'all! I'm Josh De Vera and I'm one of your sports chairs for this year! I'm a 2nd year CS student in the e-school hoping to focus in cybersecurity. I love playing all sports and staying healthy physically and mentally. Feel free to hit me up to play sports, relax, or just talk about random things. I'm excited to see where we go with all the Sports events this year and hope to see y'all there! Fly high!"
+            name: "Cecilia Rabayda",
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/pr.png",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/trey.jpg",
     committeeName: "Public Relations",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/pr.png",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/trey.jpg",
         text: [
           {
-            name: "Hayden Williams",
-            pronouns: "he/him",
-            year: "2nd year",
-            major: "Computer Science, Health and Well-Being Minor",
-            email: "jvd7eqj@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"The future belongs to those who believe in the beauty of their dreams\" - Shoyo Hinata",
-            bio: "Hey y'all! I'm Josh De Vera and I'm one of your sports chairs for this year! I'm a 2nd year CS student in the e-school hoping to focus in cybersecurity. I love playing all sports and staying healthy physically and mentally. Feel free to hit me up to play sports, relax, or just talk about random things. I'm excited to see where we go with all the Sports events this year and hope to see y'all there! Fly high!"
+            name: "Trey Nichols",
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/rose.jpg",
-    committeeName: "Advocacy",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/alexaa.jpg",
+    committeeName: "Student Advisors",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/rose.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/alexaa.jpg",
         text: [
           {
-            name: "Roseanna Quinanola",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Computer Science",
-            email: "fdp6kz@virginia.edu",
-            city: "Alexandria, VA",
-            quote: "\"Promise me you'll think about the implications!\" - Paul, The Guy Who Didn't Like Musicals",
-            bio: "Heyyy! I'm Franky, and studying makes up 80% of my personality (yeah, I follow study accounts on every social media platform), which is why I'm one of your advocacy chairs! I think education and staying informed is one of the most important things any individual can do for their community. The other 20% of my personality consists of constantly attempting to critique different media like a professional, upcycling/thrifting, and tennis. I also love cooking/baking and using my brain for anything >:D ! Feel free to hit me up if you ever want to rally or hold a verzuz, but just know that I'm always right..."
+            name: "Alexa Gavino",
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/sa.png",
-    committeeName: "Advocacy",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/jack.jpeg",
+    committeeName: "Student Advisors",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/sa.png",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/jack.jpeg",
         text: [
           {
-            name: "Franceska \"Franky\" Coo",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Computer Science",
-            email: "fdp6kz@virginia.edu",
-            city: "Alexandria, VA",
-            quote: "\"Promise me you'll think about the implications!\" - Paul, The Guy Who Didn't Like Musicals",
-            bio: "Heyyy! I'm Franky, and studying makes up 80% of my personality (yeah, I follow study accounts on every social media platform), which is why I'm one of your advocacy chairs! I think education and staying informed is one of the most important things any individual can do for their community. The other 20% of my personality consists of constantly attempting to critique different media like a professional, upcycling/thrifting, and tennis. I also love cooking/baking and using my brain for anything >:D ! Feel free to hit me up if you ever want to rally or hold a verzuz, but just know that I'm always right..."
+            name: "Jack Chang",
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/sophia.jpg",
-    committeeName: "District 7",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/sophia.jpg",
-        text: [
-          {
-            name: "Sophia Xiao",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Undecided 🤠",
-            email: "mme2hu@virginia.edu",
-            city: "Farmville, VA",
-            quote: "“I will not let the fact that I cannot do everything stop me from doing everything I can.” - and I forgot who said that but I read it in a book once and it stuck fnsnsmksk",
-            bio: "Helloyfa helloyfa! I’m Maggie, Margaret Ann, Magrat, Maggot, Mama Maggie, or whatever you wanna call me and I’m excited to be your :D7 rep this year! I’m still figuring out what I wanna do with my life, and if you are too, then we can do it together 🥰 I’m always down for a random adventure or deep conversations about random things, so feel free to reach out hehe :)"
-          },
-        ],
-      },
-    ],
-  },
-  {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/jess.jpg",
-    committeeName: "District 7",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/jess.jpg",
-        text: [
-          {
-            name: "Jessica Phan",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Undecided 🤠",
-            email: "mme2hu@virginia.edu",
-            city: "Farmville, VA",
-            quote: "“I will not let the fact that I cannot do everything stop me from doing everything I can.” - and I forgot who said that but I read it in a book once and it stuck fnsnsmksk",
-            bio: "Helloyfa helloyfa! I’m Maggie, Margaret Ann, Magrat, Maggot, Mama Maggie, or whatever you wanna call me and I’m excited to be your :D7 rep this year! I’m still figuring out what I wanna do with my life, and if you are too, then we can do it together 🥰 I’m always down for a random adventure or deep conversations about random things, so feel free to reach out hehe :)"
-          },
-        ],
-      },
-    ],
-  },
-  {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/Sunnyh.jpg",
-    committeeName: "Webmasters",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/Sunnyh.jpg",
-        text: [
-          {
-            name: "Sunny Hwang",
-            pronouns: "he/him",
-            year: "3rd year",
-            major: "Biomedical Engineering, Computer Science Minor",
-            email: "jam9qbq@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“Sometimes life is scary and dark. That is why we must find the light.” - BMO",
-            bio: "What's up everyone! I'm Jared and I'm going to be one of your webmasters this year. I'm a third year studying biomedical engineer and still don't have a single clue of what I'm doing after college. I enjoy: cooking, snowboarding, anime, volleyball, scary movies, music and the limited edition lime straw from TroSmo (NOT Trop).\nI was lil late to the OYFA party and didn't join till my second semester of my first year. Even with my \"late\" start everyone was so welcoming and genuine. I quickly found my place at UVA within OYFA. So join ASAP! and come out to our meetings and events, fill out the little form, go to that dance practice even if you don't know anyone, the whole nine. I can't wait to meet you all."
-          },
-        ],
-      },
-    ],
-  },
-  {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/Barry.jpg",
-    committeeName: "Webmasters",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/Barry.jpg",
-        text: [
-          {
-            name: "Barry Chin",
-            pronouns: "he/him",
-            year: "3rd year",
-            major: "Biomedical Engineering, Computer Science Minor",
-            email: "jam9qbq@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“Sometimes life is scary and dark. That is why we must find the light.” - BMO",
-            bio: "What's up everyone! I'm Jared and I'm going to be one of your webmasters this year. I'm a third year studying biomedical engineer and still don't have a single clue of what I'm doing after college. I enjoy: cooking, snowboarding, anime, volleyball, scary movies, music and the limited edition lime straw from TroSmo (NOT Trop).\nI was lil late to the OYFA party and didn't join till my second semester of my first year. Even with my \"late\" start everyone was so welcoming and genuine. I quickly found my place at UVA within OYFA. So join ASAP! and come out to our meetings and events, fill out the little form, go to that dance practice even if you don't know anyone, the whole nine. I can't wait to meet you all."
-          },
-        ],
-      },
-    ],
-  },
-  {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/owenn.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/owenn.jpg",
     committeeName: "Scholarship",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/owenn.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/owenn.jpg",
         text: [
           {
             name: "Owen Haines",
-            pronouns: "she/her",
-            year: "3rd year",
-            major: "Cognitive Science and Health and Well-Being",
-            email: "cmc8smh@virginia.edu",
-            city: "Centreville, VA",
-            quote: "“May the flowers remind us why the rain was so necessary.” - Anon",
-            bio: "I was born in Biñan, Laguna then moved to northern Virginia when I was 2 years old. I was grateful to grow up in such a diverse area in NOVA, but it wasn’t until I joined OYFA that I became more in touch with my Filipino roots. When I first came to UVA, I was really scared to be on my own for the first time, but OYFA quickly became a home away from home. I love having a community that I can share and appreciate my Filipino culture with! <3"
           },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_32 + "/diana.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/diana.jpg",
     committeeName: "Scholarship",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_32 + "/diana.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/diana.jpg",
         text: [
           {
             name: "Diana Gaiter",
-            pronouns: "she/her",
-            year: "3rd year",
-            major: "Cognitive Science and Health and Well-Being",
-            email: "cmc8smh@virginia.edu",
-            city: "Centreville, VA",
-            quote: "“May the flowers remind us why the rain was so necessary.” - Anon",
-            bio: "I was born in Biñan, Laguna then moved to northern Virginia when I was 2 years old. I was grateful to grow up in such a diverse area in NOVA, but it wasn’t until I joined OYFA that I became more in touch with my Filipino roots. When I first came to UVA, I was really scared to be on my own for the first time, but OYFA quickly became a home away from home. I love having a community that I can share and appreciate my Filipino culture with! <3"
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/sophia.jpg",
+    committeeName: "FIND D7 Representatives",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/sophia.jpg",
+        text: [
+          {
+            name: "Sophia Xiao",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/jess.jpg",
+    committeeName: "FIND D7 Representatives",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/jess.jpg",
+        text: [
+          {
+            name: "Jessica Phan",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/julia.jpeg",
+    committeeName: "Social",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/julia.jpeg",
+        text: [
+          {
+              name: "Julia Nakamoto",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/Aisha.jpg",
+    committeeName: "Social",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/Aisha.jpg",
+        text: [
+          {
+              name: "Aisha Chiang",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/Dre.jpg",
+    committeeName: "Sports",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/Dre.jpg",
+        text: [
+          {
+            name: "Andrea Dilao",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/atman.jpeg",
+    committeeName: "Sports",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/atman.jpeg",
+        text: [
+          {
+            name: "Atman Soni",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/Sunnyh.jpg",
+    committeeName: "Webmasters",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/Sunnyh.jpg",
+        text: [
+          {
+            name: "Sunny Hwang",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_31 + "/Barry.jpg",
+    committeeName: "Webmasters",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_31 + "/Barry.jpg",
+        text: [
+          {
+            name: "Barry Chin",
           },
         ],
       },
@@ -3201,88 +2981,78 @@ export const BNC31 = [
 
 const LEADERSHIP_FOLDER_30 = "/images/leadership/bnc30";
 
+//TODO: Create entire bio from old php files
 export const BNC30 = [
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_30 + "/Leadership_Title.jpg",
-    committeeName: "Board",
+    committeeImgSrc: LEADERSHIP_FOLDER_30 + "/joe2.jpg",
+      committeeName: "President",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_30 + "/Leadership_Title.jpg",
-        text: [
+        bioImgSrc: LEADERSHIP_FOLDER_30 + "/joe2.jpg",
+          text: [
           {
             name: "Joe Malasa",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
           },
         ],
       },
+    ]
+    },
+    {
+      committeeImgSrc: LEADERSHIP_FOLDER_30 + "/jerome2.jpg",
+      committeeName: "Vice President",
+      bios: [
+        {
+          bioImgSrc: LEADERSHIP_FOLDER_30 + "/jerome2.jpg",
+          text: [
+            {
+              name: "Jerome Tirso",
+            },
+          ],
+        },
+      ]
+    },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_30 + "/jane2.jpg",
+    committeeName: "Treasurer",
+    bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_30 + "/Leadership_Title.jpg",
-        text: [
-          {
-            name: "Jerom Tirso",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
-          },
-        ],
-      },
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_30 + "/Leadership_Title.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_30 + "/jane2.jpg",
         text: [
           {
             name: "Jane Canteros",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
           },
         ],
       },
+    ]
+  },
+    {
+      committeeImgSrc: LEADERSHIP_FOLDER_30 + "/alexa2.jpg",
+      committeeName: "Corresponding Secretary",
+      bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_30 + "/Leadership_Title.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_30 + "/alex2.jpg",
         text: [
           {
             name: "Alexa Gavino",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
           },
         ],
-      },
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_30 + "/Leadership_Title.jpg",
-        text: [
-          {
-            name: "Jaden Aponte",
-            pronouns: "she/her",
-            year: "3rd Year",
-            major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-            email: "amr4rnq@virginia.edu",
-            city: "Chesapeake, VA",
-            quote: "“A hug is always the right size” - Winnie the Pooh",
-              bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
-          },
-        ],
-      },
-    ],
-  },
+      }
+      ]
+    },
+    {
+      committeeImgSrc: LEADERSHIP_FOLDER_30 + "/jaden2.jpg",
+      committeeName: "Recording Secretary",
+      bios: [
+        {
+          bioImgSrc: LEADERSHIP_FOLDER_30 + "/jaden2.jpg",
+          text: [
+            {
+              name: "Jaden Aponte",
+            },
+          ],
+        },
+      ]
+    },
   {
     committeeImgSrc: LEADERSHIP_FOLDER_30 + "/2017advo.jpg",
     committeeName: "Advocacy",
@@ -3292,13 +3062,6 @@ export const BNC30 = [
         text: [
           {
             name: "Thyra Jensen",
-            pronouns: "she/they",
-            year: "4th Year",
-            major: "Pre-med Psychology | Health and Well-Being minor",
-            email: "llm6ee@virginia.edu@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"The flower that blooms in adversity is the most rare and beautiful of all.\" - The Emperor, Mulan",
-          bio: "Alas, I saw the bright light that dawned upon my wide eyes as I emerged from my mother's womb, and thus began the life I live today.\njk HAHA, hellOYFA all of you beautiful humans! my name is Lauren and I'm super excited to be serving as one of your Culture chairs for my last year here at UVA (': OYFA has given me some of the greatest experiences of my life throughout the past 3 years, and I can't wait to make even more memories with you all this year. outside of my academics, I enjoy being unapologetically myself, advocating for mental health and wellness (which I have struggled with for almost a decade so if you ever need someone to talk to I am always here!), and serving people in my community. my other hobbies include cooking yummy vegan recipes, going on hikes around the Blue Ridge area, tanning at the pool and beach, playing tennis, and singing even though I have awful performance anxiety. hmu if you wanna be friends <3\nPEACE. LOVE. KUL2RA."
           },
         ],
       },
@@ -3307,13 +3070,6 @@ export const BNC30 = [
         text: [
           {
             name: "Dorian Nguyen",
-            pronouns: "he/him",
-            year: "4th year",
-            major: "Global Public Health and Computer Science",
-            email: "jgd5nm@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"The woods are lovely, dark and deep, but I have promises to keep, and miles to go before I sleep.\" – Robert Frost",
-          bio: "Helloyfa! My name is Josh, and I am one of your Culture Chairs this year! I'm a fourth year studying Global Public Health and Computer Science (still unclear what I'll do post-grad). In my free time, I enjoy playing volleyball, thrifting, and binge watching Netflix series. Find me procrastinating in the Multicultural Student Center!\nPEACE. LOVE. KUL2RA."
           },
         ],
       },
@@ -3328,13 +3084,6 @@ export const BNC30 = [
         text: [
           {
             name: "Gabby Garvey",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health, Anthropology Minor",
-            email: "ant2ms@virginia.edu",
-            city: "Richmond, VA",
-            quote: "\"Live your life like a Studio Ghibli film, where every moment, even seemingly insignificant, is beautiful.\" - Anon",
-            bio: "Hello hello, i'm Annie ! This is my first year on B&C but i'm beyond excited to be one half of your historic chairs! I'm a 2nd year, hopeful GPH major with a minor in Anthropology. I love film photography and learning languages (fun fact: i'm currently learning my 5th and 6th languages). Another thing I love doing is adding to +perfecting my coffee shop vibe playlist, so feel free to send me any good rnb/krnb/chinese-rnb song recs :))"
           },
         ],
       },
@@ -3343,16 +3092,12 @@ export const BNC30 = [
         text: [
           {
             name: "Arielle Reyes",
-            pronouns: "he/him",
-            year: "2nd year",
-            major: "Undecided",
-            email: "esc9jkx@virginia.edu",
-            city: "Alexandria, VA",
-            quote: "\"People say nothing is impossible, but I do nothing every day\" — Winnie the Pooh",
-            bio: "Hiii I'm Emile! Currently a second year, RA, and undecided major-wise but we'll figure it out! I'm so excited to be one of your historic chairs! I love watching an unhealthy amount of television and movies at 2am. I'm always up for discussing them too! I also like to go on walks in the rain :) listen to music, play video games, read, and climb trees. Feel free to reach out just to chat or for anything at all!"
           },
         ],
       },
+      {
+        name: 'Danielle Borgonia'
+      }
     ],
   },
   {
@@ -3364,13 +3109,6 @@ export const BNC30 = [
         text: [
           {
             name: "Roseanna Quinanola",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Biochemistry",
-            email: "hhs5suk@virginia.edu",
-            city: "Mechanicsburg, PA",
-            quote: "\"Quit, dont quit. Noodles, don't noodles. You are too concerned about what was and what will be. Yesterday is history, tomorrow is a mystery. But today is a gift, that is why it is called the 'present'\" - Master Oogway",
-            bio: "Hello! I am your membership chair along with Jake this year. In my free time I love listening to music, watching cooking YouTube videos, and lying down. I also like to ice skate and impulsively purchase things I do not need .I am super excited to meet new people and make some mems :) Hope to see you soon!"
           },
         ],
       },
@@ -3379,13 +3117,6 @@ export const BNC30 = [
         text: [
           {
             name: "Sophia Williams",
-            pronouns: "he/him",
-            year: "3rd year",
-            major: "Commerce",
-            email: "jco9dz@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"I need a room full of mirror so I can be surrounded by winners.\" - Kanye West",
-            bio: "Who am I? I will tell you... I am Jake Ochave. The Jake Ochave. There are many stories about me. What stories have you heard? I am the Glob-glo-gab-galab. The shwabble-dabble-wabble-gabble flibba blabba blab. I'm full of shwibbly liber-kind. So please do not be in a bind, cuz' I have committed no crimes! So live life worrying about no dimes. Slime.\n*woosh *woosh*\n*Brown Streak zooms pass you and you are stunned by his stellar looks and steamy presence.*"
           },
         ],
       },
@@ -3400,13 +3131,6 @@ export const BNC30 = [
         text: [
           {
               name: "Chelsea Bengson",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Pre-Commerce, Anthropology Minor",
-              email: "scq2xe@virginia.edu",
-              city: "Springfield, VA",
-              quote: "Give man fish, he eats for a day. Give man fish man eat for life <3",
-              bio: "Hello! My name is Sydney Queener and I am one of the Public Relations chairs this year. I’m a second year majoring in Pre-Commerce and I am potentially minoring in Anthropology (honestly have no idea though? but it is fine). In my free time I like to shop (it is very much a problem), sew, bake, watch food videos on youtube, try new food and boba shops. I also really love dogs and cats."
           },
         ],
       },
@@ -3415,13 +3139,6 @@ export const BNC30 = [
         text: [
           {
             name: "John Ramirez",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Psychology and Media Studies",
-            email: "hlr5dj@virginia.edu",
-            city: "Farmville, VA",
-            quote: "\"Just follow your heart, and keep smiling.\" - Kiki's Delivery Service (1989)",
-            bio: "hi hi hi OYFA! My name is Hannah Roldan, and I’ll be serving OYFA as one of your Public Relations chairs for the 2021-2022 year. I’m currently a second year in the College of Arts and Sciences and currently I plan on studying Psychology and maybe also Media Studies. I’m so excited to be serving on OYFA’s B&C for the first time—Sydney and I have so many ideas we can’t wait to share with you! In my free time, I’m a freelance artist and general anime enthusiast. I also do play Genshin Impact a lot (hit me up if you wanna co-op!), and I will not hesitate to bake you a fresh batch cookies if you tell me you’re having a tough day. I look forward to getting to know you all! <3"
           },
         ],
       },
@@ -3436,13 +3153,6 @@ export const BNC30 = [
         text: [
           {
             name: "Jack Chang",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Global Public Health",
-            email: "ctc7rv@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.” - Vincent Van Gogh",
-            bio: "I joined OYFA to learn more about my Filipino heritage, and it’s been a blast getting to know such amazing individuals along the way! Being community chair is only one way I can give back to this organization and to the rest of the world on whatever scale possible!"
           },
         ],
       },
@@ -3451,13 +3161,6 @@ export const BNC30 = [
         text: [
           {
             name: "Pia Mutia",
-            pronouns: "he/him",
-            year: "2nd year",
-            major: "Chemical Engineering, Possible Sociology Minor",
-            email: "pms6py@virginia.edu",
-            city: "Stafford, VA",
-            quote: "\"All I've had is coffee and leftover pie.\" - Laufey",
-            bio: "My story?...still trying to figure it out ._."
           },
         ],
       },
@@ -3472,13 +3175,6 @@ export const BNC30 = [
         text: [
           {
             name: "Dana Kim",
-            pronouns: "he/him",
-            year: "4th year",
-            major: "Global Development Studies and Religious Studies",
-            email: "bjh8wt@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"What's so amazing that keeps us stargazing, and what do we think we might see?\" - Kermit the Frog              ",
-            bio: "What's up OYFA! My name is Ben and I'm excited to be one of your Social chairs this year! I am a fourth year studying Global Development Studies and Religion, so it's safe to say that I have NO clue what I want to do after college. I hail from the good ole 703 and my hobbies include impulsively buying vintage books, watching war movies, going to the gym, and singing covers of pop songs with 17 other guys. I can't wait to make wholesome AND heinous memories with everyone!!"
           },
         ],
       },
@@ -3487,13 +3183,6 @@ export const BNC30 = [
         text: [
           {
             name: "Michael Ramirez",
-            pronouns: "they/she",
-            year: "4th year",
-            major: "Nursing, African American Studies Minor",
-            email: "kmb2rt@virginia.edu",
-            city: "Houston, TX",
-            quote: "\"She could beat me, but she could never beat my outfit.\" - Rihanna              ",
-            bio: "My name is Korey I use they/she pronouns. I am a posse scholar studying in the School of Nursing. I was born and raised in Houston, Texas (H-Town Hottie)! I enjoy making memories with my friends, expressing myself with makeup, and being active on social media. My passions include working with kids (I have been an orientation leader, Resident Advisor, and Camp Counselor) and learning about Black history (I minor in AAS studies). When I graduate I hope to find a way to incorporate my passions with Nursing and give back to the community I was raised in."
           },
         ],
       },
@@ -3508,13 +3197,6 @@ export const BNC30 = [
         text: [
           {
             name: "Baohan Do",
-            pronouns: "he/him",
-            year: "2nd year",
-            major: "Computer Science, Health and Well-Being Minor",
-            email: "jvd7eqj@virginia.edu",
-            city: "Manassas, VA",
-            quote: "\"The future belongs to those who believe in the beauty of their dreams\" - Shoyo Hinata",
-            bio: "Hey y'all! I'm Josh De Vera and I'm one of your sports chairs for this year! I'm a 2nd year CS student in the e-school hoping to focus in cybersecurity. I love playing all sports and staying healthy physically and mentally. Feel free to hit me up to play sports, relax, or just talk about random things. I'm excited to see where we go with all the Sports events this year and hope to see y'all there! Fly high!"
           },
         ],
       },
@@ -3523,13 +3205,6 @@ export const BNC30 = [
         text: [
           {
             name: "Hayden Williams",
-            pronouns: "she/her",
-            year: "4th year",
-            major: "Women and Gender Studies",
-            email: "ji2fb@virginia.edu",
-            city: "Philadelphia, PA",
-            quote: "\"You can fly even higher.\" - Kageyama to Hinata",
-            bio: "I am someone who is a weeb, loves edm/raves, and animals!! I also like having conversations about astrology and the universe :o Come out to volleyball and have fun with us!"
           },
         ],
       },
@@ -3544,13 +3219,6 @@ export const BNC30 = [
         text: [
           {
             name: "Angel Jomuad",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Computer Science",
-            email: "fdp6kz@virginia.edu",
-            city: "Alexandria, VA",
-            quote: "\"Promise me you'll think about the implications!\" - Paul, The Guy Who Didn't Like Musicals",
-            bio: "Heyyy! I'm Franky, and studying makes up 80% of my personality (yeah, I follow study accounts on every social media platform), which is why I'm one of your advocacy chairs! I think education and staying informed is one of the most important things any individual can do for their community. The other 20% of my personality consists of constantly attempting to critique different media like a professional, upcycling/thrifting, and tennis. I also love cooking/baking and using my brain for anything >:D ! Feel free to hit me up if you ever want to rally or hold a verzuz, but just know that I'm always right..."
           },
         ],
       },
@@ -3559,13 +3227,6 @@ export const BNC30 = [
         text: [
           {
             name: "Rose Montgomery",
-            pronouns: "she/her",
-            year: "3rd year",
-            major: "Medical Anthropology and Sociology",
-            email: "nve4njz@virginia.edu",
-            city: "Aldie, VA",
-            quote: "\"Tis better to have loved and lost, Than never to have loved at all\" - In Memoriam A.H.H. by Alfred Lord Tennyson",
-            bio: "Helloyfa! I'm excited to be your interim Advocacy chair this fall! We have a bunch of fun activities coming up so stay tuned!! Please reach out to me if you wanna talk, chill, or just vibe :)"
           },
         ],
       },
@@ -3580,13 +3241,6 @@ export const BNC30 = [
         text: [
           {
             name: "Jessica Phan",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Undecided 🤠",
-            email: "mme2hu@virginia.edu",
-            city: "Farmville, VA",
-            quote: "“I will not let the fact that I cannot do everything stop me from doing everything I can.” - and I forgot who said that but I read it in a book once and it stuck fnsnsmksk",
-            bio: "Helloyfa helloyfa! I’m Maggie, Margaret Ann, Magrat, Maggot, Mama Maggie, or whatever you wanna call me and I’m excited to be your :D7 rep this year! I’m still figuring out what I wanna do with my life, and if you are too, then we can do it together 🥰 I’m always down for a random adventure or deep conversations about random things, so feel free to reach out hehe :)"
           },
         ],
       },
@@ -3595,13 +3249,6 @@ export const BNC30 = [
         text: [
           {
             name: "Sophia Xiao",
-            pronouns: "she/her",
-            year: "2nd year",
-            major: "Undecided",
-            email: "sam7yr@virginia.edu",
-            city: "Leesburg, VA",
-            quote: "“Relax but don’t get comfortable” - Gucci Mane",
-            bio: "Helloyfa! I’m Sarah and I’m so hyped to be your D7 rep this year!! I love OYFA with my entire heart <333 I’m also involved with Greek life at UVA as a pi phi. Hit me up if ever wanna binge Daniel Padilla movies ;)"
           },
         ],
       },
@@ -3616,13 +3263,6 @@ export const BNC30 = [
         text: [
           {
             name: "Sarah Lei",
-            pronouns: "he/him",
-            year: "3rd year",
-            major: "Biomedical Engineering, Computer Science Minor",
-            email: "jam9qbq@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "“Sometimes life is scary and dark. That is why we must find the light.” - BMO",
-            bio: "What's up everyone! I'm Jared and I'm going to be one of your webmasters this year. I'm a third year studying biomedical engineer and still don't have a single clue of what I'm doing after college. I enjoy: cooking, snowboarding, anime, volleyball, scary movies, music and the limited edition lime straw from TroSmo (NOT Trop).\nI was lil late to the OYFA party and didn't join till my second semester of my first year. Even with my \"late\" start everyone was so welcoming and genuine. I quickly found my place at UVA within OYFA. So join ASAP! and come out to our meetings and events, fill out the little form, go to that dance practice even if you don't know anyone, the whole nine. I can't wait to meet you all."
           },
         ],
       },
@@ -3631,13 +3271,6 @@ export const BNC30 = [
         text: [
           {
             name: "Brandon Phan",
-            pronouns: "he/him",
-            year: "4th year",
-            major: "Pre-med Biology, Computer Science Minor",
-            email: "ecd4wa@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"Everyone forgets that Icarus also flew.\" -- Jack Gilbert, Failing and Flying",
-            bio: "Hey everyone! My name is Emil, a fourth year pre-med student majoring in Biology and minoring in CS. A little about me, I was born in Manila and lived there for five years before my family moved to Virginia. I have a boxer back at home, her name is Allie. I love her with all my heart; a fun fact about her is that she sleeps like a human with her head always on a pillow and her bottom half under blanket. I like to play games--I recently migrated to PC gaming so woot woot. Some of my favorite games include the Dark Souls trilogy, Destiny, and Valorant; play with me some time! Also if you like to play chess, add me on chess.com so we can battle. Anyway, I'm really excited to meet all of you this year, and I can't wait to make memories with you all! :D"
           },
         ],
       },
@@ -3652,13 +3285,6 @@ export const BNC30 = [
         text: [
           {
             name: "Richard Dizon",
-            pronouns: "she/her",
-            year: "3rd year",
-            major: "Cognitive Science and Health and Well-Being",
-            email: "cmc8smh@virginia.edu",
-            city: "Centreville, VA",
-            quote: "“May the flowers remind us why the rain was so necessary.” - Anon",
-            bio: "I was born in Biñan, Laguna then moved to northern Virginia when I was 2 years old. I was grateful to grow up in such a diverse area in NOVA, but it wasn’t until I joined OYFA that I became more in touch with my Filipino roots. When I first came to UVA, I was really scared to be on my own for the first time, but OYFA quickly became a home away from home. I love having a community that I can share and appreciate my Filipino culture with! <3"
           },
         ],
       },
@@ -3667,13 +3293,6 @@ export const BNC30 = [
         text: [
           {
             name: "Danielle Rodgers",
-            pronouns: "she/her",
-            year: "4th year",
-            major: "Global Public Health and Stastics, Global Sustainability Minor",
-            email: "lm2uq@virginia.edu",
-            city: "Virginia Beach, VA",
-            quote: "\"Live fast, die young, bad girls do it well.\" - M.I.A.",
-            bio: "I was born in Bohol, Philippines and moved to Virginia Beach when I was three. So obviously, my favorite thing to do in my free time is go to the beach, but I also enjoy thrifting, cooking, playing volleyball, working out, and getting ice cream with friends. :P My favorite time of day is golden hour, and if I could listen to one album for the rest of my life it would be Ctrl by SZA."
           },
         ],
       },
@@ -3688,22 +3307,19 @@ export const BNC30 = [
         text: [
           {
             name: "Regina Yap",
-            pronouns: "she/her",
-            year: "4th year",
-            major: "Nursing",
-            email: "jbm3bd@virginia.edu",
-            city: "Winston Salem, NC",
-            quote: "“The butterfly counts not months but moments, and has time enough.” -Rabindranath Tagore",
-            bio: "Ever since I was a kid I was always attracted to creating and making. I taught myself how to draw, paint, make jewelry, and have used creative writing as a channel for self-expression as well! This outlet has helped me a lot with mental health and personal growth/wellness, both of which I’m also really passionate about. Every day I hope to share this with my communities and to open others to their creative, freely expressive sides."
           },
         ],
       },
+      {
+        name: "Andrew Zazzera",
+      }
     ],
   },
 ];
 
 const LEADERSHIP_FOLDER_29 = "/images/leadership/bnc29";
 
+//TODO: Create entire bio from old php files
 export const BNC29 = [
     {
       committeeImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
@@ -3711,76 +3327,46 @@ export const BNC29 = [
       bios: [
         {
           bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
-          text: [
-            {
-              name: "Madelyn Luansing",
-              pronouns: "she/her",
-              year: "3rd Year",
-              major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-              email: "amr4rnq@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "“A hug is always the right size” - Winnie the Pooh",
-                bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
-            },
-          ],
-        },
-        {
-          bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
-          text: [
-            {
-              name: "Alex Zarzuela",
-              pronouns: "she/her",
-              year: "3rd Year",
-              major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-              email: "amr4rnq@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "“A hug is always the right size” - Winnie the Pooh",
-                bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
-            },
-          ],
-        },
-        {
-          bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
-          text: [
-            {
-              name: "Jerome Tirso",
-              pronouns: "she/her",
-              year: "3rd Year",
-              major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-              email: "amr4rnq@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "“A hug is always the right size” - Winnie the Pooh",
-                bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
-            },
-          ],
-        },
-        {
-          bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
+          committeeTitle: 'Corresponding Secretary',
           text: [
             {
               name: "Kanata Omori",
-              pronouns: "she/her",
-              year: "3rd Year",
-              major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-              email: "amr4rnq@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "“A hug is always the right size” - Winnie the Pooh",
-                bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
             },
           ],
         },
         {
           bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
+          committeeTitle: 'Vice President',
+          text: [
+            {
+              name: "Alex Zarzuela",
+            },
+          ],
+        },
+        {
+          bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
+          committeeTitle: 'President',
+          text: [
+            {
+              name: "Madelyn Luansing",
+            },
+          ],
+        },
+        {
+          bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
+          committeeTitle: 'Treasurer',
+          text: [
+            {
+              name: "Jerome Tirso",
+            },
+          ],
+        },
+        {
+          bioImgSrc: LEADERSHIP_FOLDER_29 + "/Leadership_Title.jpg",
+          committeeTitle: 'Recording Secretary',
           text: [
             {
               name: "Christine Le",
-              pronouns: "she/her",
-              year: "3rd Year",
-              major: "Interdisciplinary in Biology, Psychology, and Anthropology",
-              email: "amr4rnq@virginia.edu",
-              city: "Chesapeake, VA",
-              quote: "“A hug is always the right size” - Winnie the Pooh",
-                bio: "Hello everyone! I hope this bio finds you well. I'm Angie, and I am your OC for this year! This past year, I discovered that 1) I have no self control when it comes to buying clothes, and 2) I’m obsessed with Korean food. I know this year will be all kinda of things, so you ever need anything, just lmk and I’ll help in any way I can! Regardless, I'll be here, outreaching :)"
             },
           ],
         },
@@ -3795,13 +3381,6 @@ export const BNC29 = [
           text: [
             {
               name: "Oanh Dao",
-              pronouns: "she/they",
-              year: "4th Year",
-              major: "Pre-med Psychology | Health and Well-Being minor",
-              email: "llm6ee@virginia.edu@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"The flower that blooms in adversity is the most rare and beautiful of all.\" - The Emperor, Mulan",
-            bio: "Alas, I saw the bright light that dawned upon my wide eyes as I emerged from my mother's womb, and thus began the life I live today.\njk HAHA, hellOYFA all of you beautiful humans! my name is Lauren and I'm super excited to be serving as one of your Culture chairs for my last year here at UVA (': OYFA has given me some of the greatest experiences of my life throughout the past 3 years, and I can't wait to make even more memories with you all this year. outside of my academics, I enjoy being unapologetically myself, advocating for mental health and wellness (which I have struggled with for almost a decade so if you ever need someone to talk to I am always here!), and serving people in my community. my other hobbies include cooking yummy vegan recipes, going on hikes around the Blue Ridge area, tanning at the pool and beach, playing tennis, and singing even though I have awful performance anxiety. hmu if you wanna be friends <3\nPEACE. LOVE. KUL2RA."
             },
           ],
         },
@@ -3810,16 +3389,12 @@ export const BNC29 = [
           text: [
             {
               name: "Melissa Lim",
-              pronouns: "he/him",
-              year: "4th year",
-              major: "Global Public Health and Computer Science",
-              email: "jgd5nm@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"The woods are lovely, dark and deep, but I have promises to keep, and miles to go before I sleep.\" – Robert Frost",
-            bio: "Helloyfa! My name is Josh, and I am one of your Culture Chairs this year! I'm a fourth year studying Global Public Health and Computer Science (still unclear what I'll do post-grad). In my free time, I enjoy playing volleyball, thrifting, and binge watching Netflix series. Find me procrastinating in the Multicultural Student Center!\nPEACE. LOVE. KUL2RA."
             },
           ],
         },
+        {
+          name: 'Amy Zhang'
+        }
       ],
     },
     {
@@ -3831,13 +3406,6 @@ export const BNC29 = [
           text: [
             {
               name: "Celine Nguyen",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Global Public Health, Anthropology Minor",
-              email: "ant2ms@virginia.edu",
-              city: "Richmond, VA",
-              quote: "\"Live your life like a Studio Ghibli film, where every moment, even seemingly insignificant, is beautiful.\" - Anon",
-              bio: "Hello hello, i'm Annie ! This is my first year on B&C but i'm beyond excited to be one half of your historic chairs! I'm a 2nd year, hopeful GPH major with a minor in Anthropology. I love film photography and learning languages (fun fact: i'm currently learning my 5th and 6th languages). Another thing I love doing is adding to +perfecting my coffee shop vibe playlist, so feel free to send me any good rnb/krnb/chinese-rnb song recs :))"
             },
           ],
         },
@@ -3846,13 +3414,6 @@ export const BNC29 = [
           text: [
             {
               name: "Oliver Viyar",
-              pronouns: "he/him",
-              year: "2nd year",
-              major: "Undecided",
-              email: "esc9jkx@virginia.edu",
-              city: "Alexandria, VA",
-              quote: "\"People say nothing is impossible, but I do nothing every day\" — Winnie the Pooh",
-              bio: "Hiii I'm Emile! Currently a second year, RA, and undecided major-wise but we'll figure it out! I'm so excited to be one of your historic chairs! I love watching an unhealthy amount of television and movies at 2am. I'm always up for discussing them too! I also like to go on walks in the rain :) listen to music, play video games, read, and climb trees. Feel free to reach out just to chat or for anything at all!"
             },
           ],
         },
@@ -3867,16 +3428,12 @@ export const BNC29 = [
           text: [
             {
               name: "Steven Ling",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Biochemistry",
-              email: "hhs5suk@virginia.edu",
-              city: "Mechanicsburg, PA",
-              quote: "\"Quit, dont quit. Noodles, don't noodles. You are too concerned about what was and what will be. Yesterday is history, tomorrow is a mystery. But today is a gift, that is why it is called the 'present'\" - Master Oogway",
-              bio: "Hello! I am your membership chair along with Jake this year. In my free time I love listening to music, watching cooking YouTube videos, and lying down. I also like to ice skate and impulsively purchase things I do not need .I am super excited to meet new people and make some mems :) Hope to see you soon!"
             },
           ],
         },
+        {
+          name: 'Misha Capuno'
+        }
       ],
     },
     {
@@ -3888,13 +3445,6 @@ export const BNC29 = [
           text: [
             {
                 name: "John Herrick",
-                pronouns: "she/her",
-                year: "2nd year",
-                major: "Pre-Commerce, Anthropology Minor",
-                email: "scq2xe@virginia.edu",
-                city: "Springfield, VA",
-                quote: "Give man fish, he eats for a day. Give man fish man eat for life <3",
-                bio: "Hello! My name is Sydney Queener and I am one of the Public Relations chairs this year. I’m a second year majoring in Pre-Commerce and I am potentially minoring in Anthropology (honestly have no idea though? but it is fine). In my free time I like to shop (it is very much a problem), sew, bake, watch food videos on youtube, try new food and boba shops. I also really love dogs and cats."
             },
           ],
         },
@@ -3903,13 +3453,6 @@ export const BNC29 = [
           text: [
             {
               name: "Danielle Rodgers",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Psychology and Media Studies",
-              email: "hlr5dj@virginia.edu",
-              city: "Farmville, VA",
-              quote: "\"Just follow your heart, and keep smiling.\" - Kiki's Delivery Service (1989)",
-              bio: "hi hi hi OYFA! My name is Hannah Roldan, and I’ll be serving OYFA as one of your Public Relations chairs for the 2021-2022 year. I’m currently a second year in the College of Arts and Sciences and currently I plan on studying Psychology and maybe also Media Studies. I’m so excited to be serving on OYFA’s B&C for the first time—Sydney and I have so many ideas we can’t wait to share with you! In my free time, I’m a freelance artist and general anime enthusiast. I also do play Genshin Impact a lot (hit me up if you wanna co-op!), and I will not hesitate to bake you a fresh batch cookies if you tell me you’re having a tough day. I look forward to getting to know you all! <3"
             },
           ],
         },
@@ -3924,13 +3467,6 @@ export const BNC29 = [
           text: [
             {
               name: "Aaron Aguhob",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Global Public Health",
-              email: "ctc7rv@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "“It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.” - Vincent Van Gogh",
-              bio: "I joined OYFA to learn more about my Filipino heritage, and it’s been a blast getting to know such amazing individuals along the way! Being community chair is only one way I can give back to this organization and to the rest of the world on whatever scale possible!"
             },
           ],
         },
@@ -3939,13 +3475,6 @@ export const BNC29 = [
           text: [
             {
               name: "Larry Han",
-              pronouns: "he/him",
-              year: "2nd year",
-              major: "Chemical Engineering, Possible Sociology Minor",
-              email: "pms6py@virginia.edu",
-              city: "Stafford, VA",
-              quote: "\"All I've had is coffee and leftover pie.\" - Laufey",
-              bio: "My story?...still trying to figure it out ._."
             },
           ],
         },
@@ -3960,13 +3489,6 @@ export const BNC29 = [
           text: [
             {
               name: "Joe Malasa",
-              pronouns: "he/him",
-              year: "4th year",
-              major: "Global Development Studies and Religious Studies",
-              email: "bjh8wt@virginia.edu",
-              city: "Manassas, VA",
-              quote: "\"What's so amazing that keeps us stargazing, and what do we think we might see?\" - Kermit the Frog              ",
-              bio: "What's up OYFA! My name is Ben and I'm excited to be one of your Social chairs this year! I am a fourth year studying Global Development Studies and Religion, so it's safe to say that I have NO clue what I want to do after college. I hail from the good ole 703 and my hobbies include impulsively buying vintage books, watching war movies, going to the gym, and singing covers of pop songs with 17 other guys. I can't wait to make wholesome AND heinous memories with everyone!!"
             },
           ],
         },
@@ -3975,13 +3497,6 @@ export const BNC29 = [
           text: [
             {
               name: "Mark Mora",
-              pronouns: "they/she",
-              year: "4th year",
-              major: "Nursing, African American Studies Minor",
-              email: "kmb2rt@virginia.edu",
-              city: "Houston, TX",
-              quote: "\"She could beat me, but she could never beat my outfit.\" - Rihanna              ",
-              bio: "My name is Korey I use they/she pronouns. I am a posse scholar studying in the School of Nursing. I was born and raised in Houston, Texas (H-Town Hottie)! I enjoy making memories with my friends, expressing myself with makeup, and being active on social media. My passions include working with kids (I have been an orientation leader, Resident Advisor, and Camp Counselor) and learning about Black history (I minor in AAS studies). When I graduate I hope to find a way to incorporate my passions with Nursing and give back to the community I was raised in."
             },
           ],
         },
@@ -3996,13 +3511,6 @@ export const BNC29 = [
           text: [
             {
               name: "Jasmin Nguyen",
-              pronouns: "he/him",
-              year: "2nd year",
-              major: "Computer Science, Health and Well-Being Minor",
-              email: "jvd7eqj@virginia.edu",
-              city: "Manassas, VA",
-              quote: "\"The future belongs to those who believe in the beauty of their dreams\" - Shoyo Hinata",
-              bio: "Hey y'all! I'm Josh De Vera and I'm one of your sports chairs for this year! I'm a 2nd year CS student in the e-school hoping to focus in cybersecurity. I love playing all sports and staying healthy physically and mentally. Feel free to hit me up to play sports, relax, or just talk about random things. I'm excited to see where we go with all the Sports events this year and hope to see y'all there! Fly high!"
             },
           ],
         },
@@ -4011,13 +3519,6 @@ export const BNC29 = [
           text: [
             {
               name: "Ky Nguyen",
-              pronouns: "she/her",
-              year: "4th year",
-              major: "Women and Gender Studies",
-              email: "ji2fb@virginia.edu",
-              city: "Philadelphia, PA",
-              quote: "\"You can fly even higher.\" - Kageyama to Hinata",
-              bio: "I am someone who is a weeb, loves edm/raves, and animals!! I also like having conversations about astrology and the universe :o Come out to volleyball and have fun with us!"
             },
           ],
         },
@@ -4032,13 +3533,6 @@ export const BNC29 = [
           text: [
             {
               name: "Abigail Hoang",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Computer Science",
-              email: "fdp6kz@virginia.edu",
-              city: "Alexandria, VA",
-              quote: "\"Promise me you'll think about the implications!\" - Paul, The Guy Who Didn't Like Musicals",
-              bio: "Heyyy! I'm Franky, and studying makes up 80% of my personality (yeah, I follow study accounts on every social media platform), which is why I'm one of your advocacy chairs! I think education and staying informed is one of the most important things any individual can do for their community. The other 20% of my personality consists of constantly attempting to critique different media like a professional, upcycling/thrifting, and tennis. I also love cooking/baking and using my brain for anything >:D ! Feel free to hit me up if you ever want to rally or hold a verzuz, but just know that I'm always right..."
             },
           ],
         },
@@ -4047,13 +3541,6 @@ export const BNC29 = [
           text: [
             {
               name: "Caroline Pham",
-              pronouns: "she/her",
-              year: "3rd year",
-              major: "Medical Anthropology and Sociology",
-              email: "nve4njz@virginia.edu",
-              city: "Aldie, VA",
-              quote: "\"Tis better to have loved and lost, Than never to have loved at all\" - In Memoriam A.H.H. by Alfred Lord Tennyson",
-              bio: "Helloyfa! I'm excited to be your interim Advocacy chair this fall! We have a bunch of fun activities coming up so stay tuned!! Please reach out to me if you wanna talk, chill, or just vibe :)"
             },
           ],
         },
@@ -4068,13 +3555,6 @@ export const BNC29 = [
           text: [
             {
               name: "Barry Chin",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Undecided 🤠",
-              email: "mme2hu@virginia.edu",
-              city: "Farmville, VA",
-              quote: "“I will not let the fact that I cannot do everything stop me from doing everything I can.” - and I forgot who said that but I read it in a book once and it stuck fnsnsmksk",
-              bio: "Helloyfa helloyfa! I’m Maggie, Margaret Ann, Magrat, Maggot, Mama Maggie, or whatever you wanna call me and I’m excited to be your :D7 rep this year! I’m still figuring out what I wanna do with my life, and if you are too, then we can do it together 🥰 I’m always down for a random adventure or deep conversations about random things, so feel free to reach out hehe :)"
             },
           ],
         },
@@ -4083,13 +3563,6 @@ export const BNC29 = [
           text: [
             {
               name: "Jack Chang",
-              pronouns: "she/her",
-              year: "2nd year",
-              major: "Undecided",
-              email: "sam7yr@virginia.edu",
-              city: "Leesburg, VA",
-              quote: "“Relax but don’t get comfortable” - Gucci Mane",
-              bio: "Helloyfa! I’m Sarah and I’m so hyped to be your D7 rep this year!! I love OYFA with my entire heart <333 I’m also involved with Greek life at UVA as a pi phi. Hit me up if ever wanna binge Daniel Padilla movies ;)"
             },
           ],
         },
@@ -4104,13 +3577,6 @@ export const BNC29 = [
           text: [
             {
               name: "Alexa Gavino",
-              pronouns: "he/him",
-              year: "3rd year",
-              major: "Biomedical Engineering, Computer Science Minor",
-              email: "jam9qbq@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "“Sometimes life is scary and dark. That is why we must find the light.” - BMO",
-              bio: "What's up everyone! I'm Jared and I'm going to be one of your webmasters this year. I'm a third year studying biomedical engineer and still don't have a single clue of what I'm doing after college. I enjoy: cooking, snowboarding, anime, volleyball, scary movies, music and the limited edition lime straw from TroSmo (NOT Trop).\nI was lil late to the OYFA party and didn't join till my second semester of my first year. Even with my \"late\" start everyone was so welcoming and genuine. I quickly found my place at UVA within OYFA. So join ASAP! and come out to our meetings and events, fill out the little form, go to that dance practice even if you don't know anyone, the whole nine. I can't wait to meet you all."
             },
           ],
         },
@@ -4119,13 +3585,6 @@ export const BNC29 = [
           text: [
             {
               name: "Ronald Diu",
-              pronouns: "he/him",
-              year: "4th year",
-              major: "Pre-med Biology, Computer Science Minor",
-              email: "ecd4wa@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"Everyone forgets that Icarus also flew.\" -- Jack Gilbert, Failing and Flying",
-              bio: "Hey everyone! My name is Emil, a fourth year pre-med student majoring in Biology and minoring in CS. A little about me, I was born in Manila and lived there for five years before my family moved to Virginia. I have a boxer back at home, her name is Allie. I love her with all my heart; a fun fact about her is that she sleeps like a human with her head always on a pillow and her bottom half under blanket. I like to play games--I recently migrated to PC gaming so woot woot. Some of my favorite games include the Dark Souls trilogy, Destiny, and Valorant; play with me some time! Also if you like to play chess, add me on chess.com so we can battle. Anyway, I'm really excited to meet all of you this year, and I can't wait to make memories with you all! :D"
             },
           ],
         },
@@ -4140,13 +3599,6 @@ export const BNC29 = [
           text: [
             {
               name: "Vince Egalla",
-              pronouns: "she/her",
-              year: "3rd year",
-              major: "Cognitive Science and Health and Well-Being",
-              email: "cmc8smh@virginia.edu",
-              city: "Centreville, VA",
-              quote: "“May the flowers remind us why the rain was so necessary.” - Anon",
-              bio: "I was born in Biñan, Laguna then moved to northern Virginia when I was 2 years old. I was grateful to grow up in such a diverse area in NOVA, but it wasn’t until I joined OYFA that I became more in touch with my Filipino roots. When I first came to UVA, I was really scared to be on my own for the first time, but OYFA quickly became a home away from home. I love having a community that I can share and appreciate my Filipino culture with! <3"
             },
           ],
         },
@@ -4155,13 +3607,6 @@ export const BNC29 = [
           text: [
             {
               name: "Elexa Rallos",
-              pronouns: "she/her",
-              year: "4th year",
-              major: "Global Public Health and Stastics, Global Sustainability Minor",
-              email: "lm2uq@virginia.edu",
-              city: "Virginia Beach, VA",
-              quote: "\"Live fast, die young, bad girls do it well.\" - M.I.A.",
-              bio: "I was born in Bohol, Philippines and moved to Virginia Beach when I was three. So obviously, my favorite thing to do in my free time is go to the beach, but I also enjoy thrifting, cooking, playing volleyball, working out, and getting ice cream with friends. :P My favorite time of day is golden hour, and if I could listen to one album for the rest of my life it would be Ctrl by SZA."
             },
           ],
         },
@@ -4176,13 +3621,6 @@ export const BNC29 = [
           text: [
             {
               name: "Chris Fassoth",
-              pronouns: "she/her",
-              year: "4th year",
-              major: "Nursing",
-              email: "jbm3bd@virginia.edu",
-              city: "Winston Salem, NC",
-              quote: "“The butterfly counts not months but moments, and has time enough.” -Rabindranath Tagore",
-              bio: "Ever since I was a kid I was always attracted to creating and making. I taught myself how to draw, paint, make jewelry, and have used creative writing as a channel for self-expression as well! This outlet has helped me a lot with mental health and personal growth/wellness, both of which I’m also really passionate about. Every day I hope to share this with my communities and to open others to their creative, freely expressive sides."
             },
           ],
         },
@@ -4190,12 +3628,627 @@ export const BNC29 = [
     },
 ];
 
+const LEADERSHIP_FOLDER_28 = "/images/leadership/bnc28";
+
+export const BNC28 = [
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_28 + "/kim_15.jpg",
+    committeeName: "President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_28 + "/kim_15.jpg",
+        text: [
+          {
+            name: "Kimberly Hall",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_28 + "/elexa_15.jpg",
+    committeeName: "Vice President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_28 + "/elexa_15.jpg",
+        text: [
+          {
+            name: "Elexa Rallos",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_28 + "/madelyn_15.jpg",
+    committeeName: "Treasurer",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_28 + "/madelyn_15.jpg",
+        text: [
+          {
+            name: "Madelyn Luansing",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_28 + "/leangelo_15.jpg",
+    committeeName: "Corresponding Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_28 + "/leangelo_15.jpg",
+        text: [
+          {
+            name: "Leangelo Acuna",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_28 + "/smalljayrome.jpg",
+    committeeName: "Recording Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_28 + "/smalljayrome.jpg",
+        text: [
+          {
+            name: "Jerome Tirso",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeName: "Still being worked on :(",
+    bios: [
+      {
+        text: [
+          {
+            name: "IN PROGRESS",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+const LEADERSHIP_FOLDER_27 = "/images/leadership/bnc27";
+
+export const BNC27 = [
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_27 + "/justin.png",
+    committeeName: "President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_27 + "/justn.png",
+        text: [
+          {
+            name: "Justin Trinidad",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_27 + "/nicole.jpg",
+    committeeName: "Vice President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_27 + "/nicole.jpg",
+        text: [
+          {
+            name: "Nicole Winfree",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_27 + "/kim.jpg",
+    committeeName: "Treasurer",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_27 + "/kim.jpg",
+        text: [
+          {
+            name: "Kimberly Hall",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_27 + "/andrea.jpg",
+    committeeName: "Corresponding Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_27 + "/andrea.jpg",
+        text: [
+          {
+            name: "Andrea Valdez",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_27 + "/elexa.jpg",
+    committeeName: "Recording Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_27 + "/elexa.jpg",
+        text: [
+          {
+            name: "Elexa Rallos",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeName: "Still being worked on :(",
+    bios: [
+      {
+        text: [
+          {
+            name: "IN PROGRESS",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+const LEADERSHIP_FOLDER_26 = "/images/leadership/bnc26";
+
+export const BNC26 = [
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_26 + "/camille.jpg",
+    committeeName: "President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_26 + "/camille.jpg",
+        text: [
+          {
+            name: "Camille Lorenzana",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_26 + "/edric.PNG",
+    committeeName: "Vice President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_26 + "/edric.PNG",
+        text: [
+          {
+            name: "Edric San Miguel",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_27 + "/justin.png",
+    committeeName: "Treasurer",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_27 + "/justing.pngg",
+        text: [
+          {
+            name: "Justin Trinidad",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_26 + "/allan.png",
+    committeeName: "Corresponding Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_26 + "/allan.png",
+        text: [
+          {
+            name: "Allan Bagsic",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_26 + "/christine.PNG",
+    committeeName: "Recording Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_26 + "/christine.PNG",
+        text: [
+          {
+            name: "Christine Tran",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeName: "Still being worked on :(",
+    bios: [
+      {
+        text: [
+          {
+            name: "IN PROGRESS",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+//TODO: Create entire bio from old php files for 28th (2015)
+//TODO: Create entire bio from old php files for 27th (2014)
+//TODO: Create entire bio from old php files for 26th (2013)
+
+export const BNC18 = [
+  {
+    committeeImgSrc: "/images/leadership/bnc18/Leadership_Title.jpg",
+    bios: [
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Recording Secretary',
+        text: [
+          {
+            name: "Felice Caringal",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'President',
+        text: [
+          {
+            name: "Laurie Gonzales",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Vice President',
+        text: [
+          {
+            name: "Aileen de Luna",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Treasurer',
+        text: [
+          {
+            name: "Mike Ordonez",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Corresponding Secretary',
+        text: [
+          {
+            name: "Marty San Jose",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: "/images/leadership/bnc18/council1.jpg",
+    bios: [
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Social',
+        text: [
+          {
+            name: "Matt Bugarin",
+          },
+          {
+            name: "Ailene Dumo",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'ISIP',
+        text: [
+          {
+            name: "Kristina Mercado",
+          },
+          {
+            name: "Mike Tan",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Sports',
+        text: [
+          {
+            name: "Anthony Buenafe",
+          },
+          {
+            name: "Lyn Raymundo",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'FIND',
+        text: [
+          {
+            name: "Eleanor Preston",
+          },
+          {
+            name: "Sam Umali",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Webmaster',
+        text: [
+          {
+            name: "Kelly Wu",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Student Advisors',
+        text: [
+          {
+            name: "VJ Macasaet",
+          },
+          {
+            name: "Miguel Guerra",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: "/images/leadership/bnc18/council2.jpg",
+    bios: [
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Culture',
+        text: [
+          {
+            name: "Antonette Aguilar",
+          },
+          {
+            name: "John Pineda",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Historic',
+        text: [
+          {
+            name: "Abby Maraya",
+          },
+          {
+            name: "Therese Enad",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Membership',
+        text: [
+          {
+            name: "Matt Sanidad",
+          },
+          {
+            name: "Holly Hilario",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Public Relations',
+        text: [
+          {
+            name: "Gabe Martinez",
+          },
+          {
+            name: "Marina Bullock",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Community',
+        text: [
+          {
+            name: "Tiffany Adongay",
+          },
+          {
+            name: "Corinne Abalos",
+          },
+        ],
+      },
+    ],
+  },
+];
+
+export const BNC15 = [
+  {
+    committeeImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+    committeeName: "Board",
+    bios: [
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'President',
+        text: [
+          {
+            name: "Phillip Valmores",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Vice President',
+        text: [
+          {
+            name: "Lawrence Gonzales",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Corresponding Secretary',
+        text: [
+          {
+            name: "Joel Joson",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Recording Secretary',
+        text: [
+          {
+            name: "Cal Barcoma",
+          },
+        ],
+      },
+      {
+        bioImgSrc: "/images/leadership/bnc15/Leadership_Title.jpg",
+        committeeTitle: 'Treasurer',
+        text: [
+          {
+            name: "DJerame Dasco",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeName: "Culture",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Enrico Castillo'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    committeeName: "Historic",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Jenni Zamora'
+          },
+          {
+            name: 'Crystal Gomez'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    committeeName: "Membership",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Maritel Sanidad'
+          },
+          {
+            name: 'Carlamae Chavez'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    committeeName: "Social",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Joe Carino'
+          },
+          {
+            name: 'Jean Jiao'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    committeeName: "Sports",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Dennis Nguyen'
+          },
+          {
+            name: 'Josh Adongay'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    committeeName: "ISIP",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Jerwin Ocampo-Tan'
+          },
+          {
+            name: 'Frances Gotianun'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    committeeName: "Contact us at oyfaatuvawebmasters@gmail.com",
+    bios: [
+      {
+        text: [
+          {
+            name: 'Help us fill out the rest of the B&Cs!'
+          },
+        ]
+      }
+    ]
+  },
+];
+
 export const BNC_ARCHIVE = [
   { bncNum: 35, bnc: BNC35, imgPath: "/images/leadership/bnc35/Leadership_Title.jpg" },
   { bncNum: 34, bnc: BNC34, imgPath: "/images/leadership/bnc34/Leadership_Title.jpg", position: 20 },
-  { bncNum: 33, bnc: BNC33, imgPath: "/images/leadership/bnc33/Leadership_Title.jpg", position: 0 },
+  { bncNum: 33, bnc: BNC33, imgPath: "/images/leadership/bnc33/Leadership_Title.jpg", position: 5 },
   { bncNum: 32, bnc: BNC32, imgPath: "/images/leadership/bnc32/Leadership_Title.jpg", position: 30 },
-  { bncNum: 31, bnc: BNC33, imgPath: "/images/leadership/bnc31/Leadership_Title.jpg", position: 25 },
-  { bncNum: 30, bnc: BNC30, imgPath: "/images/leadership/bnc30/Leadership_Title.jpg", position: 5 },
-  { bncNum: 29, bnc: BNC29, imgPath: "/images/leadership/bnc29/Leadership_Title.jpg", position: -5 },
+  { bncNum: 31, bnc: BNC31, imgPath: "/images/leadership/bnc31/Leadership_Title.jpg", position: 25 },
+  { bncNum: 30, bnc: BNC30, imgPath: "/images/leadership/bnc30/Leadership_Title.jpg", position: 5, format: 3},
+  { bncNum: 29, bnc: BNC29, imgPath: "/images/leadership/bnc29/Leadership_Title.jpg", position: 0, format: 0 },
+  { bncNum: 28, bnc: BNC28, imgPath: "/images/leadership/bnc28/Leadership_Title.jpg", position: 27, format: 3},
+  { bncNum: 27, bnc: BNC27, imgPath: "/images/leadership/bnc27/Leadership_Title.jpg", position: 0, format: 3},
+  { bncNum: 26, bnc: BNC26, imgPath: "/images/leadership/bnc26/Leadership_Title.jpg", position: 0, format: 3},
+  { bncNum: 18, bnc: BNC18, imgPath: "/images/leadership/bnc18/Leadership_Title.jpg", position: 15, format: 2},
+  { bncNum: 15, bnc: BNC15, imgPath: "/images/leadership/bnc15/Leadership_Title.jpg", position: 15, format: 0},
 ];

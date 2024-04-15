@@ -3,18 +3,20 @@ import AppearingDiv from '../../../../components/ui/AppearingDiv/AppearingDiv';
 import styles from './LeadershipGallery.module.css'
 import { useSearchParams } from 'react-router-dom';
 
-export default function LeadershipGallery ({ bnc, combinedBoardSection = false }) {
-    
+export default function LeadershipGallery ({ bnc, format = {numBoardImgs: 6}}) {
     return(
         <>
-            <h1 className={styles.gallery_heading}>BOARD</h1>
-            {combinedBoardSection ?
+            <h1 className={styles.gallery_heading}>{!format.hideTitle && 'BOARD'}</h1>
+            {format.numBoardImgs == 1 ?
                 <BoardRow board={bnc[0]}/>
                 :
-                <CommitteeGrid committees={bnc.slice(0, 6)} />
+                <CommitteeGrid committees={bnc.slice(0, format.numBoardImgs)} />
             }
-            <h1 className={styles.gallery_heading}>COUNCIL</h1>
-            <CommitteeGrid committees={bnc.slice(combinedBoardSection ? 1 : 6)} />
+            {!format.hideCouncil &&
+            <>
+                <h1 className={styles.gallery_heading}>COUNCIL</h1>
+                <CommitteeGrid committees={bnc.slice(format.numBoardImgs)} />
+            </>}
         </>
     )
 }
@@ -25,7 +27,8 @@ function BoardRow ({ board }) {
     return (
         <AppearingDiv className={styles.board_container}>
             <div className={styles.board_img_container}>
-                <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: board.committeeName}}>
+                <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: board.committeeName}}
+                    scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })}>
                     <img src={board.committeeImgSrc} loading='lazy'/>
                 </HashLink>
             </div>
@@ -35,7 +38,7 @@ function BoardRow ({ board }) {
                         {bio.text?.map((personText, index2) => (
                             <PersonText key={index + index2} name={personText.name} major={personText.major} email={personText.email} />
                         ))}
-                        <h1 className={styles.person_title}>{bio.committeeTitle.toUpperCase()}</h1>
+                        <h1 className={styles.person_title}>{bio.committeeTitle?.toUpperCase()}</h1>
                     </div>
                 ))}
             </div>
@@ -68,22 +71,30 @@ function Committee ({ committee }) {
     var infoComponent = 
         <>
             {committee.bios.map((bio, index) => (
-                <>
+                <div className={styles.person_text_container}>
                     {bio.text?.map((personText, index2) => (
                         <PersonText key={index + index2} name={personText.name} major={personText.major} email={personText.email} />
                     ))}
                     {bio.name && <PersonText key={index} name={bio.name}/>}
-                </>
+                    {bio.committeeTitle && <h1 className={styles.person_title}>{bio.committeeTitle?.toUpperCase()}</h1>}
+                </div>
             ))}
         </>
 
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -340; 
+        window.scrollTo({ top: yCoordinate + yOffset}); 
+    }
+
     return(
         <AppearingDiv>
-            <div className={styles.person_img_container}>
-                <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: committee.committeeName}}>
+            {committee.committeeImgSrc && <div className={styles.person_img_container}>
+                <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: committee.committeeName}}
+                    scroll={el => scrollWithOffset(el)}>
                     <img src={committee.committeeImgSrc} loading='lazy'/>
                 </HashLink>
-            </div>
+            </div>}
 
             {infoComponent}
             {titleComponent}
@@ -93,11 +104,11 @@ function Committee ({ committee }) {
 
 function PersonText ({ name, major, email }) {
     return(
-        <div className = {styles.person_text_container}>
+        <>
             {name && <h2 className = {styles.person_name}>{name}</h2>}
             {/* {major && <h2 className = {styles.person_major}>{major}</h2>}
             {email && <h2 className = {styles.person_email}>{email}</h2>} */}
-        </div>
+        </>
     )
 }
 

@@ -87,7 +87,7 @@ export default function HomeTitle () {
                 const helloyfaElement = document.getElementById('helloyfa');
                 helloyfaElement?.scrollIntoView({
                     behavior: 'smooth',
-                    block: 'nearest',
+                    block: 'center',
                 })
             }} style={scrollPosition > 400 ? {opacity: 0} : {}}>
                 <img src='/icons/down_arrow.svg'/>

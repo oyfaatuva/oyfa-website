@@ -12,6 +12,13 @@ import { toOrdinalNumber } from '../../utils/toOrdinalNumber';
 
 import styles from './Leadership.module.css'
 
+const FORMAT_0 = {numBoardImgs: 1};
+const FORMAT_1 = {numBoardImgs: 1, hideCouncil: true};
+const FORMAT_2 = {hideTitle: true, hideCouncil: true};
+const FORMAT_3 = {numBoardImgs: 5};
+
+const FORMATS = [FORMAT_0, FORMAT_1, FORMAT_2, FORMAT_3];
+
 export default function Leadership () {
     const [searchParams, setSearchParams] = useSearchParams();
     const archivedBNC = useMemo(() => {
@@ -46,7 +53,7 @@ export default function Leadership () {
                     <YoutubeEmbed embedId={B_C_YOUTUBE_EMBED_ID} embedWidth='50%' embedHeight='440px'/>
                 </div>
             }
-            <LeadershipGallery bnc={currentBNC} combinedBoardSection={archivedBNC?.combinedBoard}/>
+            <LeadershipGallery bnc={currentBNC} format={archivedBNC?.format != undefined ? FORMATS[archivedBNC.format] : {numBoardImgs: 6}}/>
         </>
     )
 }

@@ -372,6 +372,7 @@ export const FILES =
     {name: 'B&C Archive', imgSrc: './images/archives/Archives_Preview_B&C_Archive.png', link: '/files/Archives_B&C_Archive.pdf'},
     {name: 'Solidarity Statement', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: '/files/Archives_Solidarity_Statement.pdf'},
     {name: 'Old Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: PREVIOUS_WEBSITE_LINK},
+    {name: 'The Pensionado', link: 'https://modernpensionado.wordpress.com/the-pensionado/'}
 ]
  
 export const B_C_YOUTUBE_EMBED_ID_35 = 'lRoajvsa004'
