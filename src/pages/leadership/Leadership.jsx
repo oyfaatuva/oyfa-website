@@ -46,7 +46,7 @@ export default function Leadership () {
                     <YoutubeEmbed embedId={B_C_YOUTUBE_EMBED_ID} embedWidth='50%' embedHeight='440px'/>
                 </div>
             }
-            <LeadershipGallery bnc={currentBNC}/>
+            <LeadershipGallery bnc={currentBNC} combinedBoardSection={archivedBNC?.combinedBoard}/>
         </>
     )
 }

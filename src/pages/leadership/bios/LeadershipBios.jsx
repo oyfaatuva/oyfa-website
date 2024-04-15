@@ -25,7 +25,7 @@ export default function LeadershipBios () {
             <Helmet><title>Leadership Bios</title></Helmet>
             {archivedBNC.map((committee, index) => (
                 <div key={index} id={committee.committeeName}>
-                    {committee.bios.map((bio, index2) => (
+                    {committee.bios.filter(bio => bio.bioImgSrc).map((bio, index2) => (
                         <CommitteeBio key={index + index2} bio={bio}/>
                     ))}
                 </div>
@@ -40,7 +40,7 @@ function CommitteeBio ({ bio }) {
             <AppearingDiv className={styles.committee_img_column} translateMeasurement={200} margin='0px 100px -10% 0px'>
                 <div className={styles.committee_img_container}><img src={bio.bioImgSrc} className={styles.committee_img + " bio_imgg"}/></div>
             </AppearingDiv>
-            <CommitteeBioText bioText={bio.text}/>
+            {bio.text && <CommitteeBioText bioText={bio.text}/>}
         </div>
     );
 }
@@ -60,9 +60,9 @@ function CommitteeBioTextSection ({ textSection }) {
         <div className={styles.commitee_text_section}>
             <h1 className={styles.name}>{textSection.name} ({textSection.pronouns})</h1>
 
-            <h2>{textSection.year}</h2>
-            <h2>{textSection.major}</h2>
-            <h2>{textSection.city}</h2>
+            <p>{textSection.year}</p>
+            <p>{textSection.major}</p>
+            <p>{textSection.city}</p><br/>
             <p>{textSection.bio}</p>
             {textSection.quote && 
                 <>
