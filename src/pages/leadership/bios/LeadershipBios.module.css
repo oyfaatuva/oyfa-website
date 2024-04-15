@@ -3,14 +3,14 @@
     width: 100vw;
     min-height: 45vw;
     padding: 2% 9% 2% 2%;
+    margin-top: 5%;
 }
 
 .committee_img_column {
     flex: 1;
     display: flex;
-    align-items: top;
     justify-content: right;
-    margin-top: 5%;
+    align-items: center;
 }
 
 .committee_img_container {
@@ -39,13 +39,15 @@
 .committee_text_container {
     flex: 0 0 48%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     padding-left: 5%;
 }
 
 .commitee_text_section {
     font-size: 1.1rem;
+    padding-bottom: 5%;
 }
 
 .name {
@@ -77,9 +79,8 @@
     .committee_text_container {
         flex: 1;
         display: flex;
-        align-items: center;
         justify-content: center;
-        margin: 3% 3% 3% 3%;
+        margin: 3%;
     }
 
     .bio_img{

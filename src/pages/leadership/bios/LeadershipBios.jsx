@@ -58,7 +58,7 @@ function CommitteeBioText ({ bioText }) {
 function CommitteeBioTextSection ({ textSection }) {
     return (
         <div className={styles.commitee_text_section}>
-            <h1 className={styles.name}>{textSection.name} ({textSection.pronouns})</h1>
+            <h1 className={styles.name}>{textSection.name} {textSection.pronouns ? (`(${textSection.pronouns})`) : ''}</h1>
 
             <p>{textSection.year}</p>
             <p>{textSection.major}</p>
@@ -71,6 +71,13 @@ function CommitteeBioTextSection ({ textSection }) {
                     <p>{textSection.quote}</p>
                 </>
             }
+
+            {textSection.extraText?.map((extraText) => (
+                <>
+                    <br/>
+                    <p>{extraText.text}</p>
+                </>
+            ))}
         </div>
     );
 }
