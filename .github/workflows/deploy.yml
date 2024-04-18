@@ -24,9 +24,10 @@ jobs:
         npm run build
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: milanmk/actions-file-deployer@master
       with:
-        server: ftp.oyfaatuva.com
-        username: ${{ secrets.CPANEL_FTP_USERNAME }}
-        password: ${{ secrets.CPANEL_FTP_PASSWORD }}
-        local-dir: ./dist/
+        remote-host: "ftp.oyfaatuva.com"
+        remote-user: ${{ secrets.CPANEL_FTP_USERNAME }}
+        remote-password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+        local-path: ./dist/
+        remote-path: public_html/
