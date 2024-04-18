@@ -28,6 +28,7 @@ jobs:
     - name: 📂 Sync files
       uses: milanmk/actions-file-deployer@master
       with:
+        remote-protocol: "ftp"
         remote-host: "ftp.oyfaatuva.com"
         remote-user: ${{ secrets.CPANEL_FTP_USERNAME }}
         remote-password: ${{ secrets.CPANEL_FTP_PASSWORD }}
