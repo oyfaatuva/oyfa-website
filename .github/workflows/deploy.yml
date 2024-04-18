@@ -32,5 +32,5 @@ jobs:
         remote-host: "ftp.oyfaatuva.com"
         remote-user: ${{ secrets.CPANEL_FTP_USERNAME }}
         remote-password: ${{ secrets.CPANEL_FTP_PASSWORD }}
-        local-path: ./dist/
+        local-path: /dist
         remote-path: /public_html
