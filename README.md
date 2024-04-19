@@ -161,7 +161,7 @@ OYFA Webmasters - [@oyfaatuva](https://www.instagram.com/oyfaatuva/) - oyfaatuva
 
 Original Authors (36th Webmasters) - colby.le.623@gmail.com, sebastiangborromeo@gmail.com, christinnayang@gmail.com
 
-37th Webmasters - 
+37th Webmasters - jacoasistores@gmail.com, christinnayang@gmail.com
 
 Project Link: [https://github.com/oyfaatuva/oyfa-website](https://github.com/oyfaatuva/oyfa-website)
 
