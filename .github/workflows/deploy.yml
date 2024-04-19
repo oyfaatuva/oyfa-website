@@ -49,4 +49,4 @@ jobs:
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
         localDir: "dist/images"
         remoteDir: "images"
-        options: "--delete --only-newer"
+        options: "--only-newer --dry-run"
