@@ -15,22 +15,25 @@ jobs:
       with:
           fetch-depth: 0
 
-    - name: Use Node.js 18
+    - name: 🟩 Use Node.js 18
       uses: actions/setup-node@v2
       with:
         node-version: '18.x'
         
+    - name: 📥 Install Dependencies
+      run: npm ci
+
+    - name: 🔧 Run Tests
+      run: npm test
+        
     - name: 🔨 Build Project
-      run: |
-        npm ci
-        npm run build
+      run: npm run build
     
     - name: 📂 Sync files
-      uses: milanmk/actions-file-deployer@master
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        remote-protocol: "ftp"
-        remote-host: "ftp.oyfaatuva.com"
-        remote-user: ${{ secrets.CPANEL_FTP_USERNAME }}
-        remote-password: ${{ secrets.CPANEL_FTP_PASSWORD }}
-        local-path: /dist
-        remote-path: /public_html
+        host: "oyfaatuva.com"
+        user: ${{ secrets.CPANEL_FTP_USERNAME }}
+        password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+        localDir: "dist"
+        remoteDir: "public_html"
