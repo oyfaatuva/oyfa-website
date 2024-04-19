@@ -1,15 +1,24 @@
 import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import AppearingDiv from '../../../components/ui/AppearingDiv/AppearingDiv';
-import { BNC_ARCHIVE, BNC } from '../../../constants/bncArchive';
 
 import styles from './LeadershipBios.module.css'
 
 import { useEffect, useMemo } from 'react';
 
+// Async constant import to reduce bundle
+async function getConstants() {
+    const { BNC_ARCHIVE, BNC } = await import ('../../../constants/bncArchive');
+    return [BNC_ARCHIVE, BNC];
+}
+
 export default function LeadershipBios () {
     const { setTransition } = useOutletContext();
     const [searchParams, setSearchParams] = useSearchParams();
+
+    const [BNC_ARCHIVE, BNC] = useMemo(() => {
+        return getConstants();
+    });
 
     const archivedBNC = useMemo(() => {
         const bncNum = searchParams.get('bnc');

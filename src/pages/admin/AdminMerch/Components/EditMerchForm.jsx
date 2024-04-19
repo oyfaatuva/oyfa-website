@@ -2,7 +2,10 @@ import { useRef, useState } from "react";
 import { useOutletContext } from "react-router-dom";
 import Slider from 'react-slick';
 
-import styles from './EditMerchForm.module.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import styles from './EditMerchForm.module.css';
+import "../../../../assets/sliderFix.css";
 
 export default function EditMerchForm() {
     const [item, imageDir] = useOutletContext();

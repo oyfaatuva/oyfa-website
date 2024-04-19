@@ -1,13 +1,15 @@
-import { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
 import { defer, Await } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
-import MerchCarousel from './Components/MerchCarousel';
-import MerchGallery from './Components/MerchGallery';
-import MerchItemPopUp from './Components/MerchItemPopUp';
 import axiosClient from '../../utils/axiosClient';
+import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import MerchGallery from './Components/MerchGallery';
+
+// Async Component for code splitting
+const MerchCarousel = React.lazy(() => import('./Components/MerchCarousel'));
+const MerchItemPopUp = React.lazy(() => import('./Components/MerchItemPopUp'));
 
 import styles from './Merch.module.css'
 
@@ -40,7 +42,8 @@ export default function Merch() {
      }, [currentItem]);
 
     return(
-        <>
+        //TODO: Fix this later. Temporary Suspense for async imported components but ugly => need loading indicator
+        <Suspense>
             <Helmet><title>Merch</title></Helmet>
             <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!'/>
             
@@ -70,7 +73,7 @@ export default function Merch() {
             >
                 {currentItem && <MerchItemPopUp item={currentItem} handleClose={closeItem} imageDir={IMAGE_DIR}/>}
             </AnimatePresence>
-        </>
+        </Suspense>
     );  
 }
 

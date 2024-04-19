@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
 import LeadershipArchive from './Components/LeadershipArchive/LeadershipArchive';
-import { BNC_ARCHIVE, BNC } from '../../constants/bncArchive';
 import LeadershipGallery from './Components/LeadershipGallery/LeadershipGallery';
 import { CURRENT_BNC } from '../../Constants';
 import { B_C_YOUTUBE_EMBED_ID } from '/src/Constants';
@@ -18,6 +17,8 @@ const FORMAT_2 = {hideTitle: true, hideCouncil: true};
 const FORMAT_3 = {numBoardImgs: 5};
 
 const FORMATS = [FORMAT_0, FORMAT_1, FORMAT_2, FORMAT_3];
+
+const { BNC_ARCHIVE, BNC } = await import ('../../constants/bncArchive');
 
 export default function Leadership () {
     const [searchParams, setSearchParams] = useSearchParams();

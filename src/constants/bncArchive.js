@@ -1,5 +1,3 @@
-import { text } from "@fortawesome/fontawesome-svg-core";
-
 const LEADERSHIP_FOLDER = "/images/leadership/bnc36";
 
 export const BNC = [

@@ -1,10 +1,9 @@
-import {Component} from 'react'
+import { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import './Socialmedia.css'
 
 /* allows you to use all icons, check here for full list: https://fontawesome.com/search?o=r&f=brands */
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons';
 
 /*==USAGE GUIDE===================================================================================================
 **  DESCRIPTION:
@@ -45,14 +44,12 @@ export default class SocialMedia extends Component{
         const handles    = this.props.handles
         const numColumns = this.props.numColumns
 
-        library.add(fab) //add all brand logos to the icon library for this file
-
         //map all the social media handles into a row div
         return(
             <div>
             <div className = 'row'>
                 {handles.map((item, index) => (
-                    <SocialHandle socialHandle={item.socialHandle} iconName={item.icon}
+                    <SocialHandle socialHandle={item.socialHandle} icon={item.icon}
                     link={item.link} numColumns = {numColumns}key={index}/>
                 ))}
             </div>
@@ -76,7 +73,7 @@ class SocialHandle extends Component{
 
     render(){
         const socialHandle = this.props.socialHandle
-        const iconName = this.props.iconName
+        const icon = this.props.icon
         const numColumns = this.props.numColumns
         const link = this.props.link
 
@@ -85,7 +82,7 @@ class SocialHandle extends Component{
                 <a href={link} target='_blank' className='social_link'>
                     <p className='social_paragraph'>
                         <span>
-                            <FontAwesomeIcon icon={ 'fa-brands ' + iconName } className='social_icon' />
+                            <FontAwesomeIcon icon={icon} className='social_icon' />
                         </span>
                         {socialHandle}
                     </p>

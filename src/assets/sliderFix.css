@@ -1,0 +1,27 @@
+/* Slider fixes */
+.slides {
+    position: relative;    
+  }
+  
+  .slick-prev, .slick-next {
+    position: absolute;
+    width: 70px;
+    height: 100%;
+    top: 50%;
+  }
+  
+  .slick-prev {
+    left: 0;
+  }
+  
+  .slick-next {
+    right: 0;
+  }
+  
+  .slick-list {
+    z-index: -1;
+  }
+  
+  .slick-slider {
+    z-index: 0;
+  }

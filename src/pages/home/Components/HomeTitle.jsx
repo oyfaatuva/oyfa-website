@@ -7,7 +7,7 @@
 ** for API documentation on the react-bootstrap Carousel, visit https://react-bootstrap.netlify.app/docs/components/carousel/
 */
 
-import {Carousel} from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import Vignette from '../../../components/ui/Vignette/Vignette';
 import FadeOnLoadImg from '../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
@@ -25,19 +25,6 @@ export default function HomeTitle () {
     const imgDir = './images/home/' //images for this file are in public/images/home
     
     const content = [
-        // {
-        //     imgSrc: imgDir + 'yatrick.JPG',
-        //     captionHeader: 'Kimi no Na wa',
-        //     captionPara: 'April 13th, 2-5pm MLK Performing Arts Center @ Charlottesville High School, Barrio Fiesta 2024 - Journey: Paglalakbay',
-        //     link: 'https://www.youtube.com/watch?v=h0Dh1k9tciY',
-        //     objectPosition: 'center 30%'
-        // },
-        // {
-        //     imgSrc: imgDir + 'lerrbear.JPG',
-        //     captionHeader: 'Lerrbear',
-        //     captionPara: 'April 13th, 2-5pm MLK Performing Arts Center @ Charlottesville High School, Barrio Fiesta 2024 - Journey: Paglalakbay',
-        //     link: '/images/home/lerrbear.JPG'
-        // },
         {
             imgSrc: imgDir + '36th_BnC.jpg',
             captionHeader: '36th Board and Council',
