@@ -39,7 +39,7 @@ jobs:
         user: ${{ secrets.CPANEL_FTP_USERNAME }}
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
         localDir: "dist"
-        options: '--exclude="\.jpg$" --exclude="\.png$"'
+        options: '--exclude="images/.*$"'
 
     - name: 🖼️ Sync images/icons
       uses: sebastianpopp/ftp-action@releases/v2
@@ -47,5 +47,6 @@ jobs:
         host: "oyfaatuva.com"
         user: ${{ secrets.CPANEL_FTP_USERNAME }}
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
-        localDir: "dist"
-        options: --ignore-existing --include="files/.*$" --include="icons/.*$" --include="images/.*$" --exclude="^$"
+        localDir: "dist/images"
+        remoteDir: "images"
+        options: "--delete --only-newer"
