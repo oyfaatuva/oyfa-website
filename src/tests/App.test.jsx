@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 
@@ -49,8 +49,10 @@ beforeEach(() => {
 });
 
 describe('Routing Test', () => {
-    test('Check Home Route', () => {
+    test('Check Home Route', async () => {
         render(<App/>);
-        expect(screen.getByText('Helloyfa!')).toBeInTheDocument()
+        await waitFor(() => {
+          expect(screen.getByText('Helloyfa!')).toBeInTheDocument();
+        });
     });
 });
