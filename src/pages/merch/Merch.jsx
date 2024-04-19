@@ -48,7 +48,9 @@ export default function Merch() {
             
             <div className='mb-4'>
                 <p className={styles.gallery_title}>Showcase</p>
-                <MerchCarousel images={GALLERY_IMAGES} imageDir={IMAGE_DIR}/>
+                <Suspense>
+                    <MerchCarousel images={GALLERY_IMAGES} imageDir={IMAGE_DIR}/>
+                </Suspense>
             </div>
             <p className={styles.gallery_title}>Collection</p>
             <Suspense
