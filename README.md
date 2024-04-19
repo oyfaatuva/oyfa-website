@@ -127,32 +127,6 @@ The project uses Node.js as a development platform, GIT as version control, and 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Documentation is available directly in every source code file. The primary pattern used is to provide data as arrays/dictionaries,
-pass those arrays as props to child Components, which then dynamically map over the arrays and produce some repetitive elements.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] State-based maintenance form to replace Constants.js
-- [ ] Implement multiple-paragraph B&C bios, with links to social media/spotifys
-- [ ] HTTPS certificate
-- [ ] Overhaul Links, Archives, and Events
-
-See the [open issues](https://github.com/colbyle25/website/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -183,9 +157,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Current OYFA Webmasters - [@oyfaatuva](https://www.instagram.com/oyfaatuva/) - oyfaatuvawebmasters@gmail.com
+OYFA Webmasters - [@oyfaatuva](https://www.instagram.com/oyfaatuva/) - oyfaatuvawebmasters@gmail.com
 
-Authors - colby.le.623@gmail.com, sebastiangborromeo@gmail.com, christinnayang@gmail.com
+Original Authors (36th Webmasters) - colby.le.623@gmail.com, sebastiangborromeo@gmail.com, christinnayang@gmail.com
+
+37th Webmasters - 
 
 Project Link: [https://github.com/oyfaatuva/oyfa-website](https://github.com/oyfaatuva/oyfa-website)
 
@@ -194,15 +170,15 @@ Project Link: [https://github.com/oyfaatuva/oyfa-website](https://github.com/oyf
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/colbyle25/website.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/oyfaatuva/oyfa-website.svg?style=for-the-badge
 [contributors-url]: https://github.com/oyfaatuva/oyfa-website/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/colbyle25/website.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/oyfaatuva/oyfa-website.svg?style=for-the-badge
 [forks-url]: https://github.com/oyfaatuva/oyfa-website/forks
-[stars-shield]: https://img.shields.io/github/stars/colbyle25/website.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/oyfaatuva/oyfa-website.svg?style=for-the-badge
 [stars-url]: https://github.com/oyfaatuva/oyfa-website/stargazers
-[issues-shield]: https://img.shields.io/github/issues/colbyle25/website.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/oyfaatuva/oyfa-website.svg?style=for-the-badge
 [issues-url]: https://github.com/oyfaatuva/oyfa-website/issues
-[license-shield]: https://img.shields.io/github/license/colbyle25/website.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/oyfaatuva/oyfa-website.svg?style=for-the-badge
 [license-url]: https://github.com/oyfaatuva/oyfa-website/blob/master/LICENSE.txt
 [product-screenshot]: public/images/_common/README_Product_Screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
