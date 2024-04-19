@@ -11,7 +11,7 @@ import MerchGallery from './Components/MerchGallery';
 const MerchCarousel = React.lazy(() => import('./Components/MerchCarousel'));
 const MerchItemPopUp = React.lazy(() => import('./Components/MerchItemPopUp'));
 
-import styles from './Merch.module.css'
+import styles from './Merch.module.css';
 
 const IMAGE_DIR = 'images/merch/'
 
@@ -42,8 +42,7 @@ export default function Merch() {
      }, [currentItem]);
 
     return(
-        //TODO: Fix this later. Temporary Suspense for async imported components but ugly => need loading indicator
-        <Suspense>
+        <>
             <Helmet><title>Merch</title></Helmet>
             <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!'/>
             
@@ -71,9 +70,9 @@ export default function Merch() {
                 initial={false}
                 mode="wait"
             >
-                {currentItem && <MerchItemPopUp item={currentItem} handleClose={closeItem} imageDir={IMAGE_DIR}/>}
+                <Suspense>{currentItem && <MerchItemPopUp item={currentItem} handleClose={closeItem} imageDir={IMAGE_DIR}/>}</Suspense>
             </AnimatePresence>
-        </Suspense>
+        </>
     );  
 }
 

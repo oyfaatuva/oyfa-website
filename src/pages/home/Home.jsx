@@ -72,7 +72,6 @@ export default function Home () {
                 </a>
             </div>
 
-            
             <HomeSocialsAndSignup/>
 
             <div className='other_container'>
