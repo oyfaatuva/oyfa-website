@@ -9,13 +9,14 @@
 
 import { Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
-import Vignette from '../../../components/ui/Vignette/Vignette';
-import FadeOnLoadImg from '../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
-import AppearingDiv from '../../../components/ui/AppearingDiv/AppearingDiv';
+import Vignette from '../../../../components/ui/Vignette/Vignette';
+import FadeOnLoadImg from '../../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
+import AppearingDiv from '../../../../components/ui/AppearingDiv/AppearingDiv';
 import useScrollPosition from "/src/hooks/useScrollPosition";
 
-import '../Stylesheets/HomeTitle.css';
+import './HomeTitle.css';
 
+//TODO: Remove global css classes from HomeTitle.css and make module.css instead
 export default function HomeTitle () {
     const scrollPosition = useScrollPosition()
     const isMobile = useMediaQuery({ maxWidth: '1000px' });

@@ -1,11 +1,12 @@
 import {Component} from 'react'
 import { Carousel } from 'react-bootstrap'
 
-import '../Stylesheets/HomeTestimonies.css'
+import './HomeTestimonies.css'
 
 /* To add more Testimonies, simply fill out the content array below accordingly and everything will be 
 dynamically rendered for you */
 
+//TODO: Remove global css classes from HomeTestimonies.css and make module.css instead
 export default class Testimonies extends Component{
     render(){
         const content = [

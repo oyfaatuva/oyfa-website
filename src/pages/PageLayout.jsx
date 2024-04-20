@@ -26,9 +26,7 @@ export default function PageLayout() {
             <UpdateLocation setNavbarScrollPosition={setNavbarScrollPosition} setNavbarScrollPositionMobile={setNavbarScrollPositionMobile} setTransition={setTransition} setHide={setHide}/>
 
             <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]} leaveGap={leaveGap} hide={hide}/>
-            <Suspense fallback={<div>Page is Loading...</div>}>
-                <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setLeaveGap, setHide}}/> 
-            </Suspense>
+            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setLeaveGap, setHide}}/> 
             <Footer/>
         </>
     );

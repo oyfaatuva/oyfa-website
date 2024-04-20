@@ -5,6 +5,7 @@ import './App.css'
 
 import { AuthLayout } from './pages/AuthLayout';
 import PageLayout from './pages/PageLayout';
+import Home from './pages/home/Home';
 import About from './pages/about/About'
 import Events from './pages/events/Events'
 import Links from './pages/links/Links'
@@ -18,8 +19,7 @@ import AdminMerch from './pages/admin/AdminMerch/AdminMerch';
 import AdminLayout from './pages/admin/AdminLayout';
 import NotFound from './pages/notFound/NotFound';
 
-// Async Component for code splitting
-const Home = React.lazy(() => import('./pages/home/Home'));
+// Async Components for code splitting
 const EditMerchForm = React.lazy(() => import('./pages/admin/AdminMerch/Components/EditMerchForm'));
 
 /* If adding new pages, add a new route with a relative link pointing to the new page and 
@@ -37,8 +37,7 @@ const router = createBrowserRouter(
                     <Route index element={<Leadership/>}/>
                     <Route path='bios' element={<LeadershipBios/>}/>
                 </Route>
-                <Route path='merch' element={<Merch/>}
-                    loader={merchLoader}/>
+                <Route path='merch' element={<Merch/>} loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
             </Route>
 
