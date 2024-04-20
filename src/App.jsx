@@ -5,12 +5,12 @@ import './App.css'
 
 import { AuthLayout } from './pages/AuthLayout';
 import PageLayout from './pages/PageLayout';
-import About from './pages/about/Components/About'
-import Events from './pages/events/Components/Events'
-import Links from './pages/links/Components/Links'
+import About from './pages/about/About'
+import Events from './pages/events/Events'
+import Links from './pages/links/Links'
 import Leadership from './pages/leadership/Leadership'
 import LeadershipBios from './pages/leadership/bios/LeadershipBios';
-import Archives from './pages/archives/Components/Archives'
+import Archives from './pages/archives/Archives'
 import Merch, { merchLoader } from './pages/merch/Merch';
 import AdminLogin from './pages/admin/AdminLogin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard';

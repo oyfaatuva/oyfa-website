@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import { Helmet } from 'react-helmet';
-import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
-import Calendar from './EventsCalendar';
+import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import Calendar from './Components/EventsCalendar';
 
 /* Main export file to index that combines all "events" components */
 

@@ -1,8 +1,8 @@
 import { useOutletContext } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
-import History from './AboutHistory';
-import Mission from './AboutMission';
+import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import History from './Components/AboutHistory';
+import Mission from './Components/AboutMission';
 
 /* Main export component to index that combines all "About" components */
 

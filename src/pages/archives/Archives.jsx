@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import { Helmet } from 'react-helmet';
-import HalfTitle from '../../../components/layout/HalfTitle/HalfTitle';
-import FileGallery from './ArchivesFileGallery';
+import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import FileGallery from './Components/ArchivesFileGallery';
 
 /* Main export file to index that combines all "archives" components */
 
