@@ -2,12 +2,12 @@
 ** It contains links, long paragraph texts, and other mishmash of stuff. Ideally in the future
 ** you should migrate any sort of constants to this file so it's all in one place.
 ** Various files will import constants from this bank here. 
-** There are three sections, UPDATE EVERY YEAR, LESS LIKELY TO CHANGE, and ARCHIVE. Each
+** There are two sections, UPDATE EVERY YEAR and LESS LIKELY TO CHANGE. Each
 ** section is organized into each page where the constants will be used.
 ==========================================================================================*/
 
 
-/* The following constants, LINKS, BOARD, COUNCIL, and VENMO_LINK need to be updated every year */
+/* The following constants like VENMO_LINK, EVENTS_CALENDAR_SOURCE, and LINKS need to be updated every year */
 /*=================UPDATE EVERY YEAR=================================================================================*/
 /*=================UPDATE EVERY YEAR=================================================================================*/
 /*=================UPDATE EVERY YEAR=================================================================================*/
@@ -19,7 +19,8 @@
 /*=================HOME=====================================================================*/
 
 /* Current year's treasurer link, used in HomeGetInvolved */
-export const VENMO_LINK = 'https://account.venmo.com/u/Kyla-Quimson'
+export const VENMO_HANDLE = '@Kyla-Quimson';
+export const VENMO_LINK = 'https://account.venmo.com/u/Kyla-Quimson';
 
 /*=================EVENTS=====================================================================*/
 
@@ -88,31 +89,30 @@ export const LINKS =
 
 /*=================LEADERSHIP=====================================================================*/
 
-// Removed from this section and placed into bncArchive.js instead under /constants
+/* NOTE: the current B&C information has been moved to constants/bncArchive.js with the archived B&Cs */
+
+/* Number of the Current Board and Council */
+export const CURRENT_BNC = 36;
 
 /* Youtube embed id of the B&C promo video to be displayed on LeadershipIntro component. You can find this by clicking share,
 ** embed on the current year's video. If there isn't a video for this year leave equal to empty string '' */
-export const B_C_YOUTUBE_EMBED_ID = ''
+export const B_C_YOUTUBE_EMBED_ID = '';
 
 /* The following constants probably will not need to change often */
 /*=================LESS LIKELY TO CHANGE YEAR-TO-YEAR=====================================================================*/
 /*=================LESS LIKELY TO CHANGE YEAR-TO-YEAR=====================================================================*/
 /*=================LESS LIKELY TO CHANGE YEAR-TO-YEAR=====================================================================*/
 
-/* social media links, used on HomeGetInvolved and the footer */
-export const FACEBOOK_LINK = 'https://www.facebook.com/groups/oyfaatuva/'
-export const INSTAGRAM_LINK = 'https://www.instagram.com/oyfaatuva/'
-export const YOUTUBE_LINK = 'https://www.youtube.com/user/uvaOYFA'
-export const TWITTER_LINK = 'https://twitter.com/oyfaatuva'
-
-/* current age in years of OYFA as well as # of B&Cs there has been */
-export const OYFA_AGE = new Date().getFullYear() - 1988;
-export const CURRENT_BNC = 36;
+/* social media links, used in HomeSocialsAndSignup and Footer */
+export const FACEBOOK_LINK = 'https://www.facebook.com/groups/oyfaatuva/';
+export const INSTAGRAM_LINK = 'https://www.instagram.com/oyfaatuva/';
+export const YOUTUBE_LINK = 'https://www.youtube.com/user/uvaOYFA';
+export const TWITTER_LINK = 'https://twitter.com/oyfaatuva';
 
 /*=================COMMON=====================================================================*/
 
 /* These are the tabs to render on the Navbar, expect to add more if you add more pages (make sure to Route those in
-** index.js) */
+** App.jsx within the router) */
 export const NAVBAR_TABS = {
     about: { name: "ABOUT", url: "/about"},
     events: { name: "EVENTS", url: "/events"},
@@ -128,9 +128,6 @@ export const MAILCHIMP_BASE_URL = 'https://oyfaatuva.us4.list-manage.com/subscri
 /* Github link, used in footer */
 export const GITHUB_LINK = 'https://github.com/oyfaatuva/oyfa-website'
 
-/* Previous website link, used in footer */
-export const PREVIOUS_WEBSITE_LINK = 'https://oyfaatuva.github.io/old-oyfa-website/'
-
 /*=================SOCIAL MEDIA=====================================================================*/
 /* Common Social Media Handles Array for passing as props to SocialMedia.js routine */
 import { faYoutube, faFacebook, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -138,16 +135,16 @@ import { faYoutube, faFacebook, faInstagram, faXTwitter } from '@fortawesome/fre
 /* Textless Social Media Handles Array for passing as props to SocialMedia.js routine, used in footer */
 export const SOCIAL_MEDIA_HANDLES_NO_TEXT = [
     {icon: faFacebook, link: FACEBOOK_LINK},
-    {icon:faInstagram, link: INSTAGRAM_LINK},
-    {icon:faYoutube, link: YOUTUBE_LINK},
-    {icon:faXTwitter, link: TWITTER_LINK}
+    {icon: faInstagram, link: INSTAGRAM_LINK},
+    {icon: faYoutube, link: YOUTUBE_LINK},
+    {icon: faXTwitter, link: TWITTER_LINK}
 ]
 
 export const SOCIAL_MEDIA_HANDLES = [
     {socialHandle: '@oyfaatuva', icon: faFacebook, link: FACEBOOK_LINK},
-    {socialHandle: '@oyfaatuva', icon:faInstagram, link: INSTAGRAM_LINK},
-    {socialHandle: '@uvaOYFA', icon:faYoutube, link: YOUTUBE_LINK},
-    {socialHandle: '@oyfaatuva', icon:faXTwitter, link: TWITTER_LINK}
+    {socialHandle: '@oyfaatuva', icon: faInstagram, link: INSTAGRAM_LINK},
+    {socialHandle: '@uvaOYFA', icon: faYoutube, link: YOUTUBE_LINK},
+    {socialHandle: '@oyfaatuva', icon: faXTwitter, link: TWITTER_LINK}
 ]
 
 /*=================ABOUT=====================================================================*/
@@ -164,12 +161,11 @@ export const FILES =
     {name: 'OYFA Constitution', imgSrc: './images/archives/Archives_Preview_Constitution.png', link: '/files/OYFAConsitution.pdf'},
     {name: 'B&C Archive', imgSrc: './images/archives/Archives_Preview_B&C_Archive.png', link: '/files/Archives_B&C_Archive.pdf'},
     {name: 'Solidarity Statement', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: '/files/Archives_Solidarity_Statement.pdf'},
-    {name: 'Old Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: PREVIOUS_WEBSITE_LINK},
+    {name: 'Old Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: 'https://oyfaatuva.github.io/old-oyfa-website/'},
     {name: 'The Pensionado', link: 'https://modernpensionado.wordpress.com/the-pensionado/'}
 ]
- 
-export const B_C_YOUTUBE_EMBED_ID_35 = 'lRoajvsa004'
 
+/*=================ADMIN==========================================================================*/
 import { faHouse, faShirt } from "@fortawesome/free-solid-svg-icons";
 
 export const ADMIN_TABS = {
