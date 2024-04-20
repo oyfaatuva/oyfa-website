@@ -2,10 +2,10 @@ import { useOutletContext } from 'react-router';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import AppearingDiv from '../../components/ui/AppearingDiv/AppearingDiv';
 import HomeTitle from './Components/HomeTitle';
 import Testimonies from './Components/HomeTestimonies';
 import HomeSocialsAndSignup from './Components/HomeSocialsAndSignup/HomeSocialsAndSignup';
-import AppearingDiv from '../../components/ui/AppearingDiv/AppearingDiv';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import useScrollPosition from './../../hooks/useScrollPosition';
 
@@ -79,7 +79,6 @@ export default function Home () {
                 <AppearingDiv className='thank_you'><h3>Thank you, 36th &lt;3</h3></AppearingDiv>
             </div>
         
-            {/* <Introduction/> */}
             <Testimonies/>
         </>
     )
