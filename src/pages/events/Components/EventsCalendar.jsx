@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import { OYFA_AGE, EVENTS_CALENDAR_SOURCE } from '../../../Constants'
+import { EVENTS_CALENDAR_SOURCE, CURRENT_YEAR } from '../../../Constants'
 
 import '../Stylesheets/EventsCalendar.css'  
 
@@ -16,7 +16,7 @@ export default class Calendar extends Component{
 
         return(
             <>
-                <h1 className = 'events_heading'>{1988 + OYFA_AGE} Events Calendar</h1>
+                <h1 className = 'events_heading'>{CURRENT_YEAR} Events Calendar</h1>
 
                 <div className = 'events_calendar_container'>
                     <iframe src = {EVENTS_CALENDAR_SOURCE}
