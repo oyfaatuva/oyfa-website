@@ -6,7 +6,7 @@
 **
 ** for API documentation on the react-bootstrap Carousel, visit https://react-bootstrap.netlify.app/docs/components/carousel/
 */
-
+import { lazy } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import Vignette from '../../../../components/ui/Vignette/Vignette';

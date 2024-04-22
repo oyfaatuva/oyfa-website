@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import { Suspense, useState, lazy } from "react";
 import { Await, Outlet, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { MerchItem } from "../../merch/Components/MerchGallery";
 import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
