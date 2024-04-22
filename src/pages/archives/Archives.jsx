@@ -1,7 +1,8 @@
-import {Component} from 'react'
+import React, { Suspense, Component } from 'react'
 import { Helmet } from 'react-helmet';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
-import FileGallery from './Components/ArchivesFileGallery';
+import Loading from '../../components/layout/Loading/Loading';
+const FileGallery = React.lazy(() => import('./Components/ArchivesFileGallery/ArchivesFileGallery'));
 
 /* Main export file to index that combines all "archives" components */
 
@@ -11,7 +12,9 @@ export default class Archives extends Component{
             <div>
                 <Helmet><title>Archives</title></Helmet>
                 <HalfTitle header='Archives' imgSrc='./images/archives/Archives_Title_D7_JMU.jpeg' position={25} brightness={70}/>
-                <FileGallery />
+                <Suspense fallback={<Loading/>}>
+                    <FileGallery />
+                </Suspense>
             </div>
         )
     }

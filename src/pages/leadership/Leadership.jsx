@@ -1,13 +1,14 @@
-import { useMemo } from 'react'
+import React, { Suspense, useMemo } from 'react'
 import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
+import YoutubeEmbed from '../../components/media/YoutubeEmbed/YoutubeEmbed';
 import LeadershipArchive from './Components/LeadershipArchive/LeadershipArchive';
-import LeadershipGallery from './Components/LeadershipGallery/LeadershipGallery';
+const LeadershipGallery = React.lazy(() => import('./Components/LeadershipGallery/LeadershipGallery'));
+
+import { toOrdinalNumber } from '../../utils/toOrdinalNumber';
 import { CURRENT_BNC } from '../../Constants';
 import { B_C_YOUTUBE_EMBED_ID } from '/src/Constants';
-import YoutubeEmbed from '../../components/media/YoutubeEmbed/YoutubeEmbed';
-import { toOrdinalNumber } from '../../utils/toOrdinalNumber';
 
 import styles from './Leadership.module.css'
 
@@ -30,9 +31,7 @@ export default function Leadership () {
         return (archivedBNC ? searchParams.get('bnc') : CURRENT_BNC);
     });
 
-    const currentBNC = useMemo(() => {
-        return bncNum === undefined ? BNC : archivedBNC?.bnc || BNC;
-    });
+    const currentBNC = (bncNum === undefined ? BNC : archivedBNC?.bnc || BNC);
 
     // Vertical position of HalfTitle
     const position = archivedBNC ? archivedBNC.position : 35;
@@ -54,7 +53,9 @@ export default function Leadership () {
                     <YoutubeEmbed embedId={B_C_YOUTUBE_EMBED_ID} embedWidth='50%' embedHeight='440px'/>
                 </div>
             }
-            <LeadershipGallery bnc={currentBNC} format={archivedBNC?.format != undefined ? FORMATS[archivedBNC.format] : {numBoardImgs: 6}}/>
+            <Suspense>
+                <LeadershipGallery bnc={currentBNC} format={archivedBNC?.format != undefined ? FORMATS[archivedBNC.format] : {numBoardImgs: 6}}/>
+            </Suspense>
         </>
     )
 }
