@@ -1,5 +1,5 @@
 import { useState} from 'react'
-import { motion } from "framer-motion"
+const { motion } = await import ("framer-motion");
 import { toOrdinalNumber } from '../../../../utils/toOrdinalNumber';
 
 import styles from './LeadershipArchive.module.css'

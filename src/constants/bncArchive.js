@@ -1,5 +1,26 @@
+/** Webmaster Directions: 
+ * 1. Copy our current BNC and LEADERSHIP_FOLDER, paste it underneath into the Archive section
+ *    and rename to BNC{B&C Number}. 
+ * 2. Add this new archived B&C to the list of other archived B&Cs at the bottom called
+ *    BNC_ARCHIVE (Minimize old B&Cs to make looking through this file easier). 
+ * 3. With the original BNC, update the LEADERSHIP_FOLDER to be the current year's
+ *    folder where all the images will be stored and update the JSON information!
+ * 4. In your LEADERSHIP_FOLDER, add an image named Leadership_Title.jpg (must be exactly
+ *    this including file format and capitalization of jpg) to change the photo of the 
+ *    HalfTitle.
+ * NOTE: Remember that if you don't follow the same photo naming convention we used (ex. 
+ *    Leadership_{Position}.jpg) you will have to manually change the ImgSrc values in
+ *    the JSON as well!
+ * 
+ * FUTURE IMPROVEMENTS: If we are ever able to use a NoSQL database, that could replace
+ * this perfectly. With how different bio information has been throughout the years,
+ * using our MySQL database or any structured database would be a nightmare and make
+ * future changes/additions very difficult. 
+*/
+
 const LEADERSHIP_FOLDER = "/images/leadership/bnc36";
 
+/* This is our current Board and Council, what is displayed */
 export const BNC = [
     {
       committeeImgSrc: LEADERSHIP_FOLDER + "/Leadership_President.jpg",
@@ -549,9 +570,10 @@ export const BNC = [
     },
 ];  
 
+/* =========== Archive ============================================= */
 const LEADERSHIP_FOLDER_35 = "/images/leadership/bnc35";
 
-//TODO: Ask Alyssa if she wants something differant for 35. Otherwise reuse 36th
+//TODO: Ask Alyssa if she wants something different for 35. Otherwise reuse 36th
 export const BNC35 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_35 + "/Leadership_President.png",
@@ -2171,7 +2193,6 @@ export const BNC33 = [
 
 const LEADERSHIP_FOLDER_32 = "/images/leadership/bnc32";
 
-//TODO: Search GitHub if missing bios ever were filled
 export const BNC32 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/president.png",
@@ -3628,6 +3649,7 @@ export const BNC29 = [
 
 const LEADERSHIP_FOLDER_28 = "/images/leadership/bnc28";
 
+//TODO: Create entire bio from old php files
 export const BNC28 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_28 + "/kim_15.jpg",
@@ -3715,6 +3737,7 @@ export const BNC28 = [
 
 const LEADERSHIP_FOLDER_27 = "/images/leadership/bnc27";
 
+//TODO: Create entire bio from old php files, add council
 export const BNC27 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_27 + "/justin.png",
@@ -3802,6 +3825,7 @@ export const BNC27 = [
 
 const LEADERSHIP_FOLDER_26 = "/images/leadership/bnc26";
 
+//TODO: Create entire bio from old php files, add council
 export const BNC26 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_26 + "/camille.jpg",
@@ -3886,10 +3910,6 @@ export const BNC26 = [
     ],
   },
 ];
-
-//TODO: Create entire bio from old php files for 28th (2015)
-//TODO: Create entire bio from old php files for 27th (2014)
-//TODO: Create entire bio from old php files for 26th (2013)
 
 export const BNC18 = [
   {
@@ -4236,6 +4256,19 @@ export const BNC15 = [
   },
 ];
 
+/** This is where we add a new B&C to the archive. Some optional props can be passed in as well.
+ *  You can view more about how these props are used by viewing the implemntation in LeadershipGallery.
+ *  
+ *  Quick Overview:
+ * 
+ *  bncNum - Which number B&C it is
+ *  bnc - Actual JSON Array of the Committees
+ *  imgPath - Image used in the LeadershipArchive component (I chose to use the Title Banner image for all of them,
+ *      it can be something different if you'd like).
+ *  position - Vertical position of the Title Banner image in the HalfTitle component
+ *  format - specific format with additional props defined in Leadership. Read more in that component but it changes
+ *      things like how many members are being displayed on board, if council is missing for a given B&C, etc.
+ */
 export const BNC_ARCHIVE = [
   { bncNum: 35, bnc: BNC35, imgPath: "/images/leadership/bnc35/Leadership_Title.jpg" },
   { bncNum: 34, bnc: BNC34, imgPath: "/images/leadership/bnc34/Leadership_Title.jpg", position: 20 },

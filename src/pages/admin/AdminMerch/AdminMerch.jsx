@@ -2,7 +2,7 @@ import React, { Suspense, useState } from "react";
 import { Await, Outlet, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { MerchItem } from "../../merch/Components/MerchGallery";
 import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
-import WideModal from "../../../components/ui/PopUpTab/PopUpTab";
+import PopUpTab from "../../../components/ui/PopUpTab/PopUpTab";
 import CreateMerchForm from "./Components/CreateMerchForm";
 
 import styles from './AdminMerch.module.css'; 
@@ -34,9 +34,9 @@ export default function AdminMerch() {
 
                         return (
                         <> 
-                            <WideModal open={itemId != undefined} closeLink={'/admin/merch'}>
+                            <PopUpTab open={itemId != undefined} closeLink={'/admin/merch'}>
                                 <Outlet context={[merch.find(item => item.id == itemId), IMAGE_DIR]}/>
-                            </WideModal>
+                            </PopUpTab>
 
                             <div className={styles.view_bar}>
                                 <button className={styles.view_bar_button + ' ' + (viewSelected === 'gallery' ? styles.view_bar_button_selected : '')} onClick={() => setViewSelected('gallery')}>Gallery</button>

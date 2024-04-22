@@ -1,13 +1,14 @@
+import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import Navbar from "../components/layout/Navbar/Navbar";
 import Footer from "../components/layout/Footer/Footer";
-import { NAVBAR_TABS } from "../Constants";
-import { useEffect, useState } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
+import { NAVBAR_TABS } from "../Constants";
 
-/** These are constants that align with the height of the HalfTitle component both full screen
- * (min 1000px width) or mobile (max 1000px width) */
+/** Values that NavBar will transition to solid after passing the HalfTitle component we commonly
+ * use on most pages. Since the HalfTitle is different for full screen (min 1000px width) and 
+ * mobile (max 1000px width), we have to contants */
 const DEFAULT_NAVBAR_TRANSITION_SCROLL = 340; 
 const DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE = 250;
 
@@ -16,7 +17,6 @@ export default function PageLayout() {
     const [scroll, setNavbarScrollPosition] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL)
     const [scrollMobile, setNavbarScrollPositionMobile] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE)
     const [useTransition, setTransition] = useState(true)
-    const [leaveGap, setLeaveGap] = useState(true)
     const [hide, setHide] = useState(false);
 
     return (
@@ -24,8 +24,8 @@ export default function PageLayout() {
             <ScrollToTop/>
             <UpdateLocation setNavbarScrollPosition={setNavbarScrollPosition} setNavbarScrollPositionMobile={setNavbarScrollPositionMobile} setTransition={setTransition} setHide={setHide}/>
 
-            <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]} leaveGap={leaveGap} hide={hide}/>
-            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setLeaveGap, setHide}}/> 
+            <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]} hide={hide}/>
+            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setHide}}/> 
             <Footer/>
         </>
     );

@@ -88,7 +88,7 @@ function Committee ({ committee }) {
     }
 
     return(
-        <AppearingDiv>
+        <AppearingDiv key={committee.committeeImgSrc}>
             {committee.committeeImgSrc && <div className={styles.person_img_container}>
                 <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: committee.committeeName}}
                     scroll={el => scrollWithOffset(el)}>

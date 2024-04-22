@@ -7,13 +7,26 @@ import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
 
 import classes from "./Navbar.module.css";
 
-/**
- * USAGE GUIDE: to be made... I am lazy
- */
+/*==USAGE GUIDE===================================================================================================
+**  DESCRIPTION:
+**      Navbar used in our page layout to navigate between the different pages.
+**  PROPS: 
+**      logoImgSrc = string, file path to your image or a web link
+**      navbarTabs = string, JSON array containg navbar tabs (JSON object formatted {name: "name", url: "/url"})
+**  OPTIONAL PROPS:
+**      useTransition = boolean, condition whether navbar transitions from opaque to solid (default true).
+**      transitionScrollPositions = array, if useTransition = true, values in pixels when navbar transitions. First value
+                                    is the normal screen scroll position, second is for mobile (example format: [normal, mobile]).
+**      hide = boolean, condition whether the navbar should hide when the user scrolls down and reappear
+               on scroll up (default false).
+**
+**  RETURNS:
+**      Navbar component which is fixed to the top of the viewport
+**==============================================================================================================*/
 
-const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile"
+const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile" before it minimizes to the "tab" form
 
-export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transitionScrollPositions, leaveGap = true, hide = false }) {
+export default function Navbar({ logoImgSrc, navbarTabs, useTransition = true, transitionScrollPositions = [340, 250], hide = false }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hidden, setHidden] = useState(false);
     const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH });
@@ -39,7 +52,7 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition, transiti
 
     return (
         <>
-            {!useTransition && leaveGap && <div className={classes.header_space}/>}
+            {!useTransition && <div className={classes.header_space}/>}
             <header className={classes.header} style={(hide && hidden) ? {transform: 'translateY(-60px)'} : {}}>
                 <nav className={classes.nav + ` ${useTransition ? 
                         classes.nav_transition + ' ' + (transitionScrollPositions !== undefined && scrollPosition > (isMobile ? transitionScrollPositions[1] : transitionScrollPositions[0]) ? classes.nav_bg_color : '')

@@ -7,18 +7,11 @@ import styles from './LeadershipBios.module.css'
 import { useEffect, useMemo } from 'react';
 
 // Async constant import to reduce bundle
-async function getConstants() {
-    const { BNC_ARCHIVE, BNC } = await import ('../../../constants/bncArchive');
-    return [BNC_ARCHIVE, BNC];
-}
+const { BNC_ARCHIVE, BNC } = await import ('../../../constants/bncArchive');
 
 export default function LeadershipBios () {
     const { setTransition } = useOutletContext();
     const [searchParams, setSearchParams] = useSearchParams();
-
-    const [BNC_ARCHIVE, BNC] = useMemo(() => {
-        return getConstants();
-    });
 
     const archivedBNC = useMemo(() => {
         const bncNum = searchParams.get('bnc');
