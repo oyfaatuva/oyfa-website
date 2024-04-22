@@ -11,6 +11,11 @@
  * NOTE: Remember that if you don't follow the same photo naming convention we used (ex. 
  *    Leadership_{Position}.jpg) you will have to manually change the ImgSrc values in
  *    the JSON as well!
+ * 
+ * FUTURE IMPROVEMENTS: If we are ever able to use a NoSQL database, that could replace
+ * this perfectly. With how different bio information has been throughout the years,
+ * using our MySQL database or any structured database would be a nightmare and make
+ * future changes/additions very difficult. 
 */
 
 const LEADERSHIP_FOLDER = "/images/leadership/bnc36";
@@ -2188,7 +2193,6 @@ export const BNC33 = [
 
 const LEADERSHIP_FOLDER_32 = "/images/leadership/bnc32";
 
-//TODO: Search GitHub if missing bios ever were filled
 export const BNC32 = [
   {
     committeeImgSrc: LEADERSHIP_FOLDER_32 + "/president.png",
