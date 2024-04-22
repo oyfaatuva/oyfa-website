@@ -6,11 +6,11 @@
 **
 ** for API documentation on the react-bootstrap Carousel, visit https://react-bootstrap.netlify.app/docs/components/carousel/
 */
-import { lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import Vignette from '../../../../components/ui/Vignette/Vignette';
-const FadeOnLoadImg = lazy(() => import('../../../../components/ui/AppearingDiv/AppearingDiv'));
+const FadeOnLoadImg = lazy(() => import('../../../../components/ui/FadeOnLoadImg/FadeOnLoadImg'));
 const AppearingDiv = lazy(() => import('../../../../components/ui/AppearingDiv/AppearingDiv'));
 import useScrollPosition from "/src/hooks/useScrollPosition";
 
@@ -69,8 +69,10 @@ export default function HomeTitle () {
 
     return (
         <div className='title_container'>
-            <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content={content} isMobile={isMobile}/>
-            <Title/>
+            <Suspense>
+                <TitleCarousel timeBeforeSwitch={timeBeforeSwitch} content={content} isMobile={isMobile}/>
+                <Title/>
+            </Suspense>
             <a className='down_button' onClick={() => {
                 const helloyfaElement = document.getElementById('helloyfa');
                 helloyfaElement?.scrollIntoView({
