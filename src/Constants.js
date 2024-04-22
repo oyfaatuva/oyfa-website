@@ -116,14 +116,14 @@ export const OYFA_AGE = new Date().getFullYear() - 1988;
 
 /* These are the tabs to render on the Navbar, expect to add more if you add more pages (make sure to Route those in
 ** App.jsx within the router) */
-export const NAVBAR_TABS = {
-    about: { name: "ABOUT", url: "/about"},
-    events: { name: "EVENTS", url: "/events"},
-    links: { name: "LINKS", url: "/links"},
-    leadership: { name: "LEADERSHIP", url: "/leadership"},
-    merch: {name: "MERCH", url: "/merch"},
-    archives: { name: "ARCHIVES", url: "/archives"},
-};
+export const NAVBAR_TABS = [
+    { name: "ABOUT", url: "/about"},
+    { name: "EVENTS", url: "/events"},
+    { name: "LINKS", url: "/links"},
+    { name: "LEADERSHIP", url: "/leadership"},
+    {name: "MERCH", url: "/merch"},
+    { name: "ARCHIVES", url: "/archives"},
+];
 
 /* Mailchimp WIO Root Form Posting Link, used in EmailSignup */
 export const MAILCHIMP_BASE_URL = 'https://oyfaatuva.us4.list-manage.com/subscribe/post-json?u=06c31be345165e241d2affc73&amp;id=11be915f14&amp;f_id=00ad07e9f0;tag=1785772'
@@ -164,7 +164,8 @@ export const FILES =
     {name: 'OYFA Constitution', imgSrc: './images/archives/Archives_Preview_Constitution.png', link: '/files/OYFAConsitution.pdf'},
     {name: 'B&C Archive', imgSrc: './images/archives/Archives_Preview_B&C_Archive.png', link: '/files/Archives_B&C_Archive.pdf'},
     {name: 'Solidarity Statement', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: '/files/Archives_Solidarity_Statement.pdf'},
-    {name: 'Old Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: 'https://oyfaatuva.github.io/old-oyfa-website/'},
+    {name: '2019-2023 Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: 'https://oyfaatuva.github.io/old-oyfa-website/'},
+    {name: '2013-2018 Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: 'https://old.oyfaatuva.com'},
     {name: 'The Pensionado', link: 'https://modernpensionado.wordpress.com/the-pensionado/'}
 ]
 
