@@ -1,4 +1,10 @@
-/*=============Archives Classes=================*/
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 50px auto;
+    width: clamp(0px, 80vw, 1300px); 
+}
 
 .file_heading{
     padding-top: 3%;
@@ -12,9 +18,6 @@
     width: 90%;
     padding-top: 5%;
     padding-bottom: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-
 }
 
 .file_link{
@@ -29,8 +32,6 @@
 .file_img_container img {
     width: 100%;
     transition: transform 0.5s;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 .file_img_container img:hover {

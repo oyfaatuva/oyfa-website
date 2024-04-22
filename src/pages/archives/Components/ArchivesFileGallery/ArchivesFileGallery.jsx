@@ -1,6 +1,7 @@
 import {Component} from 'react'
-import '../Stylesheets/ArchivesFileGallery.css'
-import {FILES} from '../../../Constants'
+import {FILES} from '../../../../Constants'
+
+import styles from './ArchivesFileGallery.module.css'
 
 /********************************************************************************************************************
 ** This file renders the File Gallery, which is a row of a few components which link to a file. You can add multiple
@@ -12,13 +13,11 @@ export default class FileGallery extends Component{
     render(){
 
         return(
-            <>
-                <div className = 'archives_container row'>
-                    {FILES.map((file, index) => (
-                        <File key = {index} name={file.name} imgSrc={file.imgSrc} link={file.link}/>
-                    ))}
-                </div>
-            </>
+            <div className={styles.grid_container}>
+                {FILES.map((file, index) => (
+                    <File key = {index} name={file.name} imgSrc={file.imgSrc} link={file.link}/>
+                ))}
+            </div>
         )
     }
 }
@@ -42,15 +41,15 @@ class File extends Component{
         const link   = this.props.link;
 
         return(
-            <div className='col'>
+            <div>
 
-                <a href = {link} target='_blank' className = 'file_link'>
+                <a href = {link} target='_blank' className = {styles.file_link}>
 
-                    <div className = 'file_img_container'>
+                    <div className = {styles.file_img_container}>
                         <img src = {imgSrc}/>
                     </div>
 
-                    <h1 className = 'file_heading'>
+                    <h1 className = {styles.file_heading}>
                         {name}
                     </h1>
 
