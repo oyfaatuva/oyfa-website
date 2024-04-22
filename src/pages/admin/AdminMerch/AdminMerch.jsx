@@ -2,7 +2,7 @@ import React, { Suspense, useState } from "react";
 import { Await, Outlet, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { MerchItem } from "../../merch/Components/MerchGallery";
 import UniformGrid from "../../../components/ui/UniformGrid/UniformGrid";
-import PopUpTab from "../../../components/ui/PopUpTab/PopUpTab";
+const PopUpTab = lazy(() => import('../../../components/ui/PopUpTab/PopUpTab'));
 import CreateMerchForm from "./Components/CreateMerchForm";
 
 import styles from './AdminMerch.module.css'; 

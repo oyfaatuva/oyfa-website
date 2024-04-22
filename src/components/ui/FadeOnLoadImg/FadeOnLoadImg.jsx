@@ -1,5 +1,5 @@
+import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-const { motion, useInView } = await import ("framer-motion");
 
 export default function FadeOnLoadImg({ imgPath, alt, className, style, duration = 0.4, inViewRequired = true }) {   
     const [loaded, setImageLoaded] = useState(false);

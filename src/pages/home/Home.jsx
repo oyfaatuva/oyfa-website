@@ -1,17 +1,18 @@
-import React, { Suspense } from 'react';
+import { Suspense, lazy } from 'react';
 import { useOutletContext } from 'react-router';
 import { Helmet } from 'react-helmet';
-import AppearingDiv from '../../components/ui/AppearingDiv/AppearingDiv';
 import HomeTitle from './Components/HomeTitle/HomeTitle';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 // Async Components for code splitting
-const HomeIntroduction = React.lazy(() => import('./Components/HomeIntroduction/HomeIntroduction'));
-const HomeLinkGallery = React.lazy(() => import('./Components/HomeLinkGallery/HomeLinkGallery'));
-const HomeSocialsAndSignup = React.lazy(() => import('./Components/HomeSocialsAndSignup/HomeSocialsAndSignup'));
-const Testimonies = React.lazy(() => import('./Components/HomeTestimonies/HomeTestimonies'));
+const HomeIntroduction = lazy(() => import('./Components/HomeIntroduction/HomeIntroduction'));
+const HomeLinkGallery = lazy(() => import('./Components/HomeLinkGallery/HomeLinkGallery'));
+const HomeSocialsAndSignup = lazy(() => import('./Components/HomeSocialsAndSignup/HomeSocialsAndSignup'));
+const Testimonies = lazy(() => import('./Components/HomeTestimonies/HomeTestimonies'));
+const AppearingDiv = lazy(() => import('../../components/ui/AppearingDiv/AppearingDiv'));
 
 import './Home.css';
+import Loading from '../../components/layout/Loading/Loading';
 
 export default function Home () {
     const {setNavbarScrollPosition, setNavbarScrollPositionMobile, setHide} = useOutletContext();
@@ -26,7 +27,7 @@ export default function Home () {
             <Helmet><title>Home</title></Helmet>
             <HomeTitle/>
 
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Loading/>}>
                 <HomeIntroduction/>
                 <HomeLinkGallery/>
                 <HomeSocialsAndSignup/>

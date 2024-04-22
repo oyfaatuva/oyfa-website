@@ -1,7 +1,8 @@
+import { Suspense, lazy } from 'react';
 import { Link } from 'react-router-dom';
 import Vignette from '../../ui/Vignette/Vignette';
-import FadeOnLoadImg from '../../ui/FadeOnLoadImg/FadeOnLoadImg';
-import AppearingDiv from '../../ui/AppearingDiv/AppearingDiv';
+const FadeOnLoadImg = lazy(() => import('../../ui/FadeOnLoadImg/FadeOnLoadImg'));
+const AppearingDiv = lazy(() => import('../../../components/ui/AppearingDiv/AppearingDiv'));
 
 import './HalfTitle.css'
 
@@ -32,14 +33,30 @@ export default function HalfTitle ({header, imgSrc, brightness = 100, position =
     
     return(
         <div className = 'half_title_container'>
-            <FadeOnLoadImg imgPath={imgSrc} className='half_title_img' style={imageStyle}/>
-            <Vignette/>
-            <AppearingDiv className='header_container'>
-                <h1 className ='half_title_heading'>{header}</h1>
-            </AppearingDiv>
-            <Link to={captionLink} target={newTab ? '_blank' : ''}>
-                <AppearingDiv className='half_title_caption'><p>{caption}</p></AppearingDiv>
-            </Link>
+            <Suspense>
+                <FadeOnLoadImg imgPath={imgSrc} className='half_title_img' style={imageStyle}/>
+                <Vignette/>
+                <AppearingDiv className='header_container'>
+                    <h1 className ='half_title_heading'>{header}</h1>
+                </AppearingDiv>
+                <Link to={captionLink} target={newTab ? '_blank' : ''}>
+                    <AppearingDiv className='half_title_caption'><p>{caption}</p></AppearingDiv>
+                </Link>
+            </Suspense>
         </div>
     )
 }
+
+//TODO: replace framer-motion with this
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.animate_hidden');
+hiddenElements.forEach((el) => observer.observe(el));
