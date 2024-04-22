@@ -48,15 +48,15 @@ export default function HalfTitle ({header, imgSrc, brightness = 100, position =
 }
 
 //TODO: replace framer-motion with this
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
-});
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if(entry.isIntersecting) {
+//             entry.target.classList.add('show');
+//         } else {
+//             entry.target.classList.remove('show');
+//         }
+//     });
+// });
 
-const hiddenElements = document.querySelectorAll('.animate_hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+// const hiddenElements = document.querySelectorAll('.animate_hidden');
+// hiddenElements.forEach((el) => observer.observe(el));
