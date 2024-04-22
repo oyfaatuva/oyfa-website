@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
-import { motion } from "framer-motion"
+import Slider from "react-slick";
+const { motion } = await import ("framer-motion");
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import Slider from "react-slick";
 
 import styles from '../Stylesheets/MerchItemPopUp.module.css'
 

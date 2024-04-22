@@ -1,4 +1,4 @@
-import { useInView } from "framer-motion";
+const { useInView } = await import ("framer-motion");
 import { useRef } from "react";
 
 export default function AppearingDiv ({ children, className, style, translateMeasurement = 30, percent = false, translateAxis = 'Y', margin = '0px 100px -50px 0px', duration = 0.5, delay = 0.2 }) {

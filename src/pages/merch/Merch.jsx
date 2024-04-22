@@ -1,8 +1,8 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { useLoaderData, useOutletContext } from 'react-router';
 import { defer, Await } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet';
+const { AnimatePresence } = await import ("framer-motion");
 import axiosClient from '../../utils/axiosClient';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
 import MerchGallery from './Components/MerchGallery';
@@ -72,7 +72,7 @@ export default function Merch() {
                 initial={false}
                 mode="wait"
             >
-                <Suspense>{currentItem && <MerchItemPopUp item={currentItem} handleClose={closeItem} imageDir={IMAGE_DIR}/>}</Suspense>
+                {currentItem && <Suspense><MerchItemPopUp item={currentItem} handleClose={closeItem} imageDir={IMAGE_DIR}/></Suspense>}
             </AnimatePresence>
         </>
     );  

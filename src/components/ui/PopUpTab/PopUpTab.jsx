@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { AnimatePresence, motion } from 'framer-motion';
+const { AnimatePresence, motion } = await import ("framer-motion");
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './PopUpTab.module.css'; 
 
-export default function WideModal({ open, closeLink, children }) {
+export default function PopUpTab({ open, closeLink, children }) {
     const navigate = useNavigate();
     document.body.style.overflow = 'hidden';
 
