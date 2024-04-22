@@ -16,12 +16,12 @@ import styles from './Merch.module.css';
 const IMAGE_DIR = 'images/merch/'
 
 export default function Merch() {
-    const {setTransition, setLeaveGap} = useOutletContext();
+    const {setTransition} = useOutletContext();
     const [currentItem, setCurrentItem] = useState(null);
 
     const loaderData = useLoaderData();
 
-    const setMerchItem = (item) => {setCurrentItem(item); setTransition(false); setLeaveGap(false)}
+    const setMerchItem = (item) => {setCurrentItem(item); setTransition(false)}
     const closeItem = () => {setCurrentItem(null); setTransition(true);};
 
     var networklessItemList = [

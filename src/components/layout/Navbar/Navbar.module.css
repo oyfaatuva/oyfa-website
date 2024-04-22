@@ -115,7 +115,7 @@
     transition: right 0.4s;
 }
 
-@media screen and (max-width: 1000px) { /*TODO: preprocessor to make this variable */
+@media screen and (max-width: 1000px) { /*TODO: CSS preprocessor to make this variable */
     .body {
         overflow: hidden;
     }
