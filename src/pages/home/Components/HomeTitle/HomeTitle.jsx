@@ -6,12 +6,12 @@
 **
 ** for API documentation on the react-bootstrap Carousel, visit https://react-bootstrap.netlify.app/docs/components/carousel/
 */
-
+import { lazy } from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 import Vignette from '../../../../components/ui/Vignette/Vignette';
-import FadeOnLoadImg from '../../../../components/ui/FadeOnLoadImg/FadeOnLoadImg';
-import AppearingDiv from '../../../../components/ui/AppearingDiv/AppearingDiv';
+const FadeOnLoadImg = lazy(() => import('../../../../components/ui/AppearingDiv/AppearingDiv'));
+const AppearingDiv = lazy(() => import('../../../../components/ui/AppearingDiv/AppearingDiv'));
 import useScrollPosition from "/src/hooks/useScrollPosition";
 
 import './HomeTitle.css';

@@ -1,10 +1,10 @@
-import React, { Suspense, useMemo } from 'react'
+import { Suspense, useMemo, lazy } from 'react'
 import { Helmet } from 'react-helmet';
 import { useSearchParams } from 'react-router-dom';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
 import YoutubeEmbed from '../../components/media/YoutubeEmbed/YoutubeEmbed';
-import LeadershipArchive from './Components/LeadershipArchive/LeadershipArchive';
-const LeadershipGallery = React.lazy(() => import('./Components/LeadershipGallery/LeadershipGallery'));
+const LeadershipArchive = lazy(() => import('./Components/LeadershipArchive/LeadershipArchive'));
+const LeadershipGallery = lazy(() => import('./Components/LeadershipGallery/LeadershipGallery'));
 
 import { toOrdinalNumber } from '../../utils/toOrdinalNumber';
 import { CURRENT_BNC } from '../../Constants';
@@ -46,14 +46,15 @@ export default function Leadership () {
         <>
             <Helmet><title>Leadership</title></Helmet>
             <HalfTitle header = 'Leadership' imgSrc = {`/images/leadership/bnc${bncNum}/Leadership_Title.jpg`} brightness={65} position={position} caption='Read Bios' captionLink='/Bios'/>
-            <LeadershipArchive archive={BNC_ARCHIVE} updateBnC={updateBnC} />
-            <h1 className = {styles.leadership_heading}>{toOrdinalNumber(bncNum)} BOARD & COUNCIL</h1>        
-            {B_C_YOUTUBE_EMBED_ID != '' && 
-                <div className={styles.leadership_youtube_container}>
-                    <YoutubeEmbed embedId={B_C_YOUTUBE_EMBED_ID} embedWidth='50%' embedHeight='440px'/>
-                </div>
-            }
             <Suspense>
+                <LeadershipArchive archive={BNC_ARCHIVE} updateBnC={updateBnC} />
+                <h1 className = {styles.leadership_heading}>{toOrdinalNumber(bncNum)} BOARD & COUNCIL</h1>        
+                {B_C_YOUTUBE_EMBED_ID != '' && 
+                    <div className={styles.leadership_youtube_container}>
+                        <YoutubeEmbed embedId={B_C_YOUTUBE_EMBED_ID} embedWidth='50%' embedHeight='440px'/>
+                    </div>
+                }
+            
                 <LeadershipGallery bnc={currentBNC} format={archivedBNC?.format != undefined ? FORMATS[archivedBNC.format] : {numBoardImgs: 6}}/>
             </Suspense>
         </>

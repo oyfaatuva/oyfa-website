@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import Slider from "react-slick";
-const { motion } = await import ("framer-motion");
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 

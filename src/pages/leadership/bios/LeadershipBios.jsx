@@ -1,10 +1,9 @@
+import { Suspense, useEffect, useMemo, lazy } from 'react';
 import { useOutletContext, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import AppearingDiv from '../../../components/ui/AppearingDiv/AppearingDiv';
+const AppearingDiv = lazy(() => import('../../../components/ui/AppearingDiv/AppearingDiv'));
 
 import styles from './LeadershipBios.module.css'
-
-import { useEffect, useMemo } from 'react';
 
 // Async constant import to reduce bundle
 const { BNC_ARCHIVE, BNC } = await import ('../../../constants/bncArchive');
@@ -25,13 +24,15 @@ export default function LeadershipBios () {
     return(
         <>
             <Helmet><title>Leadership Bios</title></Helmet>
-            {archivedBNC.map((committee, index) => (
-                <>
-                    {committee.bios.filter(bio => bio.bioImgSrc).map((bio, index2) => (
-                        <CommitteeBio key={index + index2} bio={bio} committeeName={committee.committeeName}/>
-                    ))}
-                </>
-            ))}
+            <Suspense>
+                {archivedBNC.map((committee, index) => (
+                    <>
+                        {committee.bios.filter(bio => bio.bioImgSrc).map((bio, index2) => (
+                            <CommitteeBio key={index + index2} bio={bio} committeeName={committee.committeeName}/>
+                        ))}
+                    </>
+                ))}
+            </Suspense>
         </>
     )
 }
