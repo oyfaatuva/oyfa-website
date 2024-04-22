@@ -32,16 +32,17 @@ jobs:
     - name: 🔨 Build Project
       run: npm run build
     
-    - name: 📂 Sync files
+    - name: 📂 Sync assets
       uses: sebastianpopp/ftp-action@releases/v2
       with:
         host: "oyfaatuva.com"
         user: ${{ secrets.CPANEL_FTP_USERNAME }}
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
-        localDir: "dist"
-        options: '--exclude="images/.*$"'
+        localDir: "dist/assets"
+        remoteDir: "assets"
+        options: '--delete'
 
-    - name: 🖼️ Sync images/icons
+    - name: 🖼️ Sync images
       uses: sebastianpopp/ftp-action@releases/v2
       with:
         host: "oyfaatuva.com"
@@ -49,4 +50,4 @@ jobs:
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
         localDir: "dist/images"
         remoteDir: "images"
-        options: "--only-newer --dry-run"
+        options: "--delete --only-newer --ignore-time --dry-run"
