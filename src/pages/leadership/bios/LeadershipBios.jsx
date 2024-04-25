@@ -41,7 +41,7 @@ function CommitteeBio ({ bio, committeeName }) {
     return (
         <div className={styles.committee_bio}>
             <AppearingDiv className={styles.committee_img_column} translateMeasurement={200} margin='0px 100px -10% 0px'>
-                <div id={committeeName} className={styles.committee_img_container}><img src={bio.bioImgSrc} className={styles.committee_img + " bio_imgg"}/></div>
+                <div id={committeeName} className={styles.committee_img_container}><img src={bio.bioImgSrc} className={styles.committee_img + " bio_img"}/></div>
             </AppearingDiv>
             {bio.text && <CommitteeBioText bioText={bio.text}/>}
         </div>
