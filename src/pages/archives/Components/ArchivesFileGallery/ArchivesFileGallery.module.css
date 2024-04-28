@@ -26,7 +26,18 @@
 }
 
 .file_img_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    aspect-ratio: 1/1;
+    background-color: rgb(31, 31, 32);
+}
+
+.file_img_container h1{
+    color: white;
+    text-align: center;
+    margin: 0 5%;
 }
 
 .file_img_container img {
@@ -36,4 +47,10 @@
 
 .file_img_container img:hover {
     transform: scale(1.15);
+}
+
+.file_container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    color: red;
 }

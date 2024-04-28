@@ -46,7 +46,7 @@ class File extends Component{
                 <a href = {link} target='_blank' className = {styles.file_link}>
 
                     <div className = {styles.file_img_container}>
-                        <img src = {imgSrc}/>
+                        {imgSrc ? <img src = {imgSrc}/> : <h1 classname={styles.file_container_text}>{name.toUpperCase()}</h1>}
                     </div>
 
                     <h1 className = {styles.file_heading}>
