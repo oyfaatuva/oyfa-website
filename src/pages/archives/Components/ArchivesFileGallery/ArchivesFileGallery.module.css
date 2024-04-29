@@ -48,9 +48,3 @@
 .file_img_container img:hover {
     transform: scale(1.15);
 }
-
-.file_container {
-    width: 100%;
-    aspect-ratio: 1/1;
-    color: red;
-}
