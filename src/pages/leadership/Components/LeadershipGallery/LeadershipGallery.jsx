@@ -34,7 +34,7 @@ function BoardRow ({ board }) {
             </div>
             <div className={styles.board_text}>
                 {board.bios.map((bio, index) => (
-                    <div className={styles.person_text_container}>
+                    <div key={index} className={styles.person_text_container}>
                         {bio.text?.map((personText, index2) => (
                             <PersonText key={index + index2} name={personText.name} major={personText.major} email={personText.email} />
                         ))}
@@ -71,7 +71,7 @@ function Committee ({ committee }) {
     var infoComponent = 
         <>
             {committee.bios.map((bio, index) => (
-                <div className={styles.person_text_container}>
+                <div key={index} className={styles.person_text_container}>
                     {bio.text?.map((personText, index2) => (
                         <PersonText key={index + index2} name={personText.name} major={personText.major} email={personText.email} />
                     ))}
