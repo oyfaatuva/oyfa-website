@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import { AnimatePresence } from "framer-motion";
 import axiosClient from '../../utils/axiosClient';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
-import MerchGallery from './Components/MerchGallery';
+import MerchGallery, { MerchSkeletonGallery } from './Components/MerchGallery';
 
 // Async Component for code splitting
 const MerchCarousel = React.lazy(() => import('./Components/MerchCarousel'));
@@ -54,7 +54,7 @@ export default function Merch() {
             </div>
             <p className={styles.gallery_title}>Collection</p>
             <Suspense
-                fallback={<p>Loading merchandise...</p>}
+                fallback={<MerchSkeletonGallery/>}
             >
                 <Await
                     resolve={loaderData.merch}
@@ -81,6 +81,8 @@ export default function Merch() {
 export async function merchLoader() {
     try {
         const merchPromise = axiosClient.get('/merch').then((response) => response.data);
+        const fakePromise = new Promise(resolve => setTimeout(resolve, 600000));
+        console.log(merchPromise)
         return defer({merch: merchPromise});
     } catch (error) {
         console.error('Error fetching data:', error);

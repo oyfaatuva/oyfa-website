@@ -26,3 +26,27 @@ export function MerchItem({ item, setCurrentItem = null, imageDir }) {
         </div>
     );
 }
+
+export function MerchSkeletonGallery() {
+    const divs = [];
+
+    for (let i = 0; i < 8; i++) {
+        divs.push(
+            <div className={styles.merch_container}> 
+                <div className={styles.skeleton}/>
+                <div className={styles.skeleton_text}/>
+                <div className={styles.skeleton_text}/>
+                <div className={styles.skeleton_text}/>
+                <div className={styles.skeleton_text}/>
+            </div>
+        );
+    }
+
+    return (
+        <div className={styles.merch_grid_container}>
+            <div className={styles.merch_grid}>
+                {divs}   
+            </div>
+        </div>
+    );
+}
