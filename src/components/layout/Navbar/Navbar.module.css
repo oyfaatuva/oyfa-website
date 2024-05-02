@@ -33,6 +33,7 @@
     height: calc(var(--navbar-height));
     font-size: var(--font-size);
     font-family: var(--text-font);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
 
     border-bottom: 1px white solid;
