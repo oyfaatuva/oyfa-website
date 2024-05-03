@@ -1,7 +1,10 @@
+import { useSearchParams } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import { HashLink } from 'react-router-hash-link';
 import AppearingDiv from '../../../../components/ui/AppearingDiv/AppearingDiv';
+import { MAX_WIDTH } from './../../../../Constants';
+
 import styles from './LeadershipGallery.module.css'
-import { useSearchParams } from 'react-router-dom';
 
 export default function LeadershipGallery ({ bnc, format = {numBoardImgs: 6}}) {
     return(
@@ -50,14 +53,15 @@ function CommitteeGrid ({ committees }) {
     return(
         <div className={styles.grid_container}>
             {committees.map((committee, index) => (
-                <Committee key={index} committee={committee} />
+                <Committee key={index} committee={committee} index={index}/>
             ))}
         </div>
     )
 }
 
-function Committee ({ committee }) {
+function Committee ({ committee, index }) {
     const [searchParams] = useSearchParams();
+    const isMobile = useMediaQuery({ maxWidth: MAX_WIDTH });
 
     /* if title was provided render it */
     if(committee.committeeName) {
@@ -88,7 +92,7 @@ function Committee ({ committee }) {
     }
 
     return(
-        <AppearingDiv key={committee.committeeImgSrc}>
+        <AppearingDiv key={committee.committeeImgSrc} delay={isMobile ? 0.3 : (index % 3 + 1) * 0.2}>
             {committee.committeeImgSrc && <div className={styles.person_img_container}>
                 <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: committee.committeeName}}
                     scroll={el => scrollWithOffset(el)}>

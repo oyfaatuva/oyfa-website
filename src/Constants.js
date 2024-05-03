@@ -113,6 +113,7 @@ export const TWITTER_LINK = 'https://twitter.com/oyfaatuva';
 /*=================COMMON=====================================================================*/
 
 export const OYFA_AGE = new Date().getFullYear() - 1988;
+export const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile" before it minimizes to the "tab" form
 
 /* These are the tabs to render on the Navbar, expect to add more if you add more pages (make sure to Route those in
 ** App.jsx within the router) */

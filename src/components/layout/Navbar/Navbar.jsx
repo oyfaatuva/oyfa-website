@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import useScrollPosition from "/src/hooks/useScrollPosition";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
+import { MAX_WIDTH } from './../../../Constants';
 
 import classes from "./Navbar.module.css";
 
@@ -23,8 +24,6 @@ import classes from "./Navbar.module.css";
 **  RETURNS:
 **      Navbar component which is fixed to the top of the viewport
 **==============================================================================================================*/
-
-const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile" before it minimizes to the "tab" form
 
 export default function Navbar({ logoImgSrc, navbarTabs, useTransition = true, transitionScrollPositions = [340, 250], hide = false }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
