@@ -61,24 +61,27 @@ export default function Navbar({ logoImgSrc, navbarTabs, useTransition = true, t
                     <NavLink to="/" className={classes.nav_logo} onClick={closeMobileMenu}>
                         <img src={logoImgSrc}/>
                     </NavLink>
-                    {isMobile && (
+
+                    { isMobile ? (
                         <div className={classes.nav_toggle} id="nav-toggle" onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faBars} />
                         </div>
-                    )}
-                    { isMobile ? (
-                        <div className={classes.nav_menu + " " + (isMenuOpen ? classes.show_menu : "")} id="nav-menu">
-                            <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
-                            <div className={classes.nav_close} id="nav-close" onClick={toggleMenu}>
-                                <FontAwesomeIcon icon={faXmark} />
-                            </div>
-                        </div>
-
                     ) : (
                         <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
                     )}
                 </nav>
             </header>
+
+            {/* We moved this outside of the header tag because the hide transition animation caused a visual bug where the mobile sidebar menu
+                would also animate upwards slightly because the menu was a child of the header */}
+            { isMobile && 
+                <div className={classes.nav_menu + " " + (isMenuOpen ? classes.show_menu : "")} id="nav-menu">
+                    <NavBarLinks navBarLinksDict={navbarTabs} isMobile={isMobile} closeMobileMenu={closeMobileMenu}/>
+                    <div className={classes.nav_close} id="nav-close" onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={faXmark} />
+                    </div>
+                </div>
+            }
         </>
     );
 }
