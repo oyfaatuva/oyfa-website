@@ -1851,8 +1851,8 @@ export const BNC33 = [
               major: "Mechanical Engineering",
               email: "ant2ms@virginia.edu",
               city: "Norfolk, VA",
-              extraText: [{text: "Hey it’s me, Ken. I am one of your historians as well as famheads! My hobbies include but aren’t limited to: cooking, playing tennis, playing the violin, teaching, taking photos/videos and of course getting to know all of you. Please don’t hesitate to reach out to me for anything!"}],
-              bio: "When Danielle and Michelle came from NOVA to my place in Norfolk. Chris joined us for the sleepover unplanned...ended up going to Walmart and then making ramen at around 3am."
+              extraText: [{text: "When Danielle and Michelle came from NOVA to my place in Norfolk. Chris joined us for the sleepover unplanned...ended up going to Walmart and then making ramen at around 3am."},],
+              bio: "Hey it’s me, Ken. I am one of your historians as well as famheads! My hobbies include but aren’t limited to: cooking, playing tennis, playing the violin, teaching, taking photos/videos and of course getting to know all of you. Please don’t hesitate to reach out to me for anything!"
             },
           ],
         },
@@ -2026,8 +2026,9 @@ export const BNC33 = [
               major: "Computer Engineering",
               email: "@virginia.edu",
               city: "Gainesville, VA",
-              extraText: [{text: "Hi there, It’s sunny (like the ☀️) I’m a fourth year majoring in computer engineering and am one of your sports chairs. Fun fact, I am an avid fan of all Washington sports teams especially the Washington Football Team (formerly known as Redsk***)"}],
-              bio: "Meeting my big for the first time. The man hid inside a box and bursted out of it."},
+              extraText: [{text: "Meeting my big for the first time. The man hid inside a box and bursted out of it."},],
+              bio: "Hi there, It’s sunny (like the ☀️) I’m a fourth year majoring in computer engineering and am one of your sports chairs. Fun fact, I am an avid fan of all Washington sports teams especially the Washington Football Team (formerly known as Redsk***)"
+            }
           ],
         },
       ],
@@ -2077,8 +2078,8 @@ export const BNC33 = [
               major: "Echols Interdisciplinary Major",
               email: "@virginia.edu",
               city: "Chesapeake, VA",
-              extraText: [{text: "Hello hello, my name is Angie, and I am super excited to be 1/2 of your D7 reps this year (fun fact: I am also the D7 secretary hehe)! My favorite thing to do is curl up in a blanket, especially when studying, so if you're ever in need, hmu and I might just be able to help! I know this year will be all kinds of things, so feel free to msg me about ANYTHING, and I'd love to chat with you :) Take care and stay safe!"}],
-              bio: "Everyone has their own experience within OYFA, but ultimately, they all stem from the same root: the family, support, and connections you find from it. That's the nature of OYFA; if you are a Oyfan, you are part of an extensive family, dating from alumni who even post-graduation will lend whatever help they can, to current members who share in your day-to-day life on grounds. This family that you find yourself in is incredibly supportive, something that some people never really get to experience in their lives. Whether you need someone to hype you up at an event, give you advice on classes/careers, walk you through a breakdown, or just chill with on a Friday night, there is someone--quite a few someones--who would do all that for you in a heartbeat. Frankly, you can't find better people :)"},
+              extraText: [{text: "Everyone has their own experience within OYFA, but ultimately, they all stem from the same root: the family, support, and connections you find from it. That's the nature of OYFA; if you are a Oyfan, you are part of an extensive family, dating from alumni who even post-graduation will lend whatever help they can, to current members who share in your day-to-day life on grounds. This family that you find yourself in is incredibly supportive, something that some people never really get to experience in their lives. Whether you need someone to hype you up at an event, give you advice on classes/careers, walk you through a breakdown, or just chill with on a Friday night, there is someone--quite a few someones--who would do all that for you in a heartbeat. Frankly, you can't find better people :)"}],
+              bio: "Hello hello, my name is Angie, and I am super excited to be 1/2 of your D7 reps this year (fun fact: I am also the D7 secretary hehe)! My favorite thing to do is curl up in a blanket, especially when studying, so if you're ever in need, hmu and I might just be able to help! I know this year will be all kinds of things, so feel free to msg me about ANYTHING, and I'd love to chat with you :) Take care and stay safe!"},
           ],
         },
         {

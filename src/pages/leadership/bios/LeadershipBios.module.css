@@ -1,8 +1,7 @@
 .committee_bio {
     display: flex;
     width: 100vw;
-    min-height: 45vw;
-    padding: 2% 9% 2% 2%;
+    padding: 2% 9% 2% 0;
     margin-top: 5%;
 }
 
@@ -39,17 +38,17 @@
 }
 
 .committee_text_container {
-    flex: 0 0 47%;
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 5%;
 }
 
 .commitee_text_section {
     font-size: 1.1rem;
     padding-bottom: 5%;
+    padding-left: 5%;
 }
 
 .name {

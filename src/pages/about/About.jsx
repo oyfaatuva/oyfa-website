@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react'
-import { useOutletContext } from 'react-router-dom';
+import React, { Suspense, useContext, useEffect } from 'react'
 import { Helmet } from 'react-helmet';
+import { PageContext } from '../PageContext';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
 import Loading from '../../components/layout/Loading/Loading';
 const History = React.lazy(() => import('./Components/AboutHistory'));
@@ -9,8 +9,11 @@ const Mission = React.lazy(() => import('./Components/AboutMission'));
 /* Main export component to index that combines all "About" components */
 
 export default function About () {
-    const {setHide} = useOutletContext();
-    setHide(true);
+    const { setHideNavbar } = useContext(PageContext);
+
+    useEffect(() => {
+        setHideNavbar(true);
+    });
 
     return(
         <>

@@ -1,7 +1,8 @@
-import { Suspense, lazy } from 'react';
-import { useOutletContext } from 'react-router';
+import { Suspense, lazy, useContext } from 'react';
 import { Helmet } from 'react-helmet';
+import { PageContext } from '../PageContext';
 import HomeTitle from './Components/HomeTitle/HomeTitle';
+import Loading from '../../components/layout/Loading/Loading';
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 // Async Components for code splitting
@@ -12,15 +13,18 @@ const Testimonies = lazy(() => import('./Components/HomeTestimonies/HomeTestimon
 const AppearingDiv = lazy(() => import('../../components/ui/AppearingDiv/AppearingDiv'));
 
 import './Home.css';
-import Loading from '../../components/layout/Loading/Loading';
+import { useEffect } from 'react';
 
 export default function Home () {
-    const {setNavbarScrollPosition, setNavbarScrollPositionMobile, setHide} = useOutletContext();
+    const { setHideNavbar, setNavbarTransitionScroll, setNavbarTransitionScrollMobile } = useContext(PageContext);
+
     const {height} = useWindowDimensions(); 
 
-    setNavbarScrollPosition(height - 70);
-    setNavbarScrollPositionMobile(430);
-    setHide(true);
+    useEffect(() => {
+        setNavbarTransitionScroll(height - 70);
+        setNavbarTransitionScrollMobile(430);
+        setHideNavbar(true);
+    });
     
     return(
         <>

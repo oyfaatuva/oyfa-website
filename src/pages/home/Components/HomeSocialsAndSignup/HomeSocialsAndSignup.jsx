@@ -53,7 +53,7 @@ export default function HomeSocialsAndSignup() {
                     </div>
                 </div>
             </div>
-            <div className={styles.wio_container} translateY={0} duration={0.7}>
+            <div className={styles.wio_container} translatey={0} duration={0.7}>
                 <AppearingDiv translateAxis='X' translateMeasurement={100} percent={true}>
                     <h1 className={styles.header}>Sign up for our weekly newsletter <br/> "This Week in OYFA"</h1>
                 </AppearingDiv>

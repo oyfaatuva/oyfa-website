@@ -33,6 +33,7 @@
     height: calc(var(--navbar-height));
     font-size: var(--font-size);
     font-family: var(--text-font);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
 
     border-bottom: 1px white solid;
@@ -98,21 +99,32 @@
     flex-direction: row;
     flex: 1;
     margin-right: 50px;
-    margin-bottom: 0; /*TODO: Find out what style is giving ul margin-bottom of 1 rem */
+    margin-bottom: 0;
     column-gap: 4rem;
     align-items: center;
     justify-content: flex-end;
 }
 
 .nav_menu {
+    z-index: var(--z-fixed);
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: var(--navbar-color);
     width: 50%;
     height: 100vh;
     padding: 6rem 3rem 0;
     transition: right 0.4s;
+    background-color: var(--navbar-color);
+    font-size: var(--font-size);
+    font-family: var(--text-font);
+}
+
+.nav_menu ul {
+    list-style: none;
+}
+
+.nav_menu a {
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) { /*TODO: CSS preprocessor to make this variable */

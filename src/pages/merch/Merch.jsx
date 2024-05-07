@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import { AnimatePresence } from "framer-motion";
 import axiosClient from '../../utils/axiosClient';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
-import MerchGallery from './Components/MerchGallery';
+import MerchGallery, { MerchSkeletonGallery } from './Components/MerchGallery';
 
 // Async Component for code splitting
 const MerchCarousel = React.lazy(() => import('./Components/MerchCarousel'));
@@ -16,22 +16,13 @@ import styles from './Merch.module.css';
 const IMAGE_DIR = 'images/merch/'
 
 export default function Merch() {
-    const {setTransition} = useOutletContext();
     const [currentItem, setCurrentItem] = useState(null);
 
     const loaderData = useLoaderData();
 
-    const setMerchItem = (item) => {setCurrentItem(item); setTransition(false)}
-    const closeItem = () => {setCurrentItem(null); setTransition(true);};
+    const setMerchItem = (item) => {setCurrentItem(item);}
+    const closeItem = () => {setCurrentItem(null); };
 
-    var networklessItemList = [
-        {category: "Unisex T-Shirt, S-L", name: "2022 Barrio T-Shirt", price: 25.01, stock: 20, images: ['seb2.jpg']},
-        {category: 'me', name: 'Basty', price: 2, stock: 1, images: ['realseb.jpg']},
-        {category: "Unisex Hoodie, XS-XL", name: "Super duper awesome hoodie", price: 35, stock: 20, images: ['megathrowback.jpg']},
-        {category: "Holographic Sticker", name: "35th OYFA Decal", price: 3, stock: 0, images: ['throwback.jpg']},
-        {category: "Unisex T-Shirt, S-L", name: "2022 Barrio T-Shirt", price: 25.078, stock: 0, images: ['OYFABuddy.JPG']},
-        {category: "Unisex T-Shirt, S-L", name: "2023 Barrio T-Shirt", price: 25.078, stock: 0, images: ["SamExample.JPG", "SamExample.JPG", "SamExample.JPG"]}]
-    
     const GALLERY_IMAGES = ['Komiks_Banner.png', 'beAModelIBeg.jpg' , 'seb.jpg'];
 
     useEffect(() => {
@@ -44,7 +35,7 @@ export default function Merch() {
     return(
         <>
             <Helmet><title>Merch</title></Helmet>
-            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!'/>
+            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!' captionLink="https://forms.office.com/r/FRGzHXXMQq" newTab />
             
             <div className='mb-4'>
                 <p className={styles.gallery_title}>Showcase</p>
@@ -54,7 +45,7 @@ export default function Merch() {
             </div>
             <p className={styles.gallery_title}>Collection</p>
             <Suspense
-                fallback={<p>Loading merchandise...</p>}
+                fallback={<MerchSkeletonGallery/>}
             >
                 <Await
                     resolve={loaderData.merch}

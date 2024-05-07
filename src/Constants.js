@@ -113,6 +113,7 @@ export const TWITTER_LINK = 'https://twitter.com/oyfaatuva';
 /*=================COMMON=====================================================================*/
 
 export const OYFA_AGE = new Date().getFullYear() - 1988;
+export const MAX_WIDTH = '1000px' //Maximum window width to classify screen as "Mobile" before it minimizes to the "tab" form
 
 /* These are the tabs to render on the Navbar, expect to add more if you add more pages (make sure to Route those in
 ** App.jsx within the router) */
@@ -164,8 +165,8 @@ export const FILES =
     {name: 'OYFA Constitution', imgSrc: './images/archives/Archives_Preview_Constitution.png', link: '/files/OYFAConsitution.pdf'},
     {name: 'B&C Archive', imgSrc: './images/archives/Archives_Preview_B&C_Archive.png', link: '/files/Archives_B&C_Archive.pdf'},
     {name: 'Solidarity Statement', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: '/files/Archives_Solidarity_Statement.pdf'},
-    {name: '2019-2023 Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: 'https://oyfaatuva.github.io/old-oyfa-website/'},
-    {name: '2013-2018 Website', imgSrc: './images/archives/Archives_Preview_Solidarity_Statement.png', link: 'https://old.oyfaatuva.com'},
+    {name: '2019-2023 Website', link: 'https://oyfaatuva.github.io/old-oyfa-website/'},
+    {name: '2013-2018 Website', link: 'https://old.oyfaatuva.com'},
     {name: 'The Pensionado', link: 'https://modernpensionado.wordpress.com/the-pensionado/'}
 ]
 

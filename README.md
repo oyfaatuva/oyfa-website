@@ -34,7 +34,7 @@
     This website is designed to be not only a hub for all Oyfans, but as a model for all other student organizations interested in a website. In keeping with this goal, we have also produced a Quickstart Guide for anyone looking to produce a similar project.<a href="https://docs.google.com/document/d/1HpFqOiBeCmaiBkAtqW8r5TP6nRBN87xtmmukSb8xgnA/edit?usp=sharing" ><strong>View Quickstart Guide »</strong></a>
     <br />
     <br />
-    This repository is a fork of the original repo and project created by webmaster Colby Le. The following is the current website now deployed from OYFA's official GitHub to be accessed and managed by future Webmasters.
+    This repository was originally a fork of the original repo and project created by webmaster Colby Le. It is now it's own repository and the following is the current website now deployed from OYFA's official GitHub to be accessed and managed by future Webmasters.
   </p>
 </div>
 <br />

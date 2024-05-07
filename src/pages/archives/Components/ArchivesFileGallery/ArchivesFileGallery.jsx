@@ -42,18 +42,19 @@ class File extends Component{
 
         return(
             <div>
-
                 <a href = {link} target='_blank' className = {styles.file_link}>
-
-                    <div className = {styles.file_img_container}>
-                        <img src = {imgSrc}/>
+                    <div className = {styles.file_container}>
+                        <div className={styles.file_img_container}>
+                            {imgSrc ? <img src = {imgSrc}/> :
+                                <h1 classname={styles.file_container_text}>{name.toUpperCase()}</h1>
+                            }
+                        </div>
                     </div>
 
                     <h1 className = {styles.file_heading}>
                         {name}
                     </h1>
-
-                    </a>
+                </a>
             </div>
         )
     }

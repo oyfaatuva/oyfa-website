@@ -19,7 +19,37 @@
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.skeleton {
+    width: 100%;    
+    aspect-ratio: 1/1;
+    margin-bottom: .5rem;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton_text {
+    width: 90%;    
+    height: .6rem;
+    margin-bottom: .25rem;
+    margin-left: .5rem;
+    border-radius: .125rem;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton_text:last-child {
+    margin-bottom: 0;
+    width: 80%;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: rgb(240, 240, 240);
+    }
+
+    100% {
+        background-color: rgb(201, 201, 201);
+    }
 }
 
 .merch_container p {
@@ -30,9 +60,8 @@
     background-color: rgb(200, 201, 194);
     position: relative;
     width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: 5px;
-    padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
-                        Position of the img will have to be relative because of it*/
 }
 
 .merch_img_container img {
