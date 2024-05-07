@@ -32,7 +32,7 @@ export function MerchSkeletonGallery() {
 
     for (let i = 0; i < 8; i++) {
         divs.push(
-            <div className={styles.merch_container}> 
+            <div key={i} className={styles.merch_container}> 
                 <div className={styles.skeleton}/>
                 <div className={styles.skeleton_text}/>
                 <div className={styles.skeleton_text}/>

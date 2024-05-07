@@ -1,6 +1,7 @@
-import { Suspense, useEffect, useMemo, lazy } from 'react';
-import { useOutletContext, useSearchParams } from 'react-router-dom';
+import { Suspense, useEffect, useMemo, lazy, useContext } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { PageContext } from '../../PageContext';
 const AppearingDiv = lazy(() => import('../../../components/ui/AppearingDiv/AppearingDiv'));
 
 import styles from './LeadershipBios.module.css'
@@ -9,7 +10,8 @@ import styles from './LeadershipBios.module.css'
 const { BNC_ARCHIVE, BNC } = await import ('../../../constants/bncArchive');
 
 export default function LeadershipBios () {
-    const { setTransition } = useOutletContext();
+    const { setUseTransition } = useContext(PageContext);
+
     const [searchParams, setSearchParams] = useSearchParams();
 
     const archivedBNC = useMemo(() => {
@@ -18,7 +20,7 @@ export default function LeadershipBios () {
     });
     
     useEffect(() => {
-        setTransition(false);
+        setUseTransition(false);
     });
     
     return(

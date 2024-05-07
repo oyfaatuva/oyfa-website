@@ -60,9 +60,8 @@
     background-color: rgb(200, 201, 194);
     position: relative;
     width: 100%;
+    aspect-ratio: 1/1;
     margin-bottom: 5px;
-    padding-top: 100%; /*Unfortunately this is the easiest trick to make a square box relative to the width.
-                        Position of the img will have to be relative because of it*/
 }
 
 .merch_img_container img {

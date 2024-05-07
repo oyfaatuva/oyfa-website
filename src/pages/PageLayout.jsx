@@ -1,48 +1,31 @@
-import { useEffect, useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { Outlet } from "react-router-dom";
+import { PageContext, PageContextProvider } from "./PageContext";
 import ScrollToTop from "../components/ScrollToTop";
 import Navbar from "../components/layout/Navbar/Navbar";
 import Footer from "../components/layout/Footer/Footer";
-import { useLocalStorage } from "../hooks/useLocalStorage";
+
 import { NAVBAR_TABS } from "../Constants";
 
-/** Values that NavBar will transition to solid after passing the HalfTitle component we commonly
- * use on most pages. Since the HalfTitle is different for full screen (min 1000px width) and 
- * mobile (max 1000px width), we have to contants */
-const DEFAULT_NAVBAR_TRANSITION_SCROLL = 340; 
-const DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE = 250;
-
 export default function PageLayout() {
-    const [currentLocation, getCurrentLocation] = useLocalStorage('currentLocation', )
-    const [scroll, setNavbarScrollPosition] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL)
-    const [scrollMobile, setNavbarScrollPositionMobile] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE)
-    const [useTransition, setTransition] = useState(true)
-    const [hide, setHide] = useState(false);
+    function Page() {
+        const { hideNavbar, useTransition, navbarTransitionScroll, navbarTransitionScrollMobile } = useContext(PageContext);
+    
+        return (
+            <>
+                <ScrollToTop/>
+    
+                <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} 
+                    transitionScrollPositions={[navbarTransitionScroll, navbarTransitionScrollMobile]} hide={hideNavbar}/>
+                <Outlet/>  
+                <Footer/>
+            </>
+        );
+    }
 
     return (
-        <>
-            <ScrollToTop/>
-            <UpdateLocation setNavbarScrollPosition={setNavbarScrollPosition} setNavbarScrollPositionMobile={setNavbarScrollPositionMobile} setTransition={setTransition} setHide={setHide}/>
-
-            <Navbar logoImgSrc="/images/_common/Navbar_OYFA_Logo.png" navbarTabs={NAVBAR_TABS} useTransition={useTransition} transitionScrollPositions={[scroll,scrollMobile]} hide={hide}/>
-            <Outlet context={{setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setHide}}/> 
-            <Footer/>
-        </>
+        <PageContextProvider>
+            <Page/>
+        </PageContextProvider>
     );
-}
-
-function UpdateLocation({ setNavbarScrollPosition, setNavbarScrollPositionMobile, setTransition, setHide }) {
-    const { pathname } = useLocation();
-    
-    useEffect(() => { 
-        if(pathname !== sessionStorage.getItem("currentPath")) {
-            setNavbarScrollPosition(DEFAULT_NAVBAR_TRANSITION_SCROLL);
-            setNavbarScrollPositionMobile(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE);
-            setTransition(true);
-            setHide(false);
-            sessionStorage.setItem("currentPath", pathname);
-        }
-    }, [pathname]);
-
-    return null;
 }
