@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { createContext, useState } from 'react';
-import { useLocation, useNavigation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 /** Values that NavBar will transition to solid after passing the HalfTitle component we commonly
  * use on most pages. Since the HalfTitle is different for full screen (min 1000px width) and 
@@ -13,6 +13,8 @@ export const PageContext = createContext();
 export const PageContextProvider = ({ children }) => {
     const { pathname } = useLocation();
 
+    const [previousPath, setPreviousPath] = useState(null);
+
     /* Global State for Navbar to be used and set by pages */
     const [hideNavbar, setHideNavbar] = useState(false);
     const [useTransition, setUseTransition] = useState(true)
@@ -20,12 +22,12 @@ export const PageContextProvider = ({ children }) => {
     const [navbarTransitionScrollMobile, setNavbarTransitionScrollMobile] = useState(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE)
 
     useEffect(() => { 
-        if(pathname !== sessionStorage.getItem("currentPath")) {
+        if(previousPath !== pathname) {
             setNavbarTransitionScroll(DEFAULT_NAVBAR_TRANSITION_SCROLL);
             setNavbarTransitionScrollMobile(DEFAULT_NAVBAR_TRANSITION_SCROLL_MOBILE);
             setUseTransition(true);
             setHideNavbar(false);
-            sessionStorage.setItem("currentPath", pathname)
+            setPreviousPath(pathname);
         }
     }, [pathname]);
 
