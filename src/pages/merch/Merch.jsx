@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useState } from 'react';
-import { useLoaderData, useOutletContext } from 'react-router';
-import { defer, Await } from 'react-router-dom';
+import { useLoaderData } from 'react-router';
+import { defer, Await, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { AnimatePresence } from "framer-motion";
 import axiosClient from '../../utils/axiosClient';
@@ -50,7 +50,7 @@ export default function Merch() {
                 <Await
                     resolve={loaderData.merch}
                     errorElement={
-                        <p>Error loading merchanise</p>
+                        <MerchError/>
                     }
                 >
                     {(merch) => (
@@ -69,8 +69,26 @@ export default function Merch() {
     );  
 }
 
+function MerchError() {
+    const navigate = useNavigate()
+
+    return (
+        <div className={styles.error_container}> 
+            <h3>There was an error loading the Merchandise</h3>
+            <button className={styles.reload_button} onClick={() => {navigate('.', { replace: true })}}>
+                <h4>RELOAD</h4>
+            </button>
+        </div>
+    );
+}
+
 export async function merchLoader() {
     try {
+        //For forcing rejected Promise to view and test errorElement 
+        // return defer({merch: new Promise((resolve, reject) => {
+        //     setTimeout( () => reject(('this is an error')) );
+        // })})
+        
         const merchPromise = axiosClient.get('/merch').then((response) => response.data);
         return defer({merch: merchPromise});
     } catch (error) {
