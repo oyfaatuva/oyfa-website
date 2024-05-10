@@ -1,4 +1,4 @@
-import { Suspense, lazy, useContext } from 'react';
+import { Suspense, lazy, useContext, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { PageContext } from '../PageContext';
 import HomeTitle from './Components/HomeTitle/HomeTitle';
@@ -13,7 +13,6 @@ const Testimonies = lazy(() => import('./Components/HomeTestimonies/HomeTestimon
 const AppearingDiv = lazy(() => import('../../components/ui/AppearingDiv/AppearingDiv'));
 
 import './Home.css';
-import { useEffect } from 'react';
 
 export default function Home () {
     const { setHideNavbar, setNavbarTransitionScroll, setNavbarTransitionScrollMobile } = useContext(PageContext);
