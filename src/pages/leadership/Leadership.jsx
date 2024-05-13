@@ -44,7 +44,7 @@ export default function Leadership () {
 
     return(
         <>
-            <Helmet><title>Leadership</title></Helmet>
+            <Helmet><title>Leadership - OYFA at UVA</title></Helmet>
             <HalfTitle header = 'Leadership' imgSrc = {`/images/leadership/bnc${bncNum}/Leadership_Title.jpg`} brightness={65} position={position} caption='Read Bios' captionLink='/Bios'/>
             <Suspense>
                 <LeadershipArchive archive={BNC_ARCHIVE} updateBnC={updateBnC} />
