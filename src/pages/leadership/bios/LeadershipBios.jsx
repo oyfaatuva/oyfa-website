@@ -60,27 +60,27 @@ function CommitteeBioText ({ bioText }) {
     );
 }
 
-function CommitteeBioTextSection ({ textSection }) {
+function CommitteeBioTextSection ({ textSection, fontSize }) {
     return (
         <div className={styles.commitee_text_section}>
             <h1 className={styles.name}>{textSection.name} {textSection.pronouns ? (`(${textSection.pronouns})`) : ''}</h1>
 
             <p>{textSection.year}</p>
             <p>{textSection.major}</p>
-            <p>{textSection.city}</p><br/>
-            <p>{textSection.bio}</p>
+            {textSection.city &&<p>{textSection.city}<br/></p>}
+            {textSection.bio && <p>{textSection.bio}</p>}
             {textSection.quote && 
                 <>
-                <br/>
-                <h3>{textSection.name}'s Favorite Quote:</h3>
-                    <p>{textSection.quote}</p>
+                    <br/>
+                    <h3>{textSection.name}'s Favorite Quote:</h3>
+                        <p>{textSection.quote}</p>
                 </>
             }
 
             {textSection.extraText?.map((extraText) => (
                 <>
                     <br/>
-                    <h3>{extraText.header}</h3>
+                    <h4>{extraText.header}</h4>
                     <p>{extraText.text}</p>
                 </>
             ))}
