@@ -19,8 +19,8 @@
 /*=================HOME=====================================================================*/
 
 /* Current year's treasurer link, used in HomeGetInvolved */
-export const VENMO_HANDLE = '@Kyla-Quimson';
-export const VENMO_LINK = 'https://account.venmo.com/u/Kyla-Quimson';
+export const VENMO_HANDLE = '@karinnafuglie';
+export const VENMO_LINK = 'https://account.venmo.com/u/karinnafuglie';
 
 /*=================EVENTS=====================================================================*/
 
@@ -93,7 +93,7 @@ export const LINKS =
 /* NOTE: the current B&C information has been moved to constants/bncArchive.js with the archived B&Cs */
 
 /* Number of the Current Board and Council */
-export const CURRENT_BNC = 36;
+export const CURRENT_BNC = 37;
 
 /* Youtube embed id of the B&C promo video to be displayed on LeadershipIntro component. You can find this by clicking share,
 ** embed on the current year's video. If there isn't a video for this year leave equal to empty string '' */
