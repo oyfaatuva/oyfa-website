@@ -82,6 +82,12 @@ export const BNC = [
         },
       ],
     },
+    /*
+
+    **Change BNC format back to normal (bottom of page) then change numBoardImgs back to 6 (Leadership.jsx, line 58) when Nathan submits his bio**
+    
+    Nathan hasn't submitted his bio yet so on the website I'm just putting a version with 5 board members instead LOL
+
     {
       committeeImgSrc:
         LEADERSHIP_FOLDER_CURRENT + "/Leadership_Corresponding_Secretary.jpg",
@@ -103,6 +109,7 @@ export const BNC = [
         },
       ],
     },
+    */
     {
       committeeImgSrc:
         LEADERSHIP_FOLDER_CURRENT + "/Leadership_Nathan.jpg",
@@ -269,7 +276,7 @@ export const BNC = [
           bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Leadership_Nathan.jpg",
           text: [
             {
-                name: "Aliza Mateo Paras",
+                name: "Mateo Paras",
                 pronouns: "he/him",
                 year: "4th year",
                 major: "Architecture Major, Linguistics Minor",
@@ -394,10 +401,10 @@ export const BNC = [
                 name: "Dean Paler",
                 pronouns: "he/him",
                 year: "3rd year",
-                major: "?",
-                email: "rnw7tc@virginia.edu",
-                city: "?, VA",
-                bio: "?",
+                major: "Cognitive Science & Psychology Major, Data Science Minor",
+                email: "hdh4ys@virginia.edu",
+                city: "Norfolk, VA",
+                bio: "Hello OYFA. My name is Dean(us), and I’m excited to be one of your Advocacy chairs for this year! I like thrifting, cats, Pokémon, and people who follow me Instagram @deanpaler.",
               },
           ],
         },
@@ -4823,7 +4830,7 @@ export const BNC15 = [
  *      things like how many members are being displayed on board, if council is missing for a given B&C, etc.
  */
 export const BNC_ARCHIVE = [
-  { bncNum: 36, bnc: BNC36, imgPath: "/images/leadership/bnc36/Leadership_Title.jpg" },
+  { bncNum: 36, bnc: BNC36, imgPath: "/images/leadership/bnc36/Leadership_Title.jpg", format: 3 },
   { bncNum: 35, bnc: BNC35, imgPath: "/images/leadership/bnc35/Leadership_Title.jpg" },
   { bncNum: 34, bnc: BNC34, imgPath: "/images/leadership/bnc34/Leadership_Title.jpg", position: 20 },
   { bncNum: 33, bnc: BNC33, imgPath: "/images/leadership/bnc33/Leadership_Title.jpg", position: 5 },

@@ -55,7 +55,7 @@ export default function Leadership () {
                     </div>
                 }
             
-                <LeadershipGallery bnc={currentBNC} format={archivedBNC?.format != undefined ? FORMATS[archivedBNC.format] : {numBoardImgs: 6}}/>
+                <LeadershipGallery bnc={currentBNC} format={archivedBNC?.format != undefined ? FORMATS[archivedBNC.format] : {numBoardImgs: 5}}/>
             </Suspense>
         </>
     )
