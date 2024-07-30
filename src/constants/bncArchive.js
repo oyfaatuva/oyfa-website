@@ -21,6 +21,9 @@
 const LEADERSHIP_FOLDER_CURRENT = "/images/leadership/bnc37";
 
 /* This is our current Board and Council, what is displayed */
+
+/** HIDING THIS TEMPORARILY UNTIL 37TH B&C BIOS AND PICS ARE 100% COMPLETE. */
+/**
 export const BNC = [
     {
       committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Leadership_Nathan.jpg",
@@ -109,7 +112,7 @@ export const BNC = [
         },
       ],
     },
-    */
+    
     {
       committeeImgSrc:
         LEADERSHIP_FOLDER_CURRENT + "/Leadership_Nathan.jpg",
@@ -562,12 +565,13 @@ export const BNC = [
       ],
     },
 ];  
-
+*/
 /* =========== Archive ============================================= */
 const LEADERSHIP_FOLDER_36 = "/images/leadership/bnc36";
 
-/* This is our current Board and Council, what is displayed */
-export const BNC36 = [
+// temporarily displaying 36th B&C while 37th B&C bios are WIP
+
+export const BNC = [
     {
       committeeImgSrc: LEADERSHIP_FOLDER_36 + "/Leadership_President.jpg",
       committeeName: "President",
@@ -4816,7 +4820,7 @@ export const BNC15 = [
  *      things like how many members are being displayed on board, if council is missing for a given B&C, etc.
  */
 export const BNC_ARCHIVE = [
-  { bncNum: 36, bnc: BNC36, imgPath: "/images/leadership/bnc36/Leadership_Title.jpg", format: 3 },
+  // { bncNum: 36, bnc: BNC36, imgPath: "/images/leadership/bnc36/Leadership_Title.jpg", format: 3 },
   { bncNum: 35, bnc: BNC35, imgPath: "/images/leadership/bnc35/Leadership_Title.jpg" },
   { bncNum: 34, bnc: BNC34, imgPath: "/images/leadership/bnc34/Leadership_Title.jpg", position: 20 },
   { bncNum: 33, bnc: BNC33, imgPath: "/images/leadership/bnc33/Leadership_Title.jpg", position: 5 },

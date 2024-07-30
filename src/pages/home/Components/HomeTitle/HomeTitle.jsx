@@ -30,7 +30,7 @@ export default function HomeTitle () {
             imgSrc: imgDir + '36th_BnC.jpg',
             captionHeader: '36th Board and Council',
             captionPara: 'Meet our leadership team',
-            link: '/notFound' // **CHANGE BACK TO /leadership**
+            link: '/leadership' // **CHANGE BACK TO /leadership**
         },
         {
             imgSrc: imgDir + 'gbm.jpg',

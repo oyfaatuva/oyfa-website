@@ -14,7 +14,7 @@ export default function HomeLinkGallery() {
                     </AppearingDiv>
                     <img className='link_gallery_photo' src='/images/home/Events.jpg'/>
                 </Link>
-                <Link to='/notFound' className='link_gallery_column'> // **CHANGE /notFound BACK TO /leadership**
+                <Link to='/leadership' className='link_gallery_column'> 
                     <div className='link_gallery_photo_overlay'/>
                     <AppearingDiv delay={0.9} margin={isMobile ? '0px 100px -100px 0px' : '0px 100px 0px 0px'} className='link_gallery_title'>
                         <h1 className='link_gallery_bottom_title'>Leadership</h1>
