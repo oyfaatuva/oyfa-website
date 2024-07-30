@@ -121,7 +121,7 @@ export const NAVBAR_TABS = [
     { name: "ABOUT", url: "/about"},
     { name: "EVENTS", url: "/events"},
     { name: "LINKS", url: "/links"},
-    { name: "LEADERSHIP", url: "/leadership"},
+    // { name: "LEADERSHIP", url: "/leadership"}, // Temporarily hiding this so it doesn't show all Nathans for 37th BNC
     {name: "MERCH", url: "/merch"},
     { name: "ARCHIVES", url: "/archives"},
 ];
