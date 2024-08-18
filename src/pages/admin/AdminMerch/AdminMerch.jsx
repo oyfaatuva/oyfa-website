@@ -17,6 +17,7 @@ export default function AdminMerch() {
 
     return (
         <div className={styles.content}>
+            <Helmet><title>Admin Merch Dashboard - OYFA at UVA</title></Helmet>
             <Suspense
                 fallback={<p>Loading merchandise...</p>}
             >

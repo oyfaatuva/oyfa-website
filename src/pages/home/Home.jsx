@@ -27,7 +27,7 @@ export default function Home () {
     
     return(
         <>
-            <Helmet><title>Home</title></Helmet>
+            <Helmet><title>Home - OYFA at UVA</title></Helmet>
             <HomeTitle/>
 
             <Suspense fallback={<Loading/>}>
