@@ -27,8 +27,8 @@ export default function HomeTitle () {
     
     const content = [
         {
-            imgSrc: imgDir + '36th_BnC.jpg',
-            captionHeader: '36th Board and Council',
+            imgSrc: imgDir + '37th_BnC.jpg',
+            captionHeader: '37th Board and Council',
             captionPara: 'Meet our leadership team',
             link: '/leadership' // **CHANGE BACK TO /leadership**
         },

@@ -1,1 +1,0 @@
-import{r as s,j as e,m as a,E as r}from"./index-B8nKBn_C.js";class c extends s.Component{render(){return e.jsxs(e.Fragment,{children:[e.jsxs("h1",{className:"events_heading",children:[a," Events Calendar"]}),e.jsx("div",{className:"events_calendar_container",children:e.jsx("iframe",{src:r,className:"events_calendar_iframe"})})]})}}export{c as default};
