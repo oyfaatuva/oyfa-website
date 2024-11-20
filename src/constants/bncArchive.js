@@ -85,10 +85,6 @@ export const BNC = [
       ],
     },
 
-    // **Change BNC format back to normal (bottom of page) then change numBoardImgs back to 6 (Leadership.jsx, line 58) when Nathan submits his bio**
-    
-    // Nathan hasn't submitted his bio yet so on the website I'm just putting a version with 5 board members instead LOL
-
     {
       committeeImgSrc:
         LEADERSHIP_FOLDER_CURRENT + "/Nathan_bnc37pic.jpg",
