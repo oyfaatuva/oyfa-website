@@ -84,7 +84,6 @@ export const BNC = [
         },
       ],
     },
-
     {
       committeeImgSrc:
         LEADERSHIP_FOLDER_CURRENT + "/Nathan_bnc37pic.jpg",
