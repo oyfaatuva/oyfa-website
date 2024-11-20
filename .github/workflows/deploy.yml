@@ -32,7 +32,7 @@ jobs:
     - name: 📂 Sync files
       uses: sebastianpopp/ftp-action@releases/v2
       with:
-        host: "oyfaatuva.com"
+        host: "ftp.oyfaatuva.com"
         user: ${{ secrets.CPANEL_FTP_USERNAME }}
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
         localDir: "dist"
@@ -41,7 +41,7 @@ jobs:
     - name: 📂 Sync assets
       uses: sebastianpopp/ftp-action@releases/v2
       with:
-        host: "oyfaatuva.com"
+        host: "ftp.oyfaatuva.com"
         user: ${{ secrets.CPANEL_FTP_USERNAME }}
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
         localDir: "dist/assets"
@@ -51,7 +51,7 @@ jobs:
     - name: 🖼️ Sync images
       uses: sebastianpopp/ftp-action@releases/v2
       with:
-        host: "oyfaatuva.com"
+        host: "ftp.oyfaatuva.com"
         user: ${{ secrets.CPANEL_FTP_USERNAME }}
         password: ${{ secrets.CPANEL_FTP_PASSWORD }}
         localDir: "dist/images"

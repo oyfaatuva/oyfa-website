@@ -23,7 +23,8 @@ export default function Merch() {
     const setMerchItem = (item) => {setCurrentItem(item);}
     const closeItem = () => {setCurrentItem(null); };
 
-    const GALLERY_IMAGES = ['Komiks_Banner.png', 'beAModelIBeg.jpg' , 'seb.jpg'];
+    //TODO: Fix bug where carousel doesn't work with just a single image
+    const GALLERY_IMAGES = ['Komiks_Banner.png', 'Komiks_Banner.png'];
 
     useEffect(() => {
         if(currentItem == null)
