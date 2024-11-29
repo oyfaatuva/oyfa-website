@@ -10,7 +10,7 @@ export default class Links extends Component{
     render(){
         return(
             <div>
-                <Helmet><title>Links</title></Helmet>
+                <Helmet><title>Links - OYFA at UVA</title></Helmet>
                 <HalfTitle header = 'Links' imgSrc = './images/links/Links_Title_Culturefest.jpeg'
                 brightness={90} position={25} />
                 <Suspense fallback={<Loading/>}>
