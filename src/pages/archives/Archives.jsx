@@ -10,7 +10,7 @@ export default class Archives extends Component{
     render(){
         return(
             <div>
-                <Helmet><title>Archives</title></Helmet>
+                <Helmet><title>Archives - OYFA at UVA</title></Helmet>
                 <HalfTitle header='Archives' imgSrc='./images/archives/Archives_Title_D7_JMU.jpeg' position={25} brightness={70}/>
                 <Suspense fallback={<Loading/>}>
                     <FileGallery />

@@ -38,7 +38,7 @@ export default function AdminLogin () {
 
     return (
         <div className="login_container">
-            <Helmet><title>Admin Login</title></Helmet>
+            <Helmet><title>Admin Login - OYFA at UVA</title></Helmet>
             <div className="login_panel">
                 <img className="logo" src="/images/_common/Navbar_OYFA_Logo.png"/>
                 <h1 className="login_title">LOGIN</h1>
