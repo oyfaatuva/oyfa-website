@@ -27,6 +27,8 @@
   <p align="center">
     A website for the Organization of Young Filipino Americans, authored by 36th Webmasters 2023: Colby Le, Sebastian Borromeo, and Christina Yang
     <br />
+    Currently maintained by 37th Webmasters: Jaco Asistores and Christina Yang
+    <br />
     <br />
     Though there have been previous OYFA websites, this particular iteration arose out of a need for a frameworked model. Previous sites were prone to spaghetti code and disorganization over time as the site expanded. The goal with this project was to provide reusable and adaptive components, enforce strict organization, write detailed documentation, and add the capabilities of Javascript and a modern web framework so that Webmasters of the future have no roadblocks for new features and rapid maintenance.
     <br />

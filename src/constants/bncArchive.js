@@ -394,12 +394,12 @@ export const BNC = [
           text: [
             {
                 name: "Dean Paler",
-                pronouns: "he/him",
+                pronouns: "he/they",
                 year: "3rd year",
                 major: "Cognitive Science and Psychology, Data Science Minor",
                 email: "hdh4ys@virginia.edu",
                 city: "Norfolk, VA",
-                bio: "Hello OYFA. My name is Dean(us), and I’m excited to be one of your Advocacy chairs for this year! I like thrifting, cats, Pokémon, and people who follow me Instagram @deanpaler.",
+                bio: "Hello OYFA. My name is Dean(us), and I’m excited to be one of your Advocacy chairs for this year! I like thrifting, cats, Pokémon, and people who follow me on Instagram @deanpaler.",
               },
           ],
         },
