@@ -530,12 +530,12 @@ export const BNC = [
           bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Maggie_bnc37pic.jpg",
           text: [
             {
-                name: "Maggie Hildao",
+                name: "Maggie Hilado",
                 pronouns: "she/her",
                 year: "4th year",
                 major: "Statistics Major",
                 email: "yaf2pf@virginia.edu",
-                city: "Chesapeake, VA",
+                city: "Woodbridge, VA",
                 bio: "Helloyfa! I am super excited to be one of your advisors this year! feel free to approach me and start a conversation anytime about anything! Follow me on instagram @maggie.hilado and on Facebook too. can't wait to see all of your faces at everything oyfa :) much love! <3",
               },
           ],
