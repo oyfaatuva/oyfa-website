@@ -12,7 +12,7 @@ import styles from "./PdfViewer.module.css";
 ==========================================================*/
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
+    'pdfjs-dist/legacy/build/pdf.worker.min.mjs',
     import.meta.url,
   ).toString();
 
