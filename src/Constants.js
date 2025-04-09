@@ -85,7 +85,7 @@ export const LINKS =
                     {header: 'Student Disability Access Center', para: 'Provides support services, academic accommodations, advocacy, and educational training to the U.Va. students for physical and mental disabilities - (434)-243-5180; 400 Brandon Ave., Charlottesville, VA 22903', link: 'https://studenthealth.virginia.edu/'},
                     {header: 'Full List of Student Resources', link: 'https://docs.google.com/spreadsheets/d/1cOHmlndC50kTv60pviq2G98Huuva1fsiPkL64XinS0I/edit?usp=sharing'},
                 ]
-        },
+        }
     ]
 
 /*=================LEADERSHIP=====================================================================*/
@@ -122,7 +122,7 @@ export const NAVBAR_TABS = [
     { name: "EVENTS", url: "/events"},
     { name: "LINKS", url: "/links"},
     { name: "LEADERSHIP", url: "/leadership"},
-    {name: "MERCH", url: "/merch"},
+    { name: "MERCH", url: "/merch" },
     { name: "ARCHIVES", url: "/archives"},
 ];
 
