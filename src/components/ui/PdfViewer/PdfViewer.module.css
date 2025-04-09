@@ -1,0 +1,26 @@
+.pdfContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 0;
+}
+  
+.pdfWrapper {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+  
+.pdfControls {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.pdfPageCanvas {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto
+}
