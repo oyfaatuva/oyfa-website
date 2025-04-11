@@ -28,8 +28,8 @@ export const VENMO_LINK = 'https://account.venmo.com/u/alyssafamero';
 ** go to settings for the current calendar -> embed code -> customize, choose default view month/agenda, turn off title +
 ** print icon + calendar list + time zone. Then take only the src url rather than all the embed code and change
 ** this link, the Calendar component in eventsCalendar.js auto applies custom sizing rules. */
-export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%237986CB&ctz=America%2FNew_York&showNav=1&showTitle=0&showPrint=0&showCalendars=0&showTz=0&src=Y18zNjk4NGE5NjA3MDM2YTFlNDBkMDFjOWZjMzY3YWNiNzkyOGRjNTE2MWM5YmI1NzZjMDc4NzNmYzk3YTgwYjU4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23AD1457'
-export const CURRENT_YEAR = 2024;
+export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342'
+export const CURRENT_YEAR = 2025;
 
 /*=================LINKS=====================================================================*/
 
