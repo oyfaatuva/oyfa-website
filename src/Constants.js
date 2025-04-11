@@ -41,7 +41,7 @@ export const LINKS =
             sectionTitle: 'Announcements',
             links: 
                 [
-                    {header: 'OYFA Excellence Scholarship', para: 'Calling all first years: the 2024 Scholarship is now open! Applications close March 15th, 11:59PM', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
+                    {header: 'OYFA Excellence Scholarship', para: 'The Scholarship will open Spring 2026. View this for more information', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
                 ]
         },
         
