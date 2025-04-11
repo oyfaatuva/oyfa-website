@@ -19,8 +19,8 @@
 /*=================HOME=====================================================================*/
 
 /* Current year's treasurer link, used in HomeGetInvolved */
-export const VENMO_HANDLE = '@karinnafuglie';
-export const VENMO_LINK = 'https://account.venmo.com/u/karinnafuglie';
+export const VENMO_HANDLE = '@alyssafamero';
+export const VENMO_LINK = 'https://account.venmo.com/u/alyssafamero';
 
 /*=================EVENTS=====================================================================*/
 
