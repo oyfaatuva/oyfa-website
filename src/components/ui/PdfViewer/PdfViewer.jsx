@@ -7,15 +7,15 @@ import styles from "./PdfViewer.module.css";
 **  EXAMPLE:
 **      <PDFViewer fileUrl="/fahmzine/fahmzine_2024_issue1.pdf" />
 **
-**  NOTE: make sure that file is in 'public' folder and use filepath from there! 
+**  NOTE: make sure that file is in 'public' folder and use filepath starting from there! 
 ==========================================================*/
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/legacy/build/pdf.worker.min.mjs',
-    import.meta.url,
-  ).toString();
-
 export default function PDFViewer({ fileUrl }) {
+    pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+      'pdfjs-dist/legacy/build/pdf.worker.min.mjs',
+      import.meta.url,
+    ).toString();
+
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
     const pageRef = useRef(null);
