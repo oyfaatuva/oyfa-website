@@ -19,8 +19,8 @@
 /*=================HOME=====================================================================*/
 
 /* Current year's treasurer link, used in HomeGetInvolved */
-export const VENMO_HANDLE = '@karinnafuglie';
-export const VENMO_LINK = 'https://account.venmo.com/u/karinnafuglie';
+export const VENMO_HANDLE = '@alyssafamero';
+export const VENMO_LINK = 'https://account.venmo.com/u/alyssafamero';
 
 /*=================EVENTS=====================================================================*/
 
@@ -28,8 +28,9 @@ export const VENMO_LINK = 'https://account.venmo.com/u/karinnafuglie';
 ** go to settings for the current calendar -> embed code -> customize, choose default view month/agenda, turn off title +
 ** print icon + calendar list + time zone. Then take only the src url rather than all the embed code and change
 ** this link, the Calendar component in eventsCalendar.js auto applies custom sizing rules. */
-export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%237986CB&ctz=America%2FNew_York&showNav=1&showTitle=0&showPrint=0&showCalendars=0&showTz=0&src=Y18zNjk4NGE5NjA3MDM2YTFlNDBkMDFjOWZjMzY3YWNiNzkyOGRjNTE2MWM5YmI1NzZjMDc4NzNmYzk3YTgwYjU4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23AD1457'
-export const CURRENT_YEAR = 2024;
+
+export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342'
+export const CURRENT_YEAR = 2025;
 
 /*=================LINKS=====================================================================*/
 
@@ -40,7 +41,7 @@ export const LINKS =
             sectionTitle: 'Announcements',
             links: 
                 [
-                    {header: 'OYFA Excellence Scholarship', para: 'Calling all first years: the 2024 Scholarship is now open! Applications close March 15th, 11:59PM', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
+                    {header: 'OYFA Excellence Scholarship', para: 'The Scholarship will open Spring 2026. View this for more information', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
                 ]
         },
         
@@ -49,7 +50,7 @@ export const LINKS =
             links: 
                 [
                     {header: 'OYFA Historic Photos', para: 'View our official archive of memories', link: 'https://uvaoyfa.myportfolio.com/'},
-                    {header: 'OYFA 2023-2024 Events Google Calendar', para: 'Clear your calendar for our amazing events!', link: 'https://calendar.google.com/calendar/u/0?cid=Y19uMzRsOThkbGE2cW5vYWJkbG9ibmQzYXY3c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
+                    {header: 'OYFA 2025-2026 Events Google Calendar', para: 'Clear your calendar for our amazing events!', link: 'https://calendar.google.com/calendar/u/0?cid=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
                     {header: 'Week in OYFA (WIO) Sign-Up', para: 'Get our weekly newletter featuring announcements, news, puzzles, and fun tidbits!', link: 'http://eepurl.com/gBOWJv'},
                     {header: 'OYFA Discord', para: 'Play games with Oyfans', link: 'https://discord.gg/TTUZWeuD'},
                 ]
