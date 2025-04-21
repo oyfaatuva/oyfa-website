@@ -92,7 +92,7 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
                     </div>
                     <p className={styles.info_price}>{`$${parseFloat(item.price).toFixed(2)}`}</p>
                     <p>Remaining Stock: {item.stock}</p>
-                    <h3><a href="https://forms.office.com/r/FRGzHXXMQq" target="_blank">Buy it now!</a></h3>
+                    <h3><a href="https://forms.office.com/r/YiT7Cakize" target="_blank">Buy it now!</a></h3>
                 </div>
             </div>
         </motion.div>

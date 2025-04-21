@@ -36,7 +36,7 @@ export default function Merch() {
     return(
         <>
             <Helmet><title>Merch - OYFA at UVA</title></Helmet>
-            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!' captionLink="https://forms.office.com/r/FRGzHXXMQq" newTab />
+            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!' captionLink="https://forms.office.com/r/YiT7Cakize" newTab />
             
             <div className='mb-4'>
                 <p className={styles.gallery_title}>Showcase</p>
