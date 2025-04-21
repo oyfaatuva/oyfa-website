@@ -94,7 +94,7 @@ export const LINKS =
 /* NOTE: the current B&C information has been moved to constants/bncArchive.js with the archived B&Cs */
 
 /* Number of the Current Board and Council */
-export const CURRENT_BNC = 37;
+export const CURRENT_BNC = 38;
 
 /* Youtube embed id of the B&C promo video to be displayed on LeadershipIntro component. You can find this by clicking share,
 ** embed on the current year's video. If there isn't a video for this year leave equal to empty string '' */
