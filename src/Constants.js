@@ -36,15 +36,7 @@ export const CURRENT_YEAR = 2025;
 
 /* sectioned link information to render the Links page */
 export const LINKS =
-    [
-        { 
-            sectionTitle: 'Announcements',
-            links: 
-                [
-                    {header: 'OYFA Excellence Scholarship', para: 'The Scholarship will open Spring 2026. View this for more information', link: 'https://forms.office.com/r/4CZ9SD9vZA'},
-                ]
-        },
-        
+    [   
         { 
             sectionTitle: 'OYFA Links',
             links: 
@@ -68,9 +60,8 @@ export const LINKS =
             sectionTitle: 'External',
             links: 
                 [
-                    {header: 'External Org WIO Announcement Requests', link:'https://docs.google.com/forms/d/e/1FAIpQLScyJWjb7ewew4lsxuoGLVaQJyWHYATVHPBtJKpKJJxksDjN0g/viewform?usp=sf_link'},
+                    {header: 'External Org WIO Announcement Requests', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://docs.google.com/forms/d/e/1FAIpQLScyJWjb7ewew4lsxuoGLVaQJyWHYATVHPBtJKpKJJxksDjN0g/viewform?usp=sf_link'},
                     {header: 'About Lokal Lab Siargao', para: 'Non-profit assisting Typhoon Rai relief efforts', link: 'https://www.lokalsiargao.com'},
-                    {header: 'Philippines Typhoon Relief Fund', para: 'No longer accepting donations, but read about the effects of Typhoon Rai', link: 'https://gofund.me/60f4ee36'},
                 ]
         },
 
