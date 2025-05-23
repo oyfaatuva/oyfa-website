@@ -18,9 +18,11 @@
 
 /*=================HOME=====================================================================*/
 
-/* Current year's treasurer link, used in HomeGetInvolved */
+/* Current year's treasurer link, used in HomeGetInvolved 
+** Contact treasure for venmo info + new form link. */
 export const VENMO_HANDLE = '@alyssafamero';
 export const VENMO_LINK = 'https://account.venmo.com/u/alyssafamero';
+export const MERCH_FORM_LINK = 'https://forms.office.com/r/YiT7Cakize';
 
 /*=================EVENTS=====================================================================*/
 

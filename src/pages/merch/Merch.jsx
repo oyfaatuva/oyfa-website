@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 import axiosClient from '../../utils/axiosClient';
 import HalfTitle from '../../components/layout/HalfTitle/HalfTitle';
 import MerchGallery, { MerchSkeletonGallery } from './Components/MerchGallery';
+import { MERCH_FORM_LINK } from '../../Constants';
 
 // Async Component for code splitting
 const MerchCarousel = React.lazy(() => import('./Components/MerchCarousel'));
@@ -36,7 +37,7 @@ export default function Merch() {
     return(
         <>
             <Helmet><title>Merch - OYFA at UVA</title></Helmet>
-            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!' captionLink="https://forms.office.com/r/YiT7Cakize" newTab />
+            <HalfTitle header = 'Merch' imgSrc = {'/images/merch/OyfaBuddyBanner.JPG'} position={55} caption='Order Now!' captionLink={MERCH_FORM_LINK} newTab />
             
             <div className='mb-4'>
                 <p className={styles.gallery_title}>Showcase</p>

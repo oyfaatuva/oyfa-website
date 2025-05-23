@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { MERCH_FORM_LINK } from '../../../Constants';
 
 import styles from '../Stylesheets/MerchItemPopUp.module.css'
 
@@ -92,7 +93,7 @@ export default function MerchItemPopUp({ item, handleClose, imageDir }) {
                     </div>
                     <p className={styles.info_price}>{`$${parseFloat(item.price).toFixed(2)}`}</p>
                     <p>Remaining Stock: {item.stock}</p>
-                    <h3><a href="https://forms.office.com/r/YiT7Cakize" target="_blank">Buy it now!</a></h3>
+                    <h3><a href={MERCH_FORM_LINK} target="_blank">Buy it now!</a></h3>
                 </div>
             </div>
         </motion.div>
