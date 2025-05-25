@@ -116,6 +116,7 @@ export const NAVBAR_TABS = [
     { name: "EVENTS", url: "/events"},
     { name: "LINKS", url: "/links"},
     { name: "LEADERSHIP", url: "/leadership"},
+    { name: "FAMILIES", url: "/families"},
     { name: "MERCH", url: "/merch" },
     { name: "ARCHIVES", url: "/archives"},
 ];
