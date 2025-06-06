@@ -1,7 +1,8 @@
 .grid_container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    gap: 50px;
+    row-gap: 50px;
+    column-gap: 150px;
     margin: 50px auto;
     max-width: 1000px
 }
@@ -34,6 +35,7 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    display: block;
 }
 
 .fam_name_container {
