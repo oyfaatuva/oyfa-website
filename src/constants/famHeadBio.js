@@ -2,8 +2,8 @@ const FAM_PICS = "/images/families"
 
 export const Fam = [
     {
-        famImgSrc: FAM_PICS + "Amihan_famHeads.png",
-        famName: "Amihan",
+        famImgSrc: FAM_PICS + "Amihan_famHeads.jpg",
+        famName: "AMIHAN",
         bios: [
             {
                 bioImgSrc: FAM_PICS + "",
@@ -22,7 +22,7 @@ export const Fam = [
     },
     {
         famImgSrc: FAM_PICS + "Matapang_famHeads.png",
-        famName: "Matapang",
+        famName: "MATAPANG",
         bios: [
             {
                 bioImgSrc: FAM_PICS + "",
@@ -41,7 +41,7 @@ export const Fam = [
     },
     {
         famImgSrc: FAM_PICS + "Miyari_famHeads.png",
-        famName: "Miyari",
+        famName: "MIYARI",
         bios: [
             {
                 bioImgSrc: FAM_PICS + "",
@@ -60,7 +60,7 @@ export const Fam = [
     },
     {
         famImgSrc: FAM_PICS + "Yahan_famHeads.png",
-        famName: "Yahan",
+        famName: "YAHAN",
         bios: [
             {
                 bioImgSrc: FAM_PICS + "",
