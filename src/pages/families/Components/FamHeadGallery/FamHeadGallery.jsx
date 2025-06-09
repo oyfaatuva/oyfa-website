@@ -17,7 +17,7 @@ export default function FamHeadGallery({fams}) {
                 <div key={index} className={styles.fam_title_container}>
                     <p className={styles.fam_title_text}>{fam.famName}</p>
                     <div className={styles.fam_img_container}>
-                        <HashLink to={{pathname: '/famheadbios', hash: fam.famName,}}
+                        <HashLink to={{pathname: '/fam-bios', hash: fam.famName,}}
                         scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })}>
                         <img src={fam.famImgSrc} loading='lazy' />
                         </HashLink>
