@@ -30,7 +30,7 @@ function BoardRow ({ board }) {
     return (
         <AppearingDiv className={styles.board_container}>
             <div className={styles.board_img_container}>
-                <HashLink to={{pathname: 'bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: board.committeeName}}
+                <HashLink to={{pathname: '/bios', search: searchParams.get('bnc') ? `bnc=${searchParams.get('bnc')}` : '', hash: board.committeeName}}
                     scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })}>
                     <img src={board.committeeImgSrc} loading='lazy'/>
                 </HashLink>
