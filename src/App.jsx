@@ -12,6 +12,7 @@ import Links from './pages/links/Links'
 import Leadership from './pages/leadership/Leadership'
 import LeadershipBios from './pages/leadership/bios/LeadershipBios';
 import Archives from './pages/archives/Archives'
+import Fahmzine from './pages/fahmzine/Fahmzine'
 import Merch, { merchLoader } from './pages/merch/Merch';
 import AdminLogin from './pages/admin/AdminLogin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard';
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
                     <Route path='fam-bios' element={<FamHeadBios/>}/>
                 <Route path='merch' element={<Merch/>} loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
+                <Route path='fahmzine' element={<Fahmzine/>}/>
             </Route>
 
             <Route path='admin/login' element={<AdminLogin/>}/>
