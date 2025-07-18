@@ -36,7 +36,7 @@ export default class Archives extends Component{
                         onClick={() => window.location.href='_blank'}
                         style={galleryButtonStyle}
                     >
-                        FAHM Archives (through 2021)
+                        FAHMzine Archives (through 2021)
                     </button>
                     */}
                     
