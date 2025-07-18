@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs } from 'react-pdf';
 import styles from "./PdfViewer.module.css";
 
 /*==TO USE:==================================================
