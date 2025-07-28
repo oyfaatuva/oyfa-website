@@ -1,12 +1,3 @@
-/** Webmaster Directions:
- * 1. Replace and update old fam head information.
- * 2. Title each fam image filename FAMNAME_famHeads.jpg.
- * 3. Title each fam head image filename FAMHEADNAME_FamHeadPic.jpg.
- * 
- * POTENTIAL UPDATES:
- * 1. Add a Fam Head archive if necessary.
- * 2. Add Fam colors as a backdrop to the Fam Head photos and bios.
- */
 const FAM_PICS = "/images/families"
 
 export const Fam = [
@@ -102,7 +93,7 @@ export const Fam = [
     },
     {
         famImgSrc: FAM_PICS + "Miyari_famHeads.jpg",
-        famName: "MAYARI",
+        famName: "MIYARI",
         bios: [
             {
                 bioImgSrc: FAM_PICS + "Karinna_famHeadPic.jpg",
