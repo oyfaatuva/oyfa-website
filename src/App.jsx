@@ -18,7 +18,6 @@ import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard';
 import AdminMerch from './pages/admin/AdminMerch/AdminMerch';
 import AdminLayout from './pages/admin/AdminLayout';
 import Families from './pages/families/Families';
-import FamHeadBios from './pages/families/bios/famHeadBios';
 import NotFound from './pages/notFound/NotFound';
 
 // Async Components for code splitting
@@ -39,6 +38,7 @@ const router = createBrowserRouter(
                     <Route index element={<Leadership/>}/>
                     <Route path='bios' element={<LeadershipBios/>}/>
                 </Route>
+                <Route path='families' element={<Families/>}></Route>
                 <Route path='merch' element={<Merch/>} loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
             </Route>

@@ -92,9 +92,13 @@ function NavBarLinks({ navBarLinksDict, isMobile, closeMobileMenu }) {
             {Object.values(navBarLinksDict).map((tab, idx) =>
                 tab.dropdown ? (
                     <li key={idx} className={classes.dropdown}>
-                        <button className={classes.dropbtn}>
+                        <NavLink
+                            to={tab.url}
+                            className={`${classes.dropbtn} ${classes.nav_link}`}
+                            onClick={closeMobileMenu}
+                        >
                             {tab.name.toUpperCase()}
-                        </button>
+                        </NavLink>
                         <ul className={classes.dropdownContent}>
                             {tab.dropdown.map((item, subIdx) => (
                                 <li key={subIdx}>

@@ -115,11 +115,10 @@ export const NAVBAR_TABS = [
     { name: "ABOUT", url: "/about"},
     { name: "EVENTS", url: "/events"},
     { name: "LINKS", url: "/links"},
-    { name: "LEADERSHIP", 
+    { name: "LEADERSHIP", url: "/leadership",
         dropdown: [
-            { label: "BNC", url: "/leadership" },
-            { label: "FAM HEADS", url: "/leadership/fam" },
-            { label: "PAST BNC", url: "/leadership/past-bnc" },
+            { label: "BOARD & COUNCIL", url: "/leadership" },
+            { label: "FAM HEADS", url: "/families" },
         ]
     },
     { name: "MERCH", url: "/merch" },
