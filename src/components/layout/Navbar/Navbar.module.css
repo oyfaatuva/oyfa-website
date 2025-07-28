@@ -157,16 +157,15 @@
 }
 
 .dropbtn {
-  background: none;
-  border: none;
-  font-size: var(--font-size);              
+  all: unset; /* This resets button styles entirely */
+  font-size: var(--font-size);
+  font-family: var(--text-font);
+  font-weight: var(--text-font-weight);
+  color: var(--text-color);
+  text-transform: uppercase;
   cursor: pointer;
-  font-family: var(--text-font);            
-  font-weight: var(--text-font-weight);     
-  padding: 0.5rem 1rem;
-  color: var(--text-color);                 
-  transition: color 0.4s;                   
-  text-transform: uppercase; 
+  display: inline; /* Ensure it aligns like nav links */
+  transition: color 0.4s;
 }
 
 .dropdownContent {
