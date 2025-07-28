@@ -42,7 +42,7 @@ const router = createBrowserRouter(
                 </Route>
                 <Route path='families' element={<Families/>}/>
                     <Route index element={<Families/>}/>
-                    <Route path='FamHeadBios' element={<FamHeadBios/>}/>
+                    <Route path='fam-bios' element={<FamHeadBios/>}/>
                 <Route path='merch' element={<Merch/>} loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
                 <Route path='fahmzine' element={<Fahmzine/>}/>

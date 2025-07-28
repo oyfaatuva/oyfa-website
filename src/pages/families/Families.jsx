@@ -13,7 +13,7 @@ export default class Families extends Component{
         return(
             <div>
                 <Helmet><title>Families - OYFA at UVA</title></Helmet>
-                <HalfTitle header='Families' imgSrc='' caption='Meet our Fam Heads!' captionLink='/famheadbios'/>
+                <HalfTitle header='Families' imgSrc='' caption='Meet our Fam Heads!' captionLink='/fam-bios'/>
                 <Suspense fallback={<Loading/>}>
                     <h1 className={styles.families_heading}>FAM HEADS</h1>
                     <FamGallery fams={Fam}/>
