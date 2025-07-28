@@ -89,9 +89,30 @@ function NavBarLinks({ navBarLinksDict, isMobile, closeMobileMenu }) {
     return (
         <ul className={classes.nav_list}>
             {isMobile && <NavBarLink name='HOME' url='/' closeMobileMenu={closeMobileMenu} />}
-            {Object.keys(navBarLinksDict).map((componentKey) => (
-                <NavBarLink key={componentKey} {...navBarLinksDict[componentKey]} closeMobileMenu={closeMobileMenu} />
-            ))}
+            {Object.values(navBarLinksDict).map((tab, idx) =>
+                tab.dropdown ? (
+                    <li key={idx} className={classes.dropdown}>
+                        <button className={classes.dropbtn}>
+                            {tab.name.toUpperCase()}
+                        </button>
+                        <ul className={classes.dropdownContent}>
+                            {tab.dropdown.map((item, subIdx) => (
+                                <li key={subIdx}>
+                                    <NavLink
+                                        to={item.url}
+                                        className={classes.nav_link}
+                                        onClick={closeMobileMenu}
+                                    >
+                                        {item.label}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
+                ) : (
+                    <NavBarLink key={idx} {...tab} closeMobileMenu={closeMobileMenu} />
+                )
+            )}
         </ul>
     );
 }

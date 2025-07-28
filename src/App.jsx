@@ -39,9 +39,6 @@ const router = createBrowserRouter(
                     <Route index element={<Leadership/>}/>
                     <Route path='bios' element={<LeadershipBios/>}/>
                 </Route>
-                <Route path='families' element={<Families/>}/>
-                    <Route index element={<Families/>}/>
-                    <Route path='fam-bios' element={<FamHeadBios/>}/>
                 <Route path='merch' element={<Merch/>} loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
             </Route>
