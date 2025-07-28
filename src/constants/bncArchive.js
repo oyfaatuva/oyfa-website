@@ -18,18 +18,591 @@
  * future changes/additions very difficult. 
 */
 
-const LEADERSHIP_FOLDER_CURRENT = "/images/leadership/bnc37";
+const LEADERSHIP_FOLDER_CURRENT = "/images/leadership/bnc38";
 
 /* This is our current Board and Council, what is displayed */
 
 
 export const BNC = [
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Danella_bnc38pic.jpeg",
+    committeeName: "President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Danella_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Danella Romera",
+              pronouns: "-",
+              year: "4th year",
+              major: "-",
+              email: "-",
+              city: "Chesapeake, VA",
+              bio: "-",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc38pic.jpeg",
+    committeeName: "Vice President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Thea Budlong",
+              pronouns: "-",
+              year: "3rd year",
+              major: "-",
+              email: "-",
+              city: "Virginia Beach, VA",
+              bio: "-",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alyssa_bnc38.jpeg",
+    committeeName: "Treasurer",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alyssa_bnc38.jpeg",
+        text: [
+          {
+              name: "Alyssa Famero",
+              pronouns: "she/her",
+              year: "3rd year",
+              major: "Economics, Real Estate Minor",
+              email: "zvg8ch@virginia.edu",
+              city: "Toronto, ON",
+              bio: "Hi friends! I'm Alyssa, and I'll be your treasurer this year! So you'll be sending all your venmo transactions to @alyssafamero ;) I love reading, working out, and junk journaling, but I'm always down to try new things, so let's explore together and find things to add to my junk journal ( •̀ ω •́ )✧ Follow me on ig @nzfmrro and let's hang out <3",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc:
+    LEADERSHIP_FOLDER_CURRENT + "/Nikita_bnc38.jpeg",
+    committeeName: "Corresponding Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Nikita_bnc38.jpeg",
+        text: [
+          {
+              name: "Nikita Pantow",
+              pronouns: "she/her",
+              year: "4th year",
+              major: "Psychology, Asian Pacific American Studies Minor",
+              email: "jvr2wt@virginia.edu",
+              city: "Bristow, VA",
+              bio: "Hello, my lovely oyfa friends! I'm Nikita and I am excited to be your Corresponding Secretary this year! I love making matcha, going to amusement parks to ride the big rollercoasters, and enjoy karaoke with friends. I enjoy listening to w2e, newjeans (njz???), keshi, laufey, beabadoobee, tyler the creator, and so much more (i love new music, pls rec!). If you're into mbti, I am an enfj-t hehe :3. I love meeting and getting to know new people, so don't be afraid to say hi whenever you see me around Grounds, follow me on insta @nivanrow!",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc:
+    LEADERSHIP_FOLDER_CURRENT + "/Ralph_bnc38.jpeg",
+    committeeName: "Recording Secretary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ralph_bnc38.jpeg",
+        text: [
+          {
+              name: "Rafael Paras",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Kinesiology",
+              email: "yqa4ne@virginia.edu",
+              city: "Roanoke, VA",
+              bio: "Hey, I'm Rafael, or Ralph or Raf, and I am going to be your Recording Secretary for this upcoming year! I love to loiter, play sports, chill in some sweatpants, bundle up in the cold, and meet new people! This year, I want to reach out to more people so I can add them to my Week in OYFA (WIO). Follow me @ralph._paras on instagram and Rafael Paras on Facebook! Can't wait to meet y'all (in a Roanoke accent).",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpeg",
+    committeeName: "Outreach Coordinator",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Derek Poore-Abad",
+              pronouns: "he/him",
+              year: "3rd year",
+              major: "Biomedical Engineering",
+              email: "zqn2xu@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "What's up y'all. My name is Derek Poore-Abad, I'm a 3rd year Biomedical Engineering Major, and I love to troll. I enjoy listening to music, thrifting, mogging, playing sports, and eating with friends. I can’t wait to outreach for you all this year! Ima touch you ayyee. (take this out if it’s too trollz 😭) Make sure to follow my IG @757_derek, and as always, lets get our ones!",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Advocacy_bnc38pic.jpeg",
+    committeeName: "Advocacy",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Edward_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Edward Cariño",
+              pronouns: "he/him",
+              year: "4th year",
+              major: "Aerospace Engineering, Technology Ethics Minor",
+              email: "qkw8gv@virginia.edu",
+              city: "Springfield, VA",
+              bio: "hello friends it is me Edward and i am one of your advocacy chairs this year !! if i am not in the trenches of the mech building, you will find me cooking/eating, watching F1 or a movie (give me romcom recs now), and or yapping someone's ear off. i hope to use my term to help all y'all discover something new about yourself and Filipino culture :)) so follow me on insta @eddytheasian or come say hi to me :D",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ashley_bnc38.jpeg",
+        text: [
+          {
+              name: "Ashely Lohr",
+              pronouns: "she/her",
+              year: "4th year",
+              major: "English, East Asian Studies Minor",
+              email: "dgz2py@virginia.edu",
+              city: "Richmond, VA",
+              bio: "Hi hi! I'm Ashley and I'm one of your Advocacy chairs this year! I love mahjong karaoke movie nights, cafe hopping, taking unnecessarily long naps, or convincing my friends to hang out with me. My insta's @ashley_lohr if you ever wanna hang, talk, or just coexist. I’m looking forward to spending my last year here with you all so let's make the most of it :,)",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Community_bnc38pic.jpeg",
+    committeeName: "Community",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Andrew_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Andrew Huang",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Applied Statistics, Biology Minor",
+              email: "eys3te@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Hey I’m Andrew and I’m so excited to be one of your community chairs this year. I love going to the gym and playing various sports including basketball and volleyball. My favorite food is sushi and I enjoy  cooking eating a large variety of foods as well. Follow me on instagram @andrewhuang___ (3 under scores)",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lauren_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Lauren Paz",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Kinesiology",
+              email: "jgp3dm@virginia.edu",
+              city: "Centreville, VA",
+              bio: "I’m Lauren, one of your community chairs for this year! A little about me is that I enjoy Depop lowballing, trying new foods, lifting, and playing pickleball (even though I suck, so you’ll probably get a confidence boost playing w/me). I can’t wait to hangout with all OYFAns, old or new, so feel free to add me on IG & FB (@laurenpaz_). I can’t wait to be apart of so many fun events with you all this year! .☘︎ ݁˖",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culinary_bnc38pic.jpeg",
+    committeeName: "Culinary",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sarah_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Sarah Fernandez",
+              pronouns: "she/her",
+              year: "4th year",
+              major: "Biology, Chemistry Minor",
+              email: "zem5pj@virginia.edu",
+              city: "Woodbridge, VA",
+              bio: "Hii, I'm Sarah, and I'm one of your FIRST CULINARY CHAIRS YAYYYY(˶ˆᗜˆ˵)! I'm a fourth-year majoring in bio (I transferred here last year from nova). I love to eat food, make food, read, hang out with friends, and watch movies. Let's be friends, so talk to me on @sarahlvfernandez on ig and facebook <3",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Caitlyn_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Caitlyn Lee",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Nursing",
+              email: "xph5re@virginia.edu",
+              city: "McLean, VA",
+              bio: "Hi, I'm Caitlyn, one of your new culinary chairs (1st culinary ever yay!!!). Besides my passion for food and cooking, I like to spend my time binge-watching movies, taking picnics in the sun, playing volleyball, or hanging with friends. I hope everyone can fill their stomachs and hearts this year at many of our events, so come ready to feast :)) ! Follow my socials @_caitlyn_lee (instagram and facebook)",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culture_bnc38pic.jpeg",
+    committeeName: "Culture",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Christian_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Christian Ortega",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Computer Science (BS)",
+              email: "pkk8xb@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Yoo what's good! My name is Christian Ortega, and I'm a proud PINOY, honored to be one of your Culture chairs this year. I love hooping, playing video games, and chatting about Marvel, the NBA, and sneakers. Hit me up about anything @cchrschnn on IG. Tl;dr, LeBron James.",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sofia_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Sofia Romulo",
+              pronouns: "-",
+              year: "4th year",
+              major: "-",
+              email: "-",
+              city: "Chesapeake, VA",
+              bio: "-",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "D7_bnc38pic.jpeg",
+    committeeName: "District 7",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sean_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Sean Villacorte",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Electrical Engineering",
+              email: "ufq6jy@virginia.edu",
+              city: "Manassas, VA",
+              bio: "Nerds, jocks, popular kids... and then there's me. I'm Sean and I'm thrilled to serve as your D7 representative this year. I enjoy playing baseball, flag football, and chopping it up with friends. I hope you all will enjoy D7 and OYFA as much as I do. Let me know how I'm doing on IG: @bonchon.sean",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/PanPan_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Pan Pan Yang",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Nursing",
+              email: "zkj9cz@virginia.edu",
+              city: "Halifax, VA",
+              bio: "Hii I'm Pan Pan and I'm very excited to be serving as one of your D7 Representatives this year! I enjoy playing soccer, listening to music, EATING!!! and hanging out with my friends. I love meeting and talking to new people so follow me on ig @panpan.yng :D",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Historic_bnc38pic.jpeg",
+    committeeName: "Historic",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Tessa_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Tessa Bowman",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Global Studies, Japanese Language Minor",
+              email: "tfv3uz@virginia.edu",
+              city: "Newport News, VA",
+              bio: "What's up! I'm Tessa, one half of your Historic Chairs! I am so excited for this year as a new BNC member! A little about me is that I play guitar (mainly classical), I love to sing and dance, I am a cat lover and casual tennis player, and I love meeting new people and cultural connection! I can't wait to work on so many fun projects and take many pictures of everyone's smiling faces. Follow me on ig @tallglassofpeachtea for silly pics and niche interest reposts! (>‿◠)",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alysia_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Alysia Weng",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Commerce",
+              email: "hnk5cc@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Hii I'm Alysia! I'm very excited to be one of your historic chairs this year. Some things about me are that I love taking candid photos, playing tennis, and hanging out with my friends, and, hopefully, you guys soon! One of my goals this year is to help people feel more confident through my photos. I can't wait to meet everyone and have some fun! If you would like to contact me, find me on ig @aly.si.a",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Membership_bnc38pic.jpeg",
+    committeeName: "Membership",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Mark_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Mark Espiritu",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Data Science",
+              email: "rpe2nh@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "HELLO! I'm Mark and I'm one of your membership chairs this year! Some things about me is that I love Baja Blast Mtn Dew, watching football and F1 (Go 49ers and Ferrari!), and trolling with friends. One of my goals this year is to make a bunch of friends and get to know as many people as I can! So don't be shy and let's get to know each other and have an amazing year! Follow me @mark.espiiriitu on IG and Facebook!  ⧽(•‿•)⧼⧽(•‿•)⧼⧽(•‿•)⧼⧽(•‿•)⧼⧽(•‿•)⧼",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Isaella_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Isabella Flores",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Biology",
+              email: "nyt5vd@virginia.edu",
+              city: "Chesapeake, VA",
+              bio: "Hiiii i'm Isabella (you can just call me bella for short!) and i'm excited to be one of your membership chairs this year! I love anything matcha, making keychains and jewelry, watching fnaf lore videos on youtube while i eat, and making new friends! u should toooooootally add me on ig @is4bxlle so we can be friends or hang out or grab a sweet treat or whateva",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/PR_bnc38pic.jpeg",
+    committeeName: "Public Relations",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alex_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Alex McKeon",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Psychology, English and Philosophy Minor",
+              email: "zha4pt@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Hi!! I'm Alex, and I'm one of your PR chairs! I'm super excited to get to know everyone. About meeee I love plants, all things pink, and especially coffee! You'll see me all around grounds, probably putting flyers up lol, so come say hi if you spot me. Follow me on @scarlet.swanz on ig!!!",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Tristan_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Tristan Pinili",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Architecture",
+              email: "nqe7jf@virginia.edu",
+              city: "Queens, NY",
+              bio: "Whatup whatup guys!! I’m Tristan, and I am extremely excited to be your PR chair for this year. I love thrifting, cooking, drawing, editing, skating, biking, taking flics, and listening to music. I love sushi platters, popcorn chicken and taro milk tea so please bless me up. I can’t wait to meet new people and introduce them to OYFA so if you wanna chat just add me @tristanpinili on all socials ",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Scholarship_bnc38pic.jpeg",
+    committeeName: "Scholarship",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lyle_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Lyle Mora",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Civil Engineering",
+              email: "fsu5gn@virginia.edu",
+              city: "Winchester, VA",
+              bio: "Hey everyone! My name is Lyle Mora, and I am excited to be one of your scholarship chairs this year! I enjoy hanging out, trying new things, and doing activities with my friends whether that be playing volleyball, pickleball, mahjong, or going on spontaneous trips to Wawa! I am also a part of SASE, an organization that aims to support Asian scientists and engineers. I am always down to meet new people, so please feel free to reach out to me if you need any academic advice or just someone to talk to!",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Henry_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Henry Nguyen",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Aerospace Engineering",
+              email: "qzm6fy@virginia.edu",
+              city: "Woodbridge, VA",
+              bio: "Hello hello, it's yo boy Henry Nguyen! I'm going to be your scholarship chair for this upcoming school year <(￣︶￣)> and I hope to serve all the academic weapons well. Some fun facts about me is that I love reading manhwas and light novels (if you catch me on my phone I'm probably reading one), I love late night food trips with friends, and I am an all-nighter warrior. My goal for this year is to make a space where everyone is comfortable and able to lock in on those important homework, exams, etc and make friends along the way. So lets lock in and be an academic artillery together! Follow me @hen_nguyen2428 on insta and facebook!!",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Social_bnc38pic.jpeg",
+    committeeName: "Social",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Allen_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Allen Chen",
+              pronouns: "he/him",
+              year: "4th year",
+              major: "Computer Engineering",
+              email: "wmm7wr@virginia.edu",
+              city: "Fredericksburg, VA",
+              bio: "wsg friends, my name is allen and i am so hype to be one of your social chairs this year. things i like to do is watching football and f1, lift and play sports, and having fun with friends. my main priority this year is to provide a fun space for SOCIALIZATION and develop stronger interpersonal connections. lets smile and have fun! follow me on ig @ allen.cchen and facebook too :D",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Vicky_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Vicky Lin",
+              pronouns: "she/her",
+              year: "4th year",
+              major: "Architectural Design Thinking, Innovative Entrepreneurship Minor",
+              email: "fsr8zg@virginia.edu",
+              city: "Brooklyn, NY",
+              bio: "Hai! I’m Vicky Lin, and I’m so excited to be your Social Chair this year! I am always down to eat, so lmk whenever you wanna or check out @blickynoms to see what I be eatin. I love to play video games, go hiking, and watch movies.. I aim to ensure everyone feels welcome, included, and—most importantly—has a great time. Can’t wait to create some amazing memories with all of you! Follow me on @_vicky.lin on ig <3",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sports_bnc38pic.jpeg",
+    committeeName: "Sports",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lindsay_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Lindsay Almonte",
+              pronouns: "she/her",
+              year: "2nd year",
+              major: "Foreign Affairs and Psychology",
+              email: "zsw6nu@virginia.edu",
+              city: "Leesburg, VA",
+              bio: "Helloo! I'm Lindsay and I can't wait to be one of your sport chairs this year! A little about me is that I love all sports (my fav is basketball), trying new foods, napping, and hanging out with friends. I'm super excited to meet everyone this year and make new and more friends! Follow me on insta and facebook @lindsayalmontee 🤗!",
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alain_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Alain Buensuceso",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Statistics and Economics, General Business Minor",
+              email: "dpm2au@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Sup, my name's Alain and I am stoked to be one of your sports chairs this year! Some things about me is that I love to play tennis and I love to play basketball. Other than sports, I also like to spend time with friends, go to the beach, and listen to music. Some of my goals this year include making money and achieving a 4-peat in Winter Classic. Feel free to reach out to me if you ever want to ask me a question, go to a sporting event, or just to get to know me 👍",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/StudentAdvisors_bnc38pic.jpeg",
+    committeeName: "Student Advisors",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Karinna_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Karinna Fuglie",
+              pronouns: "she/her",
+              year: "4th year",
+              major: "Environmental Sciences",
+              email: "aze8kt@virginia.edu",
+              city: "Falls Church, VA",
+              bio: "Hi I'm Karinna and I'm one of your Student Advisors! I love the outdoors, playing sports, and spending time with friends. I can't wait to get to know all of you, so feel free to reach out! Please friend me on facebook and follow me on ig @karinnafuglie."
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Dean_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Dean Paler",
+              pronouns: "he/they",
+              year: "4th year",
+              major: "Cognitive Science and Psychology, Data Science Minor",
+              email: "hdh4ys@virginia.edu",
+              city: "Norfolk, VA",
+              bio: "Hi everyone! My name is Dean(us), and I’m so excited to be one of your Student Advisors! A little about me: I love thrifting, cats, Pokémon, and people who follow me on Instagram @deanpaler. Well yes! Please free to reach out anytime – whether it’s for a chat or just to say hello. Let’s make this year in OYFA one to remember ₍^. .^₎⟆",
+            },
+        ],
+      },
+    ],
+  },
+  {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Webmasters_bnc38pic.jpeg",
+    committeeName: "Webmasters",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Jeremiah_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Jeremiah Arceo",
+              pronouns: "he/him",
+              year: "2nd year",
+              major: "Computer Science (BA), Data Science Minor",
+              email: "yxk3nc@virginia.edu",
+              city: "Lorton, VA",
+              bio: "Hello, I'm Jeremiah and I am one of your Webmaster chairs! My favorite hobbies are touching grass and showering, but I also love pickleball, calligraphy, Roblox, and word games on Game Pigeon. Reach out if you want to talk and I hope to see y’all around! Add me on Roblox @j_erryx"
+            },
+        ],
+      },
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Nate_bnc38pic.jpeg",
+        text: [
+          {
+              name: "Nate Garcia",
+              pronouns: "he/him",
+              year: "3rd year",
+              major: "Computer Science (BS), Data Science Minor",
+              email: "gzk9gr@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "HELLO I AM NATE @(・●・)@ and I'm one of your webmaster chairs this year! When I'm not doing super cool coding stuff for the OYFA website (like putting this bio on the website lol), I enjoy dancing, soccer, traveling, and gallivanting w the homies. A goal of mine this year is to be a great webmaster chair and support my fellow BNC members and OYFANs! Follow me on ig @nate.gaarcia and connect w me on LinkedIn hehehe >:) ",
+            },
+        ],
+      },
+    ],
+  },
+];
+
+/* =========== Archive ============================================= */
+const LEADERSHIP_FOLDER_37 = "/images/leadership/bnc37";
+
+/* This is our current Board and Council, what is displayed */
+
+
+export const BNC37 = [
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Franceszca_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Franceszca_bnc37pic.jpg",
       committeeName: "President",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Franceszca_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Franceszca_bnc37pic.jpg",
           text: [
             {
                 name: "Franceszca Penaredondo",
@@ -45,11 +618,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Kyla_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Kyla_bnc37pic.jpg",
       committeeName: "Vice President",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Kyla_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Kyla_bnc37pic.jpg",
           text: [
             {
                 name: "Kyla Quimson",
@@ -65,11 +638,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Karinna_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Karinna_bnc37pic.jpg",
       committeeName: "Treasurer",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Karinna_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Karinna_bnc37pic.jpg",
           text: [
             {
                 name: "Karinna Fuglie",
@@ -86,11 +659,11 @@ export const BNC = [
     },
     {
       committeeImgSrc:
-        LEADERSHIP_FOLDER_CURRENT + "/Nathan_bnc37pic.jpg",
+      LEADERSHIP_FOLDER_37 + "/Nathan_bnc37pic.jpg",
       committeeName: "Corresponding Secretary",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Nathan_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Nathan_bnc37pic.jpg",
           text: [
             {
                 name: "Nathan David",
@@ -107,11 +680,11 @@ export const BNC = [
     },
     {
       committeeImgSrc:
-        LEADERSHIP_FOLDER_CURRENT + "/Miggy_bnc37pic.jpeg",
+      LEADERSHIP_FOLDER_37 + "/Miggy_bnc37pic.jpeg",
       committeeName: "Recording Secretary",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Miggy_bnc37pic.jpeg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Miggy_bnc37pic.jpeg",
           text: [
             {
                 name: "Miguel \"Miggy\" Ballesteros",
@@ -127,11 +700,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sofia_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Sofia_bnc37pic.jpg",
       committeeName: "Outreach Coordinator",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sofia_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Sofia_bnc37pic.jpg",
           text: [
             {
                 name: "Sofia Romulo",
@@ -147,11 +720,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culture_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Culture_bnc37pic.jpg",
       committeeName: "Culture",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Corey_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Corey_bnc37pic.jpg",
           text: [
             {
                 name: "Corey Farrow",
@@ -165,7 +738,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Jacob_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Jacob_bnc37pic.jpg",
           text: [
             {
                 name: "Jacob Wells",
@@ -181,11 +754,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Historic_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Historic_bnc37pic.jpg",
       committeeName: "Historic",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Christine_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Christine_bnc37pic.jpg",
           text: [
             {
                 name: "Christine Amor",
@@ -199,7 +772,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Olivia_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Olivia_bnc37pic.jpg",
           text: [
             {
                 name: "Olivia Cordero",
@@ -216,11 +789,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Membership_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Membership_bnc37pic.jpg",
       committeeName: "Membership",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Thea_bnc37pic.jpg",
           text: [
             {
                 name: "Thea Budlong",
@@ -234,7 +807,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Evie_bnc37pic.JPG",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Evie_bnc37pic.JPG",
           text: [
             {
                 name: "Evie Liu",
@@ -250,11 +823,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/PR_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/PR_bnc37pic.jpg",
       committeeName: "Public Relations",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Tori_bnc37pic.jpeg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Tori_bnc37pic.jpeg",
           text: [
             {
                 name: "Tori Ochave",
@@ -268,7 +841,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Mateo_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Mateo_bnc37pic.jpg",
           text: [
             {
                 name: "Mateo Paras",
@@ -284,11 +857,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Community_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Community_bnc37pic.jpg",
       committeeName: "Community",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Jewelle_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Jewelle_bnc37pic.jpg",
           text: [
             {
                 name: "Jewelle Sanchez",
@@ -302,7 +875,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Aniela_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Aniela_bnc37pic.jpg",
           text: [
             {
                 name: "Aniela Tolero",
@@ -318,11 +891,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Social_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Social_bnc37pic.jpg",
       committeeName: "Social",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Drenzelle_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Drenzelle_bnc37pic.jpg",
           text: [
             {
                 name: "Drenzelle Bagtas",
@@ -336,7 +909,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Carina_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Carina_bnc37pic.jpg",
           text: [
             {
                 name: "Carina Martinez",
@@ -352,11 +925,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sports_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Sports_bnc37pic.jpg",
       committeeName: "Sports",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Elle_bnc37pic.jpeg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Elle_bnc37pic.jpeg",
           text: [
             {
                 name: "Elle Ochave",
@@ -370,7 +943,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc37pic.jpeg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Derek_bnc37pic.jpeg",
           text: [
             {
                 name: "Derek Poore",
@@ -386,11 +959,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Advocacy_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Advocacy_bnc37pic.jpg",
       committeeName: "Advocacy",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Dean_bnc37pic.jpeg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Dean_bnc37pic.jpeg",
           text: [
             {
                 name: "Dean Paler",
@@ -404,7 +977,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Danella_bnc37pic.jpeg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Danella_bnc37pic.jpeg",
           text: [
             {
                 name: "Danella Lei Romera",
@@ -420,11 +993,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/D7_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/D7_bnc37pic.jpg",
       committeeName: "District 7",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Larry_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Larry_bnc37pic.jpg",
           text: [
             {
                 name: "Larry Egalla",
@@ -438,7 +1011,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Niko_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Niko_bnc37pic.jpg",
           text: [
             {
                 name: "Niko Santos",
@@ -454,11 +1027,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Webmaster_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Webmaster_bnc37pic.jpg",
       committeeName: "Webmasters",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Jaco_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Jaco_bnc37pic.jpg",
           text: [
             {
                 name: "Jaco Asistores",
@@ -472,7 +1045,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Christina_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Christina_bnc37pic.jpg",
           text: [
             {
                 name: "Christina Yang",
@@ -488,11 +1061,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Scholarship_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Scholarship_bnc37pic.jpg",
       committeeName: "Scholarship",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Maddie_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Maddie_bnc37pic.jpg",
           text: [
             {
                 name: "Maddie Miles",
@@ -506,7 +1079,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Maya_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Maya_bnc37pic.jpg",
           text: [
             {
                 name: "Maya Pattison",
@@ -523,11 +1096,11 @@ export const BNC = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/StudentAdvisors_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/StudentAdvisors_bnc37pic.jpg",
       committeeName: "Student Advisors",
       bios: [
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Maggie_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Maggie_bnc37pic.jpg",
           text: [
             {
                 name: "Maggie Hilado",
@@ -541,7 +1114,7 @@ export const BNC = [
           ],
         },
         {
-          bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Patrick_bnc37pic.jpg",
+          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Patrick_bnc37pic.jpg",
           text: [
             {
                 name: "Patrick Yuson",
@@ -558,7 +1131,6 @@ export const BNC = [
     },
 ];  
 
-/* =========== Archive ============================================= */
 const LEADERSHIP_FOLDER_36 = "/images/leadership/bnc36";
 
 // temporarily displaying 36th B&C while 37th B&C bios are WIP
@@ -4812,6 +5384,7 @@ export const BNC15 = [
  *      things like how many members are being displayed on board, if council is missing for a given B&C, etc.
  */
 export const BNC_ARCHIVE = [
+  { bncNum: 37, bnc: BNC37, imgPath: "/images/leadership/bnc37/Leadership_Title.jpg", },
   { bncNum: 36, bnc: BNC36, imgPath: "/images/leadership/bnc36/Leadership_Title.jpg", format: 3 },
   { bncNum: 35, bnc: BNC35, imgPath: "/images/leadership/bnc35/Leadership_Title.jpg" },
   { bncNum: 34, bnc: BNC34, imgPath: "/images/leadership/bnc34/Leadership_Title.jpg", position: 20 },
