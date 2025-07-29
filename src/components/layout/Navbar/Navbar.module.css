@@ -169,16 +169,22 @@
 }
 
 .dropdownContent {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+
   position: absolute;
   top: 100%;
   left: 0;
   background-color: #ffffff;
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   border-radius: 6px;
   padding: 0;
+  pointer-events: none;
 }
 
 .dropdownContent li {
@@ -186,7 +192,10 @@
 }
 
 .dropdown:hover .dropdownContent {
-  display: block;
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .dropdownContent a {
