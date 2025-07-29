@@ -123,7 +123,7 @@ export const NAVBAR_TABS = [
     },
     { name: "MERCH", url: "/merch" },
     { name: "ARCHIVES", url: "/archives"},
-    { name: "FAHMZINE", url: "/fahmzine"},
+    /*{ name: "FAHMZINE", url: "/fahmzine"},*/
 ];
 
 /* Mailchimp WIO Root Form Posting Link, used in EmailSignup */
