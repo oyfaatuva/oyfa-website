@@ -19,10 +19,6 @@ export default class Links extends Component{
                     <LinkGallery />
                 </Suspense>
 
-                { <PDFViewer fileUrl="/fahmzine/fahmzine_2024_issue1.pdf" /> }
-                { <PDFViewer fileUrl="/fahmzine/fahmzine_2024_issue2.pdf" /> }
-                { <PDFViewer fileUrl="/fahmzine/fahmzine_2024_issue3.pdf" /> }
-
             </div>
 
         )
