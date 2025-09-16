@@ -30,6 +30,8 @@ export default function FamBios() {
     );
 }
 
+
+/* structures each individual fam head section (image and bio) */
 function FamBio({ bio, famName }) {
     return (
         <div className={styles.fam_bio}>
@@ -50,6 +52,7 @@ function FamBio({ bio, famName }) {
     );
 }
 
+/* structure of info for fam head bios */
 function FamBioTextSection({ text }) {
     return (
         <div className={styles.fam_text_section}>

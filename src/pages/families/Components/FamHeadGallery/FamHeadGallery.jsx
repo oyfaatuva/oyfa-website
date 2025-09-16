@@ -12,7 +12,10 @@ export default function FamHeadGallery({fams}) {
     
     return(
         
+        /* obtain info from FAM list to create family title, img, and fam head names */
         <AppearingDiv className={styles.grid_container}>
+
+            
             {fams.map((fam, index) => (
                 <div key={index} className={styles.fam_title_container}>
                     <p className={styles.fam_title_text}>{fam.famName}</p>
