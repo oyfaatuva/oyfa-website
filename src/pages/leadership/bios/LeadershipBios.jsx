@@ -78,8 +78,9 @@ function CommitteeBioTextSection ({ textSection, fontSize }) {
                 </>
             }
 
+            { /* include email if you want
             <p>{textSection.email}</p>
-
+            */ }
             {textSection.extraText?.map((extraText) => (
                 <>
                     <br/>

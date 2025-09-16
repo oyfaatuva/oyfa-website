@@ -39,7 +39,7 @@ function BoardRow ({ board }) {
                 {board.bios.map((bio, index) => (
                     <div key={index} className={styles.person_text_container}>
                         {bio.text?.map((personText, index2) => (
-                            <PersonText key={index + index2} name={personText.name} major={personText.major} email={personText.email} />
+                            <PersonText key={index + index2} name={personText.name} major={personText.major} />
                         ))}
                         <h1 className={styles.person_title}>{bio.committeeTitle?.toUpperCase()}</h1>
                     </div>
