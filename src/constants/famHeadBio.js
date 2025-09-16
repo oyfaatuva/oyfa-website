@@ -11,7 +11,7 @@ const FAM_PICS = "/images/families"
 
 export const Fam = [
     {
-        famImgSrc: FAM_PICS + "/Amihan_famHeads.jpg",
+        famImgSrc: FAM_PICS + "/Amihan_famHeads.jpeg",
         famName: "AMIHAN",
         bios: [
             {
@@ -29,7 +29,7 @@ export const Fam = [
                 
             },
             {
-                bioImgSrc: FAM_PICS + "Francis_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Francis_famHeadPic.jpg",
                 text: [
                     {
                         name: "Francis Santos",
@@ -42,7 +42,7 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Eric_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Eric_famHeadPic.jpg",
                 text: [
                     {
                         name: "Eric Yeatts",
@@ -57,11 +57,11 @@ export const Fam = [
         ],
     },
     {
-        famImgSrc: FAM_PICS + "Matapang_famHeads.jpg",
+        famImgSrc: FAM_PICS + "/Matapang_famHeads.jpeg",
         famName: "MATAPANG",
         bios: [
             {
-                bioImgSrc: FAM_PICS + "Olivia_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Olivia_famHeadPic.jpg",
                 text: [
                     {
                         name: "Olivia Cordero",
@@ -74,7 +74,7 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Nikita_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Nikita_famHeadPic.jpg",
                 text: [
                     {
                         name: "Nikita Pantow",
@@ -87,7 +87,7 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Niko_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Niko_famHeadPic.jpg",
                 text: [
                     {
                         name: "Niko Santos",
@@ -102,11 +102,11 @@ export const Fam = [
         ],
     },
     {
-        famImgSrc: FAM_PICS + "Miyari_famHeads.jpg",
+        famImgSrc: FAM_PICS + "/Mayari_famHeads.jpeg",
         famName: "MAYARI",
         bios: [
             {
-                bioImgSrc: FAM_PICS + "Karinna_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Karinna_famHeadPic.jpg",
                 text: [
                     {
                         name: "Karinna Fuglie",
@@ -119,10 +119,10 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Elle_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Elle_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Eleanor Ochave",
+                        name: "Elle Ochave",
                         pronouns: "she/her",
                         year: "3rd year",
                         major: "Kinesiology",
@@ -132,7 +132,7 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Lauren_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Lauren_famHeadPic.jpg",
                 text: [
                     {
                         name: "Lauren Paz",
@@ -147,11 +147,11 @@ export const Fam = [
         ],
     },
     {
-        famImgSrc: FAM_PICS + "Yahan_famHeads.jpg",
+        famImgSrc: FAM_PICS + "/Yahan_famHeads.jpeg",
         famName: "YAHAN",
         bios: [
             {
-                bioImgSrc: FAM_PICS + "Miggy_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Miggy_famHeadPic.jpg",
                 text: [
                     {
                         name: "Miggy Ballesteros",
@@ -164,7 +164,7 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Argie_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Argie_famHeadPic.jpg",
                 text: [
                     {
                         name: "Argie Cunanan",
@@ -177,7 +177,7 @@ export const Fam = [
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "Sarah_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Sarah_famHeadPic.jpg",
                 text: [
                     {
                         name: "Sarah Fernandez",
