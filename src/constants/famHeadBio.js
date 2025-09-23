@@ -169,10 +169,10 @@ export const Fam = [
                     {
                         name: "Argie Cunanan",
                         pronouns: "he/him",
-                        year: "4th",
+                        year: "4th year",
                         major: "Electrical Engineering, Engineering Business Minor",
                         city: "Virginia Beach, VA",
-                        bio: "Hey! I’m Argie and I’ll be one of the YAHAN Fam Heads. I like to play basketball, nap, and share jokes. Follow me on IG @6otcu. I’m ecsta to meet and serve YAHAN 2025-2026. ٩(^ᗜ^ )و ´-",
+                        bio: "Hey! I’m Argie and I’ll be one of the YAHAN Fam Heads. I like to play basketball, nap, and share jokes. Follow me on IG @6otcu. I’m ecstatic to meet and serve YAHAN 2025-2026. ٩(^ᗜ^ )و ´-",
                     },
                 ],
             },
