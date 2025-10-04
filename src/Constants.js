@@ -45,6 +45,7 @@ export const LINKS =
                 [
                     {header: 'OYFA Historic Photos', para: 'View our official archive of memories', link: 'https://uvaoyfa.myportfolio.com/'},
                     {header: 'OYFA 2025-2026 Events Google Calendar', para: 'Clear your calendar for our amazing events!', link: 'https://calendar.google.com/calendar/u/0?cid=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
+                    {header: 'FAHMzine 2025: Pamayanan (Volume I)', para: 'A literary magazine that shares stories and reflections from the Filipino diaspora revolving this year’s central topic of community.', link: 'https://www.canva.com/design/DAG0ntk4ue8/RU-V_uSUfT5rtvnG-fQPqA/view?utm_content=DAG0ntk4ue8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h64e0eb81e2'},
                     {header: 'Week in OYFA (WIO) Sign-Up', para: 'Get our weekly newletter featuring announcements, news, puzzles, and fun tidbits!', link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=x4A0ewc3c0iLd-IWczplrHq0JpkP48ZMuDnSI9AQeT5UNkNTMEdLNVRBVllLSUQ5VVVYWTBMQjBLUy4u'},
                     {header: 'OYFA Discord', para: 'Play games with Oyfans', link: 'https://discord.gg/aKw4JpQyJW'},
                 ]

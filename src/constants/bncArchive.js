@@ -271,19 +271,19 @@ export const BNC = [
         text: [
           {
               name: "Sofia Romulo",
-              pronouns: "-",
+              pronouns: "she/her",
               year: "4th year",
-              major: "-",
-              email: "-",
+              major: "Speech Communication Disorders & Cognitive Science, Religious Studies Minor",
+              email: "tvb5pr@virginia.edu",
               city: "Chesapeake, VA",
-              bio: "-",
+              bio: "I love to talk soooo much that I made it my major. I'm culture again because I like doing culture stuff. Barrio will be awesome. Thanks",
             },
         ],
       },
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "D7_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/D7_bnc38pic.jpg",
     committeeName: "District 7",
     bios: [
       {
