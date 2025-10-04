@@ -168,7 +168,7 @@ export const BNC = [
         bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ashley_bnc38pic.jpg",
         text: [
           {
-              name: "Ashely Lohr",
+              name: "Ashley Lohr",
               pronouns: "she/her",
               year: "4th year",
               major: "English, East Asian Studies Minor",
@@ -369,7 +369,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Isaella_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Bella_bnc38pic.jpg",
         text: [
           {
               name: "Isabella Flores",
