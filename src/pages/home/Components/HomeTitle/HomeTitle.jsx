@@ -23,11 +23,11 @@ export default function HomeTitle () {
 
     /* Carousel Variables */
     const timeBeforeSwitch = 5000 //time in milliseconds
-    const imgDir = './images/home/' //images for this file are in public/images/home
+    const imgDir = '/images/home/' //images for this file are in public/images/home
     
     const content = [
         {
-            imgSrc: imgDir + '37th_BnC.jpg',
+            imgSrc: imgDir + '38th_BnC.jpg',
             captionHeader: '38th Board and Council',
             captionPara: 'Meet our leadership team',
             link: '/leadership' // **CHANGE BACK TO /leadership**
