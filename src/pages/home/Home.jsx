@@ -36,7 +36,7 @@ export default function Home () {
                 <HomeSocialsAndSignup/>
                 <div className='other_container'>
                     <img src='images/home/ffn.jpg'/>
-                    <AppearingDiv className='thank_you'><h3>Thank you, 36th &lt;3</h3></AppearingDiv>
+                    <AppearingDiv className='thank_you'><h3>Thank you, 37th &lt;3</h3></AppearingDiv>
                 </div>
                 <Testimonies/>
             </Suspense>
