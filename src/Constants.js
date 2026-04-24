@@ -88,10 +88,10 @@ export const LINKS =
                 [
                     {header: 'OYFA Student Advisors Report Form', link:'https://docs.google.com/forms/d/e/1FAIpQLSel_Mz61p-f8EheJqR4XrJYerHyIZMm62-gwEDRjg7MCarPgg/viewform'},
                     {header: 'Counseling and Psychological Services (CAPS)', para: '#: (434)-243-5150', link: 'https://www.studenthealth.virginia.edu/CAPS'},
-                    {header: "Maxine Platzer Lynn Women's Center", para: '#: (434)-982-2361', link: 'https://womenscenter.virginia.edu/'},
+                    {header: "Maxine Platzer Lynn Women's Center", para: '#: (434)-982-2361 \n 2964 Hydraulic Road, Charlottesville, VA 22901', link: 'https://womenscenter.virginia.edu/'},
                     {header: 'Planned Parenthood', para: '#: (434)-296-1000', link: 'https://www.plannedparenthood.org/health-center/virginia/charlottesville/22901/charlottesville-health-center-2815-90860'},
-                    {header: 'Gordie Center for Substance Abuse Prevention', para: '#: (434)-982-0703', link: 'https://gordie.studenthealth.virginia.edu/'},
-                    {header: 'Student Disability Access Center', para: '#: (434)-243-5180', link: 'https://studenthealth.virginia.edu/'},
+                    {header: 'Gordie Center for Substance Abuse Prevention', para: '#: (434)-982-0703 \n 400 Brandon Avenue, Charlottesville, VA 22903', link: 'https://gordie.studenthealth.virginia.edu/'},
+                    {header: 'Student Disability Access Center', para: '#: (434)-243-5180 \n 400 Brandon Ave., Charlottesville, VA 22903', link: 'https://studenthealth.virginia.edu/'},
                     {header: 'Full List of Student Resources', link: 'https://docs.google.com/spreadsheets/d/1cOHmlndC50kTv60pviq2G98Huuva1fsiPkL64XinS0I/edit?usp=sharing'},
                 ]
         }
