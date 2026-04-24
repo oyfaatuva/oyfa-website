@@ -40,45 +40,59 @@ export const CURRENT_YEAR = 2025;
 export const LINKS =
     [   
         { 
-            sectionTitle: 'OYFA Links',
+            sectionTitle: 'OYFA General Links',
+            columns: 2,
             links: 
                 [
-                    {header: 'OYFA Historic Photos', para: 'View our official archive of memories', link: 'https://uvaoyfa.myportfolio.com/'},
-                    {header: 'OYFA 2025-2026 Events Google Calendar', para: 'Clear your calendar for our amazing events!', link: 'https://calendar.google.com/calendar/u/0?cid=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
-                    {header: 'FAHMzine 2025: Pamayanan (Volume I)', para: 'A literary magazine that shares stories and reflections from the Filipino diaspora revolving this year’s central topic of community.', link: 'https://www.canva.com/design/DAG0ntk4ue8/RU-V_uSUfT5rtvnG-fQPqA/view?utm_content=DAG0ntk4ue8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h64e0eb81e2'},
-                    {header: 'Week in OYFA (WIO) Sign-Up', para: 'Get our weekly newletter featuring announcements, news, puzzles, and fun tidbits!', link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=x4A0ewc3c0iLd-IWczplrHq0JpkP48ZMuDnSI9AQeT5UNkNTMEdLNVRBVllLSUQ5VVVYWTBMQjBLUy4u'},
-                    {header: 'OYFA Discord', para: 'Play games with Oyfans', link: 'https://discord.gg/aKw4JpQyJW'},
+                    {   header: 'OYFA Historic Photos',
+                        para: 'View our official archive of memories',
+                        link: 'https://uvaoyfa.myportfolio.com/'},
+
+                    {   header: 'OYFA Google Calendar',
+                        para: 'Clear your calendar for our amazing events!',
+                        link: 'https://calendar.google.com/calendar/u/0?cid=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
+
+                    {   header: 'FAHMzine 2025: Pamayanan (Volume I)',
+                        para: 'A literary magazine that shares stories and reflections from \n the Filipino diaspora revolving this year’s central topic of community.',
+                        imgSrc: './images/links/fahmzine.jpeg',
+                        link: 'https://www.canva.com/design/DAG0ntk4ue8/RU-V_uSUfT5rtvnG-fQPqA/view?utm_content=DAG0ntk4ue8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h64e0eb81e2',
+                        featured: true},
                 ]
         },
 
         { 
-            sectionTitle: 'Facebook Groups',
+            sectionTitle: 'Groups Links',
+            columns: 3,
             links: 
                 [
-                    {header: 'Official Facebook Group', para: 'Official channels for news and info. Find our other socials at the bottom of the page!', link: 'https://www.facebook.com/groups/oyfaatuva/'},
-                    {header: 'Chilling Out With OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'}                ]
+                    {header: 'FaceBook', para: 'Official channels for news and info. Find our other socials at the bottom of the page!', link: 'https://www.facebook.com/groups/oyfaatuva/'},
+                    {header: 'Chilling w. OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'},
+                    {header: 'Discord', para: 'Play games with OYFANS!', link: 'https://discord.gg/aKw4JpQyJW'}
+                ]
         },
 
         { 
-            sectionTitle: 'External',
+            sectionTitle: 'Forms Links',
+            columns: 2,
             links: 
                 [
-                    {header: 'External Org WIO Announcement Requests', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://docs.google.com/forms/d/e/1FAIpQLScyJWjb7ewew4lsxuoGLVaQJyWHYATVHPBtJKpKJJxksDjN0g/viewform?usp=sf_link'},
+                    {header: 'Week in OYFA (WIO)\nSign-Up', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://docs.google.com/forms/d/e/1FAIpQLScyJWjb7ewew4lsxuoGLVaQJyWHYATVHPBtJKpKJJxksDjN0g/viewform?usp=sf_link'},
                     {header: 'About Lokal Lab Siargao', para: 'Non-profit assisting Typhoon Rai relief efforts', link: 'https://www.lokalsiargao.com'},
                 ]
         },
 
         { 
-            sectionTitle: 'Resources',
+            sectionTitle: 'Support & Wellness Resources',
+            columns: 3,
             links: 
                 [
-                    {header: 'OYFA Student Advisors Report Form', para: 'Our student advisors are available as a resource for all members. Report misconduct of any kind inflicted against those in our community. Examples of misconduct include but are not limited to discrimination of any kind; harassment; abuse; or any form of sexual violence', link:'https://docs.google.com/forms/d/e/1FAIpQLSel_Mz61p-f8EheJqR4XrJYerHyIZMm62-gwEDRjg7MCarPgg/viewform'},
-                    {header: 'Counseling and Psychological Services (CAPS)', para: 'Free individual, group, or couples therapy provided by the University of Virginia; also includes support group under Counseling and Psychological Services (CAPS) for students who want to become more comfortable with their gender identity and sexuality: (434)-243-5150', link: 'https://www.studenthealth.virginia.edu/CAPS'},
-                    {header: "Maxine Platzer Lynn Women's Center", para: 'Free individual, group, or couples therapy provided by the University of Virginia; food distribution available in lobby: (434)-982-2361; 2964 Hydraulic Road, Charlottesville, VA 22901', link: 'https://womenscenter.virginia.edu/'},
-                    {header: 'Planned Parenthood', para: 'Provides abortion, pregnancy testing, STD testing, and birth control services - (434)-296-1000', link: 'https://www.plannedparenthood.org/health-center/virginia/charlottesville/22901/charlottesville-health-center-2815-90860'},
-                    {header: 'Gordie Center for Substance Abuse Prevention', para: 'Provides education, information, resources and referrals for university wide alcohol and other drug abuse prevention, strategies, and support for UVA students in recovery - (434)-982-0703; 400 Brandon Avenue, Charlottesville, VA 22903', link: 'https://gordie.studenthealth.virginia.edu/'},
-                    {header: 'Student Disability Access Center', para: 'Provides support services, academic accommodations, advocacy, and educational training to the U.Va. students for physical and mental disabilities - (434)-243-5180; 400 Brandon Ave., Charlottesville, VA 22903', link: 'https://studenthealth.virginia.edu/'},
-                    {header: 'Full List of Student Resources', para: 'Provides a list of various student resources, including but not limited to resources from UVA', link: 'https://docs.google.com/spreadsheets/d/1cOHmlndC50kTv60pviq2G98Huuva1fsiPkL64XinS0I/edit?usp=sharing'},
+                    {header: 'OYFA Student Advisors Report Form', link:'https://docs.google.com/forms/d/e/1FAIpQLSel_Mz61p-f8EheJqR4XrJYerHyIZMm62-gwEDRjg7MCarPgg/viewform'},
+                    {header: 'Counseling and Psychological Services (CAPS)', para: '#: (434)-243-5150', link: 'https://www.studenthealth.virginia.edu/CAPS'},
+                    {header: "Maxine Platzer Lynn Women's Center", para: '#: (434)-982-2361 \n 2964 Hydraulic Road, Charlottesville, VA 22901', link: 'https://womenscenter.virginia.edu/'},
+                    {header: 'Planned Parenthood', para: '#: (434)-296-1000', link: 'https://www.plannedparenthood.org/health-center/virginia/charlottesville/22901/charlottesville-health-center-2815-90860'},
+                    {header: 'Gordie Center for Substance Abuse Prevention', para: '#: (434)-982-0703 \n 400 Brandon Avenue, Charlottesville, VA 22903', link: 'https://gordie.studenthealth.virginia.edu/'},
+                    {header: 'Student Disability Access Center', para: '#: (434)-243-5180 \n 400 Brandon Ave., Charlottesville, VA 22903', link: 'https://studenthealth.virginia.edu/'},
+                    {header: 'Full List of Student Resources', link: 'https://docs.google.com/spreadsheets/d/1cOHmlndC50kTv60pviq2G98Huuva1fsiPkL64XinS0I/edit?usp=sharing'},
                 ]
         }
     ]

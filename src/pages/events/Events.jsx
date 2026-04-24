@@ -11,7 +11,7 @@ export default class Events extends Component{
         return(
             <div className='mb-4'>
                 <Helmet><title>Events - OYFA at UVA</title></Helmet>
-                <HalfTitle header = 'Events' imgSrc = '/images/events/Events_Title_Yogoyfa.jpeg' brightness = {70} caption='Check Instagram for latest updates' captionLink='https://www.instagram.com/oyfaatuva/' newTab = 'true'/>
+                <HalfTitle header = 'Events' imgSrc = '/images/events/Events_Title_FFN.jpeg' brightness = {70} caption='Check Instagram for latest updates' captionLink='https://www.instagram.com/oyfaatuva/' newTab = 'true'/>
                 <Suspense fallback={<Loading/>}>
                     <Calendar />
                 </Suspense>

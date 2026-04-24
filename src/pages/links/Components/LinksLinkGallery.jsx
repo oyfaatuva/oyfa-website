@@ -9,7 +9,7 @@ export default class LinkGallery extends Component{
         return(
             <>
                 {LINKS.map((section, index) => (
-                        <LinkSection key = {index} sectionTitle = {section.sectionTitle} links = {section.links} imgSrc = {section.imgSrc}/>
+                        <LinkSection key = {index} sectionTitle = {section.sectionTitle} links = {section.links} columns = {section.columns}/>
                 ))}
             </>
         )
@@ -33,16 +33,18 @@ class LinkSection extends Component{
         const sectionTitle = this.props.sectionTitle
         const links        = this.props.links
         const imgSrc       = this.props.imgSrc
+        const columns  = this.props.columns || 2
 
         return(
             <div>
                 <h1 className = 'link_section_heading'>{sectionTitle}</h1>
-                <img className = 'link_img_container' src = {imgSrc}/>
-                <div className = 'links_container'>
+                {imgSrc && <img className = 'link_img_container' src = {imgSrc}/>}
+                <div className={`links_container ${columns === 3 ? "three_col" : "two_col"}`}>
                     {links.map((link, index) => (
-                        <Link key = {index} header={link.header} para={link.para} imgSrc={link.imgSrc} link={link.link}/>
+                        <Link key = {index} header={link.header} para={link.para} imgSrc={link.imgSrc} link={link.link} featured={link.featured}/>
                     ))}
                 </div>
+                <hr/>
             </div>
         )
     }
@@ -66,18 +68,20 @@ class Link extends Component{
     render(){
         const imgSrc = this.props.imgSrc;
         const header = this.props.header;
-        const para   = this.props.para;  
+        const para   = this.props.para;
         const link   = this.props.link;
 
         return(
-            <div className='link_container'>
+            <div className={`link_container ${this.props.featured ? "featured_link" : ""}`}>
 
                 <a href = {link} target='_blank' className = 'link_anchor'>
 
-                    <div className = 'link_img_container'>
-                        <img src = {imgSrc}/>
-                    </div>
-
+                    {imgSrc && (
+                        <div className='link_img_container'>
+                            <img src={imgSrc}/>
+                        </div>
+                    )}
+                    <div className = 'link_text_container'>
                     <h1 className = 'link_heading'>
                         {header}
                     </h1>
@@ -85,10 +89,8 @@ class Link extends Component{
                     <p className = 'link_paragraph'>
                         {para}
                     </p>
-
+                    </div>
                 </a>
-
-            
             </div>
         )
     }

@@ -36,7 +36,7 @@ export default class Mission extends Component{
                     orientation = 'text-left'
                     header = 'Identity'
                     bulletpoints = {identityPoints}
-                    imgSrc = './images/about/About_FFN.jpeg' 
+                    imgSrc = './images/about/About_Barrio.jpeg'
                     imgCaption = 'Homemade plates of barbecue, lumpia, pancit, and desserts are served at Filipino Food Night, a pop-up restaurant experience of Filipino cuisine.' />
                 <MissionRow
                     orientation = 'text-right'
@@ -47,7 +47,7 @@ export default class Mission extends Component{
                     orientation = 'text-left'
                     header = 'Professional Development'
                     bulletpoints = {professionalPoints}
-                    imgSrc = './images/about/About_Professional_Ariane.jpeg' />
+                    imgSrc = './images/about/About_Professional_Danella.jpeg' />
                 <MissionRow
                     orientation = 'text-right'
                     header = 'Dialogue'

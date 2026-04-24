@@ -18,7 +18,7 @@ export default function About () {
     return(
         <>
             <Helmet><title>About - OYFA at UVA</title></Helmet>
-            <HalfTitle header = 'About' imgSrc = './images/about/About_Title_Battle.jpeg'
+            <HalfTitle header = 'About' imgSrc = './images/about/About_Title_Grill.jpeg'
             brightness={80} position={40}/>
             <Suspense fallback={<Loading/>}>
                 <History />
