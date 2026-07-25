@@ -5,12 +5,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 
-// Handle stale Vite chunks after a deployment.
-window.addEventListener("vite:preloadError", (event) => {
-    event.preventDefault();
-    window.location.reload();
-});
-
 /* Set the browser tab title, also for SEO (so when Google queries searches for 'OYFA' this is what it finds) */
 document.title = "OYFA at UVA"
 
