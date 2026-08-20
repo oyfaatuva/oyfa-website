@@ -1288,23 +1288,9 @@ export const BNC37 = [
       ],
     },
     {
-      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Culture_bnc37pic.jpg",
+      committeeImgSrc: LEADERSHIP_FOLDER_37 + "/Jacob_bnc37pic.jpg",
       committeeName: "Culture",
       bios: [
-        {
-          bioImgSrc: LEADERSHIP_FOLDER_37 + "/Corey_bnc37pic.jpg",
-          text: [
-            {
-                name: "Corey Farrow",
-                pronouns: "he/him",
-                year: "2nd year",
-                major: "Computer Science and Sociology",
-                email: "qpn8pr@virginia.edu",
-                city: "Manassas, Virginia",
-                bio: "Hey everyone, I'm Corey! I'm a 2nd year studying Computer Science and Sociology, and I'm proud to be serving on OYFA's 37th B&C! I love listening to music, playing video games, and making new friends! My Instagram is @corey.farroww; feel free to say hi anytime!",
-              },
-          ],
-        },
         {
           bioImgSrc: LEADERSHIP_FOLDER_37 + "/Jacob_bnc37pic.jpg",
           text: [
