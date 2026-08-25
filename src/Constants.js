@@ -67,7 +67,7 @@ export const LINKS =
                 [
                     {header: 'FaceBook', para: 'Official channels for news and info. Find our other socials at the bottom of the page!', link: 'https://www.facebook.com/groups/oyfaatuva/'},
                     {header: 'Chilling w. OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'},
-                    {header: 'Discord', para: 'Play games with OYFANS!', link: 'https://discord.gg/aKw4JpQyJW'}
+                    {header: 'Discord', para: 'Play games with OYFANS!', link: 'https://discord.gg/GVf9sMxQp'}
                 ]
         },
 
@@ -86,7 +86,7 @@ export const LINKS =
             columns: 3,
             links: 
                 [
-                    {header: 'OYFA Student Advisors Report Form', link:'https://docs.google.com/forms/d/e/1FAIpQLSel_Mz61p-f8EheJqR4XrJYerHyIZMm62-gwEDRjg7MCarPgg/viewform'},
+                    {header: 'OYFA Student Advisors Report Form', link:'https://forms.gle/8FFz6y1YJXysNZpZ7'},
                     {header: 'Counseling and Psychological Services (CAPS)', para: '#: (434)-243-5150', link: 'https://www.studenthealth.virginia.edu/CAPS'},
                     {header: "Maxine Platzer Lynn Women's Center", para: '#: (434)-982-2361', link: 'https://womenscenter.virginia.edu/'},
                     {header: 'Planned Parenthood', para: '#: (434)-296-1000', link: 'https://www.plannedparenthood.org/health-center/virginia/charlottesville/22901/charlottesville-health-center-2815-90860'},
