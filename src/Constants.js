@@ -76,7 +76,7 @@ export const LINKS =
             columns: 2,
             links: 
                 [
-                    {header: 'Week in OYFA (WIO)\nSign-Up', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://docs.google.com/forms/d/e/1FAIpQLScyJWjb7ewew4lsxuoGLVaQJyWHYATVHPBtJKpKJJxksDjN0g/viewform?usp=sf_link'},
+                    {header: 'Week in OYFA (WIO)\nSign-Up', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://forms.office.com/pages/responsepage.aspx?id=x4A0ewc3c0iLd-IWczplrDvGAksnMt5LjsbqyiOOTLZUM0ZPM0FEMzhOWFpZV1IxUDFGR09YSUJIOCQlQCN0PWcu&route=shorturl'},
                     {header: 'About Lokal Lab Siargao', para: 'Non-profit assisting Typhoon Rai relief efforts', link: 'https://www.lokalsiargao.com'},
                 ]
         },
