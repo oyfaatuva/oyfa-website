@@ -31,8 +31,8 @@ export const MERCH_FORM_LINK = 'https://forms.office.com/r/YiT7Cakize';
 ** print icon + calendar list + time zone. Then take only the src url rather than all the embed code and change
 ** this link, the Calendar component in eventsCalendar.js auto applies custom sizing rules. */
 
-export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342'
-export const CURRENT_YEAR = 2025;
+export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=NGEzNDFmNjIzNWI5OTkyZTBjMDM3NGFmYzUyYzliOGFiYjM0NmFlMTMzYzQyNmVkZTU2MGE4YzkwNjZlYzUwMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Yzk2NDc0MmMzMWI0OGRmNjhmMDc4ZjFlNTU2MTE0ZTMxMjJkMzYxNGEwOWQ3NDBlMDZlNjE3MDNmNjVjYzJhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NzA5ODYyYjg3MWUyOWQ4ODhlOTkxMDNmZDM5N2RhMDY0OGYxNzQ5Nzk5MWFjZDFiNjZhNDZjYjliYmNhMzg5ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237cb342&color=%23ad1457&color=%23b39ddb&color=%230b8043'
+export const CURRENT_YEAR = '2026-2027';
 
 /*=================LINKS=====================================================================*/
 
@@ -50,7 +50,7 @@ export const LINKS =
 
                     {   header: 'OYFA Google Calendar',
                         para: 'Clear your calendar for our amazing events!',
-                        link: 'https://calendar.google.com/calendar/u/0?cid=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
+                        link: 'https://calendar.google.com/calendar/render?cid=c964742c31b48df68f078f1e556114e3122d3614a09d740e06e61703f65cc2ad%40group.calendar.google.com'},
 
                     {   header: 'FAHMzine 2025: Pamayanan (Volume I)',
                         para: 'A literary magazine that shares stories and reflections from \n the Filipino diaspora revolving this year’s central topic of community.',
