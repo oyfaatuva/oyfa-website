@@ -544,12 +544,12 @@ export const BNC = [
         text: [
           {
               name: "Derek Poore-Abad",
-              pronouns: "-",
-              year: "-",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              pronouns: "He/Him",
+              year: "4th year",
+              major: "Biomedical Engineering, Biotechnology Minor",
+              email: "zqn2xu@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "hey i'm derek im your student advisor type reach out if you ever need support, advice, or just wanna yap! #follow4follow @757_derek",
             },
         ],
       },
