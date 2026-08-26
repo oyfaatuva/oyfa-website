@@ -31,8 +31,8 @@ export const MERCH_FORM_LINK = 'https://forms.office.com/r/YiT7Cakize';
 ** print icon + calendar list + time zone. Then take only the src url rather than all the embed code and change
 ** this link, the Calendar component in eventsCalendar.js auto applies custom sizing rules. */
 
-export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&showCalendars=0&showTz=0&showTitle=0&src=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342'
-export const CURRENT_YEAR = 2025;
+export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=NGEzNDFmNjIzNWI5OTkyZTBjMDM3NGFmYzUyYzliOGFiYjM0NmFlMTMzYzQyNmVkZTU2MGE4YzkwNjZlYzUwMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Yzk2NDc0MmMzMWI0OGRmNjhmMDc4ZjFlNTU2MTE0ZTMxMjJkMzYxNGEwOWQ3NDBlMDZlNjE3MDNmNjVjYzJhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NzA5ODYyYjg3MWUyOWQ4ODhlOTkxMDNmZDM5N2RhMDY0OGYxNzQ5Nzk5MWFjZDFiNjZhNDZjYjliYmNhMzg5ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237cb342&color=%23ad1457&color=%23b39ddb&color=%230b8043'
+export const CURRENT_YEAR = '2026-2027';
 
 /*=================LINKS=====================================================================*/
 
@@ -50,7 +50,7 @@ export const LINKS =
 
                     {   header: 'OYFA Google Calendar',
                         para: 'Clear your calendar for our amazing events!',
-                        link: 'https://calendar.google.com/calendar/u/0?cid=M2NkNDhiZWYzOTA0OWJiZjQ5ZGIyZjJjMTJjNzYwMGUxMjFjNzY3NzI0YjQ5ODM4Y2Y1ODk1NDRjMGJiMDRhZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t'},
+                        link: 'https://calendar.google.com/calendar/render?cid=c964742c31b48df68f078f1e556114e3122d3614a09d740e06e61703f65cc2ad%40group.calendar.google.com'},
 
                     {   header: 'FAHMzine 2025: Pamayanan (Volume I)',
                         para: 'A literary magazine that shares stories and reflections from \n the Filipino diaspora revolving this year’s central topic of community.',
@@ -67,7 +67,7 @@ export const LINKS =
                 [
                     {header: 'FaceBook', para: 'Official channels for news and info. Find our other socials at the bottom of the page!', link: 'https://www.facebook.com/groups/oyfaatuva/'},
                     {header: 'Chilling w. OYFA', para: 'Our silly casual Facebook group', link: 'https://www.facebook.com/groups/596905140414588/'},
-                    {header: 'Discord', para: 'Play games with OYFANS!', link: 'https://discord.gg/aKw4JpQyJW'}
+                    {header: 'Discord', para: 'Play games with OYFANS!', link: 'https://discord.gg/GVf9sMxQp'}
                 ]
         },
 
@@ -76,7 +76,7 @@ export const LINKS =
             columns: 2,
             links: 
                 [
-                    {header: 'Week in OYFA (WIO)\nSign-Up', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://docs.google.com/forms/d/e/1FAIpQLScyJWjb7ewew4lsxuoGLVaQJyWHYATVHPBtJKpKJJxksDjN0g/viewform?usp=sf_link'},
+                    {header: 'Week in OYFA (WIO)\nSign-Up', para: 'Request any announcement that will be sent out through Week in OYFA (WIO)', link:'https://forms.office.com/pages/responsepage.aspx?id=x4A0ewc3c0iLd-IWczplrDvGAksnMt5LjsbqyiOOTLZUM0ZPM0FEMzhOWFpZV1IxUDFGR09YSUJIOCQlQCN0PWcu&route=shorturl'},
                     {header: 'About Lokal Lab Siargao', para: 'Non-profit assisting Typhoon Rai relief efforts', link: 'https://www.lokalsiargao.com'},
                 ]
         },
@@ -86,7 +86,7 @@ export const LINKS =
             columns: 3,
             links: 
                 [
-                    {header: 'OYFA Student Advisors Report Form', link:'https://docs.google.com/forms/d/e/1FAIpQLSel_Mz61p-f8EheJqR4XrJYerHyIZMm62-gwEDRjg7MCarPgg/viewform'},
+                    {header: 'OYFA Student Advisors Report Form', link:'https://forms.gle/8FFz6y1YJXysNZpZ7'},
                     {header: 'Counseling and Psychological Services (CAPS)', para: '#: (434)-243-5150', link: 'https://www.studenthealth.virginia.edu/CAPS'},
                     {header: "Maxine Platzer Lynn Women's Center", para: '#: (434)-982-2361', link: 'https://womenscenter.virginia.edu/'},
                     {header: 'Planned Parenthood', para: '#: (434)-296-1000', link: 'https://www.plannedparenthood.org/health-center/virginia/charlottesville/22901/charlottesville-health-center-2815-90860'},
@@ -102,7 +102,7 @@ export const LINKS =
 /* NOTE: the current B&C information has been moved to constants/bncArchive.js with the archived B&Cs */
 
 /* Number of the Current Board and Council */
-export const CURRENT_BNC = 38;
+export const CURRENT_BNC = 39;
 
 /* Youtube embed id of the B&C promo video to be displayed on LeadershipIntro component. You can find this by clicking share,
 ** embed on the current year's video. If there isn't a video for this year leave equal to empty string '' */
