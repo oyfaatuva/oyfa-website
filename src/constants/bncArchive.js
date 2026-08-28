@@ -115,7 +115,7 @@ export const BNC = [
         bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ralph_bnc38pic.jpg",
         text: [
           {
-              name: "Enzo -",
+              name: "Enzo Alinsonorin",
               pronouns: "-",
               year: "2nd year",
               major: "-",
@@ -237,13 +237,13 @@ export const BNC = [
         bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Caitlyn_bnc38pic.jpg",
         text: [
           {
-              name: "-",
-              pronouns: "-",
-              year: "-",
-              major: "-",
-              email: "-@virginia.edu",
-              city: "-",
-              bio: "-",
+              name: "Crystina Ing",
+              pronouns: "She/Her",
+              year: "3rd year",
+              major: "Chemical Engineering",
+              email: "czt5fj@virginia.edu",
+              city: "Annandale, VA",
+              bio: "Hi I'm Crystina one of your culinary chairs for the 26-27 school year (hehe). I am a major foodie and love trying food from all around and love to bake and learn new recipes! I love watching movies in theaters, arts & crafts, and reading! I'm excited to use food as the international language of love ;).",
             },
         ],
       },
