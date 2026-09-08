@@ -31,7 +31,7 @@ export const MERCH_FORM_LINK = 'https://forms.office.com/r/YiT7Cakize';
 ** print icon + calendar list + time zone. Then take only the src url rather than all the embed code and change
 ** this link, the Calendar component in eventsCalendar.js auto applies custom sizing rules. */
 
-export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=NGEzNDFmNjIzNWI5OTkyZTBjMDM3NGFmYzUyYzliOGFiYjM0NmFlMTMzYzQyNmVkZTU2MGE4YzkwNjZlYzUwMkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Yzk2NDc0MmMzMWI0OGRmNjhmMDc4ZjFlNTU2MTE0ZTMxMjJkMzYxNGEwOWQ3NDBlMDZlNjE3MDNmNjVjYzJhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NzA5ODYyYjg3MWUyOWQ4ODhlOTkxMDNmZDM5N2RhMDY0OGYxNzQ5Nzk5MWFjZDFiNjZhNDZjYjliYmNhMzg5ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237cb342&color=%23ad1457&color=%23b39ddb&color=%230b8043'
+export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=Yzk2NDc0MmMzMWI0OGRmNjhmMDc4ZjFlNTU2MTE0ZTMxMjJkMzYxNGEwOWQ3NDBlMDZlNjE3MDNmNjVjYzJhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>';
 export const CURRENT_YEAR = '2026-2027';
 
 /*=================LINKS=====================================================================*/
