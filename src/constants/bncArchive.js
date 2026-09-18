@@ -34,12 +34,12 @@ export const BNC = [
         text: [
           {
               name: "Thea Budlong",
-              pronouns: "-",
+              pronouns: "She/Her",
               year: "4th year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Global Public Health",
+              email: "xph5re@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Hello everyone! I am Thea Budlong your OYFA President for the 2026-2027 school year (YIPEE!). I look forward to meeting and getting to know everyone this year, to foster and grow this amazing community we have. Outside of school and work I love to try new recipes, do movie marathons (specifically Twilight), go shopping, and drive around everywhere. I hope to see you all soon!",
             },
         ],
       },
@@ -54,12 +54,32 @@ export const BNC = [
         text: [
           {
               name: "Caitlyn Lee",
-              pronouns: "She/her",
+              pronouns: "She/Her",
               year: "3rd year",
               major: "Nursing",
               email: "xph5re@virginia.edu",
               city: "McLean, VA",
               bio: "Hello! My name is Caitlyn and I am serving as the Internal Vice President. I love cooking, exploring new foods, binge-watching movies, and hanging out with friends! I also like staying active by taking picnics in the sun, going on hikes, lazing around at the beach, and playing volleyball. Feel free to reach out to me about anything, I'm an open book!! Follow my socials @_caitlyn_lee (insta and facebook)",
+            },
+        ],
+      },
+    ],
+  },
+    {
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpg",
+    committeeName: "External Vice President",
+    bios: [
+      {
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpg",
+        text: [
+          {
+              name: "Mark Espiritu",
+              pronouns: "He/Him",
+              year: "3rd year",
+              major: "Data Science",
+              email: "rpe2nh@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Hi I'm Mark, your new External Vice-President. I like reaching out and coordinating as well as eating and sleeping. Stim monster. Talk to me. Bye Bye. Follow me on IG: Mark_espiiriitu.",
             },
         ],
       },
@@ -74,12 +94,12 @@ export const BNC = [
         text: [
           {
               name: "Christian Ortega",
-              pronouns: "-",
+              pronouns: "He/Him",
               year: "3rd year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Computer Science (BS)",
+              email: "pkk8xb@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Yooooo what’s up guys! I’m Christian, a full filo warrior, and I’m proud to be OYFA’s Treasurer chair this year. I’m a hooper, gamer, and big Marvel fan. If you see me around grounds, be sure to say what’s up! I promise I’m not nonchalant. There’s more to me than meets the eye. #TreasureThem I will treasure OYFA <3.",
             },
         ],
       },
@@ -95,12 +115,12 @@ export const BNC = [
         text: [
           {
               name: "Alain Buensuceso",
-              pronouns: "-",
+              pronouns: "He/Him",
               year: "3rd year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Applied Statistics & Media Studies, minor in General Business",
+              email: "dpm2au@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Helllooooo ok hi um ok wait um hi hello um ok hi, my name's Alain, ok wait ok hi ok hellooooo ok let me restart, ok helloooo my name is Alain and ok wait ok i'm not ok i don't think i'm ready ok woah ok ok hellooooo ok am i ready ok i think i am ok hi hello Alain, book rooms, like sports, hmu ok hellooooooo ok i think i am done wait no ok wait ok wait ok yeah ok im good ok",
             },
         ],
       },
@@ -128,26 +148,6 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpg",
-    committeeName: "External Vice President",
-    bios: [
-      {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpg",
-        text: [
-          {
-              name: "Mark Espiritu",
-              pronouns: "He/Him",
-              year: "3rd year",
-              major: "Data Science",
-              email: "rpe2nh@virginia.edu",
-              city: "Virginia Beach, VA",
-              bio: "Hi I'm Mark, your new External Vice-President. I like reaching out and coordinating as well as eating and sleeping. Stim monster. Talk to me. Bye Bye. Follow me on IG: Mark_espiiriitu.",
-            },
-        ],
-      },
-    ],
-  },
-  {
     committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Advocacy_bnc38pic.jpg",
     committeeName: "Advocacy",
     bios: [
@@ -156,12 +156,12 @@ export const BNC = [
         text: [
           {
               name: "Lindsay Almonte",
-              pronouns: "",
+              pronouns: "She/Her",
               year: "3rd year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Foreign Affairs and Psychology",
+              email: "zsw6nu@virginia.edu",
+              city: "Ashburn, VA",
+              bio: "Hello! My name is Lindsay and I am super excited to be one of your advocacy chairs this year! I love traveling and playing sports, my fav is basketball. You can also find me trying new foods and hanging out with friends :)) I am super excited to hang out and meet new people sooo follow me on ig @lindsayalmonte!",
             },
         ],
       },
@@ -206,7 +206,7 @@ export const BNC = [
               name: "Ryan Tran",
               pronouns: "He/Him",
               year: "2nd year",
-              major: "Biochemistry",
+              major: "Medical Sociology",
               email: "njt2ny@virginia.edu",
               city: "Centreville, VA",
               bio: "ELLOYFA!!! I'm Ryan Tran and I'm one of your community chairs this year!! I'm a big fan of Pokemon, Pixar, and the Commanders! I'm always down to get food, play mahjong, talk about football, or just chat in general! Reach out (IG: ryan_trann.45) or find me at the MSC!! 🙃",
@@ -326,12 +326,12 @@ export const BNC = [
         text: [
           {
               name: "Nicole Chen",
-              pronouns: "-",
+              pronouns: "She/Her",
               year: "2nd year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Biology! (maybe I'll minor in something who knows)",
+              email: "dqj2ds@virginia.edu",
+              city: "Virginia Beach, VA",
+              bio: "Hiiii, I'm Nicole!! I'll be one of your new historic chairs this year and I'm so exciteddd (i'll get you good in photos TRUST). Outside of my role, I LOVE to rollerblade everywhere, sing, sidequest around, thrift, game (stardew!!!), craft, and hang out in general <3. So excited to meet everyone this year!!! You can find me on insta @_nicole.zc_",
             },
         ],
       },
@@ -342,7 +342,7 @@ export const BNC = [
               name: "Macy Clemente",
               pronouns: "She/Her",
               year: "2nd year",
-              major: "Nusring",
+              major: "Nursing",
               email: "tub4sb@virginia.edu",
               city: "Arlington, VA",
               bio: "Hellooo, I'm Macy, one of your 39th historic chairs. I love reading, eating sweets, hanging out with my friends, collecting plushies, and obviously being in OYFA!! I'm honored to be taking pictures of all your beautiful faces this school year. I can't wait to have fun together :) If you want to reach out, my Instagram is @macyamc ",
@@ -569,7 +569,7 @@ export const BNC = [
               major: "Mechanical Engineering, Computer Science Minor",
               email: "yck3zp@virginia.edu",
               city: "Fairfax, VA",
-              bio: "Hey guys, I'm Leo, and I will be one of your Webmasters this year! I love lifting, playing pickleball and video games, and hanging with friends. One of my goals is to meet as many people as I can, so follow me on insta and feel free to reach out about anything Engineering related! @leooooo_ch"
+              bio: "Hi guys I'm Leo and I'll be one of your webmasters this year! I love the gym, pickleball, and building gundam kits. Hmu if u tryna run doubles 🙏 @leooooo_ch"
             },
         ],
       },
