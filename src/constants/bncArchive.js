@@ -195,7 +195,7 @@ export const BNC = [
               major: "Chemical Engineering",
               email: "bnw2xn@virginia.edu",
               city: "Carrollton, VA",
-              bio: "Hi hi! I'm Ali Araneta and I'm so excited to be on of your Community Chairs this year! I love to play volleyball, dance, raves, and my cats. If you ever need someone to come try a new food places, hit me up! I'm looking forward to seeing ya'll share our love for our community. Follow @aliahna.araneta on IG & Facebook! ˙𐃷˙",
+              bio: "Hi hi! I'm Ali Araneta and I'm so excited to be one of your Community Chairs this year! I love to play volleyball, dance, raves, and my cats. If you ever need someone to come try a new food places, hit me up! I'm looking forward to seeing ya'll share our love for our community. Follow @aliahna.araneta on IG & Facebook! ˙𐃷˙",
             },
         ],
       },
