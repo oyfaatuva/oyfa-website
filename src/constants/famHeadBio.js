@@ -11,123 +11,123 @@ const FAM_PICS = "/images/families"
 
 export const Fam = [
     {
-        famImgSrc: FAM_PICS + "/Amihan_famHeads.jpeg",
+        famImgSrc: FAM_PICS + "/Amihan_famHeads.jpg",
         famName: "AMIHAN",
         bios: [
             {
-                bioImgSrc: FAM_PICS + "/Jaco_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Alain_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Jaco Asistores",
-                        pronouns: "he/him",
-                        year: "4th year",
-                        major: "Computer Science",
-                        city: "Harrisonburg, VA",
-                        bio: "Hi guys I’m Jaco and I’m one of the Amihan fam heads this year 🦅🦅 I’m a 4th year BACS major and I’m a chill guy that likes to have fun. I enjoy listening to all kinds of new music, watching movies, playing volleyball, going out to eat, and hanging out with my friends. Follow me on ig (@constantinejaco) and feel free to reach out anytime!",
+                        name: "Alain Buensuceso",
+                        pronouns: "He/Him",
+                        year: "3rd year",
+                        major: "Applied Statistics and Media Studies, minor in General Business",
+                        city: "Virginia Beach, VA",
+                        bio: "Hey! i'm alain and i can't wait",
                     },
                 ],
                 
             },
             {
-                bioImgSrc: FAM_PICS + "/Francis_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Ramses_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Francis Santos",
-                        pronouns: "he/him",
+                        name: "Ramses Mendoza",
+                        pronouns: "He/Him",
                         year: "3rd year",
-                        major: "Psychology",
-                        city: "Sterling, VA",
-                        bio: "Hi my name is Francis and i am super awesome and you are also awesome we are all awesome go Amihan insta: @fpj_23 fw me bang ",
+                        major: "Systems Engineering (Engineering Business Minor)",
+                        city: "Woodbridge, VA",
+                        bio: "Yoooo its Ramses and I'm one of your Amihan famheads! :DD I like food, my friends, swimming, and sleeping. There are so many fun memories I have with Oyfa but if I had to choose it would definitely be sleepovers playing roblox and just chilling with the FAM!!",
                     },
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "/Eric_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Erica_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Eric Yeatts",
-                        pronouns: "he/him",
-                        year: "4th Year",
-                        major: "Biochemistry",
-                        city: "Virginia Beach, VA",
-                        bio: "WASSUP YALL!! I'm Eric - one of your fam heads for Amihan this year! So excited to bond with everyone; as they say, 'we gon have some fun 😈.' On top of premed stuff (boring ...) you can find me playing basketball, volleyball, watching anime, singing (karaoke type not professional), lifting (come gym w/ me), and doing other random shi. You can talk to me anytime -> feel free to reach out! ",
+                        name: "Erica Romualdez",
+                        pronouns: "She/Her",
+                        year: "3rd Year",
+                        major: "Biology major, Health & Wellbeing minor",
+                        city: "Falls Church, VA",
+                        bio: "hiii everyone!! i’m erica, and i’m so excited to be one of your amihan famheads this year! you’ll usually find me locked in around grounds (my fav spots are SHW and Gilmer~) probably pretending to be productive… but when i’m not doing that i’m in afc, going on random side quests, getting matcha in the least performative way, or chilling with my friends! my insta is @erica.romualdez (if you like spam --> @eri.sistible), so pls say hi and follow me! i’m always down to grab food, yap, hang out, or whatever else. i can’t wait to meet all of you and make this year one to remember!!! <333",
                     },
                 ],
             },
         ],
     },
     {
-        famImgSrc: FAM_PICS + "/Matapang_famHeads.jpeg",
+        famImgSrc: FAM_PICS + "/Matapang_famHeads.jpg",
         famName: "MATAPANG",
         bios: [
             {
-                bioImgSrc: FAM_PICS + "/Olivia_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Lindsay_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Olivia Cordero",
-                        pronouns: "she/her",
-                        year: "4th year",
-                        major: "Nursing, East Asian Studies Minor",
-                        city: "Virginia Beach, VA",
-                        bio: "Hi OYFA! My name is Olivia and I'm so excited to be one of your Matapang Famheads this year! I love cooking, yoga, and playing with my friends :>> My fave fam memory was our Nintendo Sports Volleyball tournament in my second year! I'm always down to make new friends so message me anytime!",
-                    },
-                ],
-            },
-            {
-                bioImgSrc: FAM_PICS + "/Nikita_famHeadPic.jpg",
-                text: [
-                    {
-                        name: "Nikita Pantow",
-                        pronouns: "she/her",
-                        year: "4th year",
-                        major: "Psychology, Asian Pacific American Studies Minor ",
-                        city: "Bristow, VA",
-                        bio: "hi, welcome to oyfa! i’m nikita your matapang famhead. i love making matcha, long walks on the beach, and playing fortnite. my fave fam memory was fam week field day where i got to bond with my fam and play cool traditional Filipino games! follow my insta @nivanrow and never be too shy to come up to say hi, 100% chance i will say hi back :3",
-                    },
-                ],
-            },
-            {
-                bioImgSrc: FAM_PICS + "/Niko_famHeadPic.jpg",
-                text: [
-                    {
-                        name: "Niko Santos",
-                        pronouns: "he/him",
+                        name: "Lindsay Almonte",
+                        pronouns: "She/Her",
                         year: "3rd year",
-                        major: "Biomedical Engineering",
+                        major: "Foreign Affairs and Psychology",
+                        city: "Ashburn, VA",
+                        bio: "helloyfaa! I’m Lindsay and I can’t wait to be one of your matapang famheads!! I love listening to music, trying new things, and hooping (plz hoop w me). My favorite fam memory was dying my hair blue for fam week and getting a new piercing every year :)) but yay let’s win fam week plz, excited to meet everyonee",
+                    },
+                ],
+            },
+            {
+                bioImgSrc: FAM_PICS + "/Kendall_famHeadPic.jpg",
+                text: [
+                    {
+                        name: "Kendall Patulot",
+                        pronouns: "He/Him",
+                        year: "3rd year",
+                        major: "Computer Science and Philosophy",
+                        city: "Manassas, VA",
+                        bio: "“whats good oyfa. i’m kendall. i’m one of your matapang famheads this year. you’ll probably see me at cookout, the afc, having a calm lil study sesh at rice or clark, or at football/basketball games w/ the marching band. i’m down for pretty much anything, but in particular i enjoy watching shows/movies/anime/sports, reading books, playing videogames/pickleball, eating cookout/cookout adjacent food, doing anything music related, and just hanging out with all my friends. i hope i’ll see you around.” he says with a nonchalant smirk",
+                    },
+                ],
+            },
+            {
+                bioImgSrc: FAM_PICS + "/Derek_famHeadPic.jpg",
+                text: [
+                    {
+                        name: "Derek Poore-Abad",
+                        pronouns: "He/Him",
+                        year: "4th year",
+                        major: "Biomedical Engineering, Biotechnology Minor",
                         city: "Virginia Beach, VA",
-                        bio: "Sup, I'm Niko and I am one of your Matapang famheads! Let's get lit this year. If anyone is down to play volleyball or video games let me know and I'm there. ",
+                        bio: "hey guys i’m derek and i’ll be one of your Matapang famheads this year! I love to play sports, gym, thrift, larp, and have lots of fun muehehehe. My favorite fam memory is barking on the tables at Ohill 🤣. Hit dat follow button @757_derek and let’s get to trolling!!",
                     },
                 ],
             },
         ],
     },
     {
-        famImgSrc: FAM_PICS + "/Mayari_famHeads.jpeg",
+        famImgSrc: FAM_PICS + "/Mayari_famHeads.jpg",
         famName: "MAYARI",
         bios: [
             {
-                bioImgSrc: FAM_PICS + "/Karinna_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Catherine_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Karinna Fuglie",
-                        pronouns: "she/her",
-                        year: "4th year",
-                        major: "Environmental Science",
-                        city: "Falls Church, VA",
-                        bio: "hi! i’m so excited to be a mayari fam head this year! in my free time i like to go out into nature and try new things. my favorite memory of mayari was winning fam week my second year (we can do it again!). find me on instagram @karinna.fuglie so we can connect and be friends!",
+                        name: "Catherine Chen",
+                        pronouns: "She/Her",
+                        year: "3rd year",
+                        major: "Major: Nursing, Minor: Psychology",
+                        city: "Queens, NY",
+                        bio: "Hii I’m Catherine, and I am soo excited to be one of your Mayari famheads! I like to play basketball, watch movies, and try new food. My favorite memory is going to Olive Garden for fam week. Feel free to dm me on Insta @catherinee.chen, and I can't wait to meet you all!",
                     },
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "/Elle_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Mark_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Elle Ochave",
-                        pronouns: "she/her",
+                        name: "Mark Espiritu",
+                        pronouns: "He/Him",
                         year: "3rd year",
-                        major: "Kinesiology",
-                        city: "Virginia Beach, VA",
-                        bio: "Hi I'm Elle and I'm so hype to be one of your Mayari fam heads this year!! I love to stay active and finding new things to do in Cville. My fav fam memory is always big/little reveals! I can't wait to meet you all and welcome you to the best fam in OYFA! You can follow me on insta @elle.ochave.",
+                        major: "Data Science Major with Concentration in Kinesiology",
+                        city: "Cabiao, Nueva Ecija, Philippines",
+                        bio: "Hi Hi I'm Mark, and i'm excited to be one of your Mayari famheads this year! some of my favorite things are birria tacos, mechado, how to train your dragon, marvel, and fresca. i listen to almost everything besides country and i love opening mystery boxes and pokemon cards. my favorite fam memory has to be the mayari sleepover right before we do humpback hike! follow me @mark_espiiriitu and hopefully ur in my fam so we can be awesome, moons out !◯ ☽ ◑ ● ◐ ❨ ◯",
                     },
                 ],
             },
@@ -136,18 +136,18 @@ export const Fam = [
                 text: [
                     {
                         name: "Lauren Paz",
-                        pronouns: "she/her",
-                        year: "2nd year",
+                        pronouns: "She/Her",
+                        year: "3rd year",
                         major: "Kinesiology",
                         city: "Centreville, VA",
-                        bio: "Hey I’m Lauren and I’m sooo excited to be one of Mayari’s fam heads this year ˃̵ᴗ˂̵ Some of my favorite things to do is cook, thrift, lift, tan, and play pickleball. Not to mention, I’m trying to try every restaurant/cafe in the area, so if you need someone to grub with, hmu. One of my favorite fam mems is hiking Humpback post-halloweekend and being able to bond with my fam for the first time (and I know we will have many more bonding moments)! Follow me on insta & FB (@laurenpaz_), and I can’t wait to meet everyone!!",
+                        bio: "Hi! My name is Lauren and I'm from NOVA. I'm 100% committed to being your Mayari famhead this year and am majoring in Kinesiology. I like to thrift, hike, lift, go to concerts, and win fam week. I'm looking for some friends (and littles), so feel free to hmu!",
                     },
                 ],
             },
         ],
     },
     {
-        famImgSrc: FAM_PICS + "/Yahan_famHeads.jpeg",
+        famImgSrc: FAM_PICS + "/Yahan_famHeads.jpg",
         famName: "YAHAN",
         bios: [
             {
@@ -155,37 +155,37 @@ export const Fam = [
                 text: [
                     {
                         name: "Miggy Ballesteros",
-                        pronouns: "he/him",
-                        year: "3rd year",
+                        pronouns: "He/Him",
+                        year: "4th year",
                         major: "Biology",
                         city: "South Hill, VA",
-                        bio: "Hi everyone! I’m Miggy and I’m a third year biology major from South Hill, VA. I’m hype to be a famhead for the defending fam week champions 😸 I like running and going out with friends. My favorite fam memory was fam week and str**king with Christian Ortega (this was our first time meeting). Follow me on insta @m.ballesteros_",
+                        bio: "Hello! I’m Miggy, one of your Yahan famheads. I’m a fourth year biology major, I enjoy running, hiking, and just hanging out with friends. So excited to meet everyone!",
                     },
                 ],
             },
             {
-                bioImgSrc: FAM_PICS + "/Argie_famHeadPic.jpg",
+                bioImgSrc: FAM_PICS + "/Maleah_famHeadPic.jpg",
                 text: [
                     {
-                        name: "Argie Cunanan",
-                        pronouns: "he/him",
+                        name: "Maleah Caboteja",
+                        pronouns: "She/Her",
                         year: "4th year",
-                        major: "Electrical Engineering, Engineering Business Minor",
-                        city: "Virginia Beach, VA",
-                        bio: "Hey! I’m Argie and I’ll be one of the YAHAN Fam Heads. I like to play basketball, nap, and share jokes. Follow me on IG @6otcu. I’m ecstatic to meet and serve YAHAN 2025-2026. ٩(^ᗜ^ )و ´-",
-                    },
-                ],
-            },
-            {
-                bioImgSrc: FAM_PICS + "/Sarah_famHeadPic.jpg",
-                text: [
-                    {
-                        name: "Sarah Fernandez",
-                        pronouns: "she/her",
-                        year: "4th year",
-                        major: "Biology",
+                        major: "Computer Science Major, Data Science Minor",
                         city: "Woodbridge, VA",
-                        bio: "hiii i’m sarah, and i can’t wait to be one of your yahan famheads!!!! i like to listen to music, dilly dally, lay in the grass, and hang out with my friends. my fav fam memory was watching the sunrise at humpback. my insta is sarahlvfernandez & i can’t wait to meet my future fam <3",
+                        bio: "Hi everyone!! My name is Maleah and I’m hype to be one of your yahan famheads! I love crafts, finding new music, chilling with friends, and having a good time. Down to chill, play a game, run mahjong!, yap, karaoke!!, play on the switch, you name it, let’s run it all. Feel free to pass me a white peach redbull on the way. I’m excited to meet my awesome fam *insert dougie emote* insta: m_layanna",
+                    },
+                ],
+            },
+            {
+                bioImgSrc: FAM_PICS + "/Apollo_famHeadPic.jpg",
+                text: [
+                    {
+                        name: "Apollo Ocampo",
+                        pronouns: "He/Him",
+                        year: "4th year",
+                        major: "Electrical Engineering",
+                        city: "Arlington, VA",
+                        bio: "hi guys im apollo, im one of your famheads for yahan!!! I enjoy late night drives and dancing. A very fond memory I have is performing at mlk for the cultural events! my insta is apollo.ocampo (follow me now!) I’m excited to meet and hangout with yall! ^-^",
                     },
                 ],
             },
