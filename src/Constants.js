@@ -52,10 +52,10 @@ export const LINKS =
                         para: 'Clear your calendar for our amazing events!',
                         link: 'https://calendar.google.com/calendar/render?cid=c964742c31b48df68f078f1e556114e3122d3614a09d740e06e61703f65cc2ad%40group.calendar.google.com'},
 
-                    {   header: 'FAHMzine 2025: Pamayanan (Volume I)',
-                        para: 'A literary magazine that shares stories and reflections from \n the Filipino diaspora revolving this year’s central topic of community.',
-                        imgSrc: './images/links/fahmzine.jpeg',
-                        link: 'https://www.canva.com/design/DAG0ntk4ue8/RU-V_uSUfT5rtvnG-fQPqA/view?utm_content=DAG0ntk4ue8&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h64e0eb81e2',
+                    {   header: 'FAHMzine 2026: Pinagmulan (Volume I)',
+                        para: 'A literary magazine that shares stories and reflections from the Filipino diaspora revolving this year’s central topic of community.',
+                        imgSrc: './images/links/fahmzine26-1.jpg',
+                        link: 'https://canva.link/fahmzine26-1',
                         featured: true},
                 ]
         },
