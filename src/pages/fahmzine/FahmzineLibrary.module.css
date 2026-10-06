@@ -1,0 +1,82 @@
+.fahmzine {
+    width: 100%;
+    background: #fff;
+}
+
+.fahmzineSection {
+    padding: 25px 18px 25px;
+}
+
+.fahmzineSection h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fahmzineSection h2 {
+    margin: 0 0 28px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.issuesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+}
+
+.issueCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    min-width: 0;
+}
+
+.coverIcon {
+    display: flex;
+    flex-shrink: 0;
+    width: 255px;
+    height: 330px;
+    overflow: hidden;
+}
+
+.coverIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.issueInfo {
+    flex: 1;
+    min-width: 0;
+    max-width: 240px;
+}
+
+.issueInfo h3 {
+    margin: 0 0 25px;
+    font-size: 22px;
+}
+
+.issueInfo p {
+    margin: 0px;
+    font-size: 17px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+    .issuesGrid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .fahmzineHeader {
+        font-size: 36px;
+    }
+
+    .fahmzineSection h1 {
+        font-size: 30px;
+    }
+}

@@ -57,6 +57,11 @@ export const LINKS =
                         imgSrc: './images/links/fahmzine26-1.jpg',
                         link: 'https://canva.link/fahmzine26-1',
                         featured: true},
+                    {   header: 'fahmzine library page',
+                        para: 'view all issues',
+                        link: '/fahmzine'
+
+                        }
                 ]
         },
 

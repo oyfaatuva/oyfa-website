@@ -12,7 +12,8 @@ import Links from './pages/links/Links'
 import Leadership from './pages/leadership/Leadership'
 import LeadershipBios from './pages/leadership/bios/LeadershipBios';
 import Archives from './pages/archives/Archives'
-import Fahmzine from './pages/fahmzine/Components/Fahmzine_2024'
+import FahmzineLibrary from './pages/fahmzine/FahmzineLibrary'
+import Fahmzine2024 from './pages/fahmzine/Components/Fahmzine_2024'
 import Fahmzine2023 from './pages/fahmzine/Components/Fahmzine_2023'
 import Fahmzine2022 from './pages/fahmzine/Components/Fahmzine_2022'
 import Merch, { merchLoader } from './pages/merch/Merch';
@@ -47,7 +48,8 @@ const router = createBrowserRouter(
                 <Route path='merch' element={<Merch/>} loader={merchLoader}/>
                 <Route path='archives' element={<Archives/>}/>
                 <Route path='fahmzine'>
-                    <Route index element={<Fahmzine/>}/>
+                    <Route index element={<FahmzineLibrary/>}/>
+                    <Route path='fahmzine_2024' element={<Fahmzine2024/>}/>
                     <Route path='fahmzine_2023' element={<Fahmzine2023/>}/>
                     <Route path='fahmzine_2022' element={<Fahmzine2022/>}/>
                 </Route>
