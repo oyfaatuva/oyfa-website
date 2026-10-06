@@ -8,6 +8,7 @@
  * 4. In your LEADERSHIP_FOLDER, add an image named Leadership_Title.jpg (must be exactly
  *    this including file format and capitalization of jpg) to change the photo of the 
  *    HalfTitle.
+ * 5. Make sure to crop photos to square scale before uploading for easier implementation
  * NOTE: Remember that if you don't follow the same photo naming convention we used (ex. 
  *    Leadership_{Position}.jpg) you will have to manually change the ImgSrc values in
  *    the JSON as well!
@@ -18,19 +19,18 @@
  * future changes/additions very difficult. 
 */
 
-//using  bnc38 for placeholder images
-const LEADERSHIP_FOLDER_CURRENT = "/images/leadership/bnc38";
+const LEADERSHIP_FOLDER_CURRENT = "/images/leadership/bnc39";
 
 /* This is our current Board and Council, what is displayed */
 
 //TODO: update image links, fill in missing bios
 export const BNC = [
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Danella_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc39pic.jpg",
     committeeName: "President",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Danella_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc39pic.jpg",
         text: [
           {
               name: "Thea Budlong",
@@ -46,11 +46,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Caitlyn_bnc39pic.jpg",
     committeeName: "Internal Vice President",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Thea_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Caitlyn_bnc39pic.jpg",
         text: [
           {
               name: "Caitlyn Lee",
@@ -66,11 +66,11 @@ export const BNC = [
     ],
   },
     {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Mark_bnc39pic.jpg",
     committeeName: "External Vice President",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Mark_bnc39pic.jpg",
         text: [
           {
               name: "Mark Espiritu",
@@ -86,11 +86,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alyssa_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Christian_bnc39pic.jpg",
     committeeName: "Treasurer",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alyssa_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Christian_bnc39pic.jpg",
         text: [
           {
               name: "Christian Ortega",
@@ -107,11 +107,11 @@ export const BNC = [
   },
   {
     committeeImgSrc:
-    LEADERSHIP_FOLDER_CURRENT + "/Nikita_bnc38pic.jpg",
+    LEADERSHIP_FOLDER_CURRENT + "/Alain_bnc39pic.jpg",
     committeeName: "Corresponding Secretary",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Nikita_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alain_bnc39pic.jpg",
         text: [
           {
               name: "Alain Buensuceso",
@@ -121,18 +121,18 @@ export const BNC = [
               email: "dpm2au@virginia.edu",
               city: "Virginia Beach, VA",
               bio: "Helllooooo ok hi um ok wait um hi hello um ok hi, my name's Alain, ok wait ok hi ok hellooooo ok let me restart, ok helloooo my name is Alain and ok wait ok i'm not ok i don't think i'm ready ok woah ok ok hellooooo ok am i ready ok i think i am ok hi hello Alain, book rooms, like sports, hmu ok hellooooooo ok i think i am done wait no ok wait ok wait ok yeah ok im good ok",
-            },
+          },
         ],
       },
     ],
   },
   {
     committeeImgSrc:
-    LEADERSHIP_FOLDER_CURRENT + "/Ralph_bnc38pic.jpg",
+    LEADERSHIP_FOLDER_CURRENT + "/Enzo_bnc39pic.jpg",
     committeeName: "Recording Secretary",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ralph_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Enzo_bnc39pic.jpg",
         text: [
           {
               name: "Enzo Alinsonorin",
@@ -148,11 +148,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Advocacy_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Advocacy_bnc39pic.jpg",
     committeeName: "Advocacy",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Edward_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lindsay_bnc39pic.jpg",
         text: [
           {
               name: "Lindsay Almonte",
@@ -166,7 +166,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ashley_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lyle_bnc39pic.jpg",
         text: [
           {
               name: "Lyle Mora",
@@ -182,11 +182,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Community_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Community_bnc39pic.jpg",
     committeeName: "Community",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Andrew_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ali_bnc39pic.jpg",
         text: [
           {
               name: "Ali Araneta",
@@ -200,7 +200,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lauren_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ryan_bnc39pic.jpg",
         text: [
           {
               name: "Ryan Tran",
@@ -216,11 +216,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culinary_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culinary_bnc39pic.jpg",
     committeeName: "Culinary",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sarah_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Bella_bnc39pic.jpg",
         text: [
           {
               name: "Isabella Flores",
@@ -234,7 +234,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Caitlyn_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Crystina_bnc39pic.jpg",
         text: [
           {
               name: "Crystina Ing",
@@ -250,11 +250,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culture_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Culture_bnc39pic.jpg",
     committeeName: "Culture",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Christian_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Kash_bnc39pic.jpg",
         text: [
           {
               name: "Kash Reyes",
@@ -268,7 +268,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sofia_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Shilo_bnc39pic.jpg",
         text: [
           {
               name: "Shilomae Santana",
@@ -284,25 +284,25 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/D7_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/D7_bnc39pic.jpg",
     committeeName: "District 7",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sean_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lia_bnc39pic.jpg",
         text: [
           {
               name: "Lia Fitzgerald",
               pronouns: "She/Her",
               year: "3rd year",
-              major: "Electrical Engineering",
+              major: "Environmental Sciences, Environmental Thought & Practice, Data Science Minor",
               email: "mhe6qv@virginia.edu",
               city: "Alexandria, VA",
-              bio: "D what?! Hi, I'm Lia, one of your D7 chairs! Outside of my passion for D7 and practicing for Olympics, I love hanging out with friends, playing tennis, side-questing, and yapping. Can't wait for this year, let's get hype for D7! While we wait, go follow my socials @lia_fitz16 ",
+              bio: "Hi! I'm Lia, one of your District 7 representatives! When I'm not getting hype for D7 Olympics, I love to go on side-quests, spend time in nature, some amateur photography, binge-watch movies with my friends, playing tennis, anything crafty, and trying new things! I hope to see everyone get excited for D7 events and can't want to cheer yall on!! Follow me @lia_fitz16 on instagram and Lia Fitzgerald on facebook! 😊",
             },
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/PanPan_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Ralph_bnc39pic.jpg",
         text: [
           {
               name: "- Paras",
@@ -318,11 +318,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Historic_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Historic_bnc39pic.jpg",
     committeeName: "Historic",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Tessa_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Nicole_bnc39pic.jpg",
         text: [
           {
               name: "Nicole Chen",
@@ -336,7 +336,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alysia_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Macy_bnc39pic.jpg",
         text: [
           {
               name: "Macy Clemente",
@@ -352,11 +352,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Membership_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Membership_bnc39pic.jpg",
     committeeName: "Membership",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Mark_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Phoebe_bnc39pic.jpg",
         text: [
           {
               name: "Phoebe Cate",
@@ -370,7 +370,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Bella_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Kalay_bnc39pic.jpg",
         text: [
           {
               name: "Kalay Cruz",
@@ -386,11 +386,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/PR_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/PR_bnc39pic.jpg",
     committeeName: "Public Relations",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alex_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Bri_bnc39pic.jpg",
         text: [
           {
               name: "Bri Degroat",
@@ -404,7 +404,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Tristan_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Trina_bnc39pic.jpg",
         text: [
           {
               name: "Trina Serrano",
@@ -420,11 +420,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Scholarship_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Scholarship_bnc39pic.jpg",
     committeeName: "Scholarship",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lyle_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Grayson_bnc39pic.jpg",
         text: [
           {
               name: "Grayson Heraldo",
@@ -438,7 +438,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Henry_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Eliza_bnc39pic.jpg",
         text: [
           {
               name: "Eliza Pepito",
@@ -454,11 +454,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Social_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Social_bnc39pic.jpg",
     committeeName: "Social",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Allen_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Miggy_bnc39pic.jpg",
         text: [
           {
               name: "Miguel Ballesteros",
@@ -472,7 +472,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Vicky_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lauren_bnc39pic.jpg",
         text: [
           {
               name: "Lauren Paz",
@@ -488,11 +488,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sports_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sports_bnc39pic.jpg",
     committeeName: "Sports",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Lindsay_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Maia_bnc39pic.jpg",
         text: [
           {
               name: "Maia Olivia Cerezo",
@@ -506,7 +506,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alain_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Sean_bnc39pic.jpg",
         text: [
           {
               name: "Sean Villacorte",
@@ -522,11 +522,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/StudentAdvisors_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/StudentAdvisors_bnc39pic.jpg",
     committeeName: "Student Advisors",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Karinna_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Alyssa_bnc39pic.jpg",
         text: [
           {
               name: "Alyssa Famero",
@@ -540,7 +540,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Dean_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Derek_bnc39pic.jpg",
         text: [
           {
               name: "Derek Poore-Abad",
@@ -556,11 +556,11 @@ export const BNC = [
     ],
   },
   {
-    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Webmasters_bnc38pic.jpg",
+    committeeImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Webmasters_bnc39pic.jpg",
     committeeName: "Webmasters",
     bios: [
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Jeremiah_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Leo_bnc39pic.jpg",
         text: [
           {
               name: "Leo Chongtrakul",
@@ -574,7 +574,7 @@ export const BNC = [
         ],
       },
       {
-        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Nate_bnc38pic.jpg",
+        bioImgSrc: LEADERSHIP_FOLDER_CURRENT + "/Isaiah_bnc39pic.jpg",
         text: [
           {
               name: "Isaiah De Vera",
