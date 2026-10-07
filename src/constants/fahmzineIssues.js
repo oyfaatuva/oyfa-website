@@ -1,7 +1,19 @@
-const FAHM_PICS = "/images/fahmzine/";
+const FAHM_PICS = "/images/fahmzine/fahmzine_cover_";
 
 export const FAHMZINE_ISSUES =
-    [   
+    [   {
+        sectionTitle: 'Volume 5: Pinagmulan (2026)',
+        sectionSubtitle: 'Lindsay Almonte and Lyle Mora',
+        links:
+            [
+                {
+                    issue: 'Issue 1',
+                    description: '[insert description]',
+                    cover: FAHM_PICS + 'vol5_issue1.jpg',
+                    path: 'https://canva.link/fahmzine26-1'
+                }
+            ]
+        },
         { 
             sectionTitle: 'Volume 4: Pamayanan (2025)',
             sectionSubtitle: 'Edward Cariño and Ashley Lohr',
@@ -10,21 +22,21 @@ export const FAHMZINE_ISSUES =
                     {
                         issue: 'Issue 1',
                         description: 'Explore s-u-p-e-r-d-u-ppppppppppp-e-r-lo-n-g-w-o-rd-t-o-t-es-t-i-s-h-itest s ds dsdsd sdsdfasfsdf sdaf sdf sda f sdafsad fsd ffdsa j wledge, wisdom, and understanding through three issues.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue1.png',
-                        path: '/fahmzine/fahmzine_2024'
+                        cover: FAHM_PICS + 'vol4_issue1.jpg',
+                        path: 'https://www.canva.com/design/DAG0ntk4ue8/RU-V_uSUfT5rtvnG-fQPqA/view'
                     },
                     {
                         issue: 'Issue 2',
-                        description: 'Stories and reflections on fellow humanity and our shared identity.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue2.png',
-                        path: '/fahmzine/fahmzine_2023'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol4_issue2.jpg',
+                        path: 'https://www.canva.com/design/DAG8rCecMmQ/wI5qmq_xTkF6cG9n9G_2OQ/view'
                     },
                     {
                         
                         issue: 'Issue 3',
-                        description: 'The inaugural FAHMzine issue celebrating Filipino American history.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue3.png',
-                        path: '/fahmzine/fahmzine_2022'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol4_issue3.jpg',
+                        path: 'https://www.canva.com/design/DAHGtvr1YPU/nWeKLy0ZX_QMOqyt3oz1_g/view'
                     }
                 ]
         },
@@ -36,21 +48,21 @@ export const FAHMZINE_ISSUES =
                 [
                     {
                         issue: 'Issue 1',
-                        description: 'Explore knowledge, wisdom, and understanding through three issues.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue1.png',
-                        path: '/fahmzine/fahmzine_2024'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol3_issue1.jpg',
+                        path: 'https://canva.link/u87fim71s466jx2'
                     },
                     {
                         issue: 'Issue 2',
-                        description: 'Stories and reflections on fellow humanity and our shared identity.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue2.png',
-                        path: '/fahmzine/fahmzine_2023'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol3_issue2.jpg',
+                        path: 'https://canva.link/122x1ghgp5folg9'
                     },
                     {
                         issue: 'Issue 3',
-                        description: 'The inaugural FAHMzine issue celebrating Filipino American history.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue3.png',
-                        path: '/fahmzine/fahmzine_2022'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol3_issue3.jpg',
+                        path: 'https://canva.link/twtf18ts4lrc4cq'
                     }
                 ]
         },
@@ -62,21 +74,21 @@ export const FAHMZINE_ISSUES =
                 [
                     {
                         issue: 'Issue 1',
-                        description: 'Explore knowledge, wisdom, and understanding through three issues.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue1.png',
-                        path: '/fahmzine/fahmzine_2024'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol2_issue1.jpg',
+                        path: 'https://canva.link/nrnscn1d8o4ygta'
                     },
                     {
                         issue: 'Issue 2',
-                        description: 'Stories and reflections on fellow humanity and our shared identity.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue2.png',
-                        path: '/fahmzine/fahmzine_2023'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol2_issue2.jpg',
+                        path: 'https://canva.link/ycdzx8ba2arjicn'
                     },
                     {
                         issue: 'Issue 3',
-                        description: 'The inaugural FAHMzine issue celebrating Filipino American history.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue3.png',
-                        path: '/fahmzine/fahmzine_2022'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol2_issue3.jpg',
+                        path: 'https://canva.link/jqg8oqgzq24wedw'
                     }
                 ]
         },
@@ -88,21 +100,21 @@ export const FAHMZINE_ISSUES =
                 [
                     {
                         issue: 'Issue 1',
-                        description: 'Explore knowledge, wisdom, and understanding through three issues.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue1.png',
-                        path: '/fahmzine/fahmzine_2024'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol1_issue1.jpg',
+                        path: 'https://canva.link/usctv99vgdlq1ax'
                     },
                     {
                         issue: 'Issue 2',
-                        description: 'Stories and reflections on fellow humanity and our shared identity.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue2.png',
-                        path: '/fahmzine/fahmzine_2023'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol1_issue2.jpg',
+                        path: 'https://canva.link/2e7elq7pl0j3tj5'
                     },
                     {
                         issue: 'Issue 3',
-                        description: 'The inaugural FAHMzine issue celebrating Filipino American history.',
-                        cover: FAHM_PICS + 'Fahmzine2025_issue3.png',
-                        path: '/fahmzine/fahmzine_2022'
+                        description: '[insert description]',
+                        cover: FAHM_PICS + 'vol1_issue3.jpg',
+                        path: 'https://canva.link/mk6jnnqejzk8pqr'
                     }
                 ]
         },
