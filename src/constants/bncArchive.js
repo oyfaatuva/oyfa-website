@@ -136,12 +136,12 @@ export const BNC = [
         text: [
           {
               name: "Enzo Alinsonorin",
-              pronouns: "-",
+              pronouns: "He/Him",
               year: "2nd year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Cognitive Science",
+              email: "ewp7hg@virginia.edu",
+              city: "Norfolk, VA",
+              bio: "Hey everyone! I’m Enzo, your Recording Secretary for this year! I’m a huge music lover (especially edm, asap rocky, oasis), and nothing beats laughing and having fun times with my friends and family. Make sure to join the WiO where I’ll post announcements and event recaps, plus some fun interactive games along the way! Follow me on Instagram @enzoalinsonorin",
             },
         ],
       },
