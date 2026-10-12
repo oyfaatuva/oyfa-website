@@ -34,7 +34,7 @@ export default function HomeTitle () {
         },
         {
             imgSrc: imgDir + 'gbm.jpg',
-            captionHeader: 'October General Body Meeting',
+            captionHeader: 'First General Body Meeting',
             captionPara: 'Join our community',
             link: 'https://www.facebook.com/groups/oyfaatuva/'
         },
@@ -45,11 +45,11 @@ export default function HomeTitle () {
             link: 'https://www.facebook.com/groups/596905140414588/'
         },
         {
-            imgSrc: imgDir + 'Title_Fourth_Year_Modern.jpeg',
-            captionHeader: '4th Year Modern, Barrio 2023',
+            imgSrc: imgDir + 'Title_Fourth_Year_Modern.jpg',
+            captionHeader: '4th Year Modern, Barrio 2026',
             captionPara: 'View more pictures',
-            link: 'https://uvaoyfa.myportfolio.com/oyfa-2022-2023',
-            brightness: 65
+            link: 'https://uvaoyfa.myportfolio.com/oyfa-2025-2026',
+            brightness: 55
         },
         {
             imgSrc: imgDir + 'culture.jpg',
@@ -59,9 +59,9 @@ export default function HomeTitle () {
         },
         {
             imgSrc: imgDir + 'Title_First_Year_Modern.jpeg',
-            captionHeader: '1st Year Modern, Barrio 2023',
+            captionHeader: '1st Year Modern, Barrio 2026',
             captionPara: 'Watch the performance',
-            link: 'https://www.youtube.com/watch?v=zWFKvAuphp8&ab_channel=OYFAatUVA',
+            link: 'https://www.youtube.com/watch?v=CvIdSidr2jc&t=7644s',
             brightness: 65
         },
         //...continue as you see fit

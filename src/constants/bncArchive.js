@@ -476,12 +476,12 @@ export const BNC = [
         text: [
           {
               name: "Lauren Paz",
-              pronouns: "-",
+              pronouns: "She/Her",
               year: "3rd year",
-              major: "-",
-              email: "-",
-              city: "-",
-              bio: "-",
+              major: "Kinesiology",
+              email: "jgp3dm@virginia.edu",
+              city: "Centreville, VA",
+              bio: "Hi everyone! I’m Lauren and I’m one of your social chairs. When I’m not planning social events, you can most likely find me thrifting, lifting, or at a concert! Let’s socialize on @laurenpaz_ (IG) and @alaurenp (FB)!",
             },
         ],
       },

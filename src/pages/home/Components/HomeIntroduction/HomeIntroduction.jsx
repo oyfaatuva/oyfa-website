@@ -26,7 +26,7 @@ export default function HomeIntroduction() {
                 </div>
                 <AppearingDiv className='hello_photo_box2'/>
                 <AppearingDiv className='hello_photo' translateAxis='X' translateMeasurement={250} delay={0.7}>
-                    <img src='/images/home/Intro_Culturefest_Panorama.jpeg'/>
+                    <img src='/images/home/Intro_Culturefest_Panorama.jpg'/>
                 </AppearingDiv>
             </div>
     );
