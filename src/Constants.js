@@ -40,7 +40,7 @@ export const FEATURED_EVENTS = [
             { title: 'Culture Fest', blurb: 'At culture fest, we join fellow Asian student organizations to celebrate diversity and community through performance! Watch our dancers take the stage and stick around for all sorts of delicious food!', imgSrc: '/images/events/Events_culturefest.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/culture-fest'},
             { title: 'Filipino Food Night', blurb: 'FFN is OYFA’s largest food event of the year! Join us in the fall for delicious Filipino dishes, wonderful student-led performances, and a great time! ', imgSrc: '/images/events/Events_ffn.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/filipino-food-night-3'},
             { title: 'D7 Olympics', blurb: 'Every fall, OYFA joins Filipino student organizations from across District 7, including JMU, ODU, VCU, VT, and W&M, for a day of friendly competition in traditional Filipino games!', imgSrc: '/images/events/Events_d7_Olympics.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/d7-olympics-3'},
-            { title: 'Lakas 🏐', blurb: 'Our annual volleyball tournament where anyone is welcome to play! Create a team with your friends to compete in either our competitive or causal division!', imgSrc: '/images/events/Events_d7_Olympics.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/lakas-2'},
+            { title: 'Lakas 🏐', blurb: 'Our annual volleyball tournament where anyone is welcome to play! Create a team with your friends to compete in either our competitive or causal division!', imgSrc: '/images/events/Events_lakas.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/lakas-2'},
 
         ],
     },
