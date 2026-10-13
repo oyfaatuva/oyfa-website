@@ -31,8 +31,30 @@ export const MERCH_FORM_LINK = 'https://forms.office.com/r/YiT7Cakize';
 ** print icon + calendar list + time zone. Then take only the src url rather than all the embed code and change
 ** this link, the Calendar component in eventsCalendar.js auto applies custom sizing rules. */
 
-export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=Yzk2NDc0MmMzMWI0OGRmNjhmMDc4ZjFlNTU2MTE0ZTMxMjJkMzYxNGEwOWQ3NDBlMDZlNjE3MDNmNjVjYzJhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>';
+export const EVENTS_CALENDAR_SOURCE = 'https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=Yzk2NDc0MmMzMWI0OGRmNjhmMDc4ZjFlNTU2MTE0ZTMxMjJkMzYxNGEwOWQ3NDBlMDZlNjE3MDNmNjVjYzJhZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5';
 export const CURRENT_YEAR = '2026-2027';
+export const FEATURED_EVENTS = [
+    {
+        season: 'FALL EVENTS',
+        events: [
+            { title: 'Culture Fest', blurb: 'At culture fest, we join fellow Asian student organizations to celebrate diversity and community through performance! Watch our dancers take the stage and stick around for all sorts of delicious food!', imgSrc: '/images/events/Events_culturefest.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/culture-fest'},
+            { title: 'Filipino Food Night', blurb: 'FFN is OYFA’s largest food event of the year! Join us in the fall for delicious Filipino dishes, wonderful student-led performances, and a great time! ', imgSrc: '/images/events/Events_ffn.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/filipino-food-night-3'},
+            { title: 'D7 Olympics', blurb: 'Every fall, OYFA joins Filipino student organizations from across District 7, including JMU, ODU, VCU, VT, and W&M, for a day of friendly competition in traditional Filipino games!', imgSrc: '/images/events/Events_d7_Olympics.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/d7-olympics-3'},
+            { title: 'Lakas 🏐', blurb: 'Our annual volleyball tournament where anyone is welcome to play! Create a team with your friends to compete in either our competitive or causal division!', imgSrc: '/images/events/Events_d7_Olympics.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/lakas-2'},
+
+        ],
+    },
+    {
+        season: 'SPRING EVENTS',
+        events: [
+            { title: 'D7 Dialogue & Gala', blurb: 'A formal charity event bringing together Filipino student organizations from across District 7 for an evening of singing, dancing, guest speakers and workshops, and cultural performances! Dress to impress as we celebrate Filipino heritage, showcase student talent, and strengthen our community!', imgSrc: '/images/events/Events_d7_dialogue.jpeg' },
+            { title: 'Winter Classic 🏈', blurb: 'An annual Flag Football competition where OYFA competes against other Virginia schools to bring home the trophy! ', imgSrc: '/images/events/Events_winter_classic.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/winter-classic-4'},
+            { title: 'Barrio', blurb: 'OYFA’s most magical cultural event of the year! Every year in the spring, Barrio brings together traditional and modern dance performances and meaningful skits exploring Filipino identity. Look out for announcements if you’re interested in performing!', imgSrc: '/images/events/Events_barrio26.jpeg', photosLink: 'https://uvaoyfa.myportfolio.com/barrio'},
+            { title: 'Adoball 🏀', blurb: 'OYFA’s annual 2v2 basketball tournament! Grab a partner and hit the court for a chance to win it all!', imgSrc: '/images/events/Events_adoball_i_guess.jpeg'},
+
+        ],
+    },
+];
 
 /*=================LINKS=====================================================================*/
 
