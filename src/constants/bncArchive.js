@@ -228,7 +228,7 @@ export const BNC = [
               year: "3rd year",
               major: "Psychology Pre-med",
               email: "nyt5vd@virginia.edu",
-              city: "Woodbridge, VA",
+              city: "Chesapeake, VA",
               bio: "hiiii i'm isabella (you can just call me bella for short!) and i'm excited to be one of your culinary chairs this year! Aside from baking and cooking, I love anything matcha, making keychains and jewelry, watching fnaf lore videos on youtube while i eat, and making new friends! u should toooooootally add me on ig @is4bxlle so we can be friends or hang out or bake a sweet treat or whateva",
             },
         ],
