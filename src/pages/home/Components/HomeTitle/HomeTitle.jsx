@@ -27,14 +27,14 @@ export default function HomeTitle () {
     
     const content = [
         {
-            imgSrc: imgDir + '38th_BnC.jpg',
-            captionHeader: '38th Board and Council',
+            imgSrc: imgDir + '39th_BnC.jpg',
+            captionHeader: '39th Board and Council',
             captionPara: 'Meet our leadership team',
             link: '/leadership' // **CHANGE BACK TO /leadership**
         },
         {
-            imgSrc: imgDir + 'gbm.jpg',
-            captionHeader: 'October General Body Meeting',
+            imgSrc: imgDir + '2026_first_gbm.jpg',
+            captionHeader: 'First General Body Meeting',
             captionPara: 'Join our community',
             link: 'https://www.facebook.com/groups/oyfaatuva/'
         },
@@ -45,11 +45,11 @@ export default function HomeTitle () {
             link: 'https://www.facebook.com/groups/596905140414588/'
         },
         {
-            imgSrc: imgDir + 'Title_Fourth_Year_Modern.jpeg',
-            captionHeader: '4th Year Modern, Barrio 2023',
+            imgSrc: imgDir + 'Title_Fourth_Year_Modern_2026.jpg',
+            captionHeader: '4th Year Modern, Barrio 2026',
             captionPara: 'View more pictures',
-            link: 'https://uvaoyfa.myportfolio.com/oyfa-2022-2023',
-            brightness: 65
+            link: 'https://uvaoyfa.myportfolio.com/oyfa-2025-2026',
+            brightness: 55
         },
         {
             imgSrc: imgDir + 'culture.jpg',
@@ -58,10 +58,10 @@ export default function HomeTitle () {
             link: ''
         },
         {
-            imgSrc: imgDir + 'Title_First_Year_Modern.jpeg',
-            captionHeader: '1st Year Modern, Barrio 2023',
+            imgSrc: imgDir + 'Title_First_Year_Modern_2025.jpeg',
+            captionHeader: '1st Year Modern, Barrio 2025',
             captionPara: 'Watch the performance',
-            link: 'https://www.youtube.com/watch?v=zWFKvAuphp8&ab_channel=OYFAatUVA',
+            link: 'https://www.youtube.com/watch?v=CvIdSidr2jc&t=7644s',
             brightness: 65
         },
         //...continue as you see fit
