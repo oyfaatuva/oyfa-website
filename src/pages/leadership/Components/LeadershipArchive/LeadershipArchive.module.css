@@ -39,10 +39,18 @@
     position: absolute;
     top: calc(-1 * var(--button-tab-size));
     right: 10%;
+    border: none;
+    padding: 0;
+    color: inherit;
+    transition: background-color 0.2s ease;
 }
 
 .archive_button_toggle:hover {
     cursor: pointer;
+}
+
+.archive_button_toggle_open {
+    background-color: #ececec;
 }
 
 .archive_grid {

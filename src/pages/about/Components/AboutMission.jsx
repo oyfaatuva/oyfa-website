@@ -37,7 +37,7 @@ export default class Mission extends Component{
                     header = 'Identity'
                     bulletpoints = {identityPoints}
                     imgSrc = './images/about/About_Barrio.jpeg'
-                    imgCaption = 'Homemade plates of barbecue, lumpia, pancit, and desserts are served at Filipino Food Night, a pop-up restaurant experience of Filipino cuisine.' />
+                    imgCaption = "Students performing a traditional Filipino dance at Barrio, OYFA's annual culture show." />
                 <MissionRow
                     orientation = 'text-right'
                     header = 'Community'
